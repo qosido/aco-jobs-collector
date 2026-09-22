@@ -1,11 +1,17 @@
 {
-  "updatedAt": "2026-09-22T08:49:54.276Z",
+  "updatedAt": "2026-09-22T08:56:59.383Z",
   "diagnostics": {
     "ice": {
       "pagesCollected": 0,
       "rawCount": 0,
       "uniqueCount": 0,
-      "duplicatedPageDetected": false
+      "duplicatedPageDetected": false,
+      "firstPageHtmlLength": 77,
+      "firstPageTrCount": 0,
+      "firstPageTdCount": 0,
+      "firstPageHasArtInstructor": false,
+      "firstPageHasRecruiting": false,
+      "firstPagePreview": ""
     },
     "sen": {
       "keywords": [
