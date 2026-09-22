@@ -16,7 +16,7 @@ const ICE_DETAIL_BASE =
   "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981";
 
 const SEN_SEARCH_URL =
-  "https://work.sen.go.kr/work/search/recInfo/BD_selectMainSrch.do";
+  "https://work.sen.go.kr/work/search/recInfo/BD_selectSrchRecInfo.do";
 
 const SEN_DETAIL_BASE =
   "https://work.sen.go.kr/work/search/recInfo/BD_selectRecDetail.do";
@@ -671,29 +671,23 @@ async function fetchSenPage(
   page
 ) {
   const params =
-    new URLSearchParams({
-      q_currPage:
-        String(page),
+  new URLSearchParams({
+    q_currPage: String(page),
+    q_rowPerPage: "15",
+    q_sortBy: "regDt",
 
-      q_rowPerPage:
-        "15",
+    q_srchText: keyword,
+    q_srchType: "rcrtTtl",
+    q_recClosed: "closed",
 
-      q_sortBy:
-        "regDt",
-
-      q_type:
-        "rcrt",
-
-      q_searchWord:
-        keyword,
-
-      /*
-       * 사용자가 실제 브라우저에서
-       * 확인한 값 그대로 사용
-       */
-      q_recClosed:
-        "closed"
-    });
+    q_srchArea: "",
+    q_srchJob: "",
+    q_srchSchl: "",
+    q_jobCategory: "",
+    q_mySrchArea: "",
+    q_tabId: "",
+    q_today: ""
+  });
 
   const url =
     `${SEN_SEARCH_URL}?${params.toString()}`;
