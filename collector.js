@@ -1,48 +1,102 @@
 const fs = require("fs");
 
-const LIST_URL =
-  "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981";
+const BASE =
+  "https://www.ice.go.kr/ice/na/ntt/selectNttList.do";
 
-const INCLUDE_KEYWORDS = [
-  "플루트",
-  "플룻",
-  "관악",
-  "관현악",
-  "오케스트라",
-  "음악강사",
-  "음악 강사",
-  "예술강사",
-  "예술 강사",
-  "예체능강사",
-  "예체능 강사",
-  "전공실기",
-  "전공 실기",
-  "앙상블",
-  "악기강사",
-  "악기 강사",
-  "방과후"
-];
+const PAGE_URL =
+  `${BASE}?mi=10997&bbsId=1981`;
 
 async function main() {
-  console.log("인천교육청 수집 v3 시작");
+  console.log("인천교육청 예체능강사 수집 테스트 시작");
 
-  const response = await fetch(LIST_URL, {
-    headers: {
-      "User-Agent":
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36",
-      "Accept-Language": "ko-KR,ko;q=0.9"
-    }
+  // 1. 먼저 페이지를 열어 CSRF 토큰 획득
+  const firstResponse = await fetch(PAGE_URL, {
+    headers: browserHeaders()
   });
 
+  if (!firstResponse.ok) {
+    throw new Error(`초기 페이지 요청 실패: ${firstResponse.status}`);
+  }
+
+  const firstHtml = await firstResponse.text();
+
+  console.log("초기 HTML length:", firstHtml.length);
+
+  const csrf = extractCsrf(firstHtml);
+
+  console.log("CSRF:", csrf ? "획득 성공" : "찾지 못함");
+
+  if (!csrf) {
+    throw new Error("CSRFToken을 찾지 못했습니다.");
+  }
+
+  // 2. 실제 사이트와 동일하게 예체능강사 검색 POST
+  const form = new URLSearchParams();
+
+  form.set("bbsId", "1981");
+  form.set("nttSn", "");
+  form.set("mi", "10997");
+  form.set("currPage", "1");
+  form.set("paramtrStrtpt", "");
+  form.set("noLayout", "");
+  form.set("bbsRequstNo", "");
+  form.set("fileSn", "");
+  form.set("bbsTypeChk", "list");
+
+  form.set("srchAt1", "Y");
+  form.set("srchAt2", "");
+  form.set("srchAt3", "");
+  form.set("srchAt4", "Y");
+  form.set("srchAt5", "Y");
+
+  form.set("searchValue1", "예체능강사");
+  form.set("searchValue2", "");
+  form.set("searchValue3", "");
+  form.set("searchValue4", "");
+
+  form.set("arrAt1", "N");
+  form.set("arrAt2", "");
+  form.set("arrAt3", "");
+
+  form.set("srch1", "예체능강사");
+
+  form.set("srchRsvBgnde", "");
+  form.set("srchRsvEndde", "");
+  form.set("rcritAt", "");
+  form.set("srchRecBgnde", "");
+  form.set("srchRecEndde", "");
+
+  form.set("listCo", "10");
+  form.set("searchType", "sj");
+  form.set("searchValue", "");
+
+  form.set("CSRFToken", csrf);
+
+  const response = await fetch(BASE, {
+    method: "POST",
+    redirect: "follow",
+    headers: {
+      ...browserHeaders(),
+      "Content-Type":
+        "application/x-www-form-urlencoded; charset=UTF-8",
+      "Referer": PAGE_URL
+    },
+    body: form.toString()
+  });
+
+  console.log("검색 HTTP:", response.status);
+
   if (!response.ok) {
-    throw new Error(`HTTP ${response.status}`);
+    throw new Error(`검색 요청 실패: ${response.status}`);
   }
 
   const html = await response.text();
 
-  console.log("HTML length:", html.length);
+  console.log("검색 HTML length:", html.length);
 
-  const rows = [...html.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/gi)];
+  const rows = [
+    ...html.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/gi)
+  ];
 
   const allJobs = [];
 
@@ -53,7 +107,6 @@ async function main() {
       ...row.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/gi)
     ].map(m => cleanText(m[1]));
 
-    // 실제 채용공고 표는 8개 열
     if (cells.length < 8) continue;
 
     const [
@@ -67,7 +120,6 @@ async function main() {
       endDate
     ] = cells;
 
-    // 등록일 형식이 아니면 공고 행이 아님
     if (!/\d{4}[./-]\d{1,2}[./-]\d{1,2}/.test(postedAt)) {
       continue;
     }
@@ -78,15 +130,11 @@ async function main() {
 
     const nttSn = extractNttSn(row);
 
-    const detailUrl = nttSn
-      ? `https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=${nttSn}`
-      : "";
-
-    const fullText =
-      `${organization} ${jobType} ${title}`.replace(/\s+/g, " ");
-
     allJobs.push({
-      id: nttSn ? `ice_${nttSn}` : makeId(`${organization}_${title}`),
+      id: nttSn
+        ? `ice_${nttSn}`
+        : makeId(`${organization}_${title}`),
+
       source: "인천교육청",
       postedAt: normalizeDate(postedAt),
       recruitStatus,
@@ -97,32 +145,31 @@ async function main() {
       startDate: normalizeDate(startDate),
       endDate: normalizeDate(endDate),
       region: "인천",
-      url: detailUrl,
-      tags: makeTags(fullText),
-      matched: INCLUDE_KEYWORDS.some(k => fullText.includes(k))
+
+      url: nttSn
+        ? `https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?bbsId=1981&mi=10997&nttSn=${nttSn}`
+        : "",
+
+      tags: makeTags(
+        `${organization} ${jobType} ${title}`
+      )
     });
   }
 
-  console.log("실제 공고 행:", allJobs.length);
-
-  // 현재는 관련 키워드 공고만 최종 jobs에 저장
-  const matchedJobs = allJobs.filter(job => job.matched);
+  console.log("예체능강사 공고:", allJobs.length);
 
   const output = {
     updatedAt: new Date().toISOString(),
 
     diagnostics: {
+      csrfFound: !!csrf,
       htmlLength: html.length,
       totalTrCount: rows.length,
-      parsedPostCount: allJobs.length,
-      matchedCount: matchedJobs.length
+      parsedPostCount: allJobs.length
     },
 
-    // 진단용: 첫 페이지 공고를 전부 보여줌
-    debugSample: allJobs.slice(0, 20),
-
-    count: matchedJobs.length,
-    jobs: matchedJobs.map(({ matched, ...job }) => job)
+    count: allJobs.length,
+    jobs: allJobs
   };
 
   fs.writeFileSync(
@@ -131,21 +178,48 @@ async function main() {
     "utf8"
   );
 
-  console.log("완료");
-  console.log("공고:", allJobs.length);
-  console.log("관련 공고:", matchedJobs.length);
+  console.log("jobs.json 저장 완료");
+}
+
+function extractCsrf(html) {
+  const patterns = [
+    /name=["']CSRFToken["'][^>]*value=["']([^"']+)["']/i,
+    /value=["']([^"']+)["'][^>]*name=["']CSRFToken["']/i
+  ];
+
+  for (const pattern of patterns) {
+    const match = html.match(pattern);
+
+    if (match) return match[1];
+  }
+
+  return "";
+}
+
+function browserHeaders() {
+  return {
+    "User-Agent":
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36",
+
+    "Accept":
+      "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+
+    "Accept-Language":
+      "ko-KR,ko;q=0.9,en;q=0.8"
+  };
 }
 
 function extractNttSn(row) {
   const patterns = [
     /[?&]nttSn=(\d+)/i,
     /nttSn['"]?\s*[:=]\s*['"]?(\d+)/i,
-    /nttSn[^0-9]{0,20}(\d{5,})/i,
-    /selectNttInfo[^0-9]{0,100}(\d{5,})/i
+    /nttSn[^0-9]{0,30}(\d{5,})/i,
+    /selectNttInfo[^0-9]{0,150}(\d{5,})/i
   ];
 
   for (const pattern of patterns) {
     const match = row.match(pattern);
+
     if (match) return match[1];
   }
 
@@ -191,8 +265,12 @@ function makeTags(text) {
 
   if (/플루트|플룻/.test(text)) tags.push("플루트");
   if (/관악/.test(text)) tags.push("관악");
-  if (/오케스트라|관현악/.test(text)) tags.push("오케스트라");
-  if (/전공실기|전공 실기/.test(text)) tags.push("전공실기");
+  if (/오케스트라|관현악/.test(text))
+    tags.push("오케스트라");
+
+  if (/전공실기|전공 실기/.test(text))
+    tags.push("전공실기");
+
   if (/방과후/.test(text)) tags.push("방과후");
   if (/예체능/.test(text)) tags.push("예체능");
   if (/강사/.test(text)) tags.push("강사");
@@ -205,6 +283,7 @@ function makeId(text) {
 
   for (let i = 0; i < text.length; i++) {
     hash ^= text.charCodeAt(i);
+
     hash +=
       (hash << 1) +
       (hash << 4) +
