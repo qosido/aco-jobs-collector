@@ -468,21 +468,58 @@ function extractSenJobBlocks(html) {
 }
 
 function extractSenOrganization(text = "") {
-  const match = text.match(
-    /^(.+?)\s*\|\s*(?:0\d{1,2}-\d{3,4}-\d{4}|등록일\s*:)/i
-  );
+  /*
+   * 서울교육 검색결과에서 공고 기관은 보통
+   * "학교명 | 전화번호 | 등록일 : YYYY-MM-DD"
+   * 형태로 나타난다.
+   *
+   * 페이지 상단 메뉴/필터 텍스트가 앞에 섞일 수 있으므로,
+   * 전화번호 바로 앞의 마지막 덩어리만 기관명으로 사용한다.
+   */
+  const phoneMatches = [
+    ...text.matchAll(
+      /([^|]{1,80}?)\s*\|\s*(0\d{1,2}-\d{3,4}-\d{4})\s*\|\s*등록일\s*:/gi
+    )
+  ];
 
-  if (match) {
-    return match[1].replace(/\s+/g, " ").trim();
+  if (phoneMatches.length) {
+    const raw = phoneMatches[phoneMatches.length - 1][1]
+      .replace(/\s+/g, " ")
+      .trim();
+
+    /*
+     * 혹시 앞쪽 메뉴 문구가 같은 덩어리에 남아 있어도
+     * 학교/유치원/기관명으로 보이는 마지막 부분만 취한다.
+     */
+    const schoolLike = raw.match(
+      /([가-힣A-Za-z0-9·()\-]{2,50}(?:병설유치원|유치원|초등학교|중학교|고등학교|학교|교육지원청|교육청|센터|재단))$/
+    );
+
+    return schoolLike
+      ? schoolLike[1].trim()
+      : raw;
   }
 
-  const school = text.match(
-    /([가-힣A-Za-z0-9·\-\s]{2,50}(?:병설유치원|유치원|초등학교|중학교|고등학교|학교))/
-  );
+  /*
+   * 전화번호 패턴이 없는 경우에는 등록일 앞쪽의
+   * 마지막 학교/기관명 후보를 사용한다.
+   */
+  const beforePosted =
+    text.split(/등록일\s*:/i)[0] || text;
 
-  return school
-    ? school[1].replace(/\s+/g, " ").trim()
-    : "";
+  const candidates = [
+    ...beforePosted.matchAll(
+      /([가-힣A-Za-z0-9·()\-]{2,50}(?:병설유치원|유치원|초등학교|중학교|고등학교|학교|교육지원청|교육청|센터|재단))/g
+    )
+  ];
+
+  if (candidates.length) {
+    return candidates[candidates.length - 1][1]
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  return "";
 }
 
 function extractSenPostedAt(text = "") {
