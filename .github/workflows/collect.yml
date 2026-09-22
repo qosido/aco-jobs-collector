@@ -1,0 +1,40 @@
+name: ACO Jobs Collector
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "15 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 저장소 불러오기
+        uses: actions/checkout@v4
+
+      - name: Node.js 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: 채용공고 수집
+        run: node collector.js
+
+      - name: 결과 저장
+        run: |
+          git config user.name "ACO Jobs Bot"
+          git config user.email "actions@github.com"
+
+          git add jobs.json
+
+          if git diff --cached --quiet; then
+            echo "변경된 공고가 없습니다."
+          else
+            git commit -m "Update job listings"
+            git push
+          fi
