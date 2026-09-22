@@ -113,13 +113,43 @@ async function main() {
 async function collectIceJobs() {
   const allJobs = [];
   const seenFingerprints = new Set();
+
   let pagesCollected = 0;
   let duplicatedPageDetected = false;
 
+  let firstPageHtmlLength = 0;
+  let firstPageTrCount = 0;
+  let firstPageTdCount = 0;
+  let firstPageHasArtInstructor = false;
+  let firstPageHasRecruiting = false;
+  let firstPagePreview = "";
+
   for (let page = 1; page <= ICE_MAX_PAGES; page++) {
     console.log(`[인천] ${page}페이지`);
+
     const html = await fetchIcePage(page);
+
+    if (page === 1) {
+      firstPageHtmlLength = html.length;
+      firstPageTrCount = (html.match(/<tr\b/gi) || []).length;
+      firstPageTdCount = (html.match(/<td\b/gi) || []).length;
+      firstPageHasArtInstructor = html.includes("예체능강사");
+      firstPageHasRecruiting = html.includes("모집중");
+
+      const plain = cleanText(html);
+      firstPagePreview = plain.slice(0, 500);
+
+      console.log("[인천 진단]");
+      console.log(`  HTML 길이: ${firstPageHtmlLength}`);
+      console.log(`  TR 개수: ${firstPageTrCount}`);
+      console.log(`  TD 개수: ${firstPageTdCount}`);
+      console.log(`  예체능강사 포함: ${firstPageHasArtInstructor}`);
+      console.log(`  모집중 포함: ${firstPageHasRecruiting}`);
+    }
+
     const jobs = parseIceJobs(html);
+
+    console.log(`  파싱 결과: ${jobs.length}개`);
 
     if (!jobs.length) break;
 
@@ -148,7 +178,13 @@ async function collectIceJobs() {
       pagesCollected,
       rawCount: allJobs.length,
       uniqueCount: jobs.length,
-      duplicatedPageDetected
+      duplicatedPageDetected,
+      firstPageHtmlLength,
+      firstPageTrCount,
+      firstPageTdCount,
+      firstPageHasArtInstructor,
+      firstPageHasRecruiting,
+      firstPagePreview
     }
   };
 }
