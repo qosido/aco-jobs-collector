@@ -13,221 +13,177 @@ const INCLUDE_KEYWORDS = [
   "음악 강사",
   "예술강사",
   "예술 강사",
+  "예체능강사",
+  "예체능 강사",
   "전공실기",
   "전공 실기",
   "앙상블",
   "악기강사",
   "악기 강사",
-  "방과후 음악",
-  "예체능강사",
-  "예체능 강사"
-];
-
-const EXCLUDE_KEYWORDS = [
-  "재즈바",
-  "재즈 바",
-  "라이브바",
-  "라이브 바",
-  "펍"
+  "방과후"
 ];
 
 async function main() {
-  console.log("인천교육청 진단 수집 시작");
+  console.log("인천교육청 수집 v3 시작");
 
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 20000);
-
-  try {
-    const response = await fetch(LIST_URL, {
-      signal: controller.signal,
-      redirect: "follow",
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36",
-        Accept:
-          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "ko-KR,ko;q=0.9"
-      }
-    });
-
-    clearTimeout(timer);
-
-    console.log("HTTP:", response.status);
-
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
+  const response = await fetch(LIST_URL, {
+    headers: {
+      "User-Agent":
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36",
+      "Accept-Language": "ko-KR,ko;q=0.9"
     }
+  });
 
-    const html = await response.text();
-
-    console.log("HTML length:", html.length);
-
-    const rowMatches = [...html.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/gi)];
-
-    console.log("전체 tr 수:", rowMatches.length);
-
-    const allParsed = [];
-
-    for (const match of rowMatches) {
-      const row = match[0];
-
-      const linkMatch = row.match(
-        /<a[^>]+href=["']([^"']*selectNttInfo[^"']*)["'][^>]*>([\s\S]*?)<\/a>/i
-      );
-
-      if (!linkMatch) continue;
-
-      const title = stripHtml(linkMatch[2])
-        .replace(/\s+/g, " ")
-        .trim();
-
-      if (!title) continue;
-
-      const url = new URL(
-        decodeHtml(linkMatch[1]),
-        LIST_URL
-      ).href;
-
-      const cells = [
-        ...row.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/gi),
-      ].map((m) =>
-        stripHtml(m[1]).replace(/\s+/g, " ").trim()
-      );
-
-      const fullText = stripHtml(row)
-        .replace(/\s+/g, " ")
-        .trim();
-
-      allParsed.push({
-        title,
-        url,
-        cells,
-        fullText
-      });
-    }
-
-    console.log("파싱된 게시글 수:", allParsed.length);
-
-    const matched = [];
-
-    for (const item of allParsed) {
-      const text = `${item.title} ${item.fullText}`;
-
-      const included = INCLUDE_KEYWORDS.some((keyword) =>
-        text.includes(keyword)
-      );
-
-      const excluded = EXCLUDE_KEYWORDS.some((keyword) =>
-        text.includes(keyword)
-      );
-
-      if (!included || excluded) continue;
-
-      matched.push({
-        id: makeId(item.url),
-        source: "인천교육청",
-        title: item.title,
-        organization: findOrganization(item.cells),
-        region: "인천",
-        deadline: findLastDate(item.cells),
-        url: item.url,
-        tags: makeTags(text)
-      });
-    }
-
-    const output = {
-      updatedAt: new Date().toISOString(),
-      diagnostics: {
-        htmlLength: html.length,
-        totalTrCount: rowMatches.length,
-        parsedPostCount: allParsed.length,
-        matchedCount: matched.length
-      },
-      debugSample: allParsed.slice(0, 20).map((item) => ({
-        title: item.title,
-        cells: item.cells
-      })),
-      count: matched.length,
-      jobs: dedupe(matched)
-    };
-
-    fs.writeFileSync(
-      "jobs.json",
-      JSON.stringify(output, null, 2),
-      "utf8"
-    );
-
-    console.log("진단 저장 완료");
-    console.log("파싱:", allParsed.length);
-    console.log("매칭:", matched.length);
-
-  } catch (error) {
-    clearTimeout(timer);
-    console.error("수집 실패:", error);
-    process.exit(1);
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}`);
   }
-}
 
-function stripHtml(value = "") {
-  return decodeHtml(
-    value
-      .replace(/<script[\s\S]*?<\/script>/gi, "")
-      .replace(/<style[\s\S]*?<\/style>/gi, "")
-      .replace(/<br\s*\/?>/gi, " ")
-      .replace(/<[^>]+>/g, " ")
-  );
-}
+  const html = await response.text();
 
-function decodeHtml(value = "") {
-  return value
-    .replace(/&nbsp;/g, " ")
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'");
-}
+  console.log("HTML length:", html.length);
 
-function findOrganization(cells) {
-  for (const cell of cells) {
-    if (
-      /초등학교|중학교|고등학교|학교|교육청|교육지원청|센터|재단/.test(cell)
-    ) {
-      return cell;
+  const rows = [...html.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/gi)];
+
+  const allJobs = [];
+
+  for (const match of rows) {
+    const row = match[0];
+
+    const cells = [
+      ...row.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/gi)
+    ].map(m => cleanText(m[1]));
+
+    // 실제 채용공고 표는 8개 열
+    if (cells.length < 8) continue;
+
+    const [
+      postedAt,
+      recruitStatus,
+      organization,
+      jobType,
+      rawTitle,
+      deadline,
+      startDate,
+      endDate
+    ] = cells;
+
+    // 등록일 형식이 아니면 공고 행이 아님
+    if (!/\d{4}[./-]\d{1,2}[./-]\d{1,2}/.test(postedAt)) {
+      continue;
     }
+
+    const title = rawTitle
+      .replace(/^\s*N\s*/i, "")
+      .trim();
+
+    const nttSn = extractNttSn(row);
+
+    const detailUrl = nttSn
+      ? `https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=${nttSn}`
+      : "";
+
+    const fullText =
+      `${organization} ${jobType} ${title}`.replace(/\s+/g, " ");
+
+    allJobs.push({
+      id: nttSn ? `ice_${nttSn}` : makeId(`${organization}_${title}`),
+      source: "인천교육청",
+      postedAt: normalizeDate(postedAt),
+      recruitStatus,
+      organization,
+      jobType,
+      title,
+      deadline: normalizeDate(deadline),
+      startDate: normalizeDate(startDate),
+      endDate: normalizeDate(endDate),
+      region: "인천",
+      url: detailUrl,
+      tags: makeTags(fullText),
+      matched: INCLUDE_KEYWORDS.some(k => fullText.includes(k))
+    });
+  }
+
+  console.log("실제 공고 행:", allJobs.length);
+
+  // 현재는 관련 키워드 공고만 최종 jobs에 저장
+  const matchedJobs = allJobs.filter(job => job.matched);
+
+  const output = {
+    updatedAt: new Date().toISOString(),
+
+    diagnostics: {
+      htmlLength: html.length,
+      totalTrCount: rows.length,
+      parsedPostCount: allJobs.length,
+      matchedCount: matchedJobs.length
+    },
+
+    // 진단용: 첫 페이지 공고를 전부 보여줌
+    debugSample: allJobs.slice(0, 20),
+
+    count: matchedJobs.length,
+    jobs: matchedJobs.map(({ matched, ...job }) => job)
+  };
+
+  fs.writeFileSync(
+    "jobs.json",
+    JSON.stringify(output, null, 2),
+    "utf8"
+  );
+
+  console.log("완료");
+  console.log("공고:", allJobs.length);
+  console.log("관련 공고:", matchedJobs.length);
+}
+
+function extractNttSn(row) {
+  const patterns = [
+    /[?&]nttSn=(\d+)/i,
+    /nttSn['"]?\s*[:=]\s*['"]?(\d+)/i,
+    /nttSn[^0-9]{0,20}(\d{5,})/i,
+    /selectNttInfo[^0-9]{0,100}(\d{5,})/i
+  ];
+
+  for (const pattern of patterns) {
+    const match = row.match(pattern);
+    if (match) return match[1];
   }
 
   return "";
 }
 
-function findLastDate(cells) {
-  const dates = [];
-
-  for (const cell of cells) {
-    const matches = cell.match(
-      /\d{4}[.\-/]\d{1,2}[.\-/]\d{1,2}/g
-    );
-
-    if (matches) {
-      dates.push(...matches.map(normalizeDate));
-    }
-  }
-
-  dates.sort();
-
-  return dates.at(-1) || "";
+function cleanText(html = "") {
+  return decodeHtml(
+    html
+      .replace(/<script[\s\S]*?<\/script>/gi, "")
+      .replace(/<style[\s\S]*?<\/style>/gi, "")
+      .replace(/<br\s*\/?>/gi, " ")
+      .replace(/<[^>]+>/g, " ")
+  )
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
-function normalizeDate(value) {
-  const parts = value.replace(/[./]/g, "-").split("-");
+function decodeHtml(value = "") {
+  return value
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&#160;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;/gi, "'")
+    .replace(/&apos;/gi, "'");
+}
 
-  if (parts.length !== 3) return value;
+function normalizeDate(value = "") {
+  const match = value.match(
+    /(\d{4})[./-](\d{1,2})[./-](\d{1,2})/
+  );
 
-  return [
-    parts[0],
-    parts[1].padStart(2, "0"),
-    parts[2].padStart(2, "0")
-  ].join("-");
+  if (!match) return "";
+
+  return `${match[1]}-${match[2].padStart(2, "0")}-${match[3].padStart(2, "0")}`;
 }
 
 function makeTags(text) {
@@ -238,6 +194,7 @@ function makeTags(text) {
   if (/오케스트라|관현악/.test(text)) tags.push("오케스트라");
   if (/전공실기|전공 실기/.test(text)) tags.push("전공실기");
   if (/방과후/.test(text)) tags.push("방과후");
+  if (/예체능/.test(text)) tags.push("예체능");
   if (/강사/.test(text)) tags.push("강사");
 
   return [...new Set(tags)];
@@ -259,14 +216,7 @@ function makeId(text) {
   return `ice_${(hash >>> 0).toString(36)}`;
 }
 
-function dedupe(items) {
-  const seen = new Set();
-
-  return items.filter((job) => {
-    if (seen.has(job.url)) return false;
-    seen.add(job.url);
-    return true;
-  });
-}
-
-main();
+main().catch(error => {
+  console.error("수집 실패:", error);
+  process.exit(1);
+});
