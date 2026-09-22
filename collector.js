@@ -19,6 +19,8 @@ const INCLUDE_KEYWORDS = [
   "악기강사",
   "악기 강사",
   "방과후 음악",
+  "예체능강사",
+  "예체능 강사"
 ];
 
 const EXCLUDE_KEYWORDS = [
@@ -26,11 +28,11 @@ const EXCLUDE_KEYWORDS = [
   "재즈 바",
   "라이브바",
   "라이브 바",
-  "펍",
+  "펍"
 ];
 
 async function main() {
-  console.log("인천교육청 채용공고 수집 시작");
+  console.log("인천교육청 진단 수집 시작");
 
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 20000);
@@ -44,8 +46,8 @@ async function main() {
           "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36",
         Accept:
           "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "ko-KR,ko;q=0.9",
-      },
+        "Accept-Language": "ko-KR,ko;q=0.9"
+      }
     });
 
     clearTimeout(timer);
@@ -60,21 +62,14 @@ async function main() {
 
     console.log("HTML length:", html.length);
 
-    const rows = [...html.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/gi)];
+    const rowMatches = [...html.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/gi)];
 
-    const jobs = [];
+    console.log("전체 tr 수:", rowMatches.length);
 
-    for (const match of rows) {
+    const allParsed = [];
+
+    for (const match of rowMatches) {
       const row = match[0];
-      const text = stripHtml(row).replace(/\s+/g, " ").trim();
-
-      if (!INCLUDE_KEYWORDS.some((keyword) => text.includes(keyword))) {
-        continue;
-      }
-
-      if (EXCLUDE_KEYWORDS.some((keyword) => text.includes(keyword))) {
-        continue;
-      }
 
       const linkMatch = row.match(
         /<a[^>]+href=["']([^"']*selectNttInfo[^"']*)["'][^>]*>([\s\S]*?)<\/a>/i
@@ -99,24 +94,61 @@ async function main() {
         stripHtml(m[1]).replace(/\s+/g, " ").trim()
       );
 
-      jobs.push({
-        id: makeId(url),
-        source: "인천교육청",
+      const fullText = stripHtml(row)
+        .replace(/\s+/g, " ")
+        .trim();
+
+      allParsed.push({
         title,
-        organization: findOrganization(cells),
-        region: "인천",
-        deadline: findLastDate(cells),
         url,
-        tags: makeTags(text),
+        cells,
+        fullText
       });
     }
 
-    const unique = dedupe(jobs);
+    console.log("파싱된 게시글 수:", allParsed.length);
+
+    const matched = [];
+
+    for (const item of allParsed) {
+      const text = `${item.title} ${item.fullText}`;
+
+      const included = INCLUDE_KEYWORDS.some((keyword) =>
+        text.includes(keyword)
+      );
+
+      const excluded = EXCLUDE_KEYWORDS.some((keyword) =>
+        text.includes(keyword)
+      );
+
+      if (!included || excluded) continue;
+
+      matched.push({
+        id: makeId(item.url),
+        source: "인천교육청",
+        title: item.title,
+        organization: findOrganization(item.cells),
+        region: "인천",
+        deadline: findLastDate(item.cells),
+        url: item.url,
+        tags: makeTags(text)
+      });
+    }
 
     const output = {
       updatedAt: new Date().toISOString(),
-      count: unique.length,
-      jobs: unique,
+      diagnostics: {
+        htmlLength: html.length,
+        totalTrCount: rowMatches.length,
+        parsedPostCount: allParsed.length,
+        matchedCount: matched.length
+      },
+      debugSample: allParsed.slice(0, 20).map((item) => ({
+        title: item.title,
+        cells: item.cells
+      })),
+      count: matched.length,
+      jobs: dedupe(matched)
     };
 
     fs.writeFileSync(
@@ -125,7 +157,10 @@ async function main() {
       "utf8"
     );
 
-    console.log(`완료: ${unique.length}개`);
+    console.log("진단 저장 완료");
+    console.log("파싱:", allParsed.length);
+    console.log("매칭:", matched.length);
+
   } catch (error) {
     clearTimeout(timer);
     console.error("수집 실패:", error);
@@ -156,9 +191,7 @@ function decodeHtml(value = "") {
 function findOrganization(cells) {
   for (const cell of cells) {
     if (
-      /초등학교|중학교|고등학교|학교|교육청|교육지원청|센터|재단/.test(
-        cell
-      )
+      /초등학교|중학교|고등학교|학교|교육청|교육지원청|센터|재단/.test(cell)
     ) {
       return cell;
     }
@@ -193,7 +226,7 @@ function normalizeDate(value) {
   return [
     parts[0],
     parts[1].padStart(2, "0"),
-    parts[2].padStart(2, "0"),
+    parts[2].padStart(2, "0")
   ].join("-");
 }
 
@@ -231,7 +264,6 @@ function dedupe(items) {
 
   return items.filter((job) => {
     if (seen.has(job.url)) return false;
-
     seen.add(job.url);
     return true;
   });
