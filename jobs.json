@@ -1,25 +1,28 @@
 {
-  "updatedAt": "2026-09-22T08:03:49.252Z",
-  "source": {
-    "id": "ice",
-    "name": "인천교육청",
-    "category": "예체능강사",
-    "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981"
-  },
+  "updatedAt": "2026-09-22T08:24:42.800Z",
   "diagnostics": {
-    "pagesCollected": 10,
-    "maxPages": 10,
-    "rawCount": 100,
-    "uniqueCount": 100,
-    "duplicatedPageDetected": false
+    "ice": {
+      "pagesCollected": 10,
+      "rawCount": 100,
+      "uniqueCount": 100,
+      "duplicatedPageDetected": false
+    },
+    "sen": {
+      "error": "Error: SEN HTTP 404"
+    }
+  },
+  "sourceCounts": {
+    "ice": 100,
+    "sen": 0
   },
   "count": 100,
   "activeCount": 1,
   "jobs": [
     {
-      "id": "ice_3384888",
+      "id": "job_r9kbnz",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-09-18",
       "recruitStatus": "모집중",
       "isActive": true,
@@ -30,8 +33,7 @@
       "startDate": "2026-10-06",
       "endDate": "2026-12-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3384888",
-      "nttSn": "3384888",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "영상"
       ],
@@ -40,9 +42,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3384461",
+      "id": "job_158f0qk",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-09-14",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -53,8 +56,7 @@
       "startDate": "2026-09-28",
       "endDate": "2026-12-18",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3384461",
-      "nttSn": "3384461",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "스포츠"
       ],
@@ -63,9 +65,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3384288",
+      "id": "job_puyhpm",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-09-10",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -76,8 +79,7 @@
       "startDate": "2026-10-01",
       "endDate": "2026-12-10",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3384288",
-      "nttSn": "3384288",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "우쿨렐레"
       ],
@@ -88,9 +90,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3384231",
+      "id": "job_1ee2eh",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-09-10",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -101,8 +104,7 @@
       "startDate": "2026-09-17",
       "endDate": "2026-12-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3384231",
-      "nttSn": "3384231",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -111,9 +113,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3384024",
+      "id": "job_bt3jhr",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-09-08",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -124,8 +127,7 @@
       "startDate": "2026-09-22",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3384024",
-      "nttSn": "3384024",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -134,9 +136,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3383633",
+      "id": "job_1f00nea",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-09-03",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -147,19 +150,19 @@
       "startDate": "2026-09-16",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3383633",
-      "nttSn": "3383633",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
-        "음악"
+        "기타 예체능"
       ],
       "instrumentTags": [],
       "searchText": "인천동방중학교 예체능강사 2026학년도 인천동방중학교 학교예술동아리 강사(밴드부) 채용 공고",
       "autoCollected": true
     },
     {
-      "id": "ice_3383632",
+      "id": "job_gd2zat",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-09-03",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -170,8 +173,7 @@
       "startDate": "2026-09-21",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3383632",
-      "nttSn": "3383632",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "음악"
       ],
@@ -180,9 +182,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3383406",
+      "id": "job_bo6wvk",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-09-02",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -193,8 +196,7 @@
       "startDate": "2026-09-14",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3383406",
-      "nttSn": "3383406",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "미술"
       ],
@@ -203,9 +205,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3383378",
+      "id": "job_16kzui4",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-09-02",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -216,8 +219,7 @@
       "startDate": "2026-09-09",
       "endDate": "2026-12-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3383378",
-      "nttSn": "3383378",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "영상"
       ],
@@ -226,9 +228,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3382850",
+      "id": "job_m3cuzz",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-28",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -239,8 +242,7 @@
       "startDate": "2026-09-09",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3382850",
-      "nttSn": "3382850",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -249,9 +251,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3382843",
+      "id": "job_11lvchu",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-27",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -262,8 +265,7 @@
       "startDate": "2026-09-11",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3382843",
-      "nttSn": "3382843",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -272,9 +274,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3382336",
+      "id": "job_7deoq2",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-26",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -285,8 +288,7 @@
       "startDate": "2026-09-04",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3382336",
-      "nttSn": "3382336",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "관악·오케스트라"
       ],
@@ -295,9 +297,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3382351",
+      "id": "job_3jo3nr",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-26",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -308,8 +311,7 @@
       "startDate": "2026-09-03",
       "endDate": "2026-12-29",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3382351",
-      "nttSn": "3382351",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -318,9 +320,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3382251",
+      "id": "job_19cvvja",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-25",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -331,8 +334,7 @@
       "startDate": "2026-09-07",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3382251",
-      "nttSn": "3382251",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "음악"
       ],
@@ -341,9 +343,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3382057",
+      "id": "job_1ru8n02",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-25",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -354,19 +357,19 @@
       "startDate": "2026-09-15",
       "endDate": "2026-10-24",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3382057",
-      "nttSn": "3382057",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
-        "음악"
+        "기타 예체능"
       ],
       "instrumentTags": [],
       "searchText": "용현중학교 예체능강사 2026학년도 동아리(밴드부) 공연 지도 단기 강사 모집 공고",
       "autoCollected": true
     },
     {
-      "id": "ice_3382203",
+      "id": "job_73sede",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-25",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -377,8 +380,7 @@
       "startDate": "2026-09-03",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3382203",
-      "nttSn": "3382203",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -387,9 +389,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3382003",
+      "id": "job_1pezc58",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-24",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -400,8 +403,7 @@
       "startDate": "2026-09-07",
       "endDate": "2026-12-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3382003",
-      "nttSn": "3382003",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -410,9 +412,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3381618",
+      "id": "job_stq5r8",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-24",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -423,8 +426,7 @@
       "startDate": "2026-09-14",
       "endDate": "2026-11-30",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3381618",
-      "nttSn": "3381618",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -433,9 +435,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3381593",
+      "id": "job_16gs4o5",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-24",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -446,8 +449,7 @@
       "startDate": "2026-09-03",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3381593",
-      "nttSn": "3381593",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "무용"
       ],
@@ -456,9 +458,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3381561",
+      "id": "job_1p47fci",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-21",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -469,8 +472,7 @@
       "startDate": "2026-09-01",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3381561",
-      "nttSn": "3381561",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -479,9 +481,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3381486",
+      "id": "job_1ozpv97",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-21",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -492,8 +495,7 @@
       "startDate": "2026-09-01",
       "endDate": "2026-12-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3381486",
-      "nttSn": "3381486",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "스포츠"
       ],
@@ -502,9 +504,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3381510",
+      "id": "job_154cjfm",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-21",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -515,8 +518,7 @@
       "startDate": "2026-09-14",
       "endDate": "2026-11-02",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3381510",
-      "nttSn": "3381510",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -525,9 +527,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3381528",
+      "id": "job_gi6xvk",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-21",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -538,8 +541,7 @@
       "startDate": "2026-09-01",
       "endDate": "2027-01-07",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3381528",
-      "nttSn": "3381528",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -548,9 +550,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3381512",
+      "id": "job_1h9a2x8",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-21",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -561,8 +564,7 @@
       "startDate": "2026-09-07",
       "endDate": "2026-10-09",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3381512",
-      "nttSn": "3381512",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -571,9 +573,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3381409",
+      "id": "job_u5p89v",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-20",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -584,8 +587,7 @@
       "startDate": "2026-09-01",
       "endDate": "2026-12-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3381409",
-      "nttSn": "3381409",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "스포츠"
       ],
@@ -594,9 +596,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3381370",
+      "id": "job_xuoxli",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-20",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -607,8 +610,7 @@
       "startDate": "2026-09-01",
       "endDate": "2026-11-30",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3381370",
-      "nttSn": "3381370",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "스포츠"
       ],
@@ -617,9 +619,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3381311",
+      "id": "job_lcxzd3",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-20",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -630,8 +633,7 @@
       "startDate": "2026-09-01",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3381311",
-      "nttSn": "3381311",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -640,9 +642,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3381258",
+      "id": "job_4h9kbd",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-19",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -653,8 +656,7 @@
       "startDate": "2026-09-01",
       "endDate": "2026-12-29",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3381258",
-      "nttSn": "3381258",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -663,9 +665,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3381121",
+      "id": "job_5bta3a",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-18",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -676,8 +679,7 @@
       "startDate": "2026-09-07",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3381121",
-      "nttSn": "3381121",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -686,9 +688,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3381162",
+      "id": "job_wac9jv",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-18",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -699,8 +702,7 @@
       "startDate": "2026-08-28",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3381162",
-      "nttSn": "3381162",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "관악·오케스트라"
       ],
@@ -709,9 +711,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3380796",
+      "id": "job_ggjzec",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-13",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -722,8 +725,7 @@
       "startDate": "2026-09-04",
       "endDate": "2026-12-19",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3380796",
-      "nttSn": "3380796",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "스포츠"
       ],
@@ -732,9 +734,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3380793",
+      "id": "job_1byyy0l",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-13",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -745,8 +748,7 @@
       "startDate": "2026-09-01",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3380793",
-      "nttSn": "3380793",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -755,9 +757,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3380792",
+      "id": "job_1ia2fe5",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-13",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -768,8 +771,7 @@
       "startDate": "2026-09-01",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3380792",
-      "nttSn": "3380792",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -778,9 +780,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3380727",
+      "id": "job_1632js",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-12",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -791,8 +794,7 @@
       "startDate": "2026-08-19",
       "endDate": "2026-11-26",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3380727",
-      "nttSn": "3380727",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -801,9 +803,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3380653",
+      "id": "job_5u52y",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-11",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -814,8 +817,7 @@
       "startDate": "2026-08-31",
       "endDate": "2026-12-04",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3380653",
-      "nttSn": "3380653",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -824,9 +826,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3380498",
+      "id": "job_b32o2d",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-10",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -837,8 +840,7 @@
       "startDate": "2026-08-31",
       "endDate": "2026-12-24",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3380498",
-      "nttSn": "3380498",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "칼림바"
       ],
@@ -849,9 +851,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3380440",
+      "id": "job_tnpbea",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-10",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -862,8 +865,7 @@
       "startDate": "2026-08-27",
       "endDate": "2026-12-17",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3380440",
-      "nttSn": "3380440",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -872,9 +874,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3380453",
+      "id": "job_mla273",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-10",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -885,8 +888,7 @@
       "startDate": "2026-08-25",
       "endDate": "2027-01-05",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3380453",
-      "nttSn": "3380453",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "스포츠"
       ],
@@ -895,9 +897,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3380445",
+      "id": "job_1gjszh3",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-10",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -908,8 +911,7 @@
       "startDate": "2026-08-24",
       "endDate": "2026-12-18",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3380445",
-      "nttSn": "3380445",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "음악"
       ],
@@ -918,9 +920,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3380438",
+      "id": "job_7g8gm8",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-10",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -931,8 +934,7 @@
       "startDate": "2026-08-26",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3380438",
-      "nttSn": "3380438",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -941,9 +943,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3380388",
+      "id": "job_14u1ajj",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-08",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -954,8 +957,7 @@
       "startDate": "2026-08-24",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3380388",
-      "nttSn": "3380388",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -964,9 +966,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3380213",
+      "id": "job_10ipkk4",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-06",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -977,8 +980,7 @@
       "startDate": "2026-08-25",
       "endDate": "2026-12-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3380213",
-      "nttSn": "3380213",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "음악"
       ],
@@ -987,9 +989,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3380196",
+      "id": "job_1xi74vq",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-05",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1000,8 +1003,7 @@
       "startDate": "2026-08-14",
       "endDate": "2026-12-24",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3380196",
-      "nttSn": "3380196",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1010,9 +1012,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3380194",
+      "id": "job_a0l5up",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-05",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1023,8 +1026,7 @@
       "startDate": "2026-08-14",
       "endDate": "2026-12-24",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3380194",
-      "nttSn": "3380194",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1033,9 +1035,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3380138",
+      "id": "job_1jn4d6d",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-05",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1046,8 +1049,7 @@
       "startDate": "2026-08-17",
       "endDate": "2026-12-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3380138",
-      "nttSn": "3380138",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "스포츠"
       ],
@@ -1056,9 +1058,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3379922",
+      "id": "job_9pr0bu",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-08-03",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1069,8 +1072,7 @@
       "startDate": "2026-08-20",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3379922",
-      "nttSn": "3379922",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "음악"
       ],
@@ -1079,9 +1081,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3379705",
+      "id": "job_1cz4jow",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-28",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1092,8 +1095,7 @@
       "startDate": "2026-08-14",
       "endDate": "2027-01-08",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3379705",
-      "nttSn": "3379705",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "음악"
       ],
@@ -1102,9 +1104,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3379352",
+      "id": "job_1c9kj26",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-23",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1115,8 +1118,7 @@
       "startDate": "2026-08-14",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3379352",
-      "nttSn": "3379352",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "미술"
       ],
@@ -1125,9 +1127,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3379386",
+      "id": "job_jnldpv",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-23",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1138,8 +1141,7 @@
       "startDate": "2026-09-01",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3379386",
-      "nttSn": "3379386",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1148,9 +1150,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3379110",
+      "id": "job_i1827w",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-22",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1161,8 +1164,7 @@
       "startDate": "2026-08-18",
       "endDate": "2027-01-05",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3379110",
-      "nttSn": "3379110",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1171,9 +1173,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3379200",
+      "id": "job_1lwgiv2",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-22",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1184,8 +1187,7 @@
       "startDate": "2026-08-22",
       "endDate": "2026-09-19",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3379200",
-      "nttSn": "3379200",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1194,9 +1196,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3378656",
+      "id": "job_14jubgc",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-20",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1207,8 +1210,7 @@
       "startDate": "2026-08-25",
       "endDate": "2026-12-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3378656",
-      "nttSn": "3378656",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "음악"
       ],
@@ -1217,9 +1219,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3378453",
+      "id": "job_6jejfv",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-15",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1230,8 +1233,7 @@
       "startDate": "2026-09-01",
       "endDate": "2026-12-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3378453",
-      "nttSn": "3378453",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1240,9 +1242,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3378219",
+      "id": "job_13afgc3",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-14",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1253,8 +1256,7 @@
       "startDate": "2026-09-01",
       "endDate": "2026-12-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3378219",
-      "nttSn": "3378219",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "미술"
       ],
@@ -1263,9 +1265,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3377919",
+      "id": "job_8joump",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-13",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1276,8 +1279,7 @@
       "startDate": "2026-09-01",
       "endDate": "2026-12-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3377919",
-      "nttSn": "3377919",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1286,9 +1288,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3377731",
+      "id": "job_1nrit5b",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-10",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1299,8 +1302,7 @@
       "startDate": "2026-08-14",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3377731",
-      "nttSn": "3377731",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1309,9 +1311,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3377737",
+      "id": "job_12wxnh3",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-10",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1322,8 +1325,7 @@
       "startDate": "2026-08-20",
       "endDate": "2027-01-06",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3377737",
-      "nttSn": "3377737",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1332,9 +1334,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3377736",
+      "id": "job_107mn7y",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-10",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1345,8 +1348,7 @@
       "startDate": "2026-10-01",
       "endDate": "2026-11-30",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3377736",
-      "nttSn": "3377736",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1355,9 +1357,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3377735",
+      "id": "job_1awb74a",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-10",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1368,8 +1371,7 @@
       "startDate": "2026-08-20",
       "endDate": "2026-09-30",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3377735",
-      "nttSn": "3377735",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1378,9 +1380,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3377734",
+      "id": "job_qnxfg5",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-10",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1391,8 +1394,7 @@
       "startDate": "2026-08-20",
       "endDate": "2026-10-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3377734",
-      "nttSn": "3377734",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "우쿨렐레"
       ],
@@ -1403,9 +1405,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3377732",
+      "id": "job_9fm054",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-10",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1416,8 +1419,7 @@
       "startDate": "2026-08-20",
       "endDate": "2026-12-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3377732",
-      "nttSn": "3377732",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "스포츠"
       ],
@@ -1426,9 +1428,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3377341",
+      "id": "job_1ok3gkw",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-08",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1439,8 +1442,7 @@
       "startDate": "2026-08-24",
       "endDate": "2026-12-04",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3377341",
-      "nttSn": "3377341",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1449,9 +1451,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3377251",
+      "id": "job_1pykehc",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-08",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1462,8 +1465,7 @@
       "startDate": "2026-08-11",
       "endDate": "2026-12-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3377251",
-      "nttSn": "3377251",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "스포츠"
       ],
@@ -1472,9 +1474,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3377053",
+      "id": "job_s3bir8",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-06",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1485,8 +1488,7 @@
       "startDate": "2026-08-01",
       "endDate": "2026-12-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3377053",
-      "nttSn": "3377053",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1495,9 +1497,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3376902",
+      "id": "job_164ijde",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-03",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1508,8 +1511,7 @@
       "startDate": "2026-09-01",
       "endDate": "2026-12-26",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3376902",
-      "nttSn": "3376902",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1518,9 +1520,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3376715",
+      "id": "job_mpg3ke",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-02",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1531,8 +1534,7 @@
       "startDate": "2026-08-18",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3376715",
-      "nttSn": "3376715",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "스포츠"
       ],
@@ -1541,9 +1543,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3376770",
+      "id": "job_1yhckcq",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-02",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1554,8 +1557,7 @@
       "startDate": "2026-07-20",
       "endDate": "2026-11-23",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3376770",
-      "nttSn": "3376770",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "관악·오케스트라",
         "음악"
@@ -1565,9 +1567,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3376575",
+      "id": "job_1u8mjqv",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-01",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1578,8 +1581,7 @@
       "startDate": "2026-08-24",
       "endDate": "2026-12-01",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3376575",
-      "nttSn": "3376575",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1588,9 +1590,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3376569",
+      "id": "job_1ci6mca",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-01",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1601,8 +1604,7 @@
       "startDate": "2026-09-01",
       "endDate": "2026-11-30",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3376569",
-      "nttSn": "3376569",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1611,9 +1613,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3376573",
+      "id": "job_4e1yyx",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-07-01",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1624,8 +1627,7 @@
       "startDate": "2026-09-01",
       "endDate": "2027-01-06",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3376573",
-      "nttSn": "3376573",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "우쿨렐레"
       ],
@@ -1636,9 +1638,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3376240",
+      "id": "job_1j6ygf4",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-29",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1649,8 +1652,7 @@
       "startDate": "2026-08-20",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3376240",
-      "nttSn": "3376240",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "음악"
       ],
@@ -1659,9 +1661,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3376247",
+      "id": "job_7dorb8",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-29",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1672,8 +1675,7 @@
       "startDate": "2026-07-15",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3376247",
-      "nttSn": "3376247",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "스포츠"
       ],
@@ -1682,9 +1684,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3376117",
+      "id": "job_iqx70t",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-29",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1695,8 +1698,7 @@
       "startDate": "2026-08-31",
       "endDate": "2026-12-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3376117",
-      "nttSn": "3376117",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1705,9 +1707,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3375885",
+      "id": "job_gr8avy",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-25",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1718,8 +1721,7 @@
       "startDate": "2026-07-13",
       "endDate": "2026-11-30",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3375885",
-      "nttSn": "3375885",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1728,9 +1730,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3375833",
+      "id": "job_tuxmjp",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-25",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1741,8 +1744,7 @@
       "startDate": "2026-10-19",
       "endDate": "2026-12-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3375833",
-      "nttSn": "3375833",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "음악"
       ],
@@ -1751,9 +1753,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3375701",
+      "id": "job_1duknyd",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-24",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1764,8 +1767,7 @@
       "startDate": "2026-08-18",
       "endDate": "2026-12-19",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3375701",
-      "nttSn": "3375701",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "스포츠"
       ],
@@ -1774,9 +1776,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3375434",
+      "id": "job_rhck8r",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-22",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1787,8 +1790,7 @@
       "startDate": "2026-08-20",
       "endDate": "2026-12-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3375434",
-      "nttSn": "3375434",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "음악"
       ],
@@ -1797,9 +1799,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3375437",
+      "id": "job_1dpmutm",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-22",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1810,8 +1813,7 @@
       "startDate": "2026-08-24",
       "endDate": "2026-11-20",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3375437",
-      "nttSn": "3375437",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1820,9 +1822,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3375396",
+      "id": "job_ea1bdn",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-22",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1833,8 +1836,7 @@
       "startDate": "2026-09-01",
       "endDate": "2027-02-26",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3375396",
-      "nttSn": "3375396",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1843,9 +1845,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3375447",
+      "id": "job_2wpfz7",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-22",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1856,8 +1859,7 @@
       "startDate": "2026-06-29",
       "endDate": "2027-01-08",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3375447",
-      "nttSn": "3375447",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1866,9 +1868,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3375064",
+      "id": "job_1t60m30",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-18",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1879,8 +1882,7 @@
       "startDate": "2026-07-13",
       "endDate": "2026-11-30",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3375064",
-      "nttSn": "3375064",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "음악"
       ],
@@ -1889,9 +1891,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3374589",
+      "id": "job_1bsas0w",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-15",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1902,8 +1905,7 @@
       "startDate": "2026-07-13",
       "endDate": "2027-02-23",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3374589",
-      "nttSn": "3374589",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "음악",
         "스포츠"
@@ -1913,9 +1915,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3374224",
+      "id": "job_1fi96pd",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-11",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1926,19 +1929,19 @@
       "startDate": "2026-09-03",
       "endDate": "2026-12-24",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3374224",
-      "nttSn": "3374224",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
-        "음악"
+        "기타 예체능"
       ],
       "instrumentTags": [],
       "searchText": "인천해원중학교 시간강사, 예체능강사 2026학년도 인천해원중학교 문화예술동아리(밴드부) 강사 채용 공고",
       "autoCollected": true
     },
     {
-      "id": "ice_3373850",
+      "id": "job_13u58kf",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-09",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1949,8 +1952,7 @@
       "startDate": "2026-09-01",
       "endDate": "2027-02-26",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3373850",
-      "nttSn": "3373850",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1959,9 +1961,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3373901",
+      "id": "job_4rjkik",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-09",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1972,8 +1975,7 @@
       "startDate": "2026-06-16",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3373901",
-      "nttSn": "3373901",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -1982,9 +1984,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3373675",
+      "id": "job_1qscjce",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-08",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -1995,8 +1998,7 @@
       "startDate": "2026-09-01",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3373675",
-      "nttSn": "3373675",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -2005,9 +2007,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3373411",
+      "id": "job_7ezmzk",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-04",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -2018,8 +2021,7 @@
       "startDate": "2026-07-01",
       "endDate": "2027-02-28",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3373411",
-      "nttSn": "3373411",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "스포츠"
       ],
@@ -2028,9 +2030,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3373223",
+      "id": "job_1fnqq1t",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-02",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -2041,8 +2044,7 @@
       "startDate": "2026-07-03",
       "endDate": "2027-02-23",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3373223",
-      "nttSn": "3373223",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -2051,9 +2053,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3373214",
+      "id": "job_xutkjz",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-02",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -2064,8 +2067,7 @@
       "startDate": "2026-07-07",
       "endDate": "2026-11-24",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3373214",
-      "nttSn": "3373214",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "음악",
         "스포츠"
@@ -2075,9 +2077,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3372897",
+      "id": "job_177kmw4",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-06-01",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -2088,8 +2091,7 @@
       "startDate": "2026-08-18",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3372897",
-      "nttSn": "3372897",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "스포츠"
       ],
@@ -2098,9 +2100,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3372776",
+      "id": "job_mcdmml",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-05-29",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -2111,8 +2114,7 @@
       "startDate": "2026-06-22",
       "endDate": "2026-12-31",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3372776",
-      "nttSn": "3372776",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -2121,9 +2123,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3372385",
+      "id": "job_og9sod",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-05-26",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -2134,8 +2137,7 @@
       "startDate": "2026-06-15",
       "endDate": "2027-02-23",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3372385",
-      "nttSn": "3372385",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -2144,9 +2146,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3372155",
+      "id": "job_1bxm1m9",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-05-22",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -2157,8 +2160,7 @@
       "startDate": "2026-08-27",
       "endDate": "2026-12-04",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3372155",
-      "nttSn": "3372155",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -2167,9 +2169,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3372105",
+      "id": "job_uzkn48",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-05-22",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -2180,8 +2183,7 @@
       "startDate": "2026-06-01",
       "endDate": "2026-11-30",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3372105",
-      "nttSn": "3372105",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -2190,9 +2192,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3371897",
+      "id": "job_1dut8mk",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-05-20",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -2203,8 +2206,7 @@
       "startDate": "2026-10-01",
       "endDate": "2026-11-14",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3371897",
-      "nttSn": "3371897",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -2213,9 +2215,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3371198",
+      "id": "job_1ynfvlf",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-05-14",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -2226,8 +2229,7 @@
       "startDate": "2026-06-08",
       "endDate": "2027-02-23",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3371198",
-      "nttSn": "3371198",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -2236,9 +2238,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3370835",
+      "id": "job_jpg9hg",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-05-11",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -2249,8 +2252,7 @@
       "startDate": "2026-06-02",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3370835",
-      "nttSn": "3370835",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -2259,9 +2261,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3370870",
+      "id": "job_1rohtgx",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-05-11",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -2272,8 +2275,7 @@
       "startDate": "2026-05-21",
       "endDate": "2026-10-08",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3370870",
-      "nttSn": "3370870",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -2282,9 +2284,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3370708",
+      "id": "job_1vj1wp",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-05-08",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -2295,8 +2298,7 @@
       "startDate": "2026-06-01",
       "endDate": "2026-11-30",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3370708",
-      "nttSn": "3370708",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
@@ -2305,9 +2307,10 @@
       "autoCollected": true
     },
     {
-      "id": "ice_3370746",
+      "id": "job_sysx56",
       "source": "인천교육청",
       "sourceId": "ice",
+      "sourceItemId": "",
       "postedAt": "2026-05-08",
       "recruitStatus": "모집종료",
       "isActive": false,
@@ -2318,8 +2321,7 @@
       "startDate": "2026-05-15",
       "endDate": "",
       "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttInfo.do?mi=10997&bbsId=1981&nttSn=3370746",
-      "nttSn": "3370746",
+      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
       "tags": [
         "기타 예체능"
       ],
