@@ -27,6 +27,12 @@ const ARTMORE_SEARCH_URL =
 const ARTMORE_DETAIL_BASE =
   "https://www.artmore.kr/sub/recruit/search_view.do";
 
+const ARTINFO_SEARCH_URL =
+  "https://www.artinfokorea.com/jobs";
+
+const ARTINFO_DETAIL_BASE =
+  "https://www.artinfokorea.com/jobs";
+
 const ICE_MAX_PAGES = 10;
 const SEN_MAX_PAGES_PER_KEYWORD = 3;
 const ARTMORE_MAX_PAGES_PER_KEYWORD = 10;
@@ -34,6 +40,12 @@ const ARTMORE_MAX_PAGES_PER_KEYWORD = 10;
 const ARTMORE_KEYWORDS = [
   "플루트",
   "플룻"
+];
+
+const ARTINFO_KEYWORDS = [
+  "플루트",
+  "플룻",
+  "flute"
 ];
 
 const ARTMORE_ALLOWED_REGIONS = [
@@ -85,17 +97,19 @@ const KEYWORD_GROUPS = [
 
 async function main() {
   console.log("==================================");
-  console.log("ACO ON Jobs Collector v7");
-  console.log("ICE + SEN + ARTMORE");
+  console.log("ACO ON Jobs Collector v8");
+  console.log("ICE + SEN + ARTMORE + ARTINFO");
   console.log("==================================");
 
   let iceJobs = [];
   let senJobs = [];
   let artmoreJobs = [];
+  let artinfoJobs = [];
 
   let iceDiagnostics = {};
   let senDiagnostics = {};
   let artmoreDiagnostics = {};
+  let artinfoDiagnostics = {};
 
   try {
     const result = await collectIceJobs();
@@ -127,10 +141,21 @@ async function main() {
     artmoreDiagnostics = { error: String(error) };
   }
 
+  try {
+    const result = await collectArtinfoJobs();
+    artinfoJobs = result.jobs;
+    artinfoDiagnostics = result.diagnostics;
+    console.log(`\n[아트인포] ${artinfoJobs.length}개 수집 완료`);
+  } catch (error) {
+    console.error("[아트인포] 수집 실패:", error);
+    artinfoDiagnostics = { error: String(error) };
+  }
+
   const combined = dedupeCombined([
     ...iceJobs,
     ...senJobs,
-    ...artmoreJobs
+    ...artmoreJobs,
+    ...artinfoJobs
   ]);
 
   combined.sort((a, b) => {
@@ -147,12 +172,14 @@ async function main() {
     diagnostics: {
       ice: iceDiagnostics,
       sen: senDiagnostics,
-      artmore: artmoreDiagnostics
+      artmore: artmoreDiagnostics,
+      artinfo: artinfoDiagnostics
     },
     sourceCounts: {
       ice: iceJobs.length,
       sen: senJobs.length,
-      artmore: artmoreJobs.length
+      artmore: artmoreJobs.length,
+      artinfo: artinfoJobs.length
     },
     count: combined.length,
     activeCount,
@@ -169,6 +196,7 @@ async function main() {
   console.log(`인천교육청: ${iceJobs.length}`);
   console.log(`서울교육: ${senJobs.length}`);
   console.log(`아트모아: ${artmoreJobs.length}`);
+  console.log(`아트인포: ${artinfoJobs.length}`);
   console.log(`통합: ${combined.length}`);
   console.log(`현재 모집: ${activeCount}`);
   console.log("==================================");
@@ -1126,6 +1154,351 @@ function extractArtmoreAddress(text = "") {
   return match
     ? match[1].replace(/\s+/g, " ").trim()
     : "";
+}
+
+
+/* =========================================================
+   아트인포
+   - 전문 연주/예술단체 공고
+   - 지역 제한 없음
+   - 플루트 / 플룻 / flute 각각 검색 후 job id로 중복 제거
+   ========================================================= */
+
+async function collectArtinfoJobs() {
+  const discovered = new Map();
+  let searchRequests = 0;
+  let detailRequests = 0;
+  const keywordCounts = {};
+
+  for (const keyword of ARTINFO_KEYWORDS) {
+    console.log(`\n[아트인포] 검색: ${keyword}`);
+
+    const html = await fetchArtinfoSearch(keyword);
+    searchRequests++;
+
+    const ids = extractArtinfoIds(html);
+    keywordCounts[keyword] = ids.length;
+
+    console.log(`  검색결과 링크: ${ids.length}개`);
+
+    for (const id of ids) {
+      if (!discovered.has(id)) {
+        discovered.set(id, new Set());
+      }
+      discovered.get(id).add(keyword);
+    }
+
+    await sleep(300);
+  }
+
+  const jobs = [];
+
+  for (const [id, matchedSet] of discovered.entries()) {
+    try {
+      const html = await fetchArtinfoDetail(id);
+      detailRequests++;
+
+      const job = parseArtinfoDetail(
+        html,
+        id,
+        [...matchedSet]
+      );
+
+      if (job) {
+        jobs.push(job);
+      }
+    } catch (error) {
+      console.error(`[아트인포] 상세 ${id} 실패:`, error);
+    }
+
+    await sleep(180);
+  }
+
+  return {
+    jobs: dedupeBySourceId(jobs),
+    diagnostics: {
+      keywords: ARTINFO_KEYWORDS,
+      regionFilter: "전체",
+      searchRequests,
+      detailRequests,
+      discoveredCount: discovered.size,
+      uniqueCount: jobs.length,
+      keywordCounts
+    }
+  };
+}
+
+async function fetchArtinfoSearch(keyword) {
+  const params = new URLSearchParams({
+    jobTimeType: "FULL_TIME",
+    keyword
+  });
+
+  const response = await fetchWithTimeout(
+    `${ARTINFO_SEARCH_URL}?${params.toString()}`,
+    {
+      method: "GET",
+      headers: {
+        ...browserHeaders(),
+        "Referer": "https://www.artinfokorea.com/"
+      }
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error(`ARTINFO SEARCH HTTP ${response.status}`);
+  }
+
+  return response.text();
+}
+
+function extractArtinfoIds(html = "") {
+  const ids = new Set();
+
+  for (const match of html.matchAll(/href=["'](?:https:\/\/www\.artinfokorea\.com)?\/jobs\/(\d+)(?:[?#][^"']*)?["']/gi)) {
+    ids.add(match[1]);
+  }
+
+  return [...ids];
+}
+
+async function fetchArtinfoDetail(id) {
+  const response = await fetchWithTimeout(
+    `${ARTINFO_DETAIL_BASE}/${id}`,
+    {
+      method: "GET",
+      headers: {
+        ...browserHeaders(),
+        "Referer": ARTINFO_SEARCH_URL
+      }
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error(`ARTINFO DETAIL HTTP ${response.status}`);
+  }
+
+  return response.text();
+}
+
+function parseArtinfoDetail(html, id, matchedKeywords = []) {
+  const text = cleanText(html);
+
+  let title = "";
+
+  const titleTag = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
+  if (titleTag) {
+    title = cleanText(titleTag[1])
+      .replace(/^채용\s*[|｜-]\s*/i, "")
+      .replace(/\s*[|｜-]\s*아트인포.*$/i, "")
+      .trim();
+  }
+
+  if (!title) {
+    const heading = html.match(/<h[1-4][^>]*>([\s\S]*?)<\/h[1-4]>/i);
+    if (heading) {
+      title = cleanText(heading[1]);
+    }
+  }
+
+  if (!title || title === "ARTINFO") {
+    return null;
+  }
+
+  const postedAt = extractArtinfoPostedAt(text);
+  const address = extractArtinfoAddress(text);
+  const region = extractArtinfoRegion(address || text);
+  const organization = extractArtinfoOrganization(
+    text,
+    title,
+    address,
+    postedAt
+  );
+
+  const deadline = extractArtinfoDeadline(text, postedAt);
+  const recruitStatus = inferArtinfoStatus(postedAt, deadline, text);
+
+  const normalizedText = normalizeSearchText(
+    [organization, title, text.slice(0, 2500)].join(" ")
+  );
+
+  let tags = detectTags(
+    normalizeSearchText(
+      `${title} ${matchedKeywords.join(" ")}`
+    )
+  );
+
+  if (!tags.includes("플루트")) {
+    tags = ["플루트", ...tags.filter(tag => tag !== "기타 예체능")];
+  }
+
+  return {
+    id: `artinfo_${id}`,
+    source: "아트인포",
+    sourceId: "artinfo",
+    sourceItemId: String(id),
+    postedAt,
+    recruitStatus,
+    isActive: isActiveStatus(recruitStatus),
+    organization,
+    jobType: "전문 연주·예술",
+    title,
+    deadline,
+    startDate: "",
+    endDate: "",
+    region,
+    address,
+    url: `${ARTINFO_DETAIL_BASE}/${id}`,
+    tags: [...new Set(tags)],
+    instrumentTags: ["플루트"],
+    matchedKeywords,
+    searchText: normalizedText,
+    autoCollected: true
+  };
+}
+
+function extractArtinfoPostedAt(text = "") {
+  /* 상세 상단의 등록일이 보통 본문 내 첫 YYYY.MM.DD 형식 날짜다. */
+  const match = text.match(/(20\d{2})[.\/-](\d{1,2})[.\/-](\d{1,2})/);
+  return match ? normalizeDate(match[0]) : "";
+}
+
+function extractArtinfoAddress(text = "") {
+  const patterns = [
+    /((?:서울|서울특별시)\s+[가-힣]+구\s+[가-힣0-9·()\-\s]+(?:로|길)\s*\d+(?:-\d+)?(?:\s+[^\n]{0,40})?)/,
+    /((?:인천|인천광역시)\s+[가-힣]+구\s+[가-힣0-9·()\-\s]+(?:로|길)\s*\d+(?:-\d+)?(?:\s+[^\n]{0,40})?)/,
+    /((?:경기|경기도)\s+[가-힣]+시(?:\s+[가-힣]+구)?\s+[가-힣0-9·()\-\s]+(?:로|길)\s*\d+(?:-\d+)?(?:\s+[^\n]{0,40})?)/,
+    /((?:강원|강원도|충북|충청북도|충남|충청남도|전북|전라북도|전남|전라남도|경북|경상북도|경남|경상남도|제주|제주특별자치도)\s+[가-힣]+(?:시|군)\s+[가-힣0-9·()\-\s]+(?:로|길)\s*\d+(?:-\d+)?(?:\s+[^\n]{0,40})?)/
+  ];
+
+  for (const pattern of patterns) {
+    const match = text.match(pattern);
+    if (match) {
+      return match[1]
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+  }
+
+  return "";
+}
+
+function extractArtinfoRegion(value = "") {
+  const patterns = [
+    /(서울(?:특별시)?\s+[가-힣]+구)/,
+    /(인천(?:광역시)?\s+[가-힣]+구)/,
+    /((?:경기|경기도)\s+[가-힣]+시(?:\s+[가-힣]+구)?)/,
+    /((?:강원|강원도|충북|충청북도|충남|충청남도|전북|전라북도|전남|전라남도|경북|경상북도|경남|경상남도|제주|제주특별자치도)\s+[가-힣]+(?:시|군))/
+  ];
+
+  for (const pattern of patterns) {
+    const match = value.match(pattern);
+    if (match) return match[1].replace(/\s+/g, " ").trim();
+  }
+
+  return "";
+}
+
+function extractArtinfoOrganization(text, title, address, postedAt) {
+  let scoped = text;
+
+  const titlePos = scoped.indexOf(title);
+  if (titlePos >= 0) {
+    scoped = scoped.slice(titlePos + title.length, titlePos + title.length + 700);
+  } else {
+    scoped = scoped.slice(0, 1000);
+  }
+
+  if (address) {
+    const addrPos = scoped.indexOf(address);
+    if (addrPos >= 0) {
+      scoped = scoped.slice(addrPos + address.length);
+    }
+  }
+
+  if (postedAt) {
+    const dateVariants = [
+      postedAt,
+      postedAt.replace(/-/g, "."),
+      postedAt.replace(/-/g, "/")
+    ];
+
+    let datePos = -1;
+    for (const date of dateVariants) {
+      datePos = scoped.indexOf(date);
+      if (datePos >= 0) break;
+    }
+
+    if (datePos > 0) {
+      scoped = scoped.slice(0, datePos);
+    }
+  }
+
+  scoped = scoped
+    .replace(/^(플루트|플룻|flute|호른|바이올린|비올라|첼로|더블베이스|오보에|클라리넷|바순|트럼펫|트롬본|타악기)(\s+외\s+\d+)?\s*/gi, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  /* 주소 뒤 ~ 등록일 앞 구간의 끝부분이 기관명인 구조를 활용 */
+  const chunks = scoped.split(/\s{2,}|\||채용 사이트 바로가기/i).filter(Boolean);
+  const candidate = (chunks[chunks.length - 1] || scoped).trim();
+
+  return candidate.length <= 80 ? candidate : "";
+}
+
+function extractArtinfoDeadline(text = "", postedAt = "") {
+  const fullDatePatterns = [
+    /(?:지원\s*마감|접수\s*마감|접수마감일|마감일|원서접수기간|접수기간)[^\d]{0,30}(20\d{2})[.\/-](\d{1,2})[.\/-](\d{1,2})[^~\n]{0,40}~[^\d]{0,20}(20\d{2})?[.\/-]?(\d{1,2})[.\/-](\d{1,2})/i,
+    /(?:지원\s*마감|접수\s*마감|접수마감일|마감일)[^\d]{0,30}(20\d{2})[.\/-](\d{1,2})[.\/-](\d{1,2})/i
+  ];
+
+  for (const pattern of fullDatePatterns) {
+    const m = text.match(pattern);
+    if (!m) continue;
+
+    if (m[4] !== undefined) {
+      const year = m[4] || m[1];
+      return `${year}-${String(m[5]).padStart(2, "0")}-${String(m[6]).padStart(2, "0")}`;
+    }
+
+    return `${m[1]}-${String(m[2]).padStart(2, "0")}-${String(m[3]).padStart(2, "0")}`;
+  }
+
+  /* "~6/30", "5.8.(목)"처럼 연도가 생략된 경우 등록연도를 사용 */
+  if (postedAt) {
+    const year = postedAt.slice(0, 4);
+    const m = text.match(/(?:지원\s*마감|접수\s*마감|접수마감일|마감일|원서접수기간|접수기간)[\s\S]{0,120}?(?:~|까지)\s*(\d{1,2})[.\/-](\d{1,2})(?:\D|$)/i);
+    if (m) {
+      return `${year}-${String(m[1]).padStart(2, "0")}-${String(m[2]).padStart(2, "0")}`;
+    }
+  }
+
+  return "";
+}
+
+function inferArtinfoStatus(postedAt, deadline, text = "") {
+  if (/채용\s*시까지|상시\s*(?:채용|모집)/i.test(text)) {
+    return "모집중";
+  }
+
+  if (deadline) {
+    return deadline >= koreaToday()
+      ? "모집중"
+      : "모집종료";
+  }
+
+  if (postedAt) {
+    const posted = new Date(`${postedAt}T00:00:00+09:00`);
+    const now = new Date();
+    const days = (now - posted) / 86400000;
+
+    /* 마감일을 찾지 못한 오래된 공고를 활성으로 남기지 않는다. */
+    if (days > 60) {
+      return "모집종료";
+    }
+  }
+
+  return "확인필요";
 }
 
 function detectTags(text) {
