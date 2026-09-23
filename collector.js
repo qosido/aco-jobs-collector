@@ -2791,7 +2791,10 @@ async function collectGoeJobs() {
     hasOccupationText: false,
     hasPbancSn: false,
     hasViewFunction: false,
-    preview: ""
+    preview: "",
+    pbancSnSnippets: [],
+    keywordSnippets: [],
+    candidateLinkSnippets: []
   };
 
   for (const region of GOE_REGIONS) {
@@ -2846,6 +2849,86 @@ async function collectGoeJobs() {
 
           diagnosticsSample.preview =
             cleanText(html).slice(0, 1200);
+
+          /*
+           * 실제 공고 구조를 찾기 위해 pbancSn / 음악 주변 HTML을 그대로 일부 저장.
+           */
+          const pbancMatches = [
+            ...html.matchAll(
+              /pbancSn/gi
+            )
+          ].slice(0, 5);
+
+          diagnosticsSample.pbancSnSnippets =
+            pbancMatches.map(match => {
+              const start =
+                Math.max(
+                  0,
+                  match.index - 350
+                );
+
+              const end =
+                Math.min(
+                  html.length,
+                  match.index + 650
+                );
+
+              return html
+                .slice(start, end)
+                .replace(
+                  /\s+/g,
+                  " "
+                )
+                .slice(0, 1000);
+            });
+
+          const keywordMatches = [
+            ...html.matchAll(
+              /음악/gi
+            )
+          ].slice(-5);
+
+          diagnosticsSample.keywordSnippets =
+            keywordMatches.map(match => {
+              const start =
+                Math.max(
+                  0,
+                  match.index - 350
+                );
+
+              const end =
+                Math.min(
+                  html.length,
+                  match.index + 650
+                );
+
+              return html
+                .slice(start, end)
+                .replace(
+                  /\s+/g,
+                  " "
+                )
+                .slice(0, 1000);
+            });
+
+          /*
+           * 상세보기로 보이는 링크/onclick 후보도 수집.
+           */
+          diagnosticsSample.candidateLinkSnippets =
+            [
+              ...html.matchAll(
+                /<(?:a|button)[^>]*(?:pbancSn|hnfpPbancView|goView|fnView|view)[^>]*>[\s\S]{0,300}?(?:<\/a>|<\/button>)/gi
+              )
+            ]
+              .slice(0, 8)
+              .map(match =>
+                match[0]
+                  .replace(
+                    /\s+/g,
+                    " "
+                  )
+                  .slice(0, 1200)
+              );
 
           console.log("[경기도교육청 진단]");
           console.log(
