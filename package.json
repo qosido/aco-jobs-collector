@@ -1,0 +1,9 @@
+{
+  "name": "aco-jobs-collector",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ACO ON job listing collector",
+  "dependencies": {
+    "playwright": "^1.55.0"
+  }
+}
