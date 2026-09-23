@@ -1821,10 +1821,24 @@ async function collectLessoninfoJobs() {
         pagesVisited;
     }
 
-    const jobs =
+    let jobs =
       dedupeBySourceId(
         allJobs
       );
+
+    /*
+     * 목록에는 MM.DD만 표시되어 연도를 알 수 없는 글이 있다.
+     * 상세 페이지에는 YYYY.MM.DD HH:mm 전체 날짜가 있으므로
+     * 중복 제거 후 상세 페이지를 한 번씩 열어 실제 연도를 보정한다.
+     */
+    const detailResult =
+      await enrichLessoninfoDatesFromDetails(
+        page,
+        jobs
+      );
+
+    jobs =
+      detailResult.jobs;
 
     return {
       jobs,
@@ -1850,6 +1864,18 @@ async function collectLessoninfoJobs() {
 
         uniqueCount:
           jobs.length,
+
+        detailPagesChecked:
+          detailResult.checked,
+
+        detailDatesFixed:
+          detailResult.fixed,
+
+        oldPostsClosed:
+          detailResult.oldClosed,
+
+        detailErrors:
+          detailResult.errors,
 
         keywordCounts,
 
@@ -2170,6 +2196,221 @@ async function extractLessoninfoJobsFromDom(
 
   return jobs;
 }
+
+async function enrichLessoninfoDatesFromDetails(
+  page,
+  jobs
+) {
+  let checked = 0;
+  let fixed = 0;
+  let oldClosed = 0;
+  let errors = 0;
+
+  const result = [];
+
+  for (const job of jobs) {
+    const next = {
+      ...job
+    };
+
+    if (
+      !job.url ||
+      !/^https?:\/\/(?:www\.)?lessoninfo\.co\.kr\//i.test(
+        job.url
+      )
+    ) {
+      result.push(next);
+      continue;
+    }
+
+    try {
+      await page.goto(
+        job.url,
+        {
+          waitUntil:
+            "domcontentloaded",
+
+          timeout:
+            30000
+        }
+      );
+
+      await page.waitForTimeout(
+        450
+      );
+
+      checked++;
+
+      const detail =
+        await page.evaluate(() => {
+          const bodyText =
+            (document.body?.innerText || "")
+              .replace(
+                /\u00a0/g,
+                " "
+              )
+              .replace(
+                /[ \t]+/g,
+                " "
+              );
+
+          /*
+           * 레슨인포 상세 화면의 작성일은
+           * '2022.12.29 19:38'처럼 전체 연도가 표시된다.
+           * 본문 안의 다른 날짜보다 제목/작성자 영역의 날짜를 우선하기 위해
+           * 페이지 앞부분에서 먼저 찾는다.
+           */
+          const headText =
+            bodyText.slice(
+              0,
+              5000
+            );
+
+          const fullDateTime =
+            headText.match(
+              /\b(20\d{2})[./-](\d{1,2})[./-](\d{1,2})(?:\s+\d{1,2}:\d{2})?\b/
+            ) ||
+            bodyText.match(
+              /\b(20\d{2})[./-](\d{1,2})[./-](\d{1,2})(?:\s+\d{1,2}:\d{2})?\b/
+            );
+
+          return {
+            postedAt:
+              fullDateTime
+                ? [
+                    fullDateTime[1],
+                    String(fullDateTime[2]).padStart(2, "0"),
+                    String(fullDateTime[3]).padStart(2, "0")
+                  ].join("-")
+                : ""
+          };
+        });
+
+      if (
+        detail.postedAt &&
+        detail.postedAt !==
+          next.postedAt
+      ) {
+        next.postedAt =
+          detail.postedAt;
+
+        fixed++;
+      }
+
+      /*
+       * 레슨인포는 별도 마감일이 없는 글이 많다.
+       * 작성 후 60일이 지난 글은 오래된 구인으로 보고
+       * 모집종료 처리해 기본 피드에서 숨긴다.
+       */
+      if (
+        next.postedAt &&
+        isOlderThanDays(
+          next.postedAt,
+          60
+        )
+      ) {
+        if (
+          next.recruitStatus !==
+          "모집종료"
+        ) {
+          oldClosed++;
+        }
+
+        next.recruitStatus =
+          "모집종료";
+
+        next.isActive =
+          false;
+      }
+
+      result.push(next);
+    } catch (error) {
+      errors++;
+
+      /*
+       * 상세 페이지 확인 실패 시 기존 목록 데이터는 버리지 않는다.
+       * 다만 목록 날짜가 미래로 잘못 계산된 경우 활성 공고로 남는 것을 방지한다.
+       */
+      if (
+        next.postedAt &&
+        next.postedAt >
+          koreaToday()
+      ) {
+        next.recruitStatus =
+          "확인필요";
+
+        next.isActive =
+          false;
+      }
+
+      result.push(next);
+    }
+
+    await page.waitForTimeout(
+      120
+    );
+  }
+
+  return {
+    jobs:
+      result,
+
+    checked,
+
+    fixed,
+
+    oldClosed,
+
+    errors
+  };
+}
+
+function isOlderThanDays(
+  dateString,
+  days
+) {
+  if (
+    !/^\d{4}-\d{2}-\d{2}$/.test(
+      dateString || ""
+    )
+  ) {
+    return false;
+  }
+
+  const today =
+    koreaToday();
+
+  const current =
+    new Date(
+      `${today}T00:00:00+09:00`
+    );
+
+  const target =
+    new Date(
+      `${dateString}T00:00:00+09:00`
+    );
+
+  if (
+    Number.isNaN(
+      target.getTime()
+    )
+  ) {
+    return false;
+  }
+
+  const diffDays =
+    (
+      current.getTime() -
+      target.getTime()
+    ) /
+    86400000;
+
+  return (
+    diffDays >
+    days
+  );
+}
+
 /* Legacy fetch-based LessonInfo fallback kept for diagnostics; Playwright collector above is the active path. */
 async function fetchLessoninfoPage(
   keyword,
