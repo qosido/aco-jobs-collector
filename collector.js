@@ -1865,6 +1865,9 @@ async function collectLessoninfoJobs() {
         uniqueCount:
           jobs.length,
 
+        activeCount:
+          jobs.filter(job => job.isActive).length,
+
         detailPagesChecked:
           detailResult.checked,
 
