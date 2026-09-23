@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T01:04:51.260Z",
+  "updatedAt": "2026-09-23T01:29:12.421Z",
   "diagnostics": {
     "ice": {
       "pagesCollected": 10,
@@ -32,14 +32,44 @@
       "rawCount": 6,
       "uniqueCount": 6,
       "parsedBlocks": 6
+    },
+    "artmore": {
+      "keywords": [
+        "플루트",
+        "플룻"
+      ],
+      "allowedRegions": [
+        "서울",
+        "인천",
+        "부천",
+        "김포",
+        "시흥",
+        "광명"
+      ],
+      "knownAreaCodes": {
+        "인천": "2000-2053",
+        "부천": "2000-2083-2097",
+        "광명": "2000-2083-2098",
+        "시흥": "2000-2083-2112",
+        "김포": "2000-2083-2123"
+      },
+      "requests": 8,
+      "rawParsedCount": 75,
+      "regionFilteredCount": 48,
+      "uniqueCount": 48,
+      "keywordCounts": {
+        "플루트": 48,
+        "플룻": 27
+      }
     }
   },
   "sourceCounts": {
     "ice": 100,
-    "sen": 6
+    "sen": 6,
+    "artmore": 48
   },
-  "count": 106,
-  "activeCount": 8,
+  "count": 154,
+  "activeCount": 32,
   "jobs": [
     {
       "id": "job_smnx6n",
@@ -87,7 +117,37 @@
       "matchedKeywords": [
         "음악"
       ],
-      "searchText": "신암중학교 2026학년도 신암중학교 계약제 (기간제) 교원 채용(음악과 1명) 초기화 검색 채용정보 지역별 등록순 마감순 5개씩 보기 10개씩 보기 15개씩 보기 30개씩 보기 50개씩 보기 100개씩 보기 200개씩 보기 300개씩 보기 마감제외 오늘의채용공고 검색 검색건수 6건 신암중학교 | 02-441-6751 | 등록일 : 2026-09-22 조회수 : 107 2026학년도 신암중학교 계약제 (기간제) 교원 채용(음악과 1명) --> 과목(담당업무) 음악",
+      "searchText": "신암중학교 2026학년도 신암중학교 계약제 (기간제) 교원 채용(음악과 1명) 초기화 검색 채용정보 지역별 등록순 마감순 5개씩 보기 10개씩 보기 15개씩 보기 30개씩 보기 50개씩 보기 100개씩 보기 200개씩 보기 300개씩 보기 마감제외 오늘의채용공고 검색 검색건수 6건 신암중학교 | 02-441-6751 | 등록일 : 2026-09-22 조회수 : 108 2026학년도 신암중학교 계약제 (기간제) 교원 채용(음악과 1명) --> 과목(담당업무) 음악",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_95068",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "95068",
+      "postedAt": "2026-09-22",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "서초구립 한우리정보문화센터",
+      "jobType": "계약직",
+      "title": "2026 서초한우리오케스트라 직업연주자 선발",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 서초구",
+      "address": "서울 서초구 남부순환로340길 15 (서초동)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95068",
+      "tags": [
+        "플루트",
+        "관악·오케스트라"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "서초구립 한우리정보문화센터 2026 서초한우리오케스트라 직업연주자 선발 서울 서초구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 서초구립 한우리정보문화센터 진행중 2026 서초한우리오케스트라 직업연주자 선발 경력무관 고등학교 서울 서초구 남부순환로340길 15 (서초동) 연봉 0원 ~ 0원 계약직 주5일 채용시까지 2026-09-22 등록 120",
       "autoCollected": true
     },
     {
@@ -168,6 +228,35 @@
       "autoCollected": true
     },
     {
+      "id": "artmore_95013",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "95013",
+      "postedAt": "2026-09-16",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "연수문화원",
+      "jobType": "프리랜서",
+      "title": "연수문화원 문화학교 강사 모집(플룻, 통기타)",
+      "deadline": "2026-10-09",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 연수구",
+      "address": "인천 연수구 비류대로 299 (청학동)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95013",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "연수문화원 연수문화원 문화학교 강사 모집(플루트, 통기타) 인천 연수구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 연수문화원 진행중 연수문화원 문화학교 강사 모집(플루트, 통기타) 경력무관 고등학교 인천 연수구 비류대로 299 (청학동) 월급 0원 ~ 0원 프리랜서 주1일 d-16 2026-09-16 등록 2026-10-09 마감 108",
+      "autoCollected": true
+    },
+    {
       "id": "sen_110491",
       "source": "서울교육일자리포털",
       "sourceId": "sen",
@@ -242,6 +331,35 @@
       ],
       "instrumentTags": [],
       "searchText": "인천논현초등학교 예체능강사 인천논현초등학교 학교스포츠클럽 지도강사 모집 공고",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_94989",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "94989",
+      "postedAt": "2026-09-14",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "송도교향악단",
+      "jobType": "정규직",
+      "title": "송도교향악단에서 바이올린,첼로,플룻,클라리넷 선생...",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 계양구",
+      "address": "인천광역시 계양구 아나지로299번길 13",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=94989",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "송도교향악단 송도교향악단에서 바이올린,첼로,플루트,클라리넷 선생... 인천광역시 계양구 송도교향악단 진행중 송도교향악단에서 바이올린,첼로,플루트,클라리넷 선생... 경력무관 학력무관 인천광역시 계양구 아나지로299번길 13 시급 25,000원 ~ 0원 정규직 주5일 채용시까지 2026-09-14 등록 87",
       "autoCollected": true
     },
     {
@@ -1287,6 +1405,35 @@
       "autoCollected": true
     },
     {
+      "id": "artmore_94310",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "94310",
+      "postedAt": "2026-07-29",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "송도교향악단",
+      "jobType": "계약직",
+      "title": "바이올린,첼로,플루트 선생님 모십니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 서해구",
+      "address": "인천광역시 서해구 서달로123번안길 17",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=94310",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "송도교향악단 바이올린,첼로,플루트 선생님 모십니다 인천광역시 서해구 송도교향악단 진행중 바이올린,첼로,플루트 선생님 모십니다 경력무관 학력무관 인천광역시 서해구 서달로123번안길 17 시급 25,000원 ~ 0원 계약직 주5일 채용시까지 2026-07-29 등록 58",
+      "autoCollected": true
+    },
+    {
       "id": "job_1cz4jow",
       "source": "인천교육청",
       "sourceId": "ice",
@@ -1307,6 +1454,64 @@
       ],
       "instrumentTags": [],
       "searchText": "인천대중예술고등학교 시간강사, 예체능강사 2026학년도 인천대중예술고등학교 2학기 음악 실기 강사(건반) 채용 공고(2차)",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_94268",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "94268",
+      "postedAt": "2026-07-27",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "송도교향악단",
+      "jobType": "시간선택제",
+      "title": "바이올린,첼로,플루트 선생님 모십니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 남동구",
+      "address": "인천광역시 남동구 남동대로 713",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=94268",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "송도교향악단 바이올린,첼로,플루트 선생님 모십니다 인천광역시 남동구 송도교향악단 진행중 바이올린,첼로,플루트 선생님 모십니다 경력무관 학력무관 인천광역시 남동구 남동대로 713 시급 25,000원 ~ 0원 시간선택제 주5일 채용시까지 2026-07-27 등록 55",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_94248",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "94248",
+      "postedAt": "2026-07-24",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "음악공감센터",
+      "jobType": "정규직",
+      "title": "바이올린,첼로,플루트 선생님 모십니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 미추홀구",
+      "address": "인천광역시 미추홀구 한나루로 563",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=94248",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "음악공감센터 바이올린,첼로,플루트 선생님 모십니다. 인천광역시 미추홀구 음악공감센터 마감 바이올린,첼로,플루트 선생님 모십니다. 경력무관 학력무관 인천광역시 미추홀구 한나루로 563 시급 25,000원 ~ 0원 정규직 주5일 채용시까지 2026-07-24 등록 61",
       "autoCollected": true
     },
     {
@@ -2444,6 +2649,64 @@
       "autoCollected": true
     },
     {
+      "id": "artmore_92922",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "92922",
+      "postedAt": "2026-05-14",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "송도교향악단",
+      "jobType": "계약직",
+      "title": "바이올린,첼로,플루트 선생님 모십니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 서구",
+      "address": "인천광역시 서구 서달로123번안길 17",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=92922",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "송도교향악단 바이올린,첼로,플루트 선생님 모십니다 인천광역시 서구 송도교향악단 마감 바이올린,첼로,플루트 선생님 모십니다 경력무관 학력무관 인천광역시 서구 서달로123번안길 17 시급 25,000원 ~ 0원 계약직 주5일 채용시까지 2026-05-14 등록 79",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_92888",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "92888",
+      "postedAt": "2026-05-13",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "음악공감센터",
+      "jobType": "정규직",
+      "title": "바이올린,첼로,플루트 선생님 모십니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 미추홀구",
+      "address": "인천광역시 미추홀구 한나루로 563",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=92888",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "음악공감센터 바이올린,첼로,플루트 선생님 모십니다. 인천광역시 미추홀구 음악공감센터 마감 바이올린,첼로,플루트 선생님 모십니다. 경력무관 대학교(4년) 인천광역시 미추홀구 한나루로 563 시급 25,000원 ~ 0원 정규직 주5일 채용시까지 2026-05-13 등록 42",
+      "autoCollected": true
+    },
+    {
       "id": "job_jpg9hg",
       "source": "인천교육청",
       "sourceId": "ice",
@@ -2510,6 +2773,1187 @@
       ],
       "instrumentTags": [],
       "searchText": "인천명현초등학교 예체능강사 2026학년도 인천명현초등학교 동아리 강사(보드게임) 모집 공고",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_92671",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "92671",
+      "postedAt": "2026-04-30",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "하트하트아트앤컬쳐",
+      "jobType": "정규직",
+      "title": "발달장애인 연주자 정규직 직원 채용 공고",
+      "deadline": "2026-05-08",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 송파구",
+      "address": "서울 송파구 송이로23길 34 (가락동)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=92671",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "하트하트아트앤컬쳐 발달장애인 연주자 정규직 직원 채용 공고 서울 송파구 하트하트아트앤컬쳐 마감 발달장애인 연주자 정규직 직원 채용 공고 경력무관 고등학교 서울 송파구 송이로23길 34 (가락동) 월급 0원 ~ 0원 정규직 주5일 마감 2026-04-30 등록 2026-05-08 마감 474",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_91762",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "91762",
+      "postedAt": "2026-03-13",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "음악공감센터",
+      "jobType": "정규직",
+      "title": "바이올린,첼로,플룻 선생님 모십니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 미추홀구",
+      "address": "인천광역시 미추홀구 한나루로 563",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=91762",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "음악공감센터 바이올린,첼로,플루트 선생님 모십니다. 인천광역시 미추홀구 음악공감센터 마감 바이올린,첼로,플루트 선생님 모십니다. 경력무관 대학교(4년) 인천광역시 미추홀구 한나루로 563 시급 25,000원 ~ 0원 정규직 주5일 채용시까지 2026-03-13 등록 57",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_91761",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "91761",
+      "postedAt": "2026-03-13",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "송도교향악단",
+      "jobType": "계약직",
+      "title": "바이올린,첼로,플룻 선생님 모십니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 서구",
+      "address": "인천광역시 서구 서달로123번안길 17",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=91761",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "송도교향악단 바이올린,첼로,플루트 선생님 모십니다 인천광역시 서구 송도교향악단 마감 바이올린,첼로,플루트 선생님 모십니다 경력무관 학력무관 인천광역시 서구 서달로123번안길 17 시급 25,000원 ~ 0원 계약직 주5일 채용시까지 2026-03-13 등록 69",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_90836",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "90836",
+      "postedAt": "2026-02-02",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "케이아츠에듀",
+      "jobType": "계약직",
+      "title": "2026 서울학생필하모닉오케스트라 파트멘토(강사) 초빙 공고",
+      "deadline": "2026-02-11",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 은평구",
+      "address": "서울 은평구 가좌로 208 (응암동)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=90836",
+      "tags": [
+        "플루트",
+        "관악·오케스트라"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "케이아츠에듀 2026 서울학생필하모닉오케스트라 파트멘토(강사) 초빙 공고 서울 은평구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 케이아츠에듀 마감 2026 서울학생필하모닉오케스트라 파트멘토(강사) 초빙 공고 경력 1년 대학교(4년) 서울 은평구 가좌로 208 (응암동) 일급 150,000원 ~ 150,000원 계약직 주1일 마감 2026-02-02 등록 2026-02-11 마감 1919",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_90572",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "90572",
+      "postedAt": "2026-01-23",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "(재)금천문화재단",
+      "jobType": "계약직",
+      "title": "2026년 「꿈의 오케스트라 금천」 음악강사 및 코디네이터 모집 공고",
+      "deadline": "2026-02-04",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 금천구",
+      "address": "서울 금천구 시흥대로115길 48 (독산동)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=90572",
+      "tags": [
+        "플루트",
+        "관악·오케스트라",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "(재)금천문화재단 2026년 「꿈의 오케스트라 금천」 음악강사 및 코디네이터 모집 공고 서울 금천구 (재)금천문화재단 마감 2026년 「꿈의 오케스트라 금천」 음악강사 및 코디네이터 모집 공고 경력 1년 대학교(2~3년) 서울 금천구 시흥대로115길 48 (독산동) 시급 12,121원 ~ 43,000원 계약직 주2일 마감 2026-01-23 등록 2026-02-04 마감 766",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_90428",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "90428",
+      "postedAt": "2026-01-19",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "재단법인KBS교향악단",
+      "jobType": "정규직",
+      "title": "2026년 KBS교향악단 신규단원 채용",
+      "deadline": "2026-03-01",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 영등포구",
+      "address": "서울 영등포구 여의공원로 13 (여의도동)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=90428",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "재단법인kbs교향악단 2026년 kbs교향악단 신규단원 채용 서울 영등포구 재단법인kbs교향악단 마감 2026년 kbs교향악단 신규단원 채용 경력무관 대학교(4년) 서울 영등포구 여의공원로 13 (여의도동) 연봉 0원 ~ 0원 정규직 주5일 마감 2026-01-19 등록 2026-03-01 마감 1894",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_90331",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "90331",
+      "postedAt": "2026-01-15",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "하트하트아트앤컬쳐",
+      "jobType": "정규직",
+      "title": "하트하트 아트앤컬처 발달장애인 연주자(하트하트오케스트라 단원) 채용 공고",
+      "deadline": "2026-01-30",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 송파구",
+      "address": "서울 송파구 송이로23길 34 (가락동)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=90331",
+      "tags": [
+        "플루트",
+        "관악·오케스트라"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "하트하트아트앤컬쳐 하트하트 아트앤컬처 발달장애인 연주자(하트하트오케스트라 단원) 채용 공고 서울 송파구 하트하트아트앤컬쳐 마감 하트하트 아트앤컬처 발달장애인 연주자(하트하트오케스트라 단원) 채용 공고 경력무관 고등학교 서울 송파구 송이로23길 34 (가락동) 월급 0원 ~ 0원 정규직 주5일 마감 2026-01-15 등록 2026-01-30 마감 870",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_90090",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "90090",
+      "postedAt": "2026-01-05",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "송도교향악단",
+      "jobType": "계약직",
+      "title": "바이올린,첼로,플룻 선생님 모십니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 서구",
+      "address": "인천광역시 서구 서달로123번안길 17",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=90090",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "송도교향악단 바이올린,첼로,플루트 선생님 모십니다 인천광역시 서구 송도교향악단 마감 바이올린,첼로,플루트 선생님 모십니다 경력무관 학력무관 인천광역시 서구 서달로123번안길 17 시급 25,000원 ~ 0원 계약직 주5일 채용시까지 2026-01-05 등록 57",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_90089",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "90089",
+      "postedAt": "2026-01-05",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "음악공감센터",
+      "jobType": "정규직",
+      "title": "바이올린,첼로,플룻 선생님 모십니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 미추홀구",
+      "address": "인천광역시 미추홀구 한나루로 563",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=90089",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "음악공감센터 바이올린,첼로,플루트 선생님 모십니다. 인천광역시 미추홀구 음악공감센터 마감 바이올린,첼로,플루트 선생님 모십니다. 경력무관 대학교(4년) 인천광역시 미추홀구 한나루로 563 시급 25,000원 ~ 0원 정규직 주5일 채용시까지 2026-01-05 등록 38",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_89189",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "89189",
+      "postedAt": "2025-10-22",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "송도교향악단",
+      "jobType": "계약직",
+      "title": "바이올린,첼로,플룻,클라리넷 선생님 모십니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 서구",
+      "address": "인천광역시 서구 서달로123번안길 17",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=89189",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "송도교향악단 바이올린,첼로,플루트,클라리넷 선생님 모십니다 인천광역시 서구 송도교향악단 마감 바이올린,첼로,플루트,클라리넷 선생님 모십니다 경력무관 학력무관 인천광역시 서구 서달로123번안길 17 시급 25,000원 ~ 0원 계약직 주5일 채용시까지 2025-10-22 등록 114",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_89165",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "89165",
+      "postedAt": "2025-10-21",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "음악공감센터",
+      "jobType": "정규직",
+      "title": "바이올린,첼로,플룻,클라리넷 선생님 모십니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 미추홀구",
+      "address": "인천광역시 미추홀구 한나루로 563",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=89165",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "음악공감센터 바이올린,첼로,플루트,클라리넷 선생님 모십니다. 인천광역시 미추홀구 음악공감센터 마감 바이올린,첼로,플루트,클라리넷 선생님 모십니다. 경력무관 대학교(4년) 인천광역시 미추홀구 한나루로 563 시급 25,000원 ~ 0원 정규직 주5일 채용시까지 2025-10-21 등록 83",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_88339",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "88339",
+      "postedAt": "2025-08-13",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "송도교향악단",
+      "jobType": "계약직",
+      "title": "플룻 선생님 모십니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 서구",
+      "address": "인천광역시 서구 서달로123번안길 17",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=88339",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "송도교향악단 플루트 선생님 모십니다 인천광역시 서구 송도교향악단 마감 플루트 선생님 모십니다 경력무관 인천광역시 서구 서달로123번안길 17 시급 25,000원 ~ 0원 계약직 주5일 채용시까지 2025-08-13 등록 66",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_88320",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "88320",
+      "postedAt": "2025-08-12",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "송도교향악단",
+      "jobType": "정규직",
+      "title": "송도교향악단에서 플룻 선생님을 모십니다^^",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 계양구",
+      "address": "인천광역시 계양구 아나지로299번길 13",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=88320",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "송도교향악단 송도교향악단에서 플루트 선생님을 모십니다^^ 인천광역시 계양구 송도교향악단 마감 송도교향악단에서 플루트 선생님을 모십니다^^ 경력무관 인천광역시 계양구 아나지로299번길 13 시급 25,000원 ~ 0원 정규직 주5일 채용시까지 2025-08-12 등록 58",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_88317",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "88317",
+      "postedAt": "2025-08-12",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "음악공감센터",
+      "jobType": "정규직",
+      "title": "플룻 선생님 모십니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 미추홀구",
+      "address": "인천광역시 미추홀구 한나루로 563",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=88317",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "음악공감센터 플루트 선생님 모십니다. 인천광역시 미추홀구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 음악공감센터 마감 플루트 선생님 모십니다. 경력무관 인천광역시 미추홀구 한나루로 563 시급 25,000원 ~ 0원 정규직 주5일 채용시까지 2025-08-12 등록 30",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_86855",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "86855",
+      "postedAt": "2025-05-07",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "송도교향악단",
+      "jobType": "정규직",
+      "title": "송도교향악단에서 바이올린,첼로,플룻,클라리넷 선생...",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 계양구",
+      "address": "인천광역시 계양구 아나지로299번길 13",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=86855",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "송도교향악단 송도교향악단에서 바이올린,첼로,플루트,클라리넷 선생... 인천광역시 계양구 송도교향악단 마감 송도교향악단에서 바이올린,첼로,플루트,클라리넷 선생... 경력무관 대학교(4년) 인천광역시 계양구 아나지로299번길 13 시급 25,000원 ~ 0원 정규직 주5일 채용시까지 2025-05-07 등록 195",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_86552",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "86552",
+      "postedAt": "2025-04-15",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "재단법인서울시립교향악단 블라인드 채용",
+      "jobType": "정규직",
+      "title": "재단법인 서울시립교향악단 단원 모집",
+      "deadline": "2025-05-08",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 종로구",
+      "address": "서울 종로구 세종대로 175 (세종로)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=86552",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "재단법인서울시립교향악단 블라인드 채용 재단법인 서울시립교향악단 단원 모집 서울 종로구 재단법인서울시립교향악단 블라인드 채용 마감 재단법인 서울시립교향악단 단원 모집 경력무관 학력무관 서울 종로구 세종대로 175 (세종로) 연봉 0원 ~ 0원 정규직 주5일 마감 2025-04-15 등록 2025-05-08 마감 1063",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_86355",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "86355",
+      "postedAt": "2025-04-02",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "음악공감센터",
+      "jobType": "정규직",
+      "title": "바이올린,첼로,플룻,클라리넷 선생님 모십니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 미추홀구",
+      "address": "인천광역시 미추홀구 한나루로 563",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=86355",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "음악공감센터 바이올린,첼로,플루트,클라리넷 선생님 모십니다. 인천광역시 미추홀구 음악공감센터 마감 바이올린,첼로,플루트,클라리넷 선생님 모십니다. 경력무관 대학교(4년) 인천광역시 미추홀구 한나루로 563 시급 25,000원 ~ 0원 정규직 주5일 채용시까지 2025-04-02 등록 78",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_86350",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "86350",
+      "postedAt": "2025-04-02",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "송도교향악단",
+      "jobType": "계약직",
+      "title": "바이올린,첼로,플룻,클라리넷 선생님 모십니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 서구",
+      "address": "인천광역시 서구 서달로123번안길 17",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=86350",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "송도교향악단 바이올린,첼로,플루트,클라리넷 선생님 모십니다 인천광역시 서구 송도교향악단 마감 바이올린,첼로,플루트,클라리넷 선생님 모십니다 경력무관 학력무관 인천광역시 서구 서달로123번안길 17 시급 25,000원 ~ 0원 계약직 주5일 채용시까지 2025-04-02 등록 88",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_86095",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "86095",
+      "postedAt": "2025-03-18",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "(재)광명문화재단",
+      "jobType": "계약직",
+      "title": "2025 (재)광명문화재단 문화예술교육팀 '생활악기오케스트라' 사업 교육 강사 모집 공고",
+      "deadline": "2025-03-31",
+      "startDate": "",
+      "endDate": "",
+      "region": "경기 광명시",
+      "address": "경기 광명시 철망산로 2 (하안동)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=86095",
+      "tags": [
+        "플루트",
+        "관악·오케스트라",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "(재)광명문화재단 2025 (재)광명문화재단 문화예술교육팀 '생활악기오케스트라' 사업 교육 강사 모집 공고 경기 광명시 (재)광명문화재단 마감 2025 (재)광명문화재단 문화예술교육팀 '생활악기오케스트라' 사업 교육 강사 모집 공고 경력 0년 대학교(4년) 경기 광명시 철망산로 2 (하안동) 일급 150,000원 ~ 150,000원 계약직 주1일 마감 2025-03-18 등록 2025-03-31 마감 579",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_85860",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "85860",
+      "postedAt": "2025-03-06",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "엔엠케이(NMK)",
+      "jobType": "인턴",
+      "title": "2025 NMK 오케스트라 아카데미 단원모집 (대학생)",
+      "deadline": "2025-04-06",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 서초구",
+      "address": "서울 서초구 반포대로 63 (서초동)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=85860",
+      "tags": [
+        "플루트",
+        "관악·오케스트라"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "엔엠케이(nmk) 2025 nmk 오케스트라 아카데미 단원모집 (대학생) 서울 서초구 엔엠케이(nmk) 마감 2025 nmk 오케스트라 아카데미 단원모집 (대학생) 경력무관,신입 대학교(4년) 서울 서초구 반포대로 63 (서초동) 시급 0원 ~ 0원 인턴 주3일 마감 2025-03-06 등록 2025-04-06 마감 971",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_86055",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "86055",
+      "postedAt": "2025-03-04",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "송도교향악단",
+      "jobType": "정규직",
+      "title": "송도교향악단에서 바이올린,첼로,플룻,클라리넷 선생...",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 계양구",
+      "address": "인천광역시 계양구 아나지로299번길 13",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=86055",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "송도교향악단 송도교향악단에서 바이올린,첼로,플루트,클라리넷 선생... 인천광역시 계양구 송도교향악단 마감 송도교향악단에서 바이올린,첼로,플루트,클라리넷 선생... 경력무관 대학교(4년) 인천광역시 계양구 아나지로299번길 13 시급 25,000원 ~ 0원 정규직 주5일 채용시까지 2025-03-04 등록 47",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_85821",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "85821",
+      "postedAt": "2025-03-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "엔엠케이(NMK)",
+      "jobType": "계약직",
+      "title": "NMK 2025 오케스트라 / 성악 연주자 공모",
+      "deadline": "2025-03-21",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 서초구",
+      "address": "서울 서초구 반포대로 63 (서초동)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=85821",
+      "tags": [
+        "플루트",
+        "관악·오케스트라"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "엔엠케이(nmk) nmk 2025 오케스트라 / 성악 연주자 공모 서울 서초구 엔엠케이(nmk) 마감 nmk 2025 오케스트라 / 성악 연주자 공모 신입,경력 2년 대학교(4년) 서울 서초구 반포대로 63 (서초동) 일급 0원 ~ 0원 계약직 주3일 마감 2025-03-01 등록 2025-03-21 마감 1232",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_84717",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "84717",
+      "postedAt": "2024-11-15",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "송도교향악단",
+      "jobType": "계약직",
+      "title": "바이올린,첼로,플룻,클라리넷 선생님 모십니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 서구",
+      "address": "인천광역시 서구 서달로123번안길 17",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=84717",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "송도교향악단 바이올린,첼로,플루트,클라리넷 선생님 모십니다 인천광역시 서구 송도교향악단 마감 바이올린,첼로,플루트,클라리넷 선생님 모십니다 경력무관 학력무관 인천광역시 서구 서달로123번안길 17 시급 25,000원 ~ 0원 계약직 주5일 채용시까지 2024-11-15 등록 191",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_84718",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "84718",
+      "postedAt": "2024-11-15",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "음악공감센터",
+      "jobType": "정규직",
+      "title": "바이올린,첼로,플룻,클라리넷 선생님 모십니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천광역시 미추홀구",
+      "address": "인천광역시 미추홀구 한나루로 563",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=84718",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "음악공감센터 바이올린,첼로,플루트,클라리넷 선생님 모십니다. 인천광역시 미추홀구 음악공감센터 마감 바이올린,첼로,플루트,클라리넷 선생님 모십니다. 경력무관 대학교(4년) 인천광역시 미추홀구 한나루로 563 시급 25,000원 ~ 0원 정규직 주5일 채용시까지 2024-11-15 등록 152",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_82532",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "82532",
+      "postedAt": "2024-05-31",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "(주)에이디엔노뜨",
+      "jobType": "계약직",
+      "title": "(주)AD & NOTE(에이디엔노뜨), [9월-11월 공연 연주자 모집] (기악듀엣&기악독주)",
+      "deadline": "2024-06-03",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 서초구",
+      "address": "서울 서초구 방배로 201 (방배동)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=82532",
+      "tags": [
+        "플루트",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "(주)에이디엔노뜨 (주)ad & note(에이디엔노뜨), [9월-11월 공연 연주자 모집] (기악듀엣&기악독주) 서울 서초구 (주)에이디엔노뜨 마감 (주)ad & note(에이디엔노뜨), [9월-11월 공연 연주자 모집] (기악듀엣&기악독주) 경력무관 학력무관 서울 서초구 방배로 201 (방배동) 일급 0원 ~ 0원 계약직 주6일 마감 2024-05-31 등록 2024-06-03 마감 507",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_79660",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "79660",
+      "postedAt": "2024-01-11",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "국민대학교산학협력단",
+      "jobType": "프리랜서",
+      "title": "2024년도 서울학생필하모닉오케스트라 파트멘토(강사) 초빙공고",
+      "deadline": "2024-01-18",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 은평구",
+      "address": "서울 은평구 가좌로 208 (응암동)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=79660",
+      "tags": [
+        "플루트",
+        "관악·오케스트라"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "국민대학교산학협력단 2024년도 서울학생필하모닉오케스트라 파트멘토(강사) 초빙공고 서울 은평구 국민대학교산학협력단 마감 2024년도 서울학생필하모닉오케스트라 파트멘토(강사) 초빙공고 경력 1년 대학교(4년) 서울 은평구 가좌로 208 (응암동) 일급 150,000원 ~ 150,000원 프리랜서 주1일 마감 2024-01-11 등록 2024-01-18 마감 672",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_79348",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "79348",
+      "postedAt": "2023-12-22",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "서초구립 한우리정보문화센터",
+      "jobType": "계약직",
+      "title": "종료 서초구립 한우리정보문화센터 플룻앙상블 강사 채용 공고",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 서초구",
+      "address": "서울 서초구 남부순환로340길 15 (서초동)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=79348",
+      "tags": [
+        "플루트",
+        "관악·오케스트라"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "서초구립 한우리정보문화센터 종료 서초구립 한우리정보문화센터 플루트앙상블 강사 채용 공고 서울 서초구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 서초구립 한우리정보문화센터 종료 서초구립 한우리정보문화센터 플루트앙상블 강사 채용 공고 경력무관 대학교(4년) 서울 서초구 남부순환로340길 15 (서초동) 월급 200,000원 ~ 250,000원 계약직 주1일 채용시까지 2023-12-22 등록 1764",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_79306",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "79306",
+      "postedAt": "2023-12-20",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "사회복지법인 함께걷는아이들",
+      "jobType": "계약직",
+      "title": "2024년 올키즈스트라 상위관악단 음악레슨강사 채용 공고",
+      "deadline": "2024-01-05",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 서초구",
+      "address": "서울 서초구 서초대로74길 23 (서초동, 서초타운트라팰리스)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=79306",
+      "tags": [
+        "플루트",
+        "관악·오케스트라",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "사회복지법인 함께걷는아이들 2024년 올키즈스트라 상위관악단 음악레슨강사 채용 공고 서울 서초구 사회복지법인 함께걷는아이들 마감 2024년 올키즈스트라 상위관악단 음악레슨강사 채용 공고 경력무관 대학교(4년) 서울 서초구 서초대로74길 23 (서초동, 서초타운트라팰리스) 월급 500,000원 ~ 0원 계약직 주1일 마감 2023-12-20 등록 2024-01-05 마감 942",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_79047",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "79047",
+      "postedAt": "2023-12-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "(재)국립심포니오케스트라",
+      "jobType": "관계없음",
+      "title": "2024 국립심포니 [KNSO국제아카데미] 국내 참가자 모집 공고",
+      "deadline": "2024-01-31",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 서초구",
+      "address": "서울 서초구 남부순환로 2406 (서초동)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=79047",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "(재)국립심포니오케스트라 2024 국립심포니 [knso국제아카데미] 국내 참가자 모집 공고 서울 서초구 (재)국립심포니오케스트라 마감 2024 국립심포니 [knso국제아카데미] 국내 참가자 모집 공고 경력무관 대학교(4년) 서울 서초구 남부순환로 2406 (서초동) 월급 1,700,000원 ~ 0원 관계없음 주5일 마감 2023-12-01 등록 2024-01-31 마감 1383",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_78010",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "78010",
+      "postedAt": "2023-09-13",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "재단법인서울시립교향악단 블라인드 채용",
+      "jobType": "정규직",
+      "title": "재단법인 서울시립교향악단 단원 채용",
+      "deadline": "2023-10-11",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 종로구",
+      "address": "서울 종로구 세종대로 175 (세종로)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=78010",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "재단법인서울시립교향악단 블라인드 채용 재단법인 서울시립교향악단 단원 채용 서울 종로구 재단법인서울시립교향악단 블라인드 채용 마감 재단법인 서울시립교향악단 단원 채용 경력무관 학력무관 서울 종로구 세종대로 175 (세종로) 연봉 0원 ~ 0원 정규직 주5일 마감 2023-09-13 등록 2023-10-11 마감 1761",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_66923",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "66923",
+      "postedAt": "2023-03-03",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "사단법인 한국장애인공연예술단",
+      "jobType": "계약직",
+      "title": "(사) 한국장애인공연예술단 2023학년도 강사 공개채용 공고",
+      "deadline": "2023-03-17",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 강북구",
+      "address": "서울 강북구 삼양로77길 32 (수유동, 동신빌라)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=66923",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "사단법인 한국장애인공연예술단 (사) 한국장애인공연예술단 2023학년도 강사 공개채용 공고 서울 강북구 사단법인 한국장애인공연예술단 마감 (사) 한국장애인공연예술단 2023학년도 강사 공개채용 공고 경력 1년 대학교(4년) 서울 강북구 삼양로77길 32 (수유동, 동신빌라) 월급 0원 ~ 0원 계약직 주1일 마감 2023-03-03 등록 2023-03-17 마감 721",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_62664",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "62664",
+      "postedAt": "2023-01-16",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "(재)국립심포니오케스트라",
+      "jobType": "관계없음",
+      "title": "2023 국립심포니 인터내셔널 오케스트라 아카데미 국내 참가자 모집 공고",
+      "deadline": "2023-01-23",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 서초구",
+      "address": "서울 서초구 남부순환로 2406 (서초동)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=62664",
+      "tags": [
+        "플루트",
+        "관악·오케스트라"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "(재)국립심포니오케스트라 2023 국립심포니 인터내셔널 오케스트라 아카데미 국내 참가자 모집 공고 서울 서초구 (재)국립심포니오케스트라 마감 2023 국립심포니 인터내셔널 오케스트라 아카데미 국내 참가자 모집 공고 경력무관 대학교(2~3년) 서울 서초구 남부순환로 2406 (서초동) 월급 0원 ~ 0원 관계없음 주1일 마감 2023-01-16 등록 2023-01-23 마감 574",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_45816",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "45816",
+      "postedAt": "2022-06-14",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "어울림세상",
+      "jobType": "계약직",
+      "title": "발달장애인 바이올린, 플룻, 클라리넷 연주자 모집...",
+      "deadline": "2022-06-26",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울특별시 서대문구",
+      "address": "서울특별시 서대문구 경기대로9길 37",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=45816",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "어울림세상 발달장애인 바이올린, 플루트, 클라리넷 연주자 모집... 서울특별시 서대문구 어울림세상 마감 발달장애인 바이올린, 플루트, 클라리넷 연주자 모집... 경력 학력무관 서울특별시 서대문구 경기대로9길 37 월급 1,900,000원 ~ 1,900,000원 계약직 주5일 마감 2022-06-14 등록 2022-06-26 마감 77",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_38986",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "38986",
+      "postedAt": "2022-04-06",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "TIMF앙상블",
+      "jobType": "시간선택제",
+      "title": "(복사) TIMF앙상블 단원 모집",
+      "deadline": "2022-04-08",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 서초구",
+      "address": "서울 서초구 서초중앙로 18 (서초동, 서초쌍용플래티넘)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=38986",
+      "tags": [
+        "플루트",
+        "관악·오케스트라"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "timf앙상블 (복사) timf앙상블 단원 모집 서울 서초구 timf앙상블 마감 (복사) timf앙상블 단원 모집 경력무관,신입 대학교(4년) 서울 서초구 서초중앙로 18 (서초동, 서초쌍용플래티넘) 일급 0원 ~ 0원 시간선택제 주1일 마감 2022-04-06 등록 2022-04-08 마감 208",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_38796",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "38796",
+      "postedAt": "2022-04-05",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "TIMF앙상블",
+      "jobType": "시간선택제",
+      "title": "(복사) TIMF앙상블 단원 모집",
+      "deadline": "2022-04-08",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 서초구",
+      "address": "서울 서초구 서초중앙로 18 (서초동, 서초쌍용플래티넘)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=38796",
+      "tags": [
+        "플루트",
+        "관악·오케스트라"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "timf앙상블 (복사) timf앙상블 단원 모집 서울 서초구 timf앙상블 마감 (복사) timf앙상블 단원 모집 경력무관,신입 대학교(4년) 서울 서초구 서초중앙로 18 (서초동, 서초쌍용플래티넘) 일급 0원 ~ 0원 시간선택제 주1일 마감 2022-04-05 등록 2022-04-08 마감 151",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_36329",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "36329",
+      "postedAt": "2022-03-11",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "TIMF앙상블",
+      "jobType": "시간선택제",
+      "title": "TIMF앙상블 단원 모집",
+      "deadline": "2022-04-08",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 서초구",
+      "address": "서울 서초구 서초중앙로 18 (서초동, 서초쌍용플래티넘)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=36329",
+      "tags": [
+        "플루트",
+        "관악·오케스트라"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "timf앙상블 timf앙상블 단원 모집 서울 서초구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 timf앙상블 마감 timf앙상블 단원 모집 경력무관,신입 대학교(4년) 서울 서초구 서초중앙로 18 (서초동, 서초쌍용플래티넘) 일급 0원 ~ 0원 시간선택제 주1일 마감 2022-03-11 등록 2022-04-08 마감 864",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_34410",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "34410",
+      "postedAt": "2022-02-21",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "(재)세종문화회관",
+      "jobType": "파견근로",
+      "title": "2022년 세종 우리동네프로젝트 예술강사 및 코디네이터 채용",
+      "deadline": "2022-02-24",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 종로구",
+      "address": "서울 종로구 세종대로 175 (세종로)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=34410",
+      "tags": [
+        "플루트",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "(재)세종문화회관 2022년 세종 우리동네프로젝트 예술강사 및 코디네이터 채용 서울 종로구 (재)세종문화회관 마감 2022년 세종 우리동네프로젝트 예술강사 및 코디네이터 채용 경력 1년 대학교(4년) 서울 종로구 세종대로 175 (세종로) 월급 344,000원 ~ 400,000원 파견근로 주1일 마감 2022-02-21 등록 2022-02-24 마감 714",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_32656",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "32656",
+      "postedAt": "2022-02-08",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "사회복지법인 함께걷는아이들",
+      "jobType": "계약직",
+      "title": "2022년 올키즈스트라 상위관악단 플루트 강사 채용 공고",
+      "deadline": "2022-02-18",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 서초구",
+      "address": "서울 서초구 서초대로74길 23 (서초동, 서초타운트라팰리스)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=32656",
+      "tags": [
+        "플루트",
+        "관악·오케스트라"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "사회복지법인 함께걷는아이들 2022년 올키즈스트라 상위관악단 플루트 강사 채용 공고 서울 서초구 사회복지법인 함께걷는아이들 마감 2022년 올키즈스트라 상위관악단 플루트 강사 채용 공고 경력무관 대학교(4년) 서울 서초구 서초대로74길 23 (서초동, 서초타운트라팰리스) 시급 62,500원 ~ 0원 계약직 주1일 마감 2022-02-08 등록 2022-02-18 마감 378",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_8401",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "8401",
+      "postedAt": "2021-06-18",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "서초구립한우리정보문화센터",
+      "jobType": "관계없음",
+      "title": "2021 서초한우리오케스트라 2차 신규 단원 모집",
+      "deadline": "2021-06-25",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 서초구",
+      "address": "서울 서초구 남부순환로340길 15 (서초동)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=8401",
+      "tags": [
+        "플루트",
+        "관악·오케스트라"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "서초구립한우리정보문화센터 2021 서초한우리오케스트라 2차 신규 단원 모집 서울 서초구 서초구립한우리정보문화센터 마감 2021 서초한우리오케스트라 2차 신규 단원 모집 경력무관 학력무관 서울 서초구 남부순환로340길 15 (서초동) 월급 0원 ~ 0원 관계없음 주4일 마감 2021-06-18 등록 2021-06-25 마감 651",
+      "autoCollected": true
+    },
+    {
+      "id": "artmore_6166",
+      "source": "아트모아",
+      "sourceId": "artmore",
+      "sourceItemId": "6166",
+      "postedAt": "2021-05-31",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "서울에듀아트클래식",
+      "jobType": "계약직",
+      "title": "2021 인력지원사업 음악분야 채용공고",
+      "deadline": "2021-06-15",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 강남구",
+      "address": "서울 강남구 역삼로20길 9 (역삼동)",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=6166",
+      "tags": [
+        "플루트",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "서울에듀아트클래식 2021 인력지원사업 음악분야 채용공고 서울 강남구 서울에듀아트클래식 마감 2021 인력지원사업 음악분야 채용공고 신입,경력 1년 고등학교 서울 강남구 역삼로20길 9 (역삼동) 월급 1,800,000원 ~ 1,800,000원 계약직 주4일 마감 2021-05-31 등록 2021-06-15 마감 1114",
       "autoCollected": true
     }
   ]
