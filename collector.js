@@ -42,6 +42,7 @@ const LESSONINFO_KEYWORDS = [
 ];
 
 const LESSONINFO_MAX_PAGES_PER_KEYWORD = 5;
+const LESSONINFO_USE_PLAYWRIGHT = true;
 
 /*
  * 레슨인포에서 사용자가 직접 확인한 '인천 전체' 검색값.
@@ -1579,126 +1580,549 @@ function inferArtinfoStatus(postedAt, deadline, text = "") {
    ========================================================= */
 
 async function collectLessoninfoJobs() {
-  const allJobs = [];
-
-  let searchRequests = 0;
-  let rawParsedCount = 0;
-  const keywordCounts = {};
-  const firstPageHtmlLengths = {};
-
-  for (const keyword of LESSONINFO_KEYWORDS) {
-    console.log(`\n[레슨인포] 검색: ${keyword}`);
-
-    let keywordRaw = 0;
-    let previousFingerprint = "";
-
-    for (
-      let page = 1;
-      page <= LESSONINFO_MAX_PAGES_PER_KEYWORD;
-      page++
-    ) {
-      const html = await fetchLessoninfoPage(
-        keyword,
-        page
-      );
-
-      searchRequests++;
-
-      if (page === 1) {
-        firstPageHtmlLengths[keyword] = html.length;
-      }
-
-      const parsed =
-        parseLessoninfoJobs(
-          html,
-          keyword
-        );
-
-      rawParsedCount += parsed.length;
-      keywordRaw += parsed.length;
-
-      console.log(
-        `  ${page}페이지: ${parsed.length}개`
-      );
-
-      if (!parsed.length) {
-        break;
-      }
-
-      const fingerprint =
-        parsed
-          .map(job => job.sourceItemId || job.title)
-          .join("|");
-
-      /*
-       * 사이트가 page 파라미터를 무시하면 동일 페이지가 반복될 수 있으므로 중단.
-       */
-      if (
-        page > 1 &&
-        fingerprint === previousFingerprint
-      ) {
-        console.log(
-          "  같은 페이지 반복 감지 → 페이지 수집 종료"
-        );
-        break;
-      }
-
-      previousFingerprint =
-        fingerprint;
-
-      allJobs.push(...parsed);
-
-      /*
-       * 게시물 수가 적으면 다음 페이지가 없을 가능성이 높다.
-       */
-      if (parsed.length < 10) {
-        break;
-      }
-
-      await sleep(350);
-    }
-
-    keywordCounts[keyword] =
-      keywordRaw;
-
-    await sleep(400);
+  if (!LESSONINFO_USE_PLAYWRIGHT) {
+    throw new Error("LessonInfo Playwright mode is disabled");
   }
 
-  const jobs =
-    dedupeBySourceId(
-      allJobs
+  const { chromium } = require("playwright");
+
+  const allJobs = [];
+
+  let browser = null;
+  let searchRequests = 0;
+  let rawParsedCount = 0;
+  let domFallbackCount = 0;
+
+  const keywordCounts = {};
+  const firstPageHtmlLengths = {};
+  const pageCounts = {};
+
+  try {
+    browser = await chromium.launch({
+      headless: true,
+      args: [
+        "--no-sandbox",
+        "--disable-dev-shm-usage"
+      ]
+    });
+
+    const context = await browser.newContext({
+      locale: "ko-KR",
+
+      userAgent:
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) " +
+        "AppleWebKit/537.36 Chrome/153 Safari/537.36"
+    });
+
+    const page = await context.newPage();
+
+    /*
+     * 먼저 메인 채용 페이지를 한 번 열어
+     * PHP/사이트 쿠키와 브라우저 세션을 준비한다.
+     */
+    await page.goto(
+      "https://www.lessoninfo.co.kr/music-jobs",
+      {
+        waitUntil: "domcontentloaded",
+        timeout: 45000
+      }
     );
 
-  return {
-    jobs,
+    await page.waitForTimeout(1200);
 
-    diagnostics: {
-      keywords:
-        LESSONINFO_KEYWORDS,
+    for (const keyword of LESSONINFO_KEYWORDS) {
+      console.log(`\n[레슨인포/브라우저] 검색: ${keyword}`);
 
-      region:
-        "인천 전체",
+      let keywordRaw = 0;
+      let pagesVisited = 0;
+      let previousFingerprint = "";
 
-      searchField:
-        "wr_subject||wr_content",
+      for (
+        let pageNo = 1;
+        pageNo <= LESSONINFO_MAX_PAGES_PER_KEYWORD;
+        pageNo++
+      ) {
+        const url =
+          buildLessoninfoSearchUrl(
+            keyword,
+            pageNo
+          );
 
-      searchRequests,
+        console.log(
+          `  ${pageNo}페이지 열기`
+        );
 
-      rawParsedCount,
+        await page.goto(
+          url,
+          {
+            waitUntil:
+              "domcontentloaded",
 
-      uniqueCount:
-        jobs.length,
+            timeout:
+              45000
+          }
+        );
 
-      keywordCounts,
+        /*
+         * 광고/부가 스크립트가 많아 networkidle은 피하고,
+         * 본문 렌더링 시간을 짧게 준다.
+         */
+        await page.waitForTimeout(
+          1800
+        );
 
-      firstPageHtmlLengths,
+        searchRequests++;
+        pagesVisited++;
 
-      note:
-        "5KB 미만 응답이면 세션/보안 중간페이지 가능성이 높음"
+        const html =
+          await page.content();
+
+        if (pageNo === 1) {
+          firstPageHtmlLengths[keyword] =
+            html.length;
+        }
+
+        /*
+         * 1차: 기존 HTML 파서 재사용
+         */
+        let parsed =
+          parseLessoninfoJobs(
+            html,
+            keyword
+          );
+
+        /*
+         * 2차: HTML 구조가 달라 파서가 못 잡으면
+         * 실제 브라우저 DOM에서 링크/행을 직접 추출.
+         */
+        if (!parsed.length) {
+          const domItems =
+            await extractLessoninfoJobsFromDom(
+              page,
+              keyword
+            );
+
+          if (domItems.length) {
+            parsed =
+              domItems;
+
+            domFallbackCount +=
+              domItems.length;
+          }
+        }
+
+        rawParsedCount +=
+          parsed.length;
+
+        keywordRaw +=
+          parsed.length;
+
+        console.log(
+          `  ${pageNo}페이지: ${parsed.length}개`
+        );
+
+        if (!parsed.length) {
+          break;
+        }
+
+        const fingerprint =
+          parsed
+            .map(job =>
+              job.sourceItemId ||
+              job.title
+            )
+            .join("|");
+
+        /*
+         * 페이지 번호가 적용되지 않아 같은 내용이 반복되면 중단.
+         */
+        if (
+          pageNo > 1 &&
+          fingerprint ===
+            previousFingerprint
+        ) {
+          console.log(
+            "  같은 페이지 반복 감지 → 종료"
+          );
+
+          break;
+        }
+
+        previousFingerprint =
+          fingerprint;
+
+        allJobs.push(
+          ...parsed
+        );
+
+        /*
+         * 화면 한 페이지가 대략 10개 안팎이므로
+         * 10개 미만이면 마지막 페이지로 판단.
+         */
+        if (
+          parsed.length < 10
+        ) {
+          break;
+        }
+      }
+
+      keywordCounts[keyword] =
+        keywordRaw;
+
+      pageCounts[keyword] =
+        pagesVisited;
     }
-  };
+
+    const jobs =
+      dedupeBySourceId(
+        allJobs
+      );
+
+    return {
+      jobs,
+
+      diagnostics: {
+        mode:
+          "playwright",
+
+        keywords:
+          LESSONINFO_KEYWORDS,
+
+        region:
+          "인천 전체",
+
+        searchField:
+          "wr_subject||wr_content",
+
+        searchRequests,
+
+        rawParsedCount,
+
+        domFallbackCount,
+
+        uniqueCount:
+          jobs.length,
+
+        keywordCounts,
+
+        pageCounts,
+
+        firstPageHtmlLengths
+      }
+    };
+  } finally {
+    if (browser) {
+      await browser.close();
+    }
+  }
 }
 
+function buildLessoninfoSearchUrl(
+  keyword,
+  pageNo = 1
+) {
+  const params =
+    new URLSearchParams();
+
+  params.append(
+    "mode",
+    "search"
+  );
+
+  params.append(
+    "sca",
+    ""
+  );
+
+  params.append(
+    "sort",
+    ""
+  );
+
+  params.append(
+    "wr_area_0[0]",
+    LESSONINFO_INCHEON.wrArea0
+  );
+
+  params.append(
+    `wr_area_1[${LESSONINFO_INCHEON.wrArea0}][0]`,
+    LESSONINFO_INCHEON.wrArea1All
+  );
+
+  params.append(
+    "search_field",
+    "wr_subject||wr_content"
+  );
+
+  params.append(
+    "search_keyword",
+    keyword
+  );
+
+  params.append(
+    "area_sels[0]",
+    `${LESSONINFO_INCHEON.wrArea0}/${LESSONINFO_INCHEON.wrArea1All}`
+  );
+
+  if (pageNo > 1) {
+    params.append(
+      "page",
+      String(pageNo)
+    );
+  }
+
+  return (
+    `${LESSONINFO_SEARCH_URL}?${params.toString()}`
+  );
+}
+
+async function extractLessoninfoJobsFromDom(
+  page,
+  searchKeyword
+) {
+  const rawItems =
+    await page.evaluate(() => {
+      const results = [];
+
+      const rows =
+        Array.from(
+          document.querySelectorAll(
+            "tr"
+          )
+        );
+
+      for (const row of rows) {
+        const rowText =
+          (row.innerText || "")
+            .replace(
+              /\s+/g,
+              " "
+            )
+            .trim();
+
+        if (!rowText) {
+          continue;
+        }
+
+        /*
+         * 실제 채용글 행에는 지역표시가 붙어있다.
+         */
+        if (
+          !/(인천|서울|경기)\s*(전체|[가-힣]+구|[가-힣]+시)/.test(
+            rowText
+          )
+        ) {
+          continue;
+        }
+
+        const anchors =
+          Array.from(
+            row.querySelectorAll(
+              "a[href]"
+            )
+          );
+
+        let best = null;
+
+        for (const anchor of anchors) {
+          const title =
+            (anchor.innerText || "")
+              .replace(
+                /\s*N\s*$/i,
+                ""
+              )
+              .replace(
+                /\s+/g,
+                " "
+              )
+              .trim();
+
+          const href =
+            anchor.href || "";
+
+          if (
+            title.length < 4
+          ) {
+            continue;
+          }
+
+          if (
+            /^(서울|인천|경기|전체|글쓰기|검색|등록안내)$/i.test(
+              title
+            )
+          ) {
+            continue;
+          }
+
+          if (
+            !/board\.php|music-jobs|mode=(?:view|read)/i.test(
+              href
+            )
+          ) {
+            continue;
+          }
+
+          if (
+            !best ||
+            title.length >
+              best.title.length
+          ) {
+            best = {
+              title,
+              href
+            };
+          }
+        }
+
+        if (!best) {
+          continue;
+        }
+
+        results.push({
+          title:
+            best.title,
+
+          href:
+            best.href,
+
+          rowText
+        });
+      }
+
+      return results;
+    });
+
+  const jobs = [];
+
+  for (
+    const item of rawItems
+  ) {
+    const region =
+      extractLessoninfoRegion(
+        item.rowText
+      );
+
+    /*
+     * 사용자가 선택한 조건은 인천 전체.
+     */
+    if (
+      !/인천/.test(
+        `${region} ${item.rowText}`
+      )
+    ) {
+      continue;
+    }
+
+    const itemId =
+      extractLessoninfoItemId(
+        item.href,
+        item.title,
+        region
+      );
+
+    const postedAt =
+      extractLessoninfoPostedAt(
+        item.rowText
+      );
+
+    const tags =
+      detectTags(
+        normalizeSearchText(
+          `${item.title} ${searchKeyword}`
+        )
+      );
+
+    if (
+      !tags.includes(
+        "플루트"
+      )
+    ) {
+      tags.unshift(
+        "플루트"
+      );
+    }
+
+    const recruitStatus =
+      /(마감|구인완료|모집완료|채용완료)/.test(
+        item.title
+      )
+        ? "모집종료"
+        : "모집중";
+
+    jobs.push({
+      id:
+        `lessoninfo_${itemId}`,
+
+      source:
+        "레슨인포",
+
+      sourceId:
+        "lessoninfo",
+
+      sourceItemId:
+        itemId,
+
+      postedAt,
+
+      recruitStatus,
+
+      isActive:
+        isActiveStatus(
+          recruitStatus
+        ),
+
+      organization:
+        extractLessoninfoOrganization(
+          item.title
+        ),
+
+      jobType:
+        "음악학원·레슨강사",
+
+      title:
+        item.title,
+
+      deadline:
+        "",
+
+      startDate:
+        "",
+
+      endDate:
+        "",
+
+      region,
+
+      address:
+        "",
+
+      url:
+        item.href,
+
+      tags:
+        [
+          ...new Set(tags)
+        ],
+
+      instrumentTags:
+        ["플루트"],
+
+      matchedKeywords:
+        [searchKeyword],
+
+      searchText:
+        normalizeSearchText(
+          `${region} ${item.title} ${item.rowText}`
+        ),
+
+      autoCollected:
+        true
+    });
+  }
+
+  return jobs;
+}
+/* Legacy fetch-based LessonInfo fallback kept for diagnostics; Playwright collector above is the active path. */
 async function fetchLessoninfoPage(
   keyword,
   page
