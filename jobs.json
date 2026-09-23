@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T06:03:20.442Z",
+  "updatedAt": "2026-09-23T09:45:51.883Z",
   "diagnostics": {
     "ice": {
       "pagesCollected": 10,
@@ -11,7 +11,7 @@
       "firstPageTdCount": 91,
       "firstPageHasArtInstructor": true,
       "firstPageHasRecruiting": true,
-      "firstPagePreview": "공고 < 채용공고 < 채용 < 채용/시험 | 인천광역시교육청 본문으로 바로가기 메인메뉴 바로가기 이 누리집은 대한민국 공식 전자정부 누리집입니다. --> 로그인 메뉴스크랩 국가상징 KOR Language English Japanese Chinese Vietnamese Russian Mongolian Thai Uzbek --> 블로그 바로가기 유튜브 바로가기 페이스북 바로가기 인스타그램 바로가기 카카오톡 바로가기 SNS SNS 블로그 바로가기 트위터 바로가기 페이스북 바로가기 카카오톡 바로가기 인스타그램 바로가기 유튜브 바로가기 --> --> --> Tel.070.4021.7078 접수 받고 있습니다. --> --> --> --> --> --> 오늘하루열지않기 --> --> --> 닫기 --> --> --> --> 소식 교육 행정 채용/시험 참여/신청 개인정보처리방침 인천광역시교육청 관련사이트 29 ℃ 미세먼지 좋음 교육청소식 교육청소식 학생성공시대 를 여는 인천교육 INCHEON M"
+      "firstPagePreview": "공고 < 채용공고 < 채용 < 채용/시험 | 인천광역시교육청 본문으로 바로가기 메인메뉴 바로가기 이 누리집은 대한민국 공식 전자정부 누리집입니다. --> 로그인 메뉴스크랩 국가상징 KOR Language English Japanese Chinese Vietnamese Russian Mongolian Thai Uzbek --> 블로그 바로가기 유튜브 바로가기 페이스북 바로가기 인스타그램 바로가기 카카오톡 바로가기 SNS SNS 블로그 바로가기 트위터 바로가기 페이스북 바로가기 카카오톡 바로가기 인스타그램 바로가기 유튜브 바로가기 --> --> --> Tel.070.4021.7078 접수 받고 있습니다. --> --> --> --> --> --> 오늘하루열지않기 --> --> --> 닫기 --> --> --> --> 소식 교육 행정 채용/시험 참여/신청 개인정보처리방침 인천광역시교육청 관련사이트 25 ℃ 미세먼지 좋음 교육청소식 교육청소식 학생성공시대 를 여는 인천교육 INCHEON M"
     },
     "sen": {
       "keywords": [
@@ -88,29 +88,34 @@
       "region": "인천 전체",
       "searchField": "wr_subject||wr_content",
       "searchRequests": 5,
-      "rawParsedCount": 153,
+      "rawParsedCount": 158,
       "domFallbackCount": 0,
       "uniqueCount": 76,
       "keywordCounts": {
-        "플루트": 32,
-        "플룻": 121
+        "플루트": 34,
+        "플룻": 124
       },
       "pageCounts": {
         "플루트": 2,
         "플룻": 3
       },
       "firstPageHtmlLengths": {
-        "플루트": 177495,
-        "플룻": 235207
+        "플루트": 169590,
+        "플룻": 223313
       }
     },
     "goe": {
-      "strategy": "지역별 전체 수집 후 로컬 키워드 필터",
+      "mode": "playwright",
+      "strategy": "직종 탭 실제 클릭 + 지역별 전체 공고 수집 후 음악 키워드 필터",
       "regions": [
         "부천시",
         "김포시",
         "시흥시",
         "광명시"
+      ],
+      "occupations": [
+        "기간제/사립교원",
+        "초중등시간강사(자유학기활동강사 특기적성(방과후) 포함)"
       ],
       "keywords": [
         "플루트",
@@ -126,29 +131,42 @@
         "악기",
         "방과후"
       ],
-      "occupation": "초중등시간강사(자유학기활동강사 특기적성(방과후) 포함)",
-      "occupationCode": "B",
-      "requests": 4,
-      "pagesCollected": 0,
-      "rawParsedCount": 0,
-      "relevantCount": 0,
-      "uniqueCount": 0,
-      "regionCounts": {
-        "부천시": {
-          "raw": 0,
+      "searches": 8,
+      "rawParsedCount": 65,
+      "relevantCount": 39,
+      "uniqueCount": 39,
+      "combinationCounts": {
+        "기간제/사립교원 | 부천시": {
+          "raw": 6,
           "relevant": 0
         },
-        "김포시": {
-          "raw": 0,
+        "기간제/사립교원 | 김포시": {
+          "raw": 7,
           "relevant": 0
         },
-        "시흥시": {
-          "raw": 0,
+        "기간제/사립교원 | 시흥시": {
+          "raw": 7,
           "relevant": 0
         },
-        "광명시": {
-          "raw": 0,
+        "기간제/사립교원 | 광명시": {
+          "raw": 6,
           "relevant": 0
+        },
+        "초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) | 부천시": {
+          "raw": 10,
+          "relevant": 10
+        },
+        "초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) | 김포시": {
+          "raw": 11,
+          "relevant": 11
+        },
+        "초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) | 시흥시": {
+          "raw": 16,
+          "relevant": 16
+        },
+        "초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) | 광명시": {
+          "raw": 2,
+          "relevant": 2
         }
       }
     }
@@ -159,10 +177,10 @@
     "artmore": 48,
     "artinfo": 14,
     "lessoninfo": 76,
-    "goe": 0
+    "goe": 39
   },
-  "count": 244,
-  "activeCount": 108,
+  "count": 283,
+  "activeCount": 147,
   "jobs": [
     {
       "id": "lessoninfo_188113",
@@ -519,6 +537,181 @@
       "autoCollected": true
     },
     {
+      "id": "goe_61041",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "61041",
+      "postedAt": "2026-09-23",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "김포한가람중학교",
+      "jobType": "진로",
+      "title": "<김포한가람중>계약제교원(시간강사 진로)채용 공고문",
+      "deadline": "2026-10-09",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-16",
+      "region": "경기 김포시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=61041",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "김포한가람중학교 <김포한가람중>계약제교원(시간강사 진로)채용 공고문 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 진로 김포한가람중학교 031-996-7396 등록일 : 2026/09/23 조회수 : 4 <김포한가람중>계약제교원(시간강사 진로)채용 공고문 모집정보 시급 신입 | 김포시 채용인원 1 접수기간 2026/09/23 ~ 2026/10/09 채용기간 2026/10/12 ~ 2026/10/16 직무분야 진로 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_61016",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "61016",
+      "postedAt": "2026-09-23",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "고창초등학교",
+      "jobType": "초등특수",
+      "title": "초등특수교사 계약제교원(시간강사) 채용 공고(2차)",
+      "deadline": "2026-10-08",
+      "startDate": "2026-11-02",
+      "endDate": "2026-11-06",
+      "region": "경기 김포시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=61016",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "고창초등학교 초등특수교사 계약제교원(시간강사) 채용 공고(2차) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 초등특수 고창초등학교 031-984-3004 등록일 : 2026/09/23 조회수 : 5 초등특수교사 계약제교원(시간강사) 채용 공고(2차) 모집정보 시급 경력무관 | 김포시 채용인원 1 접수기간 2026/09/23 ~ 2026/10/08 채용기간 2026/11/02 ~ 2026/11/06 직무분야 초등특수 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_61083",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "61083",
+      "postedAt": "2026-09-23",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "시흥고등학교",
+      "jobType": "화학",
+      "title": "시간강사 채용 공고(화학)",
+      "deadline": "2026-10-07",
+      "startDate": "2026-10-26",
+      "endDate": "2026-11-02",
+      "region": "경기 시흥시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=61083",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "시흥고등학교 시간강사 채용 공고(화학) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 화학 시흥고등학교 031-500-0774 등록일 : 2026/09/23 조회수 : 2 시간강사 채용 공고(화학) 모집정보 시급 경력무관 | 시흥시 채용인원 1 접수기간 2026/09/23 ~ 2026/10/07 채용기간 2026/10/26 ~ 2026/11/02 직무분야 화학 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_61065",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "61065",
+      "postedAt": "2026-09-23",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "시흥고등학교",
+      "jobType": "국어, 미술",
+      "title": "시흥고등학교 국어, 미술 시간강사 채용",
+      "deadline": "2026-10-06",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-26",
+      "region": "경기 시흥시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=61065",
+      "tags": [
+        "미술"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "시흥고등학교 시흥고등학교 국어, 미술 시간강사 채용 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 국어, 미술 시흥고등학교 010-3374-1970 등록일 : 2026/09/23 조회수 : 7 시흥고등학교 국어, 미술 시간강사 채용 모집정보 시급 경력무관 | 시흥시 채용인원 2 접수기간 2026/09/29 ~ 2026/10/06 채용기간 2026/10/22 ~ 2026/10/26 직무분야 국어, 미술 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_61088",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "61088",
+      "postedAt": "2026-09-23",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "고촌고등학교",
+      "jobType": "영어",
+      "title": "(고촌고등학교) 시간강사 채용 공고(영어)",
+      "deadline": "2026-09-30",
+      "startDate": "2026-11-02",
+      "endDate": "2026-11-04",
+      "region": "경기 김포시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=61088",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "고촌고등학교 (고촌고등학교) 시간강사 채용 공고(영어) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 영어 고촌고등학교 031-8048-5157 등록일 : 2026/09/23 조회수 : 5 (고촌고등학교) 시간강사 채용 공고(영어) 모집정보 시급 경력무관 | 김포시 채용인원 1 접수기간 2026/09/23 ~ 2026/09/30 채용기간 2026/11/02 ~ 2026/11/04 직무분야 영어 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_61077",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "61077",
+      "postedAt": "2026-09-23",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "고촌고등학교",
+      "jobType": "화학",
+      "title": "2026학년도 고촌고 시간강사 채용 공고문(화학)",
+      "deadline": "2026-09-30",
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-27",
+      "region": "경기 김포시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=61077",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "고촌고등학교 2026학년도 고촌고 시간강사 채용 공고문(화학) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 화학 고촌고등학교 010-9027-6679 등록일 : 2026/09/23 조회수 : 8 2026학년도 고촌고 시간강사 채용 공고문(화학) 모집정보 시급 경력무관 | 김포시 채용인원 1 접수기간 2026/09/23 ~ 2026/09/30 채용기간 2026/10/21 ~ 2026/10/27 직무분야 화학 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_61068",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "61068",
+      "postedAt": "2026-09-23",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "고촌고등학교",
+      "jobType": "정보·컴퓨터",
+      "title": "(고촌고등학교) 시간강사(정보·컴퓨터) 채용 공고",
+      "deadline": "2026-09-30",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-28",
+      "region": "경기 김포시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=61068",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "고촌고등학교 (고촌고등학교) 시간강사(정보·컴퓨터) 채용 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 정보·컴퓨터 고촌고등학교 031-8048-5164 등록일 : 2026/09/23 조회수 : 6 (고촌고등학교) 시간강사(정보·컴퓨터) 채용 공고 모집정보 시급 경력무관 | 김포시 채용인원 1 접수기간 2026/09/23 ~ 2026/09/30 채용기간 2026/10/22 ~ 2026/10/28 직무분야 정보·컴퓨터 상세보기",
+      "autoCollected": true
+    },
+    {
       "id": "job_smnx6n",
       "source": "인천교육청",
       "sourceId": "ice",
@@ -539,6 +732,109 @@
       ],
       "instrumentTags": [],
       "searchText": "인천승학초등학교 예체능강사 인천승학초 2026학년도 2학기 창의적체험활동 동아리활동(합주부) 강사 모집 공고",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60966",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60966",
+      "postedAt": "2026-09-23",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "충현고등학교",
+      "jobType": "영어",
+      "title": "[충현고] 시간강사 채용 공고(영어)",
+      "deadline": "2026-09-27",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-07",
+      "region": "경기 광명시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60966",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "충현고등학교 [충현고] 시간강사 채용 공고(영어) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 영어 충현고등학교 02-6922-6111 등록일 : 2026/09/23 조회수 : 10 마감임박 [충현고] 시간강사 채용 공고(영어) 모집정보 시급 신입 | 광명시 채용인원 1 접수기간 2026/09/23 ~ 2026/09/27 채용기간 2026/10/01 ~ 2026/10/07 직무분야 영어 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60928",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60928",
+      "postedAt": "2026-09-22",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "경기도시흥교육지원청",
+      "jobType": "초1-2맞춤형 및 수익자방과후 프로그램 동시 운영",
+      "title": "2026 계수초등학교 방과후프로그램 개인위탁 강사 모집 공고",
+      "deadline": "2026-09-30",
+      "startDate": "2026-10-26",
+      "endDate": "2026-12-30",
+      "region": "경기 시흥시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60928",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [
+        "방과후"
+      ],
+      "searchText": "경기도시흥교육지원청 2026 계수초등학교 방과후프로그램 개인위탁 강사 모집 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 초1-2맞춤형 및 수익자방과후 프로그램 동시 운영 경기도시흥교육지원청 010-2667-1464 등록일 : 2026/09/22 조회수 : 145 2026 계수초등학교 방과후프로그램 개인위탁 강사 모집 공고 모집정보 시급 신입 | 시흥시 채용인원 1 접수기간 2026/09/28 ~ 2026/09/30 채용기간 2026/10/26 ~ 2026/12/30 직무분야 초1-2맞춤형 및 수익자방과후 프로그램 동시 운영 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60848",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60848",
+      "postedAt": "2026-09-22",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "운양중학교",
+      "jobType": "통합과학",
+      "title": "운양중학교 시간강사(통합과학) 채용 공고",
+      "deadline": "2026-09-29",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-16",
+      "region": "경기 김포시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60848",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "운양중학교 운양중학교 시간강사(통합과학) 채용 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 통합과학 운양중학교 031-5186-8717 등록일 : 2026/09/22 조회수 : 7 마감임박 운양중학교 시간강사(통합과학) 채용 공고 모집정보 시급 경력무관 | 김포시 채용인원 1 접수기간 2026/09/22 ~ 2026/09/29 채용기간 2026/10/12 ~ 2026/10/16 직무분야 통합과학 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60829",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60829",
+      "postedAt": "2026-09-22",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "시화나래초등학교 -364-3487",
+      "jobType": "놀이 체육(전래놀이,방송댄스 등 체육관련 가능)",
+      "title": "★시화나래초등학교 2026학년도 초1~2맞춤형 개인위탁 강사 채용 공고(2차 공고)",
+      "deadline": "2026-09-29",
+      "startDate": "2026-10-12",
+      "endDate": "2027-02-19",
+      "region": "경기 시흥시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60829",
+      "tags": [
+        "스포츠",
+        "무용"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "시화나래초등학교 -364-3487 ★시화나래초등학교 2026학년도 초1~2맞춤형 개인위탁 강사 채용 공고(2차 공고) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 놀이 체육(전래놀이,방송댄스 등 체육관련 가능) 시화나래초등학교 -364-3487 등록일 : 2026/09/22 조회수 : 66 마감임박 ★시화나래초등학교 2026학년도 초1~2맞춤형 개인위탁 강사 채용 공고(2차 공고) 모집정보 시급 경력무관 | 시흥시 채용인원 1 접수기간 2026/09/22 ~ 2026/09/29 채용기간 2026/10/12 ~ 2027/02/19 직무분야 놀이 체육(전래놀이,방송댄스 등 체육관련 가능) 상세보기",
       "autoCollected": true
     },
     {
@@ -564,7 +860,132 @@
       "matchedKeywords": [
         "음악"
       ],
-      "searchText": "신암중학교 2026학년도 신암중학교 계약제 (기간제) 교원 채용(음악과 1명) 초기화 검색 채용정보 지역별 등록순 마감순 5개씩 보기 10개씩 보기 15개씩 보기 30개씩 보기 50개씩 보기 100개씩 보기 200개씩 보기 300개씩 보기 마감제외 오늘의채용공고 검색 검색건수 6건 신암중학교 | 02-441-6751 | 등록일 : 2026-09-22 조회수 : 144 2026학년도 신암중학교 계약제 (기간제) 교원 채용(음악과 1명) --> 과목(담당업무) 음악",
+      "searchText": "신암중학교 2026학년도 신암중학교 계약제 (기간제) 교원 채용(음악과 1명) 초기화 검색 채용정보 지역별 등록순 마감순 5개씩 보기 10개씩 보기 15개씩 보기 30개씩 보기 50개씩 보기 100개씩 보기 200개씩 보기 300개씩 보기 마감제외 오늘의채용공고 검색 검색건수 6건 신암중학교 | 02-441-6751 | 등록일 : 2026-09-22 조회수 : 159 2026학년도 신암중학교 계약제 (기간제) 교원 채용(음악과 1명) --> 과목(담당업무) 음악",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60857",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60857",
+      "postedAt": "2026-09-22",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "김포금빛초등학교",
+      "jobType": "4학년 담임",
+      "title": "김포금빛초 계약제교원(시간강사) 채용 1차 공고",
+      "deadline": "2026-09-28",
+      "startDate": "2026-11-16",
+      "endDate": "2026-11-20",
+      "region": "경기 김포시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60857",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "김포금빛초등학교 김포금빛초 계약제교원(시간강사) 채용 1차 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 4학년 담임 김포금빛초등학교 031-999-8705 등록일 : 2026/09/22 조회수 : 12 마감임박 김포금빛초 계약제교원(시간강사) 채용 1차 공고 모집정보 시급 경력 | 김포시 채용인원 1 접수기간 2026/09/22 ~ 2026/09/28 채용기간 2026/11/16 ~ 2026/11/20 직무분야 4학년 담임 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60914",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60914",
+      "postedAt": "2026-09-22",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "시흥신일초등학교",
+      "jobType": "만화창작 외 7개",
+      "title": "2026 시흥 학생맞춤형 공유학교 학생 선택 브릿지 프로그램 강사 모집 공고",
+      "deadline": "2026-09-28",
+      "startDate": "2026-10-01",
+      "endDate": "2026-11-30",
+      "region": "경기 시흥시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60914",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "시흥신일초등학교 2026 시흥 학생맞춤형 공유학교 학생 선택 브릿지 프로그램 강사 모집 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 만화창작 외 7개 시흥신일초등학교 070-4878-2819 등록일 : 2026/09/22 조회수 : 147 마감임박 2026 시흥 학생맞춤형 공유학교 학생 선택 브릿지 프로그램 강사 모집 공고 모집정보 시급 경력무관 | 시흥시 채용인원 1 접수기간 2026/09/22 ~ 2026/09/28 채용기간 2026/10/01 ~ 2026/11/30 직무분야 만화창작 외 7개 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60903",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60903",
+      "postedAt": "2026-09-22",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "월곶중학교",
+      "jobType": "영어",
+      "title": "[월곶중] 영어 시간강사 채용 공고(2차)",
+      "deadline": "2026-09-28",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-20",
+      "region": "경기 시흥시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60903",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "월곶중학교 [월곶중] 영어 시간강사 채용 공고(2차) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 영어 월곶중학교 031-503-1700 등록일 : 2026/09/22 조회수 : 22 마감임박 [월곶중] 영어 시간강사 채용 공고(2차) 모집정보 시급 경력무관 | 시흥시 채용인원 1 접수기간 2026/09/22 ~ 2026/09/28 채용기간 2026/10/12 ~ 2026/10/20 직무분야 영어 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60806",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60806",
+      "postedAt": "2026-09-22",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "시흥능곡고등학교",
+      "jobType": "특수, 수학, 국어",
+      "title": "2026 시간강사 채용 공고문 및 지원서(특수1,수학3,국어1)",
+      "deadline": "2026-09-28",
+      "startDate": "",
+      "endDate": "",
+      "region": "경기 시흥시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60806",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "시흥능곡고등학교 2026 시간강사 채용 공고문 및 지원서(특수1,수학3,국어1) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 특수, 수학, 국어 시흥능곡고등학교 031-8084-8102 등록일 : 2026/09/22 조회수 : 42 마감임박 2026 시간강사 채용 공고문 및 지원서(특수1,수학3,국어1) 모집정보 시급 경력무관 | 시흥시 채용인원 5 접수기간 2026/09/21 ~ 2026/09/28 채용기간 ~ 직무분야 특수, 수학, 국어 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60795",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60795",
+      "postedAt": "2026-09-22",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "김포제일고등학교",
+      "jobType": "영양교사 1명",
+      "title": "2026학년도 김포제일고 계약제교원(시간강사) 채용 공고-영양교사(9.29.화~10.8.목)",
+      "deadline": "2026-09-27",
+      "startDate": "2026-09-29",
+      "endDate": "2026-10-08",
+      "region": "경기 김포시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60795",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "김포제일고등학교 2026학년도 김포제일고 계약제교원(시간강사) 채용 공고-영양교사(9.29.화~10.8.목) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 영양교사 1명 김포제일고등학교 031-950-6518 등록일 : 2026/09/22 조회수 : 13 마감임박 2026학년도 김포제일고 계약제교원(시간강사) 채용 공고-영양교사(9.29.화~10.8.목) 모집정보 시급 경력무관 | 김포시 채용인원 1 접수기간 2026/09/22 ~ 2026/09/27 채용기간 2026/09/29 ~ 2026/10/08 직무분야 영양교사 1명 상세보기",
       "autoCollected": true
     },
     {
@@ -594,7 +1015,182 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "서초구립 한우리정보문화센터 2026 서초한우리오케스트라 직업연주자 선발 서울 서초구 서초구립 한우리정보문화센터 진행중 2026 서초한우리오케스트라 직업연주자 선발 경력무관 고등학교 서울 서초구 남부순환로340길 15 (서초동) 연봉 0원 ~ 0원 계약직 주5일 채용시까지 2026-09-22 등록 134",
+      "searchText": "서초구립 한우리정보문화센터 2026 서초한우리오케스트라 직업연주자 선발 서울 서초구 서초구립 한우리정보문화센터 진행중 2026 서초한우리오케스트라 직업연주자 선발 경력무관 고등학교 서울 서초구 남부순환로340길 15 (서초동) 연봉 0원 ~ 0원 계약직 주5일 채용시까지 2026-09-22 등록 139",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60681",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60681",
+      "postedAt": "2026-09-21",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "부일중학교",
+      "jobType": "국어",
+      "title": "국어 시간강사 채용공고",
+      "deadline": "2026-10-16",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-23",
+      "region": "경기 부천시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60681",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "부일중학교 국어 시간강사 채용공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 국어 부일중학교 070-7099-5248 등록일 : 2026/09/21 조회수 : 17 국어 시간강사 채용공고 모집정보 시급 경력무관 | 부천시 채용인원 1 접수기간 2026/09/21 ~ 2026/10/16 채용기간 2026/10/19 ~ 2026/10/23 직무분야 국어 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60652",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60652",
+      "postedAt": "2026-09-21",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "부천공업고등학교",
+      "jobType": "건설",
+      "title": "부천공업고등학교 시간강사 채용공고(건설2차)",
+      "deadline": "2026-09-28",
+      "startDate": "2026-10-26",
+      "endDate": "2026-11-03",
+      "region": "경기 부천시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60652",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "부천공업고등학교 부천공업고등학교 시간강사 채용공고(건설2차) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 건설 부천공업고등학교 032-610-7406 등록일 : 2026/09/21 조회수 : 9 마감임박 부천공업고등학교 시간강사 채용공고(건설2차) 모집정보 시급 경력무관 | 부천시 채용인원 1 접수기간 2026/09/21 ~ 2026/09/28 채용기간 2026/10/26 ~ 2026/11/03 직무분야 건설 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60651",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60651",
+      "postedAt": "2026-09-21",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "부천공업고등학교",
+      "jobType": "특수",
+      "title": "부천공업고등학교 시간강사 채용공고(특수2차)",
+      "deadline": "2026-09-28",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-08",
+      "region": "경기 부천시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60651",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "부천공업고등학교 부천공업고등학교 시간강사 채용공고(특수2차) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 특수 부천공업고등학교 032-610-7406 등록일 : 2026/09/21 조회수 : 11 마감임박 부천공업고등학교 시간강사 채용공고(특수2차) 모집정보 시급 경력무관 | 부천시 채용인원 1 접수기간 2026/09/21 ~ 2026/09/28 채용기간 2026/10/01 ~ 2026/10/08 직무분야 특수 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60657",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60657",
+      "postedAt": "2026-09-21",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "배곧유치원",
+      "jobType": "유치원",
+      "title": "2026.10.12.자 배곧유치원 계약제교원(시간강사) 채용 공고",
+      "deadline": "2026-09-28",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-16",
+      "region": "경기 시흥시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60657",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "배곧유치원 2026.10.12.자 배곧유치원 계약제교원(시간강사) 채용 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 유치원 배곧유치원 031-499-3921 등록일 : 2026/09/21 조회수 : 56 마감임박 2026.10.12.자 배곧유치원 계약제교원(시간강사) 채용 공고 모집정보 시급 경력 | 시흥시 채용인원 1 접수기간 2026/09/21 ~ 2026/09/28 채용기간 2026/10/12 ~ 2026/10/16 직무분야 유치원 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60726",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60726",
+      "postedAt": "2026-09-21",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "김포제일고등학교",
+      "jobType": "국어 1명, 화학 1명",
+      "title": "2026학년도 김포제일고 계약제교원(시간강사) 채용 3차공고-국어,화학 (과목별 기간 상이)",
+      "deadline": "2026-09-27",
+      "startDate": "",
+      "endDate": "",
+      "region": "경기 김포시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60726",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "김포제일고등학교 2026학년도 김포제일고 계약제교원(시간강사) 채용 3차공고-국어,화학 (과목별 기간 상이) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 국어 1명, 화학 1명 김포제일고등학교 031-950-6518 등록일 : 2026/09/21 조회수 : 15 마감임박 2026학년도 김포제일고 계약제교원(시간강사) 채용 3차공고-국어,화학 (과목별 기간 상이) 모집정보 시급 경력무관 | 김포시 채용인원 2 접수기간 2026/09/22 ~ 2026/09/27 채용기간 ~ 직무분야 국어 1명, 화학 1명 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60759",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60759",
+      "postedAt": "2026-09-21",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "월포초등학교",
+      "jobType": "초등특수",
+      "title": "2026학년도 월포초등학교 특수교육 협력강사 채용 공고",
+      "deadline": "2026-09-27",
+      "startDate": "2026-10-01",
+      "endDate": "2026-12-31",
+      "region": "경기 시흥시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60759",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "월포초등학교 2026학년도 월포초등학교 특수교육 협력강사 채용 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 초등특수 월포초등학교 010-8910-8570 등록일 : 2026/09/21 조회수 : 105 마감임박 2026학년도 월포초등학교 특수교육 협력강사 채용 공고 모집정보 시급 경력무관 | 시흥시 채용인원 1 접수기간 2026/09/21 ~ 2026/09/27 채용기간 2026/10/01 ~ 2026/12/31 직무분야 초등특수 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60734",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60734",
+      "postedAt": "2026-09-21",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "원미고등학교",
+      "jobType": "일본어",
+      "title": "원미고 강사(일본어 시간강사) 채용 공고",
+      "deadline": "2026-09-24",
+      "startDate": "2026-09-28",
+      "endDate": "2026-10-02",
+      "region": "경기 부천시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60734",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "원미고등학교 원미고 강사(일본어 시간강사) 채용 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 일본어 원미고등학교 032-722-6200 등록일 : 2026/09/21 조회수 : 13 마감임박 원미고 강사(일본어 시간강사) 채용 공고 모집정보 시급 경력무관 | 부천시 채용인원 1 접수기간 2026/09/22 ~ 2026/09/24 채용기간 2026/09/28 ~ 2026/10/02 직무분야 일본어 상세보기",
       "autoCollected": true
     },
     {
@@ -704,6 +1300,131 @@
       "autoCollected": true
     },
     {
+      "id": "goe_60581",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60581",
+      "postedAt": "2026-09-18",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "배곧해솔중학교",
+      "jobType": "영어",
+      "title": "오늘마감 계약제교원(시간강사) 채용 공고(장기재직휴가)(영어)_2차",
+      "deadline": "2026-09-23",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-16",
+      "region": "경기 시흥시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60581",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "배곧해솔중학교 오늘마감 계약제교원(시간강사) 채용 공고(장기재직휴가)(영어)_2차 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 영어 배곧해솔중학교 031-8063-1807 등록일 : 2026/09/18 조회수 : 36 오늘마감 계약제교원(시간강사) 채용 공고(장기재직휴가)(영어)_2차 모집정보 시급 경력무관 | 시흥시 채용인원 1 접수기간 2026/09/18 ~ 2026/09/23 채용기간 2026/10/12 ~ 2026/10/16 직무분야 영어 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60575",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60575",
+      "postedAt": "2026-09-18",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "운산고등학교",
+      "jobType": "국어",
+      "title": "오늘마감 [광명 운산고] 시간강사 채용 공고(역사)",
+      "deadline": "2026-09-23",
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-30",
+      "region": "경기 광명시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60575",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "운산고등학교 오늘마감 [광명 운산고] 시간강사 채용 공고(역사) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 국어 운산고등학교 02-2610-3010 등록일 : 2026/09/18 조회수 : 18 오늘마감 [광명 운산고] 시간강사 채용 공고(역사) 모집정보 시급 경력무관 | 광명시 채용인원 1 접수기간 2026/09/17 ~ 2026/09/23 채용기간 2026/10/26 ~ 2026/10/30 직무분야 국어 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60407",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60407",
+      "postedAt": "2026-09-17",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "시화나래초등학교",
+      "jobType": "장구수업",
+      "title": "(2차) 시화나래초 5학년 예술교육 외부강사 채용 공고(장구수업)",
+      "deadline": "2026-10-02",
+      "startDate": "2026-10-21",
+      "endDate": "2026-11-12",
+      "region": "경기 시흥시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60407",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "시화나래초등학교 (2차) 시화나래초 5학년 예술교육 외부강사 채용 공고(장구수업) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 장구수업 시화나래초등학교 031-364-3493 등록일 : 2026/09/17 조회수 : 79 (2차) 시화나래초 5학년 예술교육 외부강사 채용 공고(장구수업) 모집정보 시급 경력무관 | 시흥시 채용인원 1 접수기간 2026/09/17 ~ 2026/10/02 채용기간 2026/10/21 ~ 2026/11/12 직무분야 장구수업 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60453",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60453",
+      "postedAt": "2026-09-17",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "부명중학교",
+      "jobType": "국어",
+      "title": "[부명중학교] 시간강사 채용 공고(국어) 2차",
+      "deadline": "2026-09-30",
+      "startDate": "2026-10-26",
+      "endDate": "2026-11-03",
+      "region": "경기 부천시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60453",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "부명중학교 [부명중학교] 시간강사 채용 공고(국어) 2차 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 국어 부명중학교 070-7099-4896 등록일 : 2026/09/17 조회수 : 51 [부명중학교] 시간강사 채용 공고(국어) 2차 모집정보 시급 경력무관 | 부천시 채용인원 1 접수기간 2026/09/22 ~ 2026/09/30 채용기간 2026/10/26 ~ 2026/11/03 직무분야 국어 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60438",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60438",
+      "postedAt": "2026-09-17",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "성곡중학교",
+      "jobType": "통합사회,일반사회,지리",
+      "title": "2026학년도 시간강사 채용 공고(통합사회-3차)",
+      "deadline": "2026-09-27",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-21",
+      "region": "경기 부천시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60438",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "성곡중학교 2026학년도 시간강사 채용 공고(통합사회-3차) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 통합사회,일반사회,지리 성곡중학교 070-7099-9881 등록일 : 2026/09/17 조회수 : 27 마감임박 2026학년도 시간강사 채용 공고(통합사회-3차) 모집정보 시급 경력무관 | 부천시 채용인원 1 접수기간 2026/09/18 ~ 2026/09/27 채용기간 2026/10/15 ~ 2026/10/21 직무분야 통합사회,일반사회,지리 상세보기",
+      "autoCollected": true
+    },
+    {
       "id": "artmore_95013",
       "source": "아트모아",
       "sourceId": "artmore",
@@ -729,7 +1450,32 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "연수문화원 연수문화원 문화학교 강사 모집(플루트, 통기타) 인천 연수구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 연수문화원 진행중 연수문화원 문화학교 강사 모집(플루트, 통기타) 경력무관 고등학교 인천 연수구 비류대로 299 (청학동) 월급 0원 ~ 0원 프리랜서 주1일 d-16 2026-09-16 등록 2026-10-09 마감 109",
+      "searchText": "연수문화원 연수문화원 문화학교 강사 모집(플루트, 통기타) 인천 연수구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 연수문화원 진행중 연수문화원 문화학교 강사 모집(플루트, 통기타) 경력무관 고등학교 인천 연수구 비류대로 299 (청학동) 월급 0원 ~ 0원 프리랜서 주1일 d-16 2026-09-16 등록 2026-10-09 마감 110",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60308",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60308",
+      "postedAt": "2026-09-16",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "시화나래초등학교",
+      "jobType": "장구",
+      "title": "[2차공고] 시화나래초 5학년 예술교육 외부강사 채용 공고(장구수업)",
+      "deadline": "2026-10-02",
+      "startDate": "2026-10-21",
+      "endDate": "2026-11-12",
+      "region": "경기 시흥시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60308",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "시화나래초등학교 [2차공고] 시화나래초 5학년 예술교육 외부강사 채용 공고(장구수업) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 장구 시화나래초등학교 031-364-3493 등록일 : 2026/09/16 조회수 : 84 [2차공고] 시화나래초 5학년 예술교육 외부강사 채용 공고(장구수업) 모집정보 시급 경력무관 | 시흥시 채용인원 1 접수기간 2026/09/17 ~ 2026/10/02 채용기간 2026/10/21 ~ 2026/11/12 직무분야 장구 상세보기",
       "autoCollected": true
     },
     {
@@ -784,6 +1530,56 @@
         "음악"
       ],
       "searchText": "보성여자고등학교 2027학년도 학교법인 보성학원(보성여자중.고등학교) 신규교사 임용후보자 선정경쟁시험 시행계획 공고(음악, 국어) 보성여중_음악1, 보성여고_국어1",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60088",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60088",
+      "postedAt": "2026-09-15",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "김포한가람중학교",
+      "jobType": "과학",
+      "title": "(김포한가람중학교) 계약제교원(시간강사-과학) 채용",
+      "deadline": "2026-09-30",
+      "startDate": "2026-10-19",
+      "endDate": "2026-11-19",
+      "region": "경기 김포시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60088",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "김포한가람중학교 (김포한가람중학교) 계약제교원(시간강사-과학) 채용 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 과학 김포한가람중학교 031-996-7396 등록일 : 2026/09/15 조회수 : 13 (김포한가람중학교) 계약제교원(시간강사-과학) 채용 모집정보 시급 신입 | 김포시 채용인원 2 접수기간 2026/09/15 ~ 2026/09/30 채용기간 2026/10/19 ~ 2026/11/19 직무분야 과학 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_60145",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "60145",
+      "postedAt": "2026-09-15",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "산현중학교",
+      "jobType": "영양",
+      "title": "2026학년도 시간 강사 채용 공고문(3차_가정)",
+      "deadline": "2026-09-27",
+      "startDate": "2026-11-04",
+      "endDate": "2026-11-06",
+      "region": "경기 시흥시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=60145",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "산현중학교 2026학년도 시간 강사 채용 공고문(3차_가정) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 영양 산현중학교 031-505-1855 등록일 : 2026/09/15 조회수 : 24 마감임박 2026학년도 시간 강사 채용 공고문(3차_가정) 모집정보 시급 신입 | 시흥시 채용인원 1 접수기간 2026/09/16 ~ 2026/09/27 채용기간 2026/11/04 ~ 2026/11/06 직무분야 영양 상세보기",
       "autoCollected": true
     },
     {
@@ -866,6 +1662,31 @@
         "플룻"
       ],
       "searchText": "인천 부평구 인천 부평구 대형음악학원 플루트강사샘 모집해요. 인천 부평구 경기 부천시 인천 계양구 인천 부평구 대형음악학원 플루트강사샘 모집해요. 09.13 92",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_59585",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "59585",
+      "postedAt": "2026-09-10",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "부천상록학교",
+      "jobType": "특수(초등), 특수(중등)",
+      "title": "부천상록학교(공립 특수학교) 2026학년도 2학기 시간강사 채용 공고",
+      "deadline": "2026-12-04",
+      "startDate": "2026-09-30",
+      "endDate": "2026-12-09",
+      "region": "경기 부천시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=59585",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "부천상록학교 부천상록학교(공립 특수학교) 2026학년도 2학기 시간강사 채용 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 특수(초등), 특수(중등) 부천상록학교 032-678-2862 등록일 : 2026/09/10 조회수 : 52 부천상록학교(공립 특수학교) 2026학년도 2학기 시간강사 채용 공고 모집정보 시급 신입 | 부천시 채용인원 0 접수기간 2026/09/10 ~ 2026/12/04 채용기간 2026/09/30 ~ 2026/12/09 직무분야 특수(초등), 특수(중등) 상세보기",
       "autoCollected": true
     },
     {
@@ -992,6 +1813,81 @@
         "음악"
       ],
       "searchText": "송산학원 학교법인 송산학원 정규교원 (정보컴퓨터,실용음악,조리) 채용 공고 정보컴퓨터, 실용음악, 조리 과목",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_59171",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "59171",
+      "postedAt": "2026-09-07",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "배곧초등학교",
+      "jobType": "5학년 또는 6학년 체육전담교사",
+      "title": "기간제교원(학교폭력 책임교사 수업경감 지원 시간강사) 채용 공고(6차)",
+      "deadline": "2026-10-23",
+      "startDate": "2026-09-14",
+      "endDate": "2026-12-24",
+      "region": "경기 시흥시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=59171",
+      "tags": [
+        "스포츠"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "배곧초등학교 기간제교원(학교폭력 책임교사 수업경감 지원 시간강사) 채용 공고(6차) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 5학년 또는 6학년 체육전담교사 배곧초등학교 031-8099-9702 등록일 : 2026/09/07 조회수 : 92 기간제교원(학교폭력 책임교사 수업경감 지원 시간강사) 채용 공고(6차) 모집정보 시급 신입 | 시흥시 채용인원 1 접수기간 2026/09/07 ~ 2026/10/23 채용기간 2026/09/14 ~ 2026/12/24 직무분야 5학년 또는 6학년 체육전담교사 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_59133",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "59133",
+      "postedAt": "2026-09-07",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "대야초등학교",
+      "jobType": "5학년 담임",
+      "title": "대야초등학교 시간강사 채용 공고",
+      "deadline": "2026-09-30",
+      "startDate": "2026-11-02",
+      "endDate": "2026-11-06",
+      "region": "경기 시흥시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=59133",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "대야초등학교 대야초등학교 시간강사 채용 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 5학년 담임 대야초등학교 031-363-3099 등록일 : 2026/09/07 조회수 : 101 대야초등학교 시간강사 채용 공고 모집정보 시급 경력무관 | 시흥시 채용인원 1 접수기간 2026/09/07 ~ 2026/09/30 채용기간 2026/11/02 ~ 2026/11/06 직무분야 5학년 담임 상세보기",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_59040",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "59040",
+      "postedAt": "2026-09-04",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "송운중학교",
+      "jobType": "특수",
+      "title": "2026학년도 송운중 시간강사 채용 공고(특수)",
+      "deadline": "2026-11-06",
+      "startDate": "",
+      "endDate": "",
+      "region": "경기 시흥시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=59040",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "송운중학교 2026학년도 송운중 시간강사 채용 공고(특수) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 특수 송운중학교 등록일 : 2026/09/04 조회수 : 77 2026학년도 송운중 시간강사 채용 공고(특수) 모집정보 시급 경력무관 | 시흥시 채용인원 1 접수기간 2026/09/07 ~ 2026/11/06 채용기간 ~ 직무분야 특수 상세보기",
       "autoCollected": true
     },
     {
@@ -1145,6 +2041,31 @@
       "autoCollected": true
     },
     {
+      "id": "goe_58426",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "58426",
+      "postedAt": "2026-08-31",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "상동중학교",
+      "jobType": "수학",
+      "title": "상동중학교 수학과 2026학년도 계약제교원(시간강사) 채용 공고(3차)",
+      "deadline": "2026-09-30",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-30",
+      "region": "경기 부천시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=58426",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "상동중학교 상동중학교 수학과 2026학년도 계약제교원(시간강사) 채용 공고(3차) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 수학 상동중학교 070-7099-5210 등록일 : 2026/08/31 조회수 : 62 상동중학교 수학과 2026학년도 계약제교원(시간강사) 채용 공고(3차) 모집정보 시급 경력무관 | 부천시 채용인원 1 접수기간 2026/08/31 ~ 2026/09/30 채용기간 2026/10/22 ~ 2026/10/30 직무분야 수학 상세보기",
+      "autoCollected": true
+    },
+    {
       "id": "job_m3cuzz",
       "source": "인천교육청",
       "sourceId": "ice",
@@ -1263,6 +2184,31 @@
         "플루트"
       ],
       "searchText": "인천 남동구 * 삭제된 게시물 입니다. 인천 남동구 * 삭제된 게시물 입니다. 08.26 13",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_57911",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "57911",
+      "postedAt": "2026-08-25",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "부천부흥중학교",
+      "jobType": "영어",
+      "title": "2026학년도 부천부흥중학교 기간제교원(영어, 시간강사) 채용 공고",
+      "deadline": "2026-09-30",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-16",
+      "region": "경기 부천시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=57911",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "부천부흥중학교 2026학년도 부천부흥중학교 기간제교원(영어, 시간강사) 채용 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 영어 부천부흥중학교 070-7099-0862 등록일 : 2026/08/25 조회수 : 105 2026학년도 부천부흥중학교 기간제교원(영어, 시간강사) 채용 공고 모집정보 시급 경력무관 | 부천시 채용인원 1 접수기간 2026/08/26 ~ 2026/09/30 채용기간 2026/10/12 ~ 2026/10/16 직무분야 영어 상세보기",
       "autoCollected": true
     },
     {
@@ -1834,6 +2780,31 @@
       ],
       "instrumentTags": [],
       "searchText": "덕신고등학교 예체능강사, 방과후강사 2026학년도 2학기 방과후학교 외부강사 채용(첼로)",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_55562",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "55562",
+      "postedAt": "2026-08-11",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "경기도교육청",
+      "jobType": "사회/한국사",
+      "title": "2026년 병원형 위(Wee)센터 시간강사 채용(사회/한국사)",
+      "deadline": "2026-12-31",
+      "startDate": "",
+      "endDate": "",
+      "region": "경기 부천시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=55562",
+      "tags": [
+        "기타 예체능"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "경기도교육청 2026년 병원형 위(wee)센터 시간강사 채용(사회/한국사) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 사회/한국사 경기도교육청 032-310-0172 등록일 : 2026/08/11 조회수 : 112 2026년 병원형 위(wee)센터 시간강사 채용(사회/한국사) 모집정보 시급 경력무관 | 부천시 채용인원 1 접수기간 2026/08/10 ~ 2026/12/31 채용기간 2026/08/26 ~ 직무분야 사회/한국사 상세보기",
       "autoCollected": true
     },
     {
@@ -4303,7 +5274,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "하트하트아트앤컬쳐 발달장애인 연주자 정규직 직원 채용 공고 서울 송파구 하트하트아트앤컬쳐 마감 발달장애인 연주자 정규직 직원 채용 공고 경력무관 고등학교 서울 송파구 송이로23길 34 (가락동) 월급 0원 ~ 0원 정규직 주5일 마감 2026-04-30 등록 2026-05-08 마감 475",
+      "searchText": "하트하트아트앤컬쳐 발달장애인 연주자 정규직 직원 채용 공고 서울 송파구 하트하트아트앤컬쳐 마감 발달장애인 연주자 정규직 직원 채용 공고 경력무관 고등학교 서울 송파구 송이로23길 34 (가락동) 월급 0원 ~ 0원 정규직 주5일 마감 2026-04-30 등록 2026-05-08 마감 477",
       "autoCollected": true
     },
     {
@@ -5003,6 +5974,31 @@
         "플룻"
       ],
       "searchText": "인천 미추홀구 3/18(토) 2시30분예식 플루트 연주자구합니다. 인천주안인근웨딩홀 인천 미추홀구 인천 부평구 인천 서해구 3/18(토) 2시30분예식 플루트 연주자구합니다. 인천주안인근웨딩홀 02.17 789",
+      "autoCollected": true
+    },
+    {
+      "id": "goe_31140",
+      "source": "경기도교육청",
+      "sourceId": "goe",
+      "sourceItemId": "31140",
+      "postedAt": "2026-02-11",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "모담중학교",
+      "jobType": "수업 종목: 학교 여건을 고려하여 협의 후 결정",
+      "title": "[김포 모담중 ]스포츠클럽 강사 모집",
+      "deadline": "2026-12-31",
+      "startDate": "",
+      "endDate": "",
+      "region": "경기 김포시",
+      "address": "",
+      "url": "https://www.goe.go.kr/recruit/ad/func/pb/hnfpPbancView.do?mi=10502&pbancSn=31140",
+      "tags": [
+        "스포츠"
+      ],
+      "instrumentTags": [],
+      "matchedKeywords": [],
+      "searchText": "모담중학교 [김포 모담중 ]스포츠클럽 강사 모집 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 수업 종목: 학교 여건을 고려하여 협의 후 결정 모담중학교 등록일 : 2026/02/11 조회수 : 841 [김포 모담중 ]스포츠클럽 강사 모집 모집정보 시급 경력무관 | 김포시 채용인원 1 접수기간 2026/02/11 ~ 2026/12/31 채용기간 2026/03/01 ~ 직무분야 수업 종목: 학교 여건을 고려하여 협의 후 결정 상세보기",
       "autoCollected": true
     },
     {
@@ -6690,7 +7686,7 @@
         "플루트",
         "플룻"
       ],
-      "searchText": "서울 구로구 서울, 경기, 인천 바이올린, 첼로, 피아노 선생님 구인합니다. 서울 구로구 서울, 경기, 인천 바이올린, 첼로, 피아노 선생님 구인합니다. n --> --> 730",
+      "searchText": "서울 구로구 서울, 경기, 인천 바이올린, 첼로, 피아노 선생님 구인합니다. 서울 구로구 서울, 경기, 인천 바이올린, 첼로, 피아노 선생님 구인합니다. n --> --> 736",
       "autoCollected": true
     }
   ]
