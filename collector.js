@@ -24,6 +24,8 @@ const SEN_DETAIL_BASE =
 const ICE_MAX_PAGES = 10;
 const SEN_MAX_PAGES_PER_KEYWORD = 3;
 
+let iceSessionCookie = "";
+
 const SEN_KEYWORDS = [
   "플루트",
   "플룻",
@@ -190,6 +192,60 @@ async function collectIceJobs() {
 }
 
 async function fetchIcePage(page) {
+  /*
+   * 인천교육청은 GitHub Actions에서 POST만 바로 보내면
+   * 아주 짧은 응답(약 77 bytes)을 돌려주는 경우가 있다.
+   * 브라우저처럼 목록 페이지를 먼저 GET해서 세션 쿠키를 만든 뒤
+   * 같은 쿠키로 검색 POST를 보낸다.
+   */
+  if (!iceSessionCookie) {
+    const bootstrap = await fetchWithTimeout(
+      ICE_LIST_URL,
+      {
+        method: "GET",
+        headers: {
+          ...browserHeaders()
+        }
+      }
+    );
+
+    if (!bootstrap.ok) {
+      throw new Error(
+        `ICE bootstrap HTTP ${bootstrap.status}`
+      );
+    }
+
+    let setCookies = [];
+
+    if (
+      typeof bootstrap.headers.getSetCookie === "function"
+    ) {
+      setCookies =
+        bootstrap.headers.getSetCookie();
+    } else {
+      const raw =
+        bootstrap.headers.get("set-cookie");
+
+      if (raw) {
+        setCookies = [raw];
+      }
+    }
+
+    iceSessionCookie =
+      setCookies
+        .map(cookie =>
+          cookie.split(";")[0]
+        )
+        .filter(Boolean)
+        .join("; ");
+
+    await bootstrap.text();
+
+    console.log(
+      `[인천] 세션 준비 완료 / 쿠키 ${iceSessionCookie ? "있음" : "없음"}`
+    );
+  }
+
   const form = new URLSearchParams();
 
   form.set("bbsId", "1981");
@@ -209,18 +265,48 @@ async function fetchIcePage(page) {
   form.set("listCo", "10");
   form.set("searchType", "sj");
 
-  const response = await fetchWithTimeout(ICE_SEARCH_URL, {
-    method: "POST",
-    headers: {
-      ...browserHeaders(),
-      "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-      "Referer": ICE_LIST_URL
-    },
-    body: form.toString()
-  });
+  const headers = {
+    ...browserHeaders(),
+    "Content-Type":
+      "application/x-www-form-urlencoded; charset=UTF-8",
+    "Referer":
+      ICE_LIST_URL,
+    "Origin":
+      "https://www.ice.go.kr"
+  };
 
-  if (!response.ok) throw new Error(`ICE HTTP ${response.status}`);
-  return response.text();
+  if (iceSessionCookie) {
+    headers["Cookie"] =
+      iceSessionCookie;
+  }
+
+  const response = await fetchWithTimeout(
+    ICE_SEARCH_URL,
+    {
+      method: "POST",
+      headers,
+      body:
+        form.toString()
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error(
+      `ICE HTTP ${response.status}`
+    );
+  }
+
+  const body =
+    await response.text();
+
+  if (body.length < 500) {
+    console.log(
+      "[인천] 짧은 응답:",
+      JSON.stringify(body)
+    );
+  }
+
+  return body;
 }
 
 function parseIceJobs(html) {
