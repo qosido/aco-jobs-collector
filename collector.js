@@ -21,8 +21,37 @@ const SEN_SEARCH_URL =
 const SEN_DETAIL_BASE =
   "https://work.sen.go.kr/work/search/recInfo/BD_selectRecDetail.do";
 
+const ARTMORE_SEARCH_URL =
+  "https://www.artmore.kr/sub/recruit/search_list.do";
+
+const ARTMORE_DETAIL_BASE =
+  "https://www.artmore.kr/sub/recruit/search_view.do";
+
 const ICE_MAX_PAGES = 10;
 const SEN_MAX_PAGES_PER_KEYWORD = 3;
+const ARTMORE_MAX_PAGES_PER_KEYWORD = 10;
+
+const ARTMORE_KEYWORDS = [
+  "플루트",
+  "플룻"
+];
+
+const ARTMORE_ALLOWED_REGIONS = [
+  "서울",
+  "인천",
+  "부천",
+  "김포",
+  "시흥",
+  "광명"
+];
+
+const ARTMORE_AREA_CODES = {
+  인천: "2000-2053",
+  부천: "2000-2083-2097",
+  광명: "2000-2083-2098",
+  시흥: "2000-2083-2112",
+  김포: "2000-2083-2123"
+};
 
 let iceSessionCookie = "";
 
@@ -56,13 +85,17 @@ const KEYWORD_GROUPS = [
 
 async function main() {
   console.log("==================================");
-  console.log("ACO ON Jobs Collector v5 FIXED");
+  console.log("ACO ON Jobs Collector v7");
+  console.log("ICE + SEN + ARTMORE");
   console.log("==================================");
 
   let iceJobs = [];
   let senJobs = [];
+  let artmoreJobs = [];
+
   let iceDiagnostics = {};
   let senDiagnostics = {};
+  let artmoreDiagnostics = {};
 
   try {
     const result = await collectIceJobs();
@@ -84,29 +117,58 @@ async function main() {
     senDiagnostics = { error: String(error) };
   }
 
-  const combined = dedupeCombined([...iceJobs, ...senJobs]);
+  try {
+    const result = await collectArtmoreJobs();
+    artmoreJobs = result.jobs;
+    artmoreDiagnostics = result.diagnostics;
+    console.log(`\n[아트모아] ${artmoreJobs.length}개 수집 완료`);
+  } catch (error) {
+    console.error("[아트모아] 수집 실패:", error);
+    artmoreDiagnostics = { error: String(error) };
+  }
 
-  combined.sort((a, b) =>
-    String(b.postedAt || "").localeCompare(String(a.postedAt || "")) ||
-    String(b.deadline || "").localeCompare(String(a.deadline || ""))
-  );
+  const combined = dedupeCombined([
+    ...iceJobs,
+    ...senJobs,
+    ...artmoreJobs
+  ]);
+
+  combined.sort((a, b) => {
+    return (
+      String(b.postedAt || "").localeCompare(String(a.postedAt || "")) ||
+      String(b.deadline || "").localeCompare(String(a.deadline || ""))
+    );
+  });
 
   const activeCount = combined.filter(job => job.isActive).length;
 
   const output = {
     updatedAt: new Date().toISOString(),
-    diagnostics: { ice: iceDiagnostics, sen: senDiagnostics },
-    sourceCounts: { ice: iceJobs.length, sen: senJobs.length },
+    diagnostics: {
+      ice: iceDiagnostics,
+      sen: senDiagnostics,
+      artmore: artmoreDiagnostics
+    },
+    sourceCounts: {
+      ice: iceJobs.length,
+      sen: senJobs.length,
+      artmore: artmoreJobs.length
+    },
     count: combined.length,
     activeCount,
     jobs: combined
   };
 
-  fs.writeFileSync("jobs.json", JSON.stringify(output, null, 2), "utf8");
+  fs.writeFileSync(
+    "jobs.json",
+    JSON.stringify(output, null, 2),
+    "utf8"
+  );
 
   console.log("\n==================================");
-  console.log(`인천: ${iceJobs.length}`);
-  console.log(`서울: ${senJobs.length}`);
+  console.log(`인천교육청: ${iceJobs.length}`);
+  console.log(`서울교육: ${senJobs.length}`);
+  console.log(`아트모아: ${artmoreJobs.length}`);
   console.log(`통합: ${combined.length}`);
   console.log(`현재 모집: ${activeCount}`);
   console.log("==================================");
@@ -759,6 +821,311 @@ function extractSenJobType(text = "") {
   if (text.includes("방과후")) return "방과후강사";
 
   return "강사";
+}
+
+
+/* =========================================================
+   아트모아
+   - 플루트 / 플룻만 검색
+   - 전국 검색 후 서울/인천/부천/김포/시흥/광명만 유지
+   ========================================================= */
+
+async function collectArtmoreJobs() {
+  const allJobs = [];
+  let requests = 0;
+  let rawParsedCount = 0;
+  let regionFilteredCount = 0;
+  const keywordCounts = {};
+
+  for (const keyword of ARTMORE_KEYWORDS) {
+    console.log(`\n[아트모아] 검색: ${keyword}`);
+    let keywordRaw = 0;
+
+    for (let page = 1; page <= ARTMORE_MAX_PAGES_PER_KEYWORD; page++) {
+      const html = await fetchArtmorePage(keyword, page);
+      requests++;
+
+      const parsed = parseArtmoreJobs(html, keyword);
+      rawParsedCount += parsed.length;
+      keywordRaw += parsed.length;
+
+      const allowed = parsed.filter(job =>
+        isArtmoreAllowedRegion(job.region, job.searchText)
+      );
+
+      regionFilteredCount += allowed.length;
+      allJobs.push(...allowed);
+
+      console.log(
+        `  ${page}페이지: 파싱 ${parsed.length} / 지역통과 ${allowed.length}`
+      );
+
+      if (parsed.length < 10) break;
+      await sleep(300);
+    }
+
+    keywordCounts[keyword] = keywordRaw;
+    await sleep(400);
+  }
+
+  const jobs = dedupeBySourceId(allJobs);
+
+  return {
+    jobs,
+    diagnostics: {
+      keywords: ARTMORE_KEYWORDS,
+      allowedRegions: ARTMORE_ALLOWED_REGIONS,
+      knownAreaCodes: ARTMORE_AREA_CODES,
+      requests,
+      rawParsedCount,
+      regionFilteredCount,
+      uniqueCount: jobs.length,
+      keywordCounts
+    }
+  };
+}
+
+async function fetchArtmorePage(keyword, page) {
+  const form = new URLSearchParams();
+
+  form.append("page", String(page));
+  form.append("listSize", "10");
+  form.append("sort_type", "1");
+  form.append("exclude_end_yn", "");
+  form.append("artmore_yn", "");
+  form.append("search_cd", "");
+  form.append("search_nm", "");
+  form.append("search_val", "");
+  form.append("keyword", keyword);
+
+  form.append("array_keyword_kind", "1");
+  form.append("array_keyword_kind", "2");
+  form.append("array_keyword_kind", "3");
+
+  form.append("school_code", "");
+  form.append("school_type", "");
+  form.append("merit_type", "");
+  form.append("pay_type", "");
+  form.append("reg_date", "");
+  form.append("last_date", "");
+
+  const response = await fetchWithTimeout(
+    ARTMORE_SEARCH_URL,
+    {
+      method: "POST",
+      headers: {
+        ...browserHeaders(),
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+        "Referer": ARTMORE_SEARCH_URL,
+        "Origin": "https://www.artmore.kr"
+      },
+      body: form.toString()
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error(`ARTMORE HTTP ${response.status}`);
+  }
+
+  const body = await response.text();
+
+  if (page === 1) {
+    console.log(`[아트모아] ${keyword} HTML 길이: ${body.length}`);
+  }
+
+  return body;
+}
+
+function parseArtmoreJobs(html, searchKeyword) {
+  const jobs = [];
+
+  const rows = [
+    ...html.matchAll(
+      /<tr[^>]*>[\s\S]*?rec_idx=\d+[\s\S]*?<\/tr>/gi
+    )
+  ];
+
+  for (const rowMatch of rows) {
+    const rowHtml = rowMatch[0];
+    const idMatch = rowHtml.match(/rec_idx=(\d+)/i);
+    if (!idMatch) continue;
+
+    const recIdx = idMatch[1];
+    const cells = [
+      ...rowHtml.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/gi)
+    ];
+    const cellText = cells.map(cell => cleanText(cell[1]));
+    const rowText = cleanText(rowHtml);
+
+    let title = "";
+    const titlePatterns = [
+      new RegExp(
+        `<a[^>]+href=["'][^"']*search_view\\.do\\?[^"']*rec_idx=${recIdx}[^"']*["'][^>]*>([\\s\\S]*?)<\\/a>`,
+        "i"
+      ),
+      new RegExp(
+        `<a[^>]+[^>]*rec_idx=${recIdx}[^>]*>([\\s\\S]*?)<\\/a>`,
+        "i"
+      )
+    ];
+
+    for (const pattern of titlePatterns) {
+      const match = rowHtml.match(pattern);
+      if (!match) continue;
+
+      const candidate = cleanText(match[1])
+        .replace(/^(진행중|마감)\s*/i, "")
+        .trim();
+
+      if (candidate.length >= 3) {
+        title = candidate;
+        break;
+      }
+    }
+
+    if (!title && cellText.length >= 2) {
+      title = cellText[1]
+        .replace(/^(진행중|마감)\s*/i, "")
+        .replace(/\s+(경력무관|신입|경력).*$/i, "")
+        .trim();
+    }
+
+    if (!title) continue;
+
+    let organization = cellText[0] || "";
+    organization = organization
+      .replace(/관심기업등록/gi, "")
+      .replace(/Image/gi, "")
+      .replace(/\s+/g, " ")
+      .trim();
+
+    const region = extractArtmoreRegion(rowText);
+
+    const postedMatch = rowText.match(
+      /(\d{4}[./-]\d{1,2}[./-]\d{1,2})\s*등록/i
+    );
+    const deadlineMatch = rowText.match(
+      /(\d{4}[./-]\d{1,2}[./-]\d{1,2})\s*마감/i
+    );
+
+    const postedAt = postedMatch ? normalizeDate(postedMatch[1]) : "";
+    const deadline = deadlineMatch ? normalizeDate(deadlineMatch[1]) : "";
+
+    let recruitStatus = "확인필요";
+
+    if (/진행중/i.test(rowText) || /채용시까지/i.test(rowText)) {
+      recruitStatus = "모집중";
+    } else if (deadline) {
+      recruitStatus = deadline >= koreaToday() ? "모집중" : "모집종료";
+    } else if (/마감/i.test(rowText)) {
+      recruitStatus = "모집종료";
+    }
+
+    const employmentType = extractArtmoreEmploymentType(rowText);
+    const searchText = normalizeSearchText(
+      [organization, title, region, rowText].join(" ")
+    );
+
+    const tags = detectTags(
+      normalizeSearchText(`${title} ${searchKeyword}`)
+    );
+
+    if (!tags.includes("플루트")) tags.unshift("플루트");
+
+    jobs.push({
+      id: `artmore_${recIdx}`,
+      source: "아트모아",
+      sourceId: "artmore",
+      sourceItemId: recIdx,
+      postedAt,
+      recruitStatus,
+      isActive: isActiveStatus(recruitStatus),
+      organization,
+      jobType: employmentType || "예술·공연",
+      title,
+      deadline,
+      startDate: "",
+      endDate: "",
+      region,
+      address: extractArtmoreAddress(rowText),
+      url: `${ARTMORE_DETAIL_BASE}?rec_idx=${recIdx}`,
+      tags: [...new Set(tags)],
+      instrumentTags: ["플루트"],
+      matchedKeywords: [searchKeyword],
+      searchText,
+      autoCollected: true
+    });
+  }
+
+  return jobs;
+}
+
+function extractArtmoreRegion(text = "") {
+  const patterns = [
+    /(서울(?:특별시)?\s*[가-힣]+구)/,
+    /(인천(?:광역시)?\s*[가-힣]+구)/,
+    /(경기(?:도)?\s*부천시(?:\s*[가-힣]+구)?)/,
+    /(경기(?:도)?\s*김포시)/,
+    /(경기(?:도)?\s*시흥시)/,
+    /(경기(?:도)?\s*광명시)/,
+    /(부천시(?:\s*[가-힣]+구)?)/,
+    /(김포시)/,
+    /(시흥시)/,
+    /(광명시)/
+  ];
+
+  for (const pattern of patterns) {
+    const match = text.match(pattern);
+    if (!match) continue;
+
+    let result = match[1].replace(/\s+/g, " ").trim();
+
+    if (/^(부천시|김포시|시흥시|광명시)/.test(result)) {
+      result = `경기 ${result}`;
+    }
+
+    return result;
+  }
+
+  return "";
+}
+
+function isArtmoreAllowedRegion(region = "", searchText = "") {
+  const text = `${region} ${searchText}`;
+
+  return (
+    /서울(?:특별시)?/.test(text) ||
+    /인천(?:광역시)?/.test(text) ||
+    /부천시/.test(text) ||
+    /김포시/.test(text) ||
+    /시흥시/.test(text) ||
+    /광명시/.test(text)
+  );
+}
+
+function extractArtmoreEmploymentType(text = "") {
+  const types = [
+    "정규직",
+    "계약직",
+    "시간선택제",
+    "인턴",
+    "파견근로",
+    "대체인력",
+    "프리랜서",
+    "관계없음"
+  ];
+
+  return [...new Set(types.filter(type => text.includes(type)))].join(", ");
+}
+
+function extractArtmoreAddress(text = "") {
+  const match = text.match(
+    /((?:서울(?:특별시)?|인천(?:광역시)?|경기(?:도)?)\s+[가-힣0-9·\-\s]+(?:로|길)\s*\d+(?:-\d+)?(?:\s*\([^)]+\))?)/i
+  );
+
+  return match
+    ? match[1].replace(/\s+/g, " ").trim()
+    : "";
 }
 
 function detectTags(text) {
