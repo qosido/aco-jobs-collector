@@ -2772,300 +2772,273 @@ function extractLessoninfoOrganization(
 
 async function collectGoeJobs() {
   const allJobs = [];
+
   let requests = 0;
-  let rawCount = 0;
+  let rawParsedCount = 0;
+  let relevantCount = 0;
   let pagesCollected = 0;
-  const queryCounts = {};
+
+  const regionCounts = {};
 
   /*
-   * 부천시 + 음악 첫 페이지 진단값
+   * 경기도교육청은 제목 검색으로 '음악' 등을 각각 조회하면
+   * 실제로 0건인 경우가 많다.
+   *
+   * 따라서 지역 + 직종만 지정해 목록을 넓게 받은 뒤,
+   * 제목/직무분야/카드 텍스트를 ACO ON에서 직접 키워드 필터링한다.
+   *
+   * 이렇게 하면 요청 수도 크게 줄고,
+   * 제목에는 '예술강사'라고만 쓰고 직무분야에 '음악'이 있는
+   * 공고도 놓치지 않는다.
    */
-  const diagnosticsSample = {
-    region: "부천시",
-    keyword: "음악",
-    htmlLength: 0,
-    trCount: 0,
-    tdCount: 0,
-    anchorCount: 0,
-    hasKeyword: false,
-    hasOccupationText: false,
-    hasPbancSn: false,
-    hasViewFunction: false,
-    preview: "",
-    pbancSnSnippets: [],
-    keywordSnippets: [],
-    candidateLinkSnippets: []
-  };
-
   for (const region of GOE_REGIONS) {
-    for (const keyword of GOE_KEYWORDS) {
-      const queryKey = `${region}:${keyword}`;
-      let queryRaw = 0;
-      let previousFingerprint = "";
+    console.log(`\n[경기도교육청] ${region} 전체 확인`);
 
-      console.log(`\n[경기도교육청] ${region} / ${keyword}`);
+    let regionRaw = 0;
+    let regionRelevant = 0;
+    let previousFingerprint = "";
 
-      for (
-        let page = 1;
-        page <= GOE_MAX_PAGES_PER_QUERY;
-        page++
-      ) {
-        const html = await fetchGoePage(
+    for (
+      let page = 1;
+      page <= GOE_MAX_PAGES_PER_QUERY;
+      page++
+    ) {
+      const html =
+        await fetchGoePage(
           region,
-          keyword,
           page
         );
 
-        requests++;
+      requests++;
 
-        if (
-          region === "부천시" &&
-          keyword === "음악" &&
-          page === 1
-        ) {
-          diagnosticsSample.htmlLength =
-            html.length;
-
-          diagnosticsSample.trCount =
-            (html.match(/<tr\b/gi) || []).length;
-
-          diagnosticsSample.tdCount =
-            (html.match(/<td\b/gi) || []).length;
-
-          diagnosticsSample.anchorCount =
-            (html.match(/<a\b/gi) || []).length;
-
-          diagnosticsSample.hasKeyword =
-            html.includes("음악");
-
-          diagnosticsSample.hasOccupationText =
-            html.includes("초중등시간강사");
-
-          diagnosticsSample.hasPbancSn =
-            /pbancSn/i.test(html);
-
-          diagnosticsSample.hasViewFunction =
-            /hnfpPbancView|view|goView|fnView/i.test(html);
-
-          diagnosticsSample.preview =
-            cleanText(html).slice(0, 1200);
-
-          /*
-           * 실제 공고 구조를 찾기 위해 pbancSn / 음악 주변 HTML을 그대로 일부 저장.
-           */
-          const pbancMatches = [
-            ...html.matchAll(
-              /pbancSn/gi
-            )
-          ].slice(0, 5);
-
-          diagnosticsSample.pbancSnSnippets =
-            pbancMatches.map(match => {
-              const start =
-                Math.max(
-                  0,
-                  match.index - 350
-                );
-
-              const end =
-                Math.min(
-                  html.length,
-                  match.index + 650
-                );
-
-              return html
-                .slice(start, end)
-                .replace(
-                  /\s+/g,
-                  " "
-                )
-                .slice(0, 1000);
-            });
-
-          const keywordMatches = [
-            ...html.matchAll(
-              /음악/gi
-            )
-          ].slice(-5);
-
-          diagnosticsSample.keywordSnippets =
-            keywordMatches.map(match => {
-              const start =
-                Math.max(
-                  0,
-                  match.index - 350
-                );
-
-              const end =
-                Math.min(
-                  html.length,
-                  match.index + 650
-                );
-
-              return html
-                .slice(start, end)
-                .replace(
-                  /\s+/g,
-                  " "
-                )
-                .slice(0, 1000);
-            });
-
-          /*
-           * 상세보기로 보이는 링크/onclick 후보도 수집.
-           */
-          diagnosticsSample.candidateLinkSnippets =
-            [
-              ...html.matchAll(
-                /<(?:a|button)[^>]*(?:pbancSn|hnfpPbancView|goView|fnView|view)[^>]*>[\s\S]{0,300}?(?:<\/a>|<\/button>)/gi
-              )
-            ]
-              .slice(0, 8)
-              .map(match =>
-                match[0]
-                  .replace(
-                    /\s+/g,
-                    " "
-                  )
-                  .slice(0, 1200)
-              );
-
-          console.log("[경기도교육청 진단]");
-          console.log(
-            `  HTML 길이: ${diagnosticsSample.htmlLength}`
-          );
-          console.log(
-            `  TR: ${diagnosticsSample.trCount}, TD: ${diagnosticsSample.tdCount}, A: ${diagnosticsSample.anchorCount}`
-          );
-          console.log(
-            `  음악 포함: ${diagnosticsSample.hasKeyword}`
-          );
-          console.log(
-            `  pbancSn 포함: ${diagnosticsSample.hasPbancSn}`
-          );
-        }
-
-        const jobs = parseGoeJobs(
+      const parsed =
+        parseGoeJobs(
           html,
-          region,
-          keyword
+          region
         );
 
-        rawCount += jobs.length;
-        queryRaw += jobs.length;
+      rawParsedCount +=
+        parsed.length;
 
-        console.log(
-          `  ${page}페이지: ${jobs.length}개`
+      regionRaw +=
+        parsed.length;
+
+      const relevant =
+        parsed.filter(job =>
+          isGoeRelevantJob(job)
         );
 
-        if (!jobs.length) break;
+      relevantCount +=
+        relevant.length;
 
-        const fingerprint =
-          jobs
-            .map(job =>
-              job.sourceItemId ||
-              job.title
-            )
-            .join("|");
+      regionRelevant +=
+        relevant.length;
 
-        if (
-          page > 1 &&
-          fingerprint === previousFingerprint
-        ) {
-          console.log(
-            "  같은 페이지 반복 감지 → 종료"
-          );
-          break;
-        }
+      console.log(
+        `  ${page}페이지: 전체 ${parsed.length} / 관련 ${relevant.length}`
+      );
 
-        previousFingerprint =
-          fingerprint;
-
-        allJobs.push(...jobs);
-        pagesCollected++;
-
-        if (jobs.length < 50) {
-          break;
-        }
-
-        await sleep(250);
+      if (!parsed.length) {
+        break;
       }
 
-      queryCounts[queryKey] =
-        queryRaw;
+      const fingerprint =
+        parsed
+          .map(job =>
+            job.sourceItemId ||
+            `${job.organization}|${job.title}|${job.postedAt}`
+          )
+          .join("|");
 
-      await sleep(250);
+      if (
+        page > 1 &&
+        fingerprint === previousFingerprint
+      ) {
+        console.log(
+          "  같은 페이지 반복 감지 → 종료"
+        );
+        break;
+      }
+
+      previousFingerprint =
+        fingerprint;
+
+      allJobs.push(
+        ...relevant
+      );
+
+      pagesCollected++;
+
+      /*
+       * 한 페이지에 최대 50개.
+       * 50개 미만이면 마지막 페이지로 판단.
+       */
+      if (parsed.length < 50) {
+        break;
+      }
+
+      await sleep(300);
     }
+
+    regionCounts[region] = {
+      raw:
+        regionRaw,
+
+      relevant:
+        regionRelevant
+    };
+
+    await sleep(300);
   }
 
   const jobs =
-    dedupeBySourceId(allJobs);
+    dedupeBySourceId(
+      allJobs
+    );
 
   return {
     jobs,
+
     diagnostics: {
+      strategy:
+        "지역별 전체 수집 후 로컬 키워드 필터",
+
       regions:
         GOE_REGIONS,
+
       keywords:
         GOE_KEYWORDS,
+
       occupation:
         "초중등시간강사(자유학기활동강사 특기적성(방과후) 포함)",
+
       occupationCode:
         "B",
+
       requests,
+
       pagesCollected,
-      rawCount,
+
+      rawParsedCount,
+
+      relevantCount,
+
       uniqueCount:
         jobs.length,
-      queryCounts,
-      sample:
-        diagnosticsSample
+
+      regionCounts
     }
   };
 }
+
 async function fetchGoePage(
   region,
-  keyword,
   page
 ) {
   const form =
     new URLSearchParams();
 
-  form.set("mi", "10502");
-  form.set("pbancSn", "");
-  form.set("currPage", String(page));
-  form.set("srchEcptDtl", "Y");
-  form.set("srchTodayPb", "N");
-  form.set("srchLgnNm", region);
+  form.set(
+    "mi",
+    "10502"
+  );
+
+  form.set(
+    "pbancSn",
+    ""
+  );
+
+  form.set(
+    "currPage",
+    String(page)
+  );
+
+  /*
+   * 실제 사이트 hidden input 명칭.
+   */
+  form.set(
+    "srchEcptDl",
+    "Y"
+  );
+
+  form.set(
+    "srchTodayPb",
+    "N"
+  );
+
+  form.set(
+    "srchLgnNm",
+    region
+  );
 
   form.set(
     "srchOcptNm",
     "초중등시간강사(자유학기활동강사 특기적성(방과후) 포함)"
   );
 
-  form.set("srchOcptCd", "B");
-  form.set("pageIndex", "50");
-  form.set("orderbyType", "reg");
-  form.set("searchType", "sj");
-  form.set("searchValue", keyword);
-  form.set("btchDlYn", "");
-  form.set("cndNo", "");
-  form.set("srchSchlSe", "");
+  form.set(
+    "srchOcptCd",
+    "B"
+  );
+
+  form.set(
+    "pageIndex",
+    "50"
+  );
+
+  form.set(
+    "orderbyType",
+    "reg"
+  );
+
+  /*
+   * 검색어는 비워서 해당 지역/직종의 공고를 전부 받고
+   * ACO ON 쪽에서 직접 음악 관련 여부를 판정한다.
+   */
+  form.set(
+    "searchType",
+    "sj"
+  );
+
+  form.set(
+    "searchValue",
+    ""
+  );
+
+  form.set(
+    "btchDlYn",
+    ""
+  );
+
+  form.set(
+    "cndNo",
+    ""
+  );
+
+  form.set(
+    "srchSchlSe",
+    ""
+  );
 
   const response =
     await fetchWithTimeout(
       GOE_SEARCH_URL,
       {
         method: "POST",
+
         headers: {
           ...browserHeaders(),
+
           "Content-Type":
             "application/x-www-form-urlencoded; charset=UTF-8",
+
           "Referer":
             GOE_SEARCH_URL,
+
           "Origin":
             "https://www.goe.go.kr"
         },
+
         body:
           form.toString()
       },
@@ -3083,124 +3056,149 @@ async function fetchGoePage(
 
 function parseGoeJobs(
   html,
-  region,
-  searchKeyword
+  region
 ) {
   const jobs = [];
-  const rows = [
-    ...html.matchAll(
-      /<tr[^>]*>[\s\S]*?<\/tr>/gi
+
+  /*
+   * 실제 경기도교육청 목록은 table이 아니라:
+   * <div class="recruit_list"><ul><li>...</li></ul></div>
+   * 구조다.
+   */
+  let scope =
+    html;
+
+  const listMatch =
+    html.match(
+      /<div[^>]+class=["'][^"']*\brecruit_list\b[^"']*["'][^>]*>([\s\S]*?)<\/div>/i
+    );
+
+  if (listMatch) {
+    scope =
+      listMatch[1];
+  }
+
+  const items = [
+    ...scope.matchAll(
+      /<li\b[^>]*>([\s\S]*?)<\/li>/gi
     )
   ];
 
-  for (const rowMatch of rows) {
-    const rowHtml =
-      rowMatch[0];
+  for (const itemMatch of items) {
+    const itemHtml =
+      itemMatch[0];
 
-    const cells = [
-      ...rowHtml.matchAll(
-        /<td[^>]*>([\s\S]*?)<\/td>/gi
-      )
-    ];
-
-    if (cells.length < 4) {
-      continue;
-    }
-
-    const cellText =
-      cells.map(cell =>
-        cleanText(cell[1])
+    const itemText =
+      cleanText(
+        itemHtml
       );
 
-    const rowText =
-      cleanText(rowHtml);
-
-    const pbancSn =
-      extractGoePbancSn(rowHtml);
-
-    const anchors = [
-      ...rowHtml.matchAll(
-        /<a\b[^>]*>([\s\S]*?)<\/a>/gi
+    if (
+      !itemText ||
+      itemText.includes(
+        "등록된 공고가 없습니다"
       )
-    ];
-
-    let title = "";
-
-    for (const anchor of anchors) {
-      const candidate =
-        cleanText(anchor[1])
-          .replace(/^\s*N\s*/i, "")
-          .trim();
-
-      if (
-        candidate.length >= 4 &&
-        candidate.length > title.length
-      ) {
-        title =
-          candidate;
-      }
-    }
-
-    if (!title) {
-      title =
-        cellText
-          .filter(Boolean)
-          .sort(
-            (a, b) =>
-              b.length - a.length
-          )[0] || "";
-    }
-
-    if (!title) {
+    ) {
       continue;
     }
 
-    const dates =
-      [
-        ...rowText.matchAll(
-          /(\d{4})[./-](\d{1,2})[./-](\d{1,2})/g
-        )
-      ].map(match =>
-        [
-          match[1],
-          match[2].padStart(2, "0"),
-          match[3].padStart(2, "0")
-        ].join("-")
+    /*
+     * 실제 채용 카드인지 확인.
+     */
+    if (
+      !/등록일\s*:/.test(
+        itemText
+      ) ||
+      !/접수기간/.test(
+        itemText
+      )
+    ) {
+      continue;
+    }
+
+    const pbancSn =
+      extractGoePbancSn(
+        itemHtml
+      );
+
+    const postedMatch =
+      itemText.match(
+        /등록일\s*:\s*(\d{4}[./-]\d{1,2}[./-]\d{1,2})/i
       );
 
     const postedAt =
-      dates[0] || "";
-
-    const deadline =
-      dates.length > 1
-        ? dates[dates.length - 1]
+      postedMatch
+        ? normalizeDate(
+            postedMatch[1]
+          )
         : "";
 
-    const organization =
-      extractGoeOrganization(
-        rowText,
-        title
+    const reception =
+      extractGoeDateRange(
+        itemText,
+        "접수기간"
       );
 
-    const normalizedText =
+    const employment =
+      extractGoeDateRange(
+        itemText,
+        "채용기간"
+      );
+
+    const deadline =
+      reception.end || "";
+
+    const organization =
+      extractGoeOrganizationFromCard(
+        itemText
+      );
+
+    const title =
+      extractGoeTitleFromCard(
+        itemText
+      );
+
+    if (!title) {
+      continue;
+    }
+
+    const jobField =
+      extractGoeJobField(
+        itemText
+      );
+
+    const actualRegion =
+      extractGoeRegionFromCard(
+        itemText,
+        region
+      );
+
+    const recruitStatus =
+      guessGoeStatus(
+        itemText,
+        deadline
+      );
+
+    const searchText =
       normalizeSearchText(
-        `${organization} ${title} ${rowText}`
+        [
+          organization,
+          title,
+          jobField,
+          itemText
+        ].join(" ")
       );
 
     const tags =
       detectTags(
         normalizeSearchText(
-          `${title} ${searchKeyword}`
+          `${title} ${jobField}`
         )
       );
 
     const instrumentTags =
-      getInstrumentTags(tags);
-
-    const recruitStatus =
-      guessGoeStatus(
-        rowText,
-        deadline
+      getInstrumentTags(
+        tags
       );
 
     jobs.push({
@@ -3208,43 +3206,67 @@ function parseGoeJobs(
         pbancSn
           ? `goe_${pbancSn}`
           : makeId(
-              `${region}|${organization}|${title}|${postedAt}`
+              `${actualRegion}|${organization}|${title}|${postedAt}`
             ),
+
       source:
         "경기도교육청",
+
       sourceId:
         "goe",
+
       sourceItemId:
         pbancSn || "",
+
       postedAt,
+
       recruitStatus,
+
       isActive:
         isActiveStatus(
           recruitStatus
         ),
+
       organization,
+
       jobType:
+        jobField ||
         "초중등시간강사·방과후",
+
       title,
+
       deadline,
+
       startDate:
+        employment.start ||
         "",
+
       endDate:
+        employment.end ||
         "",
+
       region:
-        `경기 ${region}`,
+        `경기 ${actualRegion}`,
+
       address:
         "",
+
       url:
         pbancSn
           ? `${GOE_DETAIL_BASE}?mi=10502&pbancSn=${pbancSn}`
           : GOE_SEARCH_URL,
+
       tags,
+
       instrumentTags,
+
       matchedKeywords:
-        [searchKeyword],
-      searchText:
-        normalizedText,
+        detectGoeMatchedKeywords(
+          `${title} ${jobField} ${itemText}`
+        ),
+
+      searchText,
+
       autoCollected:
         true
     });
@@ -3253,22 +3275,76 @@ function parseGoeJobs(
   return jobs;
 }
 
+function isGoeRelevantJob(
+  job
+) {
+  const text =
+    normalizeSearchText(
+      `${job.title} ${job.jobType} ${job.searchText}`
+    );
+
+  return GOE_KEYWORDS.some(keyword =>
+    text.includes(
+      normalizeSearchText(
+        keyword
+      )
+    )
+  );
+}
+
+function detectGoeMatchedKeywords(
+  value = ""
+) {
+  const text =
+    normalizeSearchText(
+      value
+    );
+
+  const matches =
+    GOE_KEYWORDS.filter(keyword =>
+      text.includes(
+        normalizeSearchText(
+          keyword
+        )
+      )
+    );
+
+  return [
+    ...new Set(
+      matches.map(keyword =>
+        normalizeSearchText(
+          keyword
+        )
+      )
+    )
+  ];
+}
+
 function extractGoePbancSn(
   html = ""
 ) {
   const decoded =
-    decodeHtml(html);
+    decodeHtml(
+      html
+    );
 
   const patterns = [
     /[?&]pbancSn=(\d+)/i,
+
     /pbancSn\s*[=:]\s*["']?(\d+)/i,
-    /hnfpPbancView\.do[\s\S]{0,150}?(\d{4,})/i,
-    /(?:fn|go|view|select)[A-Za-z0-9_]*\s*\(\s*["']?(\d{4,})["']?/i
+
+    /(?:goView|fnView|view|goDetail|goPbancView)\s*\(\s*["']?(\d{4,})["']?/i,
+
+    /hnfpPbanc(?:View|Detail)\.do[\s\S]{0,200}?(\d{4,})/i,
+
+    /data-[a-z0-9_-]*(?:sn|seq|idx)=["'](\d{4,})["']/i
   ];
 
   for (const pattern of patterns) {
     const match =
-      decoded.match(pattern);
+      decoded.match(
+        pattern
+      );
 
     if (match) {
       return match[1];
@@ -3278,31 +3354,151 @@ function extractGoePbancSn(
   return "";
 }
 
-function extractGoeOrganization(
-  text = "",
-  title = ""
+function extractGoeOrganizationFromCard(
+  text = ""
 ) {
-  const matches = [
-    ...text.matchAll(
-      /([가-힣A-Za-z0-9·()\-]{2,50}(?:유치원|초등학교|중학교|고등학교|학교|교육지원청|교육청|센터))/g
-    )
-  ];
+  /*
+   * "학교명 031-... 등록일 : ..." 형식.
+   * 전화번호가 없는 학교도 있어 등록일 앞부분을 보조 사용.
+   */
+  let match =
+    text.match(
+      /^(.+?)\s+(?:0\d{1,2}-\d{3,4}-\d{4})\s+등록일\s*:/i
+    );
 
-  if (matches.length) {
-    return matches[
-      matches.length - 1
-    ][1]
+  if (match) {
+    return match[1]
       .replace(/\s+/g, " ")
       .trim();
   }
 
-  const titleMatch =
-    title.match(
-      /^(.{2,40}?(?:유치원|초등학교|중학교|고등학교|학교))/
+  match =
+    text.match(
+      /^(.+?)\s+등록일\s*:/i
     );
 
-  return titleMatch
-    ? titleMatch[1].trim()
+  if (match) {
+    return match[1]
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  return "";
+}
+
+function extractGoeTitleFromCard(
+  text = ""
+) {
+  /*
+   * "조회수 : n" 뒤부터 "모집정보" 앞까지가 제목.
+   */
+  let match =
+    text.match(
+      /조회수\s*:\s*\d+\s*(.*?)(?=\s+모집정보)/i
+    );
+
+  if (match) {
+    return match[1]
+      .replace(
+        /^(마감임박|신규|NEW)\s*/i,
+        ""
+      )
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  /*
+   * 조회수 표기가 없는 경우 등록일 이후를 사용.
+   */
+  match =
+    text.match(
+      /등록일\s*:\s*\d{4}[./-]\d{1,2}[./-]\d{1,2}\s*(.*?)(?=\s+모집정보)/i
+    );
+
+  if (match) {
+    return match[1]
+      .replace(
+        /조회수\s*:\s*\d+/i,
+        ""
+      )
+      .replace(
+        /^(마감임박|신규|NEW)\s*/i,
+        ""
+      )
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  return "";
+}
+
+function extractGoeRegionFromCard(
+  text = "",
+  fallbackRegion = ""
+) {
+  const match =
+    text.match(
+      /\|\s*(부천시|김포시|시흥시|광명시)\b/
+    );
+
+  return match
+    ? match[1]
+    : fallbackRegion;
+}
+
+function extractGoeDateRange(
+  text = "",
+  label = ""
+) {
+  const escaped =
+    label.replace(
+      /[.*+?^${}()|[\]\\]/g,
+      "\\$&"
+    );
+
+  const regex =
+    new RegExp(
+      `${escaped}\\s*(\\d{4}[./-]\\d{1,2}[./-]\\d{1,2})(?:\\s+\\d{1,2}:\\d{2})?\\s*~\\s*(\\d{4}[./-]\\d{1,2}[./-]\\d{1,2})(?:\\s+\\d{1,2}:\\d{2})?`,
+      "i"
+    );
+
+  const match =
+    text.match(
+      regex
+    );
+
+  if (!match) {
+    return {
+      start: "",
+      end: ""
+    };
+  }
+
+  return {
+    start:
+      normalizeDate(
+        match[1]
+      ),
+
+    end:
+      normalizeDate(
+        match[2]
+      )
+  };
+}
+
+function extractGoeJobField(
+  text = ""
+) {
+  const match =
+    text.match(
+      /직무분야\s*(.*?)(?=\s+상세보기|$)/i
+    );
+
+  return match
+    ? match[1]
+        .replace(/\s+/g, " ")
+        .trim()
     : "";
 }
 
@@ -3311,24 +3507,25 @@ function guessGoeStatus(
   deadline = ""
 ) {
   const compact =
-    text.replace(/\s+/g, "");
+    text.replace(
+      /\s+/g,
+      ""
+    );
 
   if (
-    compact.includes("모집중") ||
-    compact.includes("접수중")
-  ) {
-    return "모집중";
-  }
-
-  if (
-    compact.includes("마감") ||
-    compact.includes("접수종료") ||
-    compact.includes("모집종료")
+    compact.includes(
+      "접수종료"
+    ) ||
+    compact.includes(
+      "모집종료"
+    )
   ) {
     return "모집종료";
   }
 
-  if (deadline) {
+  if (
+    deadline
+  ) {
     return (
       deadline >= koreaToday()
         ? "모집중"
@@ -3338,6 +3535,7 @@ function guessGoeStatus(
 
   return "확인필요";
 }
+
 
 function detectTags(text) {
   const result = [];
