@@ -33,6 +33,24 @@ const ARTINFO_SEARCH_URL =
 const ARTINFO_DETAIL_BASE =
   "https://www.artinfokorea.com/jobs";
 
+const LESSONINFO_SEARCH_URL =
+  "https://www.lessoninfo.co.kr/music-jobs";
+
+const LESSONINFO_KEYWORDS = [
+  "플루트",
+  "플룻"
+];
+
+const LESSONINFO_MAX_PAGES_PER_KEYWORD = 5;
+
+/*
+ * 레슨인포에서 사용자가 직접 확인한 '인천 전체' 검색값.
+ */
+const LESSONINFO_INCHEON = {
+  wrArea0: "20130716174916_3863",
+  wrArea1All: "20131126132601_5023_all"
+};
+
 const ICE_MAX_PAGES = 10;
 const SEN_MAX_PAGES_PER_KEYWORD = 3;
 const ARTMORE_MAX_PAGES_PER_KEYWORD = 10;
@@ -97,19 +115,21 @@ const KEYWORD_GROUPS = [
 
 async function main() {
   console.log("==================================");
-  console.log("ACO ON Jobs Collector v8");
-  console.log("ICE + SEN + ARTMORE + ARTINFO");
+  console.log("ACO ON Jobs Collector v9");
+  console.log("ICE + SEN + ARTMORE + ARTINFO + LESSONINFO");
   console.log("==================================");
 
   let iceJobs = [];
   let senJobs = [];
   let artmoreJobs = [];
   let artinfoJobs = [];
+  let lessoninfoJobs = [];
 
   let iceDiagnostics = {};
   let senDiagnostics = {};
   let artmoreDiagnostics = {};
   let artinfoDiagnostics = {};
+  let lessoninfoDiagnostics = {};
 
   try {
     const result = await collectIceJobs();
@@ -151,11 +171,22 @@ async function main() {
     artinfoDiagnostics = { error: String(error) };
   }
 
+  try {
+    const result = await collectLessoninfoJobs();
+    lessoninfoJobs = result.jobs;
+    lessoninfoDiagnostics = result.diagnostics;
+    console.log(`\n[레슨인포] ${lessoninfoJobs.length}개 수집 완료`);
+  } catch (error) {
+    console.error("[레슨인포] 수집 실패:", error);
+    lessoninfoDiagnostics = { error: String(error) };
+  }
+
   const combined = dedupeCombined([
     ...iceJobs,
     ...senJobs,
     ...artmoreJobs,
-    ...artinfoJobs
+    ...artinfoJobs,
+    ...lessoninfoJobs
   ]);
 
   combined.sort((a, b) => {
@@ -165,22 +196,28 @@ async function main() {
     );
   });
 
-  const activeCount = combined.filter(job => job.isActive).length;
+  const activeCount =
+    combined.filter(job => job.isActive).length;
 
   const output = {
     updatedAt: new Date().toISOString(),
+
     diagnostics: {
       ice: iceDiagnostics,
       sen: senDiagnostics,
       artmore: artmoreDiagnostics,
-      artinfo: artinfoDiagnostics
+      artinfo: artinfoDiagnostics,
+      lessoninfo: lessoninfoDiagnostics
     },
+
     sourceCounts: {
       ice: iceJobs.length,
       sen: senJobs.length,
       artmore: artmoreJobs.length,
-      artinfo: artinfoJobs.length
+      artinfo: artinfoJobs.length,
+      lessoninfo: lessoninfoJobs.length
     },
+
     count: combined.length,
     activeCount,
     jobs: combined
@@ -197,6 +234,7 @@ async function main() {
   console.log(`서울교육: ${senJobs.length}`);
   console.log(`아트모아: ${artmoreJobs.length}`);
   console.log(`아트인포: ${artinfoJobs.length}`);
+  console.log(`레슨인포: ${lessoninfoJobs.length}`);
   console.log(`통합: ${combined.length}`);
   console.log(`현재 모집: ${activeCount}`);
   console.log("==================================");
@@ -1499,6 +1537,625 @@ function inferArtinfoStatus(postedAt, deadline, text = "") {
   }
 
   return "확인필요";
+}
+
+
+/* =========================================================
+   레슨인포
+   - 피아노강사·음악학원구인 게시판
+   - 인천 전체
+   - 제목+내용에서 플루트 / 플룻 각각 검색
+   ========================================================= */
+
+async function collectLessoninfoJobs() {
+  const allJobs = [];
+
+  let searchRequests = 0;
+  let rawParsedCount = 0;
+  const keywordCounts = {};
+  const firstPageHtmlLengths = {};
+
+  for (const keyword of LESSONINFO_KEYWORDS) {
+    console.log(`\n[레슨인포] 검색: ${keyword}`);
+
+    let keywordRaw = 0;
+    let previousFingerprint = "";
+
+    for (
+      let page = 1;
+      page <= LESSONINFO_MAX_PAGES_PER_KEYWORD;
+      page++
+    ) {
+      const html = await fetchLessoninfoPage(
+        keyword,
+        page
+      );
+
+      searchRequests++;
+
+      if (page === 1) {
+        firstPageHtmlLengths[keyword] = html.length;
+      }
+
+      const parsed =
+        parseLessoninfoJobs(
+          html,
+          keyword
+        );
+
+      rawParsedCount += parsed.length;
+      keywordRaw += parsed.length;
+
+      console.log(
+        `  ${page}페이지: ${parsed.length}개`
+      );
+
+      if (!parsed.length) {
+        break;
+      }
+
+      const fingerprint =
+        parsed
+          .map(job => job.sourceItemId || job.title)
+          .join("|");
+
+      /*
+       * 사이트가 page 파라미터를 무시하면 동일 페이지가 반복될 수 있으므로 중단.
+       */
+      if (
+        page > 1 &&
+        fingerprint === previousFingerprint
+      ) {
+        console.log(
+          "  같은 페이지 반복 감지 → 페이지 수집 종료"
+        );
+        break;
+      }
+
+      previousFingerprint =
+        fingerprint;
+
+      allJobs.push(...parsed);
+
+      /*
+       * 게시물 수가 적으면 다음 페이지가 없을 가능성이 높다.
+       */
+      if (parsed.length < 10) {
+        break;
+      }
+
+      await sleep(350);
+    }
+
+    keywordCounts[keyword] =
+      keywordRaw;
+
+    await sleep(400);
+  }
+
+  const jobs =
+    dedupeBySourceId(
+      allJobs
+    );
+
+  return {
+    jobs,
+
+    diagnostics: {
+      keywords:
+        LESSONINFO_KEYWORDS,
+
+      region:
+        "인천 전체",
+
+      searchField:
+        "wr_subject||wr_content",
+
+      searchRequests,
+
+      rawParsedCount,
+
+      uniqueCount:
+        jobs.length,
+
+      keywordCounts,
+
+      firstPageHtmlLengths
+    }
+  };
+}
+
+async function fetchLessoninfoPage(
+  keyword,
+  page
+) {
+  const params =
+    new URLSearchParams();
+
+  params.append(
+    "mode",
+    "search"
+  );
+
+  params.append(
+    "sca",
+    ""
+  );
+
+  params.append(
+    "sort",
+    ""
+  );
+
+  params.append(
+    "wr_area_0[0]",
+    LESSONINFO_INCHEON.wrArea0
+  );
+
+  params.append(
+    `wr_area_1[${LESSONINFO_INCHEON.wrArea0}][0]`,
+    LESSONINFO_INCHEON.wrArea1All
+  );
+
+  params.append(
+    "search_field",
+    "wr_subject||wr_content"
+  );
+
+  params.append(
+    "search_keyword",
+    keyword
+  );
+
+  params.append(
+    "area_sels[0]",
+    `${LESSONINFO_INCHEON.wrArea0}/${LESSONINFO_INCHEON.wrArea1All}`
+  );
+
+  /*
+   * 레슨인포 게시판은 일반적으로 page 값을 사용한다.
+   * 첫 페이지도 명시해서 재현성을 높인다.
+   */
+  params.append(
+    "page",
+    String(page)
+  );
+
+  const url =
+    `${LESSONINFO_SEARCH_URL}?${params.toString()}`;
+
+  const response =
+    await fetchWithTimeout(
+      url,
+      {
+        method: "GET",
+
+        headers: {
+          ...browserHeaders(),
+
+          "Referer":
+            "https://www.lessoninfo.co.kr/"
+        }
+      },
+      30000
+    );
+
+  if (!response.ok) {
+    throw new Error(
+      `LESSONINFO HTTP ${response.status}`
+    );
+  }
+
+  const body =
+    await response.text();
+
+  if (page === 1) {
+    console.log(
+      `[레슨인포] ${keyword} HTML 길이: ${body.length}`
+    );
+  }
+
+  return body;
+}
+
+function parseLessoninfoJobs(
+  html,
+  searchKeyword
+) {
+  const jobs = [];
+
+  /*
+   * 검색결과는 표 형태이므로 tr 단위로 먼저 분리한다.
+   * 레슨인포는 게시판 링크 형식이 여러 번 바뀐 적이 있어
+   * 특정 URL 하나에만 의존하지 않고 '지역 + 제목 링크'를 함께 본다.
+   */
+  const rows = [
+    ...html.matchAll(
+      /<tr[^>]*>[\s\S]*?<\/tr>/gi
+    )
+  ];
+
+  for (const rowMatch of rows) {
+    const rowHtml =
+      rowMatch[0];
+
+    const rowText =
+      cleanText(
+        rowHtml
+      );
+
+    /*
+     * 실제 채용글 행은 검색 화면에서 지역명이 함께 노출된다.
+     */
+    if (
+      !/(인천|서울|경기)\s*(전체|[가-힣]+구|[가-힣]+시)/.test(
+        rowText
+      )
+    ) {
+      continue;
+    }
+
+    const anchors = [
+      ...rowHtml.matchAll(
+        /<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi
+      )
+    ];
+
+    if (!anchors.length) {
+      continue;
+    }
+
+    let title = "";
+    let href = "";
+
+    /*
+     * 메뉴/지역 링크를 제외하고 가장 제목다운 앵커를 선택.
+     */
+    for (const anchor of anchors) {
+      const candidate =
+        cleanText(
+          anchor[2]
+        )
+          .replace(
+            /\s*N\s*$/i,
+            ""
+          )
+          .trim();
+
+      const candidateHref =
+        decodeHtml(
+          anchor[1]
+        );
+
+      if (
+        candidate.length < 4 ||
+        /^(서울|인천|경기|전체|글쓰기|검색|등록안내)$/i.test(
+          candidate
+        )
+      ) {
+        continue;
+      }
+
+      if (
+        /mode=(?:view|read)|board\.php|music-jobs/i.test(
+          candidateHref
+        )
+      ) {
+        /*
+         * 제목은 보통 지역명보다 훨씬 길다.
+         */
+        if (
+          !title ||
+          candidate.length > title.length
+        ) {
+          title =
+            candidate;
+
+          href =
+            candidateHref;
+        }
+      }
+    }
+
+    if (!title) {
+      continue;
+    }
+
+    const region =
+      extractLessoninfoRegion(
+        rowText
+      );
+
+    /*
+     * 인천 전체 검색 결과지만 게시글에 여러 희망지역이 함께 붙을 수 있다.
+     * 최소한 인천이 포함된 행만 유지한다.
+     */
+    if (
+      !/인천/.test(
+        `${region} ${rowText}`
+      )
+    ) {
+      continue;
+    }
+
+    const absoluteUrl =
+      lessoninfoAbsoluteUrl(
+        href
+      );
+
+    const itemId =
+      extractLessoninfoItemId(
+        href,
+        title,
+        region
+      );
+
+    const postedAt =
+      extractLessoninfoPostedAt(
+        rowText
+      );
+
+    const searchText =
+      normalizeSearchText(
+        `${region} ${title} ${rowText}`
+      );
+
+    const tags =
+      detectTags(
+        normalizeSearchText(
+          `${title} ${searchKeyword}`
+        )
+      );
+
+    if (
+      !tags.includes(
+        "플루트"
+      )
+    ) {
+      tags.unshift(
+        "플루트"
+      );
+    }
+
+    /*
+     * 레슨인포 목록은 별도 마감일이 없는 게시물이 많다.
+     * 검색 결과에 노출되어 있는 글은 우선 모집중으로 취급하고,
+     * 제목에 마감/완료가 명시된 경우에만 종료 처리한다.
+     */
+    const recruitStatus =
+      /(마감|구인완료|모집완료|채용완료)/.test(
+        title
+      )
+        ? "모집종료"
+        : "모집중";
+
+    jobs.push({
+      id:
+        `lessoninfo_${itemId}`,
+
+      source:
+        "레슨인포",
+
+      sourceId:
+        "lessoninfo",
+
+      sourceItemId:
+        itemId,
+
+      postedAt,
+
+      recruitStatus,
+
+      isActive:
+        isActiveStatus(
+          recruitStatus
+        ),
+
+      organization:
+        extractLessoninfoOrganization(
+          title
+        ),
+
+      jobType:
+        "음악학원·레슨강사",
+
+      title,
+
+      deadline:
+        "",
+
+      startDate:
+        "",
+
+      endDate:
+        "",
+
+      region,
+
+      address:
+        "",
+
+      url:
+        absoluteUrl ||
+        LESSONINFO_SEARCH_URL,
+
+      tags:
+        [
+          ...new Set(tags)
+        ],
+
+      instrumentTags:
+        ["플루트"],
+
+      matchedKeywords:
+        [searchKeyword],
+
+      searchText,
+
+      autoCollected:
+        true
+    });
+  }
+
+  return jobs;
+}
+
+function extractLessoninfoRegion(
+  text = ""
+) {
+  const matches = [
+    ...text.matchAll(
+      /((?:서울|인천|경기)\s*(?:전체|[가-힣]+구|[가-힣]+시))/g
+    )
+  ];
+
+  if (!matches.length) {
+    return "인천";
+  }
+
+  /*
+   * 인천 검색이므로 인천 표기가 있으면 우선 사용.
+   */
+  const incheon =
+    matches.find(match =>
+      match[1].startsWith(
+        "인천"
+      )
+    );
+
+  return (
+    incheon?.[1] ||
+    matches[0][1]
+  )
+    .replace(
+      /\s+/g,
+      " "
+    )
+    .trim();
+}
+
+function extractLessoninfoPostedAt(
+  text = ""
+) {
+  /*
+   * YYYY-MM-DD / YYYY.MM.DD 형식이 있으면 우선.
+   */
+  const full =
+    text.match(
+      /(\d{4}[./-]\d{1,2}[./-]\d{1,2})/
+    );
+
+  if (full) {
+    return normalizeDate(
+      full[1]
+    );
+  }
+
+  /*
+   * 게시판에서 MM.DD만 표시하는 경우 현재 연도를 붙인다.
+   */
+  const short =
+    text.match(
+      /(?:^|\s)(\d{1,2})[./](\d{1,2})(?:\s|$)/
+    );
+
+  if (short) {
+    const today =
+      koreaToday();
+
+    const year =
+      today.slice(
+        0,
+        4
+      );
+
+    return `${year}-${short[1].padStart(2, "0")}-${short[2].padStart(2, "0")}`;
+  }
+
+  return "";
+}
+
+function extractLessoninfoItemId(
+  href = "",
+  title = "",
+  region = ""
+) {
+  const decoded =
+    decodeHtml(
+      href
+    );
+
+  const patterns = [
+    /[?&](?:wr_id|code|idx|no|num)=([^&#]+)/i,
+    /\/(\d{3,})(?:[/?#]|$)/
+  ];
+
+  for (const pattern of patterns) {
+    const match =
+      decoded.match(
+        pattern
+      );
+
+    if (match) {
+      return String(
+        match[1]
+      )
+        .replace(
+          /[^A-Za-z0-9_-]/g,
+          ""
+        )
+        .slice(
+          0,
+          80
+        );
+    }
+  }
+
+  return makeId(
+    `${region}|${title}|${decoded}`
+  ).replace(
+    /^job_/,
+    ""
+  );
+}
+
+function lessoninfoAbsoluteUrl(
+  href = ""
+) {
+  if (!href) {
+    return "";
+  }
+
+  const decoded =
+    decodeHtml(
+      href
+    );
+
+  try {
+    return new URL(
+      decoded,
+      "https://www.lessoninfo.co.kr/"
+    ).toString();
+  } catch {
+    return "";
+  }
+}
+
+function extractLessoninfoOrganization(
+  title = ""
+) {
+  /*
+   * 제목에 '[기관명]' 또는 '(기관명)'이 있으면 보조적으로 사용.
+   * 그렇지 않으면 레슨인포는 기관명을 별도 제공하지 않는 경우가 많아 공란 유지.
+   */
+  const bracket =
+    title.match(
+      /^\s*[\[(]([^\])]{2,40})[\])]\s*/
+    );
+
+  return bracket
+    ? bracket[1].trim()
+    : "";
 }
 
 function detectTags(text) {
