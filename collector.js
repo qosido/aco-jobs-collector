@@ -77,6 +77,27 @@ const GOE_KEYWORDS = [
   "방과후"
 ];
 
+const GOE_RELEVANCE_KEYWORDS = [
+  "플루트",
+  "플룻",
+  "리코더",
+  "우쿨렐레",
+  "우쿠렐레",
+  "우크렐레",
+  "우클렐레",
+  "칼림바",
+  "음악",
+  "음악강사",
+  "악기",
+  "기악",
+  "관악",
+  "관현악",
+  "오케스트라",
+  "윈드오케스트라",
+  "앙상블",
+  "합주"
+];
+
 const GOE_MAX_PAGES_PER_QUERY = 3;
 
 /*
@@ -3157,6 +3178,7 @@ async function collectGoeJobs() {
         regions: GOE_REGIONS,
         occupations: GOE_OCCUPATIONS,
         keywords: GOE_KEYWORDS,
+        relevanceKeywords: GOE_RELEVANCE_KEYWORDS,
         searches,
         rawParsedCount,
         relevantCount,
@@ -3340,7 +3362,6 @@ function buildGoeJobFromDomItem(
       [
         organization,
         title,
-        occupation,
         jobField,
         text
       ].join(" ")
@@ -3408,7 +3429,7 @@ function isGoeRelevantJob(
       `${job.title} ${job.jobType} ${job.searchText}`
     );
 
-  return GOE_KEYWORDS.some(keyword =>
+  return GOE_RELEVANCE_KEYWORDS.some(keyword =>
     text.includes(
       normalizeSearchText(
         keyword
@@ -3426,7 +3447,7 @@ function detectGoeMatchedKeywords(
     );
 
   const matches =
-    GOE_KEYWORDS.filter(keyword =>
+    GOE_RELEVANCE_KEYWORDS.filter(keyword =>
       text.includes(
         normalizeSearchText(
           keyword
