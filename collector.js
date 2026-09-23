@@ -2777,6 +2777,23 @@ async function collectGoeJobs() {
   let pagesCollected = 0;
   const queryCounts = {};
 
+  /*
+   * 부천시 + 음악 첫 페이지 진단값
+   */
+  const diagnosticsSample = {
+    region: "부천시",
+    keyword: "음악",
+    htmlLength: 0,
+    trCount: 0,
+    tdCount: 0,
+    anchorCount: 0,
+    hasKeyword: false,
+    hasOccupationText: false,
+    hasPbancSn: false,
+    hasViewFunction: false,
+    preview: ""
+  };
+
   for (const region of GOE_REGIONS) {
     for (const keyword of GOE_KEYWORDS) {
       const queryKey = `${region}:${keyword}`;
@@ -2797,6 +2814,53 @@ async function collectGoeJobs() {
         );
 
         requests++;
+
+        if (
+          region === "부천시" &&
+          keyword === "음악" &&
+          page === 1
+        ) {
+          diagnosticsSample.htmlLength =
+            html.length;
+
+          diagnosticsSample.trCount =
+            (html.match(/<tr\b/gi) || []).length;
+
+          diagnosticsSample.tdCount =
+            (html.match(/<td\b/gi) || []).length;
+
+          diagnosticsSample.anchorCount =
+            (html.match(/<a\b/gi) || []).length;
+
+          diagnosticsSample.hasKeyword =
+            html.includes("음악");
+
+          diagnosticsSample.hasOccupationText =
+            html.includes("초중등시간강사");
+
+          diagnosticsSample.hasPbancSn =
+            /pbancSn/i.test(html);
+
+          diagnosticsSample.hasViewFunction =
+            /hnfpPbancView|view|goView|fnView/i.test(html);
+
+          diagnosticsSample.preview =
+            cleanText(html).slice(0, 1200);
+
+          console.log("[경기도교육청 진단]");
+          console.log(
+            `  HTML 길이: ${diagnosticsSample.htmlLength}`
+          );
+          console.log(
+            `  TR: ${diagnosticsSample.trCount}, TD: ${diagnosticsSample.tdCount}, A: ${diagnosticsSample.anchorCount}`
+          );
+          console.log(
+            `  음악 포함: ${diagnosticsSample.hasKeyword}`
+          );
+          console.log(
+            `  pbancSn 포함: ${diagnosticsSample.hasPbancSn}`
+          );
+        }
 
         const jobs = parseGoeJobs(
           html,
@@ -2870,11 +2934,12 @@ async function collectGoeJobs() {
       rawCount,
       uniqueCount:
         jobs.length,
-      queryCounts
+      queryCounts,
+      sample:
+        diagnosticsSample
     }
   };
 }
-
 async function fetchGoePage(
   region,
   keyword,
