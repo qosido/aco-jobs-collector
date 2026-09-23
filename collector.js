@@ -267,6 +267,14 @@ async function main() {
       lessoninfo: lessoninfoJobs.length,
       goe: goeJobs.length
     },
+    locationCoverage: buildLocationCoverage({
+      ice: iceJobs,
+      sen: senJobs,
+      artmore: artmoreJobs,
+      artinfo: artinfoJobs,
+      lessoninfo: lessoninfoJobs,
+      goe: goeJobs
+    }),
     count: combined.length,
     activeCount,
     jobs: combined
@@ -3627,6 +3635,60 @@ function guessGoeStatus(
   }
 
   return "확인필요";
+}
+
+
+function buildLocationCoverage(sourceMap) {
+  const result = {};
+
+  for (const [sourceId, jobs] of Object.entries(sourceMap)) {
+    const total = jobs.length;
+    const withAddress =
+      jobs.filter(job => String(job.address || "").trim()).length;
+    const withOrganization =
+      jobs.filter(job => String(job.organization || job.org || "").trim()).length;
+    const withRegion =
+      jobs.filter(job => String(job.region || "").trim()).length;
+    const activeJobs =
+      jobs.filter(job => job.isActive !== false);
+    const activeWithAddress =
+      activeJobs.filter(job => String(job.address || "").trim()).length;
+    const activeWithOrganization =
+      activeJobs.filter(job => String(job.organization || job.org || "").trim()).length;
+
+    result[sourceId] = {
+      total,
+      active: activeJobs.length,
+      withAddress,
+      addressRate:
+        total ? Math.round(withAddress / total * 1000) / 10 : 0,
+      withOrganization,
+      organizationRate:
+        total ? Math.round(withOrganization / total * 1000) / 10 : 0,
+      withRegion,
+      activeWithAddress,
+      activeWithOrganization
+    };
+  }
+
+  const allJobs = Object.values(sourceMap).flat();
+  const total = allJobs.length;
+  const withAddress =
+    allJobs.filter(job => String(job.address || "").trim()).length;
+  const withOrganization =
+    allJobs.filter(job => String(job.organization || job.org || "").trim()).length;
+
+  result.total = {
+    total,
+    withAddress,
+    addressRate:
+      total ? Math.round(withAddress / total * 1000) / 10 : 0,
+    withOrganization,
+    organizationRate:
+      total ? Math.round(withOrganization / total * 1000) / 10 : 0
+  };
+
+  return result;
 }
 
 function detectTags(text) {
