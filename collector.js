@@ -84,6 +84,7 @@ const ARTMORE_AREA_CODES = {
 };
 
 let iceSessionCookie = "";
+let lessoninfoSessionCookie = "";
 
 const SEN_KEYWORDS = [
   "플루트",
@@ -320,19 +321,16 @@ async function collectIceJobs() {
 }
 
 async function fetchIcePage(page) {
-  /*
-   * 인천교육청은 GitHub Actions에서 POST만 바로 보내면
-   * 아주 짧은 응답(약 77 bytes)을 돌려주는 경우가 있다.
-   * 브라우저처럼 목록 페이지를 먼저 GET해서 세션 쿠키를 만든 뒤
-   * 같은 쿠키로 검색 POST를 보낸다.
-   */
-  if (!iceSessionCookie) {
+  async function bootstrapIceSession() {
+    iceSessionCookie = "";
+
     const bootstrap = await fetchWithTimeout(
       ICE_LIST_URL,
       {
         method: "GET",
         headers: {
-          ...browserHeaders()
+          ...browserHeaders(),
+          "Cache-Control": "no-cache"
         }
       }
     );
@@ -370,66 +368,99 @@ async function fetchIcePage(page) {
     await bootstrap.text();
 
     console.log(
-      `[인천] 세션 준비 완료 / 쿠키 ${iceSessionCookie ? "있음" : "없음"}`
+      `[인천] 세션 준비 / 쿠키 ${iceSessionCookie ? "있음" : "없음"}`
     );
   }
 
-  const form = new URLSearchParams();
+  async function requestIcePage() {
+    const form = new URLSearchParams();
 
-  form.set("bbsId", "1981");
-  form.set("nttSn", "");
-  form.set("mi", "10997");
-  form.set("currPage", String(page));
-  form.set("bbsTypeChk", "list");
-  form.set("srchAt1", "Y");
-  form.set("srchAt2", "");
-  form.set("srchAt3", "");
-  form.set("srchAt4", "Y");
-  form.set("srchAt5", "Y");
-  form.set("searchValue1", "예체능강사");
-  form.set("srch1", "예체능강사");
-  form.set("arrAt1", "N");
-  form.set("rcritAt", "");
-  form.set("listCo", "10");
-  form.set("searchType", "sj");
+    form.set("bbsId", "1981");
+    form.set("nttSn", "");
+    form.set("mi", "10997");
+    form.set("currPage", String(page));
+    form.set("bbsTypeChk", "list");
+    form.set("srchAt1", "Y");
+    form.set("srchAt2", "");
+    form.set("srchAt3", "");
+    form.set("srchAt4", "Y");
+    form.set("srchAt5", "Y");
+    form.set("searchValue1", "예체능강사");
+    form.set("srch1", "예체능강사");
+    form.set("arrAt1", "N");
+    form.set("rcritAt", "");
+    form.set("listCo", "10");
+    form.set("searchType", "sj");
 
-  const headers = {
-    ...browserHeaders(),
-    "Content-Type":
-      "application/x-www-form-urlencoded; charset=UTF-8",
-    "Referer":
-      ICE_LIST_URL,
-    "Origin":
-      "https://www.ice.go.kr"
-  };
+    const headers = {
+      ...browserHeaders(),
+      "Content-Type":
+        "application/x-www-form-urlencoded; charset=UTF-8",
+      "Referer":
+        ICE_LIST_URL,
+      "Origin":
+        "https://www.ice.go.kr",
+      "Cache-Control":
+        "no-cache"
+    };
 
-  if (iceSessionCookie) {
-    headers["Cookie"] =
-      iceSessionCookie;
-  }
-
-  const response = await fetchWithTimeout(
-    ICE_SEARCH_URL,
-    {
-      method: "POST",
-      headers,
-      body:
-        form.toString()
+    if (iceSessionCookie) {
+      headers["Cookie"] =
+        iceSessionCookie;
     }
-  );
 
-  if (!response.ok) {
-    throw new Error(
-      `ICE HTTP ${response.status}`
+    const response = await fetchWithTimeout(
+      ICE_SEARCH_URL,
+      {
+        method: "POST",
+        headers,
+        body:
+          form.toString()
+      }
     );
+
+    if (!response.ok) {
+      throw new Error(
+        `ICE HTTP ${response.status}`
+      );
+    }
+
+    return response.text();
   }
 
-  const body =
-    await response.text();
+  if (!iceSessionCookie) {
+    await bootstrapIceSession();
+  }
+
+  let body =
+    await requestIcePage();
+
+  /*
+   * 인천교육청은 간헐적으로 77바이트 안팎의 빈 응답을 준다.
+   * 이 경우 새 세션을 만든 뒤 2회까지 다시 시도한다.
+   */
+  for (
+    let retry = 1;
+    body.length < 500 && retry <= 2;
+    retry++
+  ) {
+    console.log(
+      `[인천] 짧은 응답 ${body.length} bytes → 세션 재생성 후 재시도 ${retry}`
+    );
+
+    await sleep(
+      700 * retry
+    );
+
+    await bootstrapIceSession();
+
+    body =
+      await requestIcePage();
+  }
 
   if (body.length < 500) {
     console.log(
-      "[인천] 짧은 응답:",
+      "[인천] 최종 짧은 응답:",
       JSON.stringify(body)
     );
   }
@@ -1660,7 +1691,10 @@ async function collectLessoninfoJobs() {
 
       keywordCounts,
 
-      firstPageHtmlLengths
+      firstPageHtmlLengths,
+
+      note:
+        "5KB 미만 응답이면 세션/보안 중간페이지 가능성이 높음"
     }
   };
 }
@@ -1669,90 +1703,196 @@ async function fetchLessoninfoPage(
   keyword,
   page
 ) {
-  const params =
-    new URLSearchParams();
+  async function bootstrapLessoninfoSession() {
+    lessoninfoSessionCookie = "";
 
-  params.append(
-    "mode",
-    "search"
-  );
+    const bootstrap =
+      await fetchWithTimeout(
+        "https://www.lessoninfo.co.kr/music-jobs",
+        {
+          method: "GET",
 
-  params.append(
-    "sca",
-    ""
-  );
+          headers: {
+            ...browserHeaders(),
 
-  params.append(
-    "sort",
-    ""
-  );
+            "Cache-Control":
+              "no-cache"
+          }
+        },
+        30000
+      );
 
-  params.append(
-    "wr_area_0[0]",
-    LESSONINFO_INCHEON.wrArea0
-  );
+    if (!bootstrap.ok) {
+      throw new Error(
+        `LESSONINFO bootstrap HTTP ${bootstrap.status}`
+      );
+    }
 
-  params.append(
-    `wr_area_1[${LESSONINFO_INCHEON.wrArea0}][0]`,
-    LESSONINFO_INCHEON.wrArea1All
-  );
+    let setCookies = [];
 
-  params.append(
-    "search_field",
-    "wr_subject||wr_content"
-  );
+    if (
+      typeof bootstrap.headers.getSetCookie === "function"
+    ) {
+      setCookies =
+        bootstrap.headers.getSetCookie();
+    } else {
+      const raw =
+        bootstrap.headers.get("set-cookie");
 
-  params.append(
-    "search_keyword",
-    keyword
-  );
+      if (raw) {
+        setCookies = [raw];
+      }
+    }
 
-  params.append(
-    "area_sels[0]",
-    `${LESSONINFO_INCHEON.wrArea0}/${LESSONINFO_INCHEON.wrArea1All}`
-  );
+    lessoninfoSessionCookie =
+      setCookies
+        .map(cookie =>
+          cookie.split(";")[0]
+        )
+        .filter(Boolean)
+        .join("; ");
 
-  /*
-   * 레슨인포 게시판은 일반적으로 page 값을 사용한다.
-   * 첫 페이지도 명시해서 재현성을 높인다.
-   */
-  params.append(
-    "page",
-    String(page)
-  );
+    await bootstrap.text();
 
-  const url =
-    `${LESSONINFO_SEARCH_URL}?${params.toString()}`;
-
-  const response =
-    await fetchWithTimeout(
-      url,
-      {
-        method: "GET",
-
-        headers: {
-          ...browserHeaders(),
-
-          "Referer":
-            "https://www.lessoninfo.co.kr/"
-        }
-      },
-      30000
-    );
-
-  if (!response.ok) {
-    throw new Error(
-      `LESSONINFO HTTP ${response.status}`
+    console.log(
+      `[레슨인포] 세션 준비 / 쿠키 ${lessoninfoSessionCookie ? "있음" : "없음"}`
     );
   }
 
-  const body =
-    await response.text();
+  function buildLessoninfoUrl() {
+    const params =
+      new URLSearchParams();
+
+    params.append(
+      "mode",
+      "search"
+    );
+
+    params.append(
+      "sca",
+      ""
+    );
+
+    params.append(
+      "sort",
+      ""
+    );
+
+    params.append(
+      "wr_area_0[0]",
+      LESSONINFO_INCHEON.wrArea0
+    );
+
+    params.append(
+      `wr_area_1[${LESSONINFO_INCHEON.wrArea0}][0]`,
+      LESSONINFO_INCHEON.wrArea1All
+    );
+
+    params.append(
+      "search_field",
+      "wr_subject||wr_content"
+    );
+
+    params.append(
+      "search_keyword",
+      keyword
+    );
+
+    params.append(
+      "area_sels[0]",
+      `${LESSONINFO_INCHEON.wrArea0}/${LESSONINFO_INCHEON.wrArea1All}`
+    );
+
+    if (page > 1) {
+      params.append(
+        "page",
+        String(page)
+      );
+    }
+
+    return (
+      `${LESSONINFO_SEARCH_URL}?${params.toString()}`
+    );
+  }
+
+  async function requestLessoninfo() {
+    const headers = {
+      ...browserHeaders(),
+
+      "Referer":
+        "https://www.lessoninfo.co.kr/music-jobs",
+
+      "Cache-Control":
+        "no-cache"
+    };
+
+    if (lessoninfoSessionCookie) {
+      headers["Cookie"] =
+        lessoninfoSessionCookie;
+    }
+
+    const response =
+      await fetchWithTimeout(
+        buildLessoninfoUrl(),
+        {
+          method: "GET",
+          headers
+        },
+        30000
+      );
+
+    if (!response.ok) {
+      throw new Error(
+        `LESSONINFO HTTP ${response.status}`
+      );
+    }
+
+    return response.text();
+  }
+
+  if (!lessoninfoSessionCookie) {
+    await bootstrapLessoninfoSession();
+  }
+
+  let body =
+    await requestLessoninfo();
+
+  /*
+   * 정상 검색 페이지는 수십~수백 KB 수준이다.
+   * 5 KB 미만은 세션/보안 중간페이지로 보고 새 세션으로 재시도한다.
+   */
+  for (
+    let retry = 1;
+    body.length < 5000 && retry <= 2;
+    retry++
+  ) {
+    console.log(
+      `[레슨인포] 짧은 응답 ${body.length} bytes → 세션 재생성 후 재시도 ${retry}`
+    );
+
+    await sleep(
+      800 * retry
+    );
+
+    await bootstrapLessoninfoSession();
+
+    body =
+      await requestLessoninfo();
+  }
 
   if (page === 1) {
     console.log(
       `[레슨인포] ${keyword} HTML 길이: ${body.length}`
     );
+
+    if (body.length < 5000) {
+      console.log(
+        "[레슨인포] 짧은 응답 내용:",
+        JSON.stringify(
+          cleanText(body).slice(0, 700)
+        )
+      );
+    }
   }
 
   return body;
