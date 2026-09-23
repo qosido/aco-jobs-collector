@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T05:34:33.279Z",
+  "updatedAt": "2026-09-23T05:48:49.824Z",
   "diagnostics": {
     "ice": {
       "pagesCollected": 0,
@@ -54,11 +54,11 @@
         "김포": "2000-2083-2123"
       },
       "requests": 8,
-      "rawParsedCount": 75,
+      "rawParsedCount": 76,
       "regionFilteredCount": 48,
       "uniqueCount": 48,
       "keywordCounts": {
-        "플루트": 48,
+        "플루트": 49,
         "플룻": 27
       }
     },
@@ -100,11 +100,12 @@
         "플룻": 3
       },
       "firstPageHtmlLengths": {
-        "플루트": 177315,
-        "플룻": 231687
+        "플루트": 177436,
+        "플룻": 219897
       }
     },
     "goe": {
+      "strategy": "지역별 전체 수집 후 로컬 키워드 필터",
       "regions": [
         "부천시",
         "김포시",
@@ -127,93 +128,28 @@
       ],
       "occupation": "초중등시간강사(자유학기활동강사 특기적성(방과후) 포함)",
       "occupationCode": "B",
-      "requests": 48,
+      "requests": 4,
       "pagesCollected": 0,
-      "rawCount": 0,
+      "rawParsedCount": 0,
+      "relevantCount": 0,
       "uniqueCount": 0,
-      "queryCounts": {
-        "부천시:플루트": 0,
-        "부천시:플룻": 0,
-        "부천시:리코더": 0,
-        "부천시:우쿨렐레": 0,
-        "부천시:우쿠렐레": 0,
-        "부천시:칼림바": 0,
-        "부천시:음악": 0,
-        "부천시:관악": 0,
-        "부천시:관현악": 0,
-        "부천시:오케스트라": 0,
-        "부천시:악기": 0,
-        "부천시:방과후": 0,
-        "김포시:플루트": 0,
-        "김포시:플룻": 0,
-        "김포시:리코더": 0,
-        "김포시:우쿨렐레": 0,
-        "김포시:우쿠렐레": 0,
-        "김포시:칼림바": 0,
-        "김포시:음악": 0,
-        "김포시:관악": 0,
-        "김포시:관현악": 0,
-        "김포시:오케스트라": 0,
-        "김포시:악기": 0,
-        "김포시:방과후": 0,
-        "시흥시:플루트": 0,
-        "시흥시:플룻": 0,
-        "시흥시:리코더": 0,
-        "시흥시:우쿨렐레": 0,
-        "시흥시:우쿠렐레": 0,
-        "시흥시:칼림바": 0,
-        "시흥시:음악": 0,
-        "시흥시:관악": 0,
-        "시흥시:관현악": 0,
-        "시흥시:오케스트라": 0,
-        "시흥시:악기": 0,
-        "시흥시:방과후": 0,
-        "광명시:플루트": 0,
-        "광명시:플룻": 0,
-        "광명시:리코더": 0,
-        "광명시:우쿨렐레": 0,
-        "광명시:우쿠렐레": 0,
-        "광명시:칼림바": 0,
-        "광명시:음악": 0,
-        "광명시:관악": 0,
-        "광명시:관현악": 0,
-        "광명시:오케스트라": 0,
-        "광명시:악기": 0,
-        "광명시:방과후": 0
-      },
-      "sample": {
-        "region": "부천시",
-        "keyword": "음악",
-        "htmlLength": 103213,
-        "trCount": 0,
-        "tdCount": 0,
-        "anchorCount": 304,
-        "hasKeyword": true,
-        "hasOccupationText": true,
-        "hasPbancSn": true,
-        "hasViewFunction": true,
-        "preview": "구인구직홈페이지 본문 바로가기 메인메뉴 바로가기 이 누리집은 대한민국 공식 전자정부 누리집입니다. 공식 누리집 확인방법 열기 --> 공식 누리집 주소 확인하기 go.kr 주소를 사용하는 누리집은 대한민국 정부기관이 관리하는 누리집입니다. 이밖에 or.kr 또는 .kr등 다른 도메인 주소를 사용하고 있다면 아래 URL에서 도메인 주소를 확인해 보세요 운영중인 공식 누리집보기 --> 홈페이지 사용자 문의 070-4021-7078 070-4021-7015 이용문의게시판 으로 이동하기 오늘 하루 열지 않기 --> 어린이홈페이지 경기도교육청 화면크기 작게 보통 조금 크게 크게 가장크게 초기화 언어 선택 &ZeroWidthSpace; ▼ Language Korean English 日本語 Russian Chinese Vietnamese Thai French Mongolian ភាសាខ្មែរ Tagalog 경기도교육청 구인구직홈페이지 로그인 회원가입 --> 전체메뉴 구직관리 구직관리 지원서 등록 지원서 목록 구인정보 구인정보 구인정보조회 맞춤구인정보 인력풀 교직원 온라인 채용 구)자원봉사자모집 커뮤니티 커뮤니티 공지사항 묻고답하기 자료실 사이트맵 이동 화면크기 --> Language --> 언어 선택 ​ ▼ 언어 선택 ​ ▼ Language 열기 English 日本語 Russian Chinese Vietnamese Thai French Korean Mongolian ភាសាខ្មែរ Tagalog 한국어 English --> 전체메뉴 닫기 로그인을 해주세요. 회원가입 --> 검색 구직관리 구인정보 커뮤니티 구직관리 지원서 등록 지원서 목록 구인정보 구인정보조회 맞춤구인정보 인력풀 교직원 온라인 채용 구)자원봉사자모집 커뮤니티 공지사항 묻고답하기 자료실 인증 센터 어린이 정부포털 통합검색 검색어를 입력해주세요 검색에 어려움이 있으신가요? 검색 고급검색 인기검색어 안전보건교육 상승 1 산업재해조사표 동일 퇴직금계산기 상승 3 육아휴직급여 동일 실업인정신청 동일 국민내일배움 하락 1 노사협의회 하락 1 산업안전보건 동일 국민내일배움카드신청 상승 11 안전보건교육 동일 최근검색어 안전보건교육 삭제 안전보건교육 삭제 안전보건교육 삭제 최근검색어 전체 삭제 레이어 닫기 소속기관(지청 및 위원회) 서울지방고용노동청 서울강남지청 서울동부지청 서울서부지청 서울남부지청 서울북부지청 서울관악지청 중부지방고용노동청 인천북부지청 부천지청 의정부지",
-        "pbancSnSnippets": [
-          " <!-- 네비게이션 --> <script src=\"/recruit/js/snsCnrs.js\"></script> <script> //Url Copy function goCopyUrl(){ var url = ''; var textarea = document.createElement(\"textarea\"); document.body.appendChild(textarea); url = window.document.location.href; //게시물 복사 var params = '?bbsId=&nttSn=&mi=10502'; //구인구직(채용공고) url복사 var params3 = '?pbancSn=&mi=10502'; var RQbbsIds = ''; var nttSns = ''; var searchTypes = ''; var searchValues = ''; var pbancSns = ''; var mis = '10502'; //게시물 복사 if (RQbbsIds && nttSns) { fullurl = url + params; //구인구직(채용공고) url복사 }else if(pbancSns && mis){ fullurl = url + params3; //리스트 복사 }else { fullurl = url; } textarea.value = fullurl; textarea.select(); document.execCommand(\"copy\"); document.body.removeChild(textarea); alert(\"URL이 복사되었습니다.\"); } </script> <!-- breadcrumb --> <nav class=\"breadcrumb-wrap\" aria-label=\"브레드크럼\"> <ol class=\"breadcrumb\"> <li class=\"home\"><a href=\"/recruit/main.do\"><i class=\"xi-home\" aria-hidden=\"t",
-          "pyUrl(){ var url = ''; var textarea = document.createElement(\"textarea\"); document.body.appendChild(textarea); url = window.document.location.href; //게시물 복사 var params = '?bbsId=&nttSn=&mi=10502'; //구인구직(채용공고) url복사 var params3 = '?pbancSn=&mi=10502'; var RQbbsIds = ''; var nttSns = ''; var searchTypes = ''; var searchValues = ''; var pbancSns = ''; var mis = '10502'; //게시물 복사 if (RQbbsIds && nttSns) { fullurl = url + params; //구인구직(채용공고) url복사 }else if(pbancSns && mis){ fullurl = url + params3; //리스트 복사 }else { fullurl = url; } textarea.value = fullurl; textarea.select(); document.execCommand(\"copy\"); document.body.removeChild(textarea); alert(\"URL이 복사되었습니다.\"); } </script> <!-- breadcrumb --> <nav class=\"breadcrumb-wrap\" aria-label=\"브레드크럼\"> <ol class=\"breadcrumb\"> <li class=\"home\"><a href=\"/recruit/main.do\"><i class=\"xi-home\" aria-hidden=\"true\"></i>홈</a></li> <li><a href='/recruit/ad/func/pb/hnfpPbancList.do?mi=10502' class=\"item-link\">구인정보</a></",
-          "ocument.location.href; //게시물 복사 var params = '?bbsId=&nttSn=&mi=10502'; //구인구직(채용공고) url복사 var params3 = '?pbancSn=&mi=10502'; var RQbbsIds = ''; var nttSns = ''; var searchTypes = ''; var searchValues = ''; var pbancSns = ''; var mis = '10502'; //게시물 복사 if (RQbbsIds && nttSns) { fullurl = url + params; //구인구직(채용공고) url복사 }else if(pbancSns && mis){ fullurl = url + params3; //리스트 복사 }else { fullurl = url; } textarea.value = fullurl; textarea.select(); document.execCommand(\"copy\"); document.body.removeChild(textarea); alert(\"URL이 복사되었습니다.\"); } </script> <!-- breadcrumb --> <nav class=\"breadcrumb-wrap\" aria-label=\"브레드크럼\"> <ol class=\"breadcrumb\"> <li class=\"home\"><a href=\"/recruit/main.do\"><i class=\"xi-home\" aria-hidden=\"true\"></i>홈</a></li> <li><a href='/recruit/ad/func/pb/hnfpPbancList.do?mi=10502' class=\"item-link\">구인정보</a></li><li><a href='/recruit/ad/func/pb/hnfpPbancList.do?mi=10502' class=\"item-link\">구인정보조회</a></li> </ol> </nav> <!-- breadcrumb -",
-          "<button type=\"button\" title=\"검색\" class=\"btn secondary sm\" onclick=\"javascript:goSearch()\">검색</button> </div> </fieldset> <!-- //게시판 검색 --> </div> </form> </div> <!-- //상단검색영역 --> <form name=\"pbancListForm\" id=\"pbancListForm\" method=\"post\"> <input type=\"hidden\" name=\"mi\" value=\"10502\"> <input type=\"hidden\" name=\"pbancSn\" id=\"pbancSn\" value=\"\"> <input type=\"hidden\" name=\"currPage\" id=\"currPage\" value=\"1\" /> <input type=\"hidden\" name=\"srchEcptDl\" id=\"srchEcptDl\" value=\"Y\"> <input type=\"hidden\" name=\"srchTodayPb\" id=\"srchTodayPb\" value=\"N\"> <input type=\"hidden\" name=\"srchLgnNm\" id=\"srchLgnNm\" value=\"부천시\"> <input type=\"hidden\" name=\"srchOcptNm\" id=\"srchOcptNm\" value=\"초중등시간강사(자유학기활동강사 특기적성(방과후) 포함)\"> <input type=\"hidden\" name=\"srchOcptCd\" id=\"srchOcptCd\" value=\"B\"> <input type=\"hidden\" name=\"pageIndex\" id=\"pageIndex\" value=\"50\"> <input type=\"hidden\" name=\"orderbyType\" id=\"orderbyType\" value=\"reg\"> <input type=\"hidden\" name=\"sear",
-          "\"button\" title=\"검색\" class=\"btn secondary sm\" onclick=\"javascript:goSearch()\">검색</button> </div> </fieldset> <!-- //게시판 검색 --> </div> </form> </div> <!-- //상단검색영역 --> <form name=\"pbancListForm\" id=\"pbancListForm\" method=\"post\"> <input type=\"hidden\" name=\"mi\" value=\"10502\"> <input type=\"hidden\" name=\"pbancSn\" id=\"pbancSn\" value=\"\"> <input type=\"hidden\" name=\"currPage\" id=\"currPage\" value=\"1\" /> <input type=\"hidden\" name=\"srchEcptDl\" id=\"srchEcptDl\" value=\"Y\"> <input type=\"hidden\" name=\"srchTodayPb\" id=\"srchTodayPb\" value=\"N\"> <input type=\"hidden\" name=\"srchLgnNm\" id=\"srchLgnNm\" value=\"부천시\"> <input type=\"hidden\" name=\"srchOcptNm\" id=\"srchOcptNm\" value=\"초중등시간강사(자유학기활동강사 특기적성(방과후) 포함)\"> <input type=\"hidden\" name=\"srchOcptCd\" id=\"srchOcptCd\" value=\"B\"> <input type=\"hidden\" name=\"pageIndex\" id=\"pageIndex\" value=\"50\"> <input type=\"hidden\" name=\"orderbyType\" id=\"orderbyType\" value=\"reg\"> <input type=\"hidden\" name=\"searchType\" id=\"s"
-        ],
-        "keywordSnippets": [
-          "option> --> <option value=\"ADIT_COL2\" >학교명</option> <option value=\"subject\" >과목명</option> <!-- <option value=\"cn\">내용</option> --> </select> <!-- 폼그룹 --> <!-- <div class=\"form-group\">ㄱ <div class=\"form-conts\"> --> <input type=\"text\" title=\"검색단어\" name=\"searchValue\" id=\"searchValue\" value=\"음악\" class=\"form-control\" onkeydown=\"if(event.keyCode==13){goSearch(); return false;}\"/> <!-- </div> </div> --> <button type=\"button\" title=\"검색\" class=\"btn secondary sm\" onclick=\"javascript:goSearch()\">검색</button> </div> </fieldset> <!-- //게시판 검색 --> </div> </form> </div> <!-- //상단검색영역 --> <form name=\"pbancListForm\" id=\"pbancListForm\" method=\"post\"> <input type=\"hidden\" name=\"mi\" value=\"10502\"> <input type=\"hidden\" name=\"pbancSn\" id=\"pbancSn\" value=\"\"> <input type=\"hidden\" name=\"currPage\" id=\"currPage\" value=\"1\" /> <input type=\"hidden\" name=\"srchEcptDl\" id=\"srchEc",
-          "\"> <input type=\"hidden\" name=\"srchOcptCd\" id=\"srchOcptCd\" value=\"B\"> <input type=\"hidden\" name=\"pageIndex\" id=\"pageIndex\" value=\"50\"> <input type=\"hidden\" name=\"orderbyType\" id=\"orderbyType\" value=\"reg\"> <input type=\"hidden\" name=\"searchType\" id=\"searchType\" value=\"sj\"> <input type=\"hidden\" name=\"searchValue\" id=\"searchValue\" value=\"음악\"> <input type=\"hidden\" name=\"btchDlYn\" id=\"btchDlYn\"> <input type=\"hidden\" name=\"cndNo\" id=\"cndNo\"> <input type=\"hidden\" name=\"srchSchlSe\" id=\"srchSchlSe\" value=\"\"> <!-- 게시판 리스트 --> <div class=\"recruit_list\"> <ul> <li>등록된 공고가 없습니다.</li> </ul> </div> <!-- //게시판 리스트 --> <!-- <div class=\"btns ar mgt80\"> <button type=\"button\" class=\"btn primary\" onclick=\"javascript:goInsert();\">등록</button> </div> --> </form> <!-- 페이징 --> <!-- //페이징 --> </div> <script type=\"text/javascript\"> //지역별 var addLgnNm = function(val, id){ /*var cnt = $(\".chk_list\").find(\"#typ"
-        ],
-        "candidateLinkSnippets": [
-          "<a href=\"/recruit/cm/cntnts/cntntsView.do?mi=11119&cntntsId=1735\" class=\"\" title=\"인력풀\">인력풀</a>",
-          "<a href=\"/recruit/cm/cntnts/cntntsView.do?mi=11120&cntntsId=1738\" class=\"\" title=\"교직원 온라인 채용\">교직원 온라인 채용</a>",
-          "<a href=\"/recruit/cm/cntnts/cntntsView.do?mi=11119&cntntsId=1735\" class=\"sm\" title=\"인력풀\">인력풀</a>",
-          "<a href=\"/recruit/cm/cntnts/cntntsView.do?mi=11120&cntntsId=1738\" class=\"sm\" title=\"교직원 온라인 채용\">교직원 온라인 채용</a>",
-          "<a href=\"/recruit/cm/cntnts/cntntsView.do?mi=11119&cntntsId=1735\" title=\"인력풀 이동\"><span>인력풀</span></a>",
-          "<a href=\"/recruit/cm/cntnts/cntntsView.do?mi=11120&cntntsId=1738\" title=\"교직원 온라인 채용 이동\"><span>교직원 온라인 채용</span></a>",
-          "<a href=\"/goe/cm/cntnts/cntntsView.do?mi=10089&cntntsId=1776\" class=\"point\">개인정보처리방침</a>",
-          "<a href=\"/goe/cm/cntnts/cntntsView.do?mi=10067&cntntsId=1586\">영상정보기기운영규정</a>"
-        ]
+      "regionCounts": {
+        "부천시": {
+          "raw": 0,
+          "relevant": 0
+        },
+        "김포시": {
+          "raw": 0,
+          "relevant": 0
+        },
+        "시흥시": {
+          "raw": 0,
+          "relevant": 0
+        },
+        "광명시": {
+          "raw": 0,
+          "relevant": 0
+        }
       }
     }
   },
@@ -605,7 +541,7 @@
       "matchedKeywords": [
         "음악"
       ],
-      "searchText": "신암중학교 2026학년도 신암중학교 계약제 (기간제) 교원 채용(음악과 1명) 초기화 검색 채용정보 지역별 등록순 마감순 5개씩 보기 10개씩 보기 15개씩 보기 30개씩 보기 50개씩 보기 100개씩 보기 200개씩 보기 300개씩 보기 마감제외 오늘의채용공고 검색 검색건수 6건 신암중학교 | 02-441-6751 | 등록일 : 2026-09-22 조회수 : 140 2026학년도 신암중학교 계약제 (기간제) 교원 채용(음악과 1명) --> 과목(담당업무) 음악",
+      "searchText": "신암중학교 2026학년도 신암중학교 계약제 (기간제) 교원 채용(음악과 1명) 초기화 검색 채용정보 지역별 등록순 마감순 5개씩 보기 10개씩 보기 15개씩 보기 30개씩 보기 50개씩 보기 100개씩 보기 200개씩 보기 300개씩 보기 마감제외 오늘의채용공고 검색 검색건수 6건 신암중학교 | 02-441-6751 | 등록일 : 2026-09-22 조회수 : 141 2026학년도 신암중학교 계약제 (기간제) 교원 채용(음악과 1명) --> 과목(담당업무) 음악",
       "autoCollected": true
     },
     {
@@ -635,7 +571,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "서초구립 한우리정보문화센터 2026 서초한우리오케스트라 직업연주자 선발 서울 서초구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 서초구립 한우리정보문화센터 진행중 2026 서초한우리오케스트라 직업연주자 선발 경력무관 고등학교 서울 서초구 남부순환로340길 15 (서초동) 연봉 0원 ~ 0원 계약직 주5일 채용시까지 2026-09-22 등록 131",
+      "searchText": "서초구립 한우리정보문화센터 2026 서초한우리오케스트라 직업연주자 선발 서울 서초구 서초구립 한우리정보문화센터 진행중 2026 서초한우리오케스트라 직업연주자 선발 경력무관 고등학교 서울 서초구 남부순환로340길 15 (서초동) 연봉 0원 ~ 0원 계약직 주5일 채용시까지 2026-09-22 등록 134",
       "autoCollected": true
     },
     {
@@ -2846,7 +2782,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "케이아츠에듀 2026 서울학생필하모닉오케스트라 파트멘토(강사) 초빙 공고 서울 은평구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 케이아츠에듀 마감 2026 서울학생필하모닉오케스트라 파트멘토(강사) 초빙 공고 경력 1년 대학교(4년) 서울 은평구 가좌로 208 (응암동) 일급 150,000원 ~ 150,000원 계약직 주1일 마감 2026-02-02 등록 2026-02-11 마감 1919",
+      "searchText": "케이아츠에듀 2026 서울학생필하모닉오케스트라 파트멘토(강사) 초빙 공고 서울 은평구 케이아츠에듀 마감 2026 서울학생필하모닉오케스트라 파트멘토(강사) 초빙 공고 경력 1년 대학교(4년) 서울 은평구 가좌로 208 (응암동) 일급 150,000원 ~ 150,000원 계약직 주1일 마감 2026-02-02 등록 2026-02-11 마감 1919",
       "autoCollected": true
     },
     {
@@ -2875,7 +2811,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 부평구 2월3일 금요일 오전 플루트대타 선생님 구합니다 경기 부천시 인천 부평구 2월3일 금요일 오전 플루트대타 선생님 구합니다 01.27 765",
+      "searchText": "인천 부평구 2월3일 금요일 오전 플루트대타 선생님 구합니다 경기 부천시 인천 부평구 2월3일 금요일 오전 플루트대타 선생님 구합니다 01.27 766",
       "autoCollected": true
     },
     {
@@ -2993,7 +2929,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "재단법인kbs교향악단 2026년 kbs교향악단 신규단원 채용 서울 영등포구 재단법인kbs교향악단 마감 2026년 kbs교향악단 신규단원 채용 경력무관 대학교(4년) 서울 영등포구 여의공원로 13 (여의도동) 연봉 0원 ~ 0원 정규직 주5일 마감 2026-01-19 등록 2026-03-01 마감 1894",
+      "searchText": "재단법인kbs교향악단 2026년 kbs교향악단 신규단원 채용 서울 영등포구 재단법인kbs교향악단 마감 2026년 kbs교향악단 신규단원 채용 경력무관 대학교(4년) 서울 영등포구 여의공원로 13 (여의도동) 연봉 0원 ~ 0원 정규직 주5일 마감 2026-01-19 등록 2026-03-01 마감 1895",
       "autoCollected": true
     },
     {
@@ -3730,7 +3666,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "(재)광명문화재단 2025 (재)광명문화재단 문화예술교육팀 '생활악기오케스트라' 사업 교육 강사 모집 공고 경기 광명시 (재)광명문화재단 마감 2025 (재)광명문화재단 문화예술교육팀 '생활악기오케스트라' 사업 교육 강사 모집 공고 경력 0년 대학교(4년) 경기 광명시 철망산로 2 (하안동) 일급 150,000원 ~ 150,000원 계약직 주1일 마감 2025-03-18 등록 2025-03-31 마감 579",
+      "searchText": "(재)광명문화재단 2025 (재)광명문화재단 문화예술교육팀 '생활악기오케스트라' 사업 교육 강사 모집 공고 경기 광명시 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 (재)광명문화재단 마감 2025 (재)광명문화재단 문화예술교육팀 '생활악기오케스트라' 사업 교육 강사 모집 공고 경력 0년 대학교(4년) 경기 광명시 철망산로 2 (하안동) 일급 150,000원 ~ 150,000원 계약직 주1일 마감 2025-03-18 등록 2025-03-31 마감 579",
       "autoCollected": true
     },
     {
@@ -3966,7 +3902,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "(주)에이디엔노뜨 (주)ad & note(에이디엔노뜨), [9월-11월 공연 연주자 모집] (기악듀엣&기악독주) 서울 서초구 (주)에이디엔노뜨 마감 (주)ad & note(에이디엔노뜨), [9월-11월 공연 연주자 모집] (기악듀엣&기악독주) 경력무관 학력무관 서울 서초구 방배로 201 (방배동) 일급 0원 ~ 0원 계약직 주6일 마감 2024-05-31 등록 2024-06-03 마감 507",
+      "searchText": "(주)에이디엔노뜨 (주)ad & note(에이디엔노뜨), [9월-11월 공연 연주자 모집] (기악듀엣&기악독주) 서울 서초구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 (주)에이디엔노뜨 마감 (주)ad & note(에이디엔노뜨), [9월-11월 공연 연주자 모집] (기악듀엣&기악독주) 경력무관 학력무관 서울 서초구 방배로 201 (방배동) 일급 0원 ~ 0원 계약직 주6일 마감 2024-05-31 등록 2024-06-03 마감 507",
       "autoCollected": true
     },
     {
@@ -4263,7 +4199,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "timf앙상블 (복사) timf앙상블 단원 모집 서울 서초구 timf앙상블 마감 (복사) timf앙상블 단원 모집 경력무관,신입 대학교(4년) 서울 서초구 서초중앙로 18 (서초동, 서초쌍용플래티넘) 일급 0원 ~ 0원 시간선택제 주1일 마감 2022-04-05 등록 2022-04-08 마감 151",
+      "searchText": "timf앙상블 (복사) timf앙상블 단원 모집 서울 서초구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 timf앙상블 마감 (복사) timf앙상블 단원 모집 경력무관,신입 대학교(4년) 서울 서초구 서초중앙로 18 (서초동, 서초쌍용플래티넘) 일급 0원 ~ 0원 시간선택제 주1일 마감 2022-04-05 등록 2022-04-08 마감 151",
       "autoCollected": true
     },
     {
@@ -4293,7 +4229,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "timf앙상블 timf앙상블 단원 모집 서울 서초구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 timf앙상블 마감 timf앙상블 단원 모집 경력무관,신입 대학교(4년) 서울 서초구 서초중앙로 18 (서초동, 서초쌍용플래티넘) 일급 0원 ~ 0원 시간선택제 주1일 마감 2022-03-11 등록 2022-04-08 마감 864",
+      "searchText": "timf앙상블 timf앙상블 단원 모집 서울 서초구 timf앙상블 마감 timf앙상블 단원 모집 경력무관,신입 대학교(4년) 서울 서초구 서초중앙로 18 (서초동, 서초쌍용플래티넘) 일급 0원 ~ 0원 시간선택제 주1일 마감 2022-03-11 등록 2022-04-08 마감 864",
       "autoCollected": true
     },
     {
