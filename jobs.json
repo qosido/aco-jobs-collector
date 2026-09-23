@@ -1,17 +1,17 @@
 {
-  "updatedAt": "2026-09-23T10:14:41.394Z",
+  "updatedAt": "2026-09-23T11:47:20.828Z",
   "diagnostics": {
     "ice": {
-      "pagesCollected": 10,
-      "rawCount": 100,
-      "uniqueCount": 100,
+      "pagesCollected": 0,
+      "rawCount": 0,
+      "uniqueCount": 0,
       "duplicatedPageDetected": false,
-      "firstPageHtmlLength": 183908,
-      "firstPageTrCount": 19,
-      "firstPageTdCount": 91,
-      "firstPageHasArtInstructor": true,
-      "firstPageHasRecruiting": true,
-      "firstPagePreview": "공고 < 채용공고 < 채용 < 채용/시험 | 인천광역시교육청 본문으로 바로가기 메인메뉴 바로가기 이 누리집은 대한민국 공식 전자정부 누리집입니다. --> 로그인 메뉴스크랩 국가상징 KOR Language English Japanese Chinese Vietnamese Russian Mongolian Thai Uzbek --> 블로그 바로가기 유튜브 바로가기 페이스북 바로가기 인스타그램 바로가기 카카오톡 바로가기 SNS SNS 블로그 바로가기 트위터 바로가기 페이스북 바로가기 카카오톡 바로가기 인스타그램 바로가기 유튜브 바로가기 --> --> --> Tel.070.4021.7078 접수 받고 있습니다. --> --> --> --> --> --> 오늘하루열지않기 --> --> --> 닫기 --> --> --> --> 소식 교육 행정 채용/시험 참여/신청 개인정보처리방침 인천광역시교육청 관련사이트 22 ℃ 미세먼지 좋음 교육청소식 교육청소식 학생성공시대 를 여는 인천교육 INCHEON M"
+      "firstPageHtmlLength": 77,
+      "firstPageTrCount": 0,
+      "firstPageTdCount": 0,
+      "firstPageHasArtInstructor": false,
+      "firstPageHasRecruiting": false,
+      "firstPagePreview": ""
     },
     "sen": {
       "keywords": [
@@ -105,8 +105,8 @@
         "플룻": 3
       },
       "firstPageHtmlLengths": {
-        "플루트": 170046,
-        "플룻": 236486
+        "플루트": 168034,
+        "플룻": 222283
       }
     },
     "goe": {
@@ -177,15 +177,15 @@
     }
   },
   "sourceCounts": {
-    "ice": 100,
+    "ice": 0,
     "sen": 6,
     "artmore": 48,
     "artinfo": 14,
     "lessoninfo": 76,
     "goe": 39
   },
-  "count": 283,
-  "activeCount": 74,
+  "count": 183,
+  "activeCount": 72,
   "jobs": [
     {
       "id": "goe_61041",
@@ -284,7 +284,7 @@
       ],
       "instrumentTags": [],
       "matchedKeywords": [],
-      "searchText": "시흥고등학교 시흥고등학교 국어, 미술 시간강사 채용 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 국어, 미술 시흥고등학교 010-3374-1970 등록일 : 2026/09/23 조회수 : 8 시흥고등학교 국어, 미술 시간강사 채용 모집정보 시급 경력무관 | 시흥시 채용인원 2 접수기간 2026/09/29 ~ 2026/10/06 채용기간 2026/10/22 ~ 2026/10/26 직무분야 국어, 미술 상세보기",
+      "searchText": "시흥고등학교 시흥고등학교 국어, 미술 시간강사 채용 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 국어, 미술 시흥고등학교 010-3374-1970 등록일 : 2026/09/23 조회수 : 9 시흥고등학교 국어, 미술 시간강사 채용 모집정보 시급 경력무관 | 시흥시 채용인원 2 접수기간 2026/09/29 ~ 2026/10/06 채용기간 2026/10/22 ~ 2026/10/26 직무분야 국어, 미술 상세보기",
       "autoCollected": true
     },
     {
@@ -309,7 +309,7 @@
       ],
       "instrumentTags": [],
       "matchedKeywords": [],
-      "searchText": "고촌고등학교 (고촌고등학교) 시간강사 채용 공고(영어) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 영어 고촌고등학교 031-8048-5157 등록일 : 2026/09/23 조회수 : 6 (고촌고등학교) 시간강사 채용 공고(영어) 모집정보 시급 경력무관 | 김포시 채용인원 1 접수기간 2026/09/23 ~ 2026/09/30 채용기간 2026/11/02 ~ 2026/11/04 직무분야 영어 상세보기",
+      "searchText": "고촌고등학교 (고촌고등학교) 시간강사 채용 공고(영어) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 영어 고촌고등학교 031-8048-5157 등록일 : 2026/09/23 조회수 : 7 (고촌고등학교) 시간강사 채용 공고(영어) 모집정보 시급 경력무관 | 김포시 채용인원 1 접수기간 2026/09/23 ~ 2026/09/30 채용기간 2026/11/02 ~ 2026/11/04 직무분야 영어 상세보기",
       "autoCollected": true
     },
     {
@@ -363,29 +363,6 @@
       "autoCollected": true
     },
     {
-      "id": "job_smnx6n",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-09-23",
-      "recruitStatus": "모집중",
-      "isActive": true,
-      "organization": "인천승학초등학교",
-      "jobType": "예체능강사",
-      "title": "인천승학초 2026학년도 2학기 창의적체험활동 동아리활동(합주부) 강사 모집 공고",
-      "deadline": "2026-09-27",
-      "startDate": "2026-10-02",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "관악·오케스트라"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천승학초등학교 예체능강사 인천승학초 2026학년도 2학기 창의적체험활동 동아리활동(합주부) 강사 모집 공고",
-      "autoCollected": true
-    },
-    {
       "id": "goe_60966",
       "source": "경기도교육청",
       "sourceId": "goe",
@@ -434,7 +411,7 @@
       "matchedKeywords": [
         "방과후"
       ],
-      "searchText": "경기도시흥교육지원청 2026 계수초등학교 방과후프로그램 개인위탁 강사 모집 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 초1-2맞춤형 및 수익자방과후 프로그램 동시 운영 경기도시흥교육지원청 010-2667-1464 등록일 : 2026/09/22 조회수 : 146 2026 계수초등학교 방과후프로그램 개인위탁 강사 모집 공고 모집정보 시급 신입 | 시흥시 채용인원 1 접수기간 2026/09/28 ~ 2026/09/30 채용기간 2026/10/26 ~ 2026/12/30 직무분야 초1-2맞춤형 및 수익자방과후 프로그램 동시 운영 상세보기",
+      "searchText": "경기도시흥교육지원청 2026 계수초등학교 방과후프로그램 개인위탁 강사 모집 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 초1-2맞춤형 및 수익자방과후 프로그램 동시 운영 경기도시흥교육지원청 010-2667-1464 등록일 : 2026/09/22 조회수 : 154 2026 계수초등학교 방과후프로그램 개인위탁 강사 모집 공고 모집정보 시급 신입 | 시흥시 채용인원 1 접수기간 2026/09/28 ~ 2026/09/30 채용기간 2026/10/26 ~ 2026/12/30 직무분야 초1-2맞춤형 및 수익자방과후 프로그램 동시 운영 상세보기",
       "autoCollected": true
     },
     {
@@ -485,7 +462,7 @@
       ],
       "instrumentTags": [],
       "matchedKeywords": [],
-      "searchText": "시화나래초등학교 -364-3487 ★시화나래초등학교 2026학년도 초1~2맞춤형 개인위탁 강사 채용 공고(2차 공고) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 놀이 체육(전래놀이,방송댄스 등 체육관련 가능) 시화나래초등학교 -364-3487 등록일 : 2026/09/22 조회수 : 66 마감임박 ★시화나래초등학교 2026학년도 초1~2맞춤형 개인위탁 강사 채용 공고(2차 공고) 모집정보 시급 경력무관 | 시흥시 채용인원 1 접수기간 2026/09/22 ~ 2026/09/29 채용기간 2026/10/12 ~ 2027/02/19 직무분야 놀이 체육(전래놀이,방송댄스 등 체육관련 가능) 상세보기",
+      "searchText": "시화나래초등학교 -364-3487 ★시화나래초등학교 2026학년도 초1~2맞춤형 개인위탁 강사 채용 공고(2차 공고) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 놀이 체육(전래놀이,방송댄스 등 체육관련 가능) 시화나래초등학교 -364-3487 등록일 : 2026/09/22 조회수 : 71 마감임박 ★시화나래초등학교 2026학년도 초1~2맞춤형 개인위탁 강사 채용 공고(2차 공고) 모집정보 시급 경력무관 | 시흥시 채용인원 1 접수기간 2026/09/22 ~ 2026/09/29 채용기간 2026/10/12 ~ 2027/02/19 직무분야 놀이 체육(전래놀이,방송댄스 등 체육관련 가능) 상세보기",
       "autoCollected": true
     },
     {
@@ -511,7 +488,7 @@
       "matchedKeywords": [
         "음악"
       ],
-      "searchText": "신암중학교 2026학년도 신암중학교 계약제 (기간제) 교원 채용(음악과 1명) 초기화 검색 채용정보 지역별 등록순 마감순 5개씩 보기 10개씩 보기 15개씩 보기 30개씩 보기 50개씩 보기 100개씩 보기 200개씩 보기 300개씩 보기 마감제외 오늘의채용공고 검색 검색건수 6건 신암중학교 | 02-441-6751 | 등록일 : 2026-09-22 조회수 : 161 2026학년도 신암중학교 계약제 (기간제) 교원 채용(음악과 1명) --> 과목(담당업무) 음악",
+      "searchText": "신암중학교 2026학년도 신암중학교 계약제 (기간제) 교원 채용(음악과 1명) 초기화 검색 채용정보 지역별 등록순 마감순 5개씩 보기 10개씩 보기 15개씩 보기 30개씩 보기 50개씩 보기 100개씩 보기 200개씩 보기 300개씩 보기 마감제외 오늘의채용공고 검색 검색건수 6건 신암중학교 | 02-441-6751 | 등록일 : 2026-09-22 조회수 : 164 2026학년도 신암중학교 계약제 (기간제) 교원 채용(음악과 1명) --> 과목(담당업무) 음악",
       "autoCollected": true
     },
     {
@@ -561,7 +538,7 @@
       ],
       "instrumentTags": [],
       "matchedKeywords": [],
-      "searchText": "시흥신일초등학교 2026 시흥 학생맞춤형 공유학교 학생 선택 브릿지 프로그램 강사 모집 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 만화창작 외 7개 시흥신일초등학교 070-4878-2819 등록일 : 2026/09/22 조회수 : 147 마감임박 2026 시흥 학생맞춤형 공유학교 학생 선택 브릿지 프로그램 강사 모집 공고 모집정보 시급 경력무관 | 시흥시 채용인원 1 접수기간 2026/09/22 ~ 2026/09/28 채용기간 2026/10/01 ~ 2026/11/30 직무분야 만화창작 외 7개 상세보기",
+      "searchText": "시흥신일초등학교 2026 시흥 학생맞춤형 공유학교 학생 선택 브릿지 프로그램 강사 모집 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 만화창작 외 7개 시흥신일초등학교 070-4878-2819 등록일 : 2026/09/22 조회수 : 153 마감임박 2026 시흥 학생맞춤형 공유학교 학생 선택 브릿지 프로그램 강사 모집 공고 모집정보 시급 경력무관 | 시흥시 채용인원 1 접수기간 2026/09/22 ~ 2026/09/28 채용기간 2026/10/01 ~ 2026/11/30 직무분야 만화창작 외 7개 상세보기",
       "autoCollected": true
     },
     {
@@ -666,7 +643,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "서초구립 한우리정보문화센터 2026 서초한우리오케스트라 직업연주자 선발 서울 서초구 서초구립 한우리정보문화센터 진행중 2026 서초한우리오케스트라 직업연주자 선발 경력무관 고등학교 서울 서초구 남부순환로340길 15 (서초동) 연봉 0원 ~ 0원 계약직 주5일 채용시까지 2026-09-22 등록 139",
+      "searchText": "서초구립 한우리정보문화센터 2026 서초한우리오케스트라 직업연주자 선발 서울 서초구 서초구립 한우리정보문화센터 진행중 2026 서초한우리오케스트라 직업연주자 선발 경력무관 고등학교 서울 서초구 남부순환로340길 15 (서초동) 연봉 0원 ~ 0원 계약직 주5일 채용시까지 2026-09-22 등록 142",
       "autoCollected": true
     },
     {
@@ -741,7 +718,7 @@
       ],
       "instrumentTags": [],
       "matchedKeywords": [],
-      "searchText": "부천공업고등학교 부천공업고등학교 시간강사 채용공고(특수2차) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 특수 부천공업고등학교 032-610-7406 등록일 : 2026/09/21 조회수 : 11 마감임박 부천공업고등학교 시간강사 채용공고(특수2차) 모집정보 시급 경력무관 | 부천시 채용인원 1 접수기간 2026/09/21 ~ 2026/09/28 채용기간 2026/10/01 ~ 2026/10/08 직무분야 특수 상세보기",
+      "searchText": "부천공업고등학교 부천공업고등학교 시간강사 채용공고(특수2차) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 특수 부천공업고등학교 032-610-7406 등록일 : 2026/09/21 조회수 : 12 마감임박 부천공업고등학교 시간강사 채용공고(특수2차) 모집정보 시급 경력무관 | 부천시 채용인원 1 접수기간 2026/09/21 ~ 2026/09/28 채용기간 2026/10/01 ~ 2026/10/08 직무분야 특수 상세보기",
       "autoCollected": true
     },
     {
@@ -766,7 +743,7 @@
       ],
       "instrumentTags": [],
       "matchedKeywords": [],
-      "searchText": "배곧유치원 2026.10.12.자 배곧유치원 계약제교원(시간강사) 채용 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 유치원 배곧유치원 031-499-3921 등록일 : 2026/09/21 조회수 : 56 마감임박 2026.10.12.자 배곧유치원 계약제교원(시간강사) 채용 공고 모집정보 시급 경력 | 시흥시 채용인원 1 접수기간 2026/09/21 ~ 2026/09/28 채용기간 2026/10/12 ~ 2026/10/16 직무분야 유치원 상세보기",
+      "searchText": "배곧유치원 2026.10.12.자 배곧유치원 계약제교원(시간강사) 채용 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 유치원 배곧유치원 031-499-3921 등록일 : 2026/09/21 조회수 : 58 마감임박 2026.10.12.자 배곧유치원 계약제교원(시간강사) 채용 공고 모집정보 시급 경력 | 시흥시 채용인원 1 접수기간 2026/09/21 ~ 2026/09/28 채용기간 2026/10/12 ~ 2026/10/16 직무분야 유치원 상세보기",
       "autoCollected": true
     },
     {
@@ -816,7 +793,7 @@
       ],
       "instrumentTags": [],
       "matchedKeywords": [],
-      "searchText": "월포초등학교 2026학년도 월포초등학교 특수교육 협력강사 채용 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 초등특수 월포초등학교 010-8910-8570 등록일 : 2026/09/21 조회수 : 107 마감임박 2026학년도 월포초등학교 특수교육 협력강사 채용 공고 모집정보 시급 경력무관 | 시흥시 채용인원 1 접수기간 2026/09/21 ~ 2026/09/27 채용기간 2026/10/01 ~ 2026/12/31 직무분야 초등특수 상세보기",
+      "searchText": "월포초등학교 2026학년도 월포초등학교 특수교육 협력강사 채용 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 초등특수 월포초등학교 010-8910-8570 등록일 : 2026/09/21 조회수 : 108 마감임박 2026학년도 월포초등학교 특수교육 협력강사 채용 공고 모집정보 시급 경력무관 | 시흥시 채용인원 1 접수기간 2026/09/21 ~ 2026/09/27 채용기간 2026/10/01 ~ 2026/12/31 직무분야 초등특수 상세보기",
       "autoCollected": true
     },
     {
@@ -842,29 +819,6 @@
       "instrumentTags": [],
       "matchedKeywords": [],
       "searchText": "원미고등학교 원미고 강사(일본어 시간강사) 채용 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 일본어 원미고등학교 032-722-6200 등록일 : 2026/09/21 조회수 : 13 마감임박 원미고 강사(일본어 시간강사) 채용 공고 모집정보 시급 경력무관 | 부천시 채용인원 1 접수기간 2026/09/22 ~ 2026/09/24 채용기간 2026/09/28 ~ 2026/10/02 직무분야 일본어 상세보기",
-      "autoCollected": true
-    },
-    {
-      "id": "job_r9kbnz",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-09-18",
-      "recruitStatus": "모집중",
-      "isActive": true,
-      "organization": "인천완정초등학교",
-      "jobType": "시간강사, 예체능강사",
-      "title": "2026학년도 6학년 문화예술(영상 제작) 강사 채용 공고",
-      "deadline": "2026-10-01",
-      "startDate": "2026-10-06",
-      "endDate": "2026-12-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "영상"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천완정초등학교 시간강사, 예체능강사 2026학년도 6학년 문화예술(영상 제작) 강사 채용 공고",
       "autoCollected": true
     },
     {
@@ -943,7 +897,7 @@
       ],
       "instrumentTags": [],
       "matchedKeywords": [],
-      "searchText": "배곧해솔중학교 오늘마감 계약제교원(시간강사) 채용 공고(장기재직휴가)(영어)_2차 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 영어 배곧해솔중학교 031-8063-1807 등록일 : 2026/09/18 조회수 : 36 오늘마감 계약제교원(시간강사) 채용 공고(장기재직휴가)(영어)_2차 모집정보 시급 경력무관 | 시흥시 채용인원 1 접수기간 2026/09/18 ~ 2026/09/23 채용기간 2026/10/12 ~ 2026/10/16 직무분야 영어 상세보기",
+      "searchText": "배곧해솔중학교 오늘마감 계약제교원(시간강사) 채용 공고(장기재직휴가)(영어)_2차 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 영어 배곧해솔중학교 031-8063-1807 등록일 : 2026/09/18 조회수 : 37 오늘마감 계약제교원(시간강사) 채용 공고(장기재직휴가)(영어)_2차 모집정보 시급 경력무관 | 시흥시 채용인원 1 접수기간 2026/09/18 ~ 2026/09/23 채용기간 2026/10/12 ~ 2026/10/16 직무분야 영어 상세보기",
       "autoCollected": true
     },
     {
@@ -1072,7 +1026,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "연수문화원 연수문화원 문화학교 강사 모집(플루트, 통기타) 인천 연수구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 연수문화원 진행중 연수문화원 문화학교 강사 모집(플루트, 통기타) 경력무관 고등학교 인천 연수구 비류대로 299 (청학동) 월급 0원 ~ 0원 프리랜서 주1일 d-16 2026-09-16 등록 2026-10-09 마감 110",
+      "searchText": "연수문화원 연수문화원 문화학교 강사 모집(플루트, 통기타) 인천 연수구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 연수문화원 진행중 연수문화원 문화학교 강사 모집(플루트, 통기타) 경력무관 고등학교 인천 연수구 비류대로 299 (청학동) 월급 0원 ~ 0원 프리랜서 주1일 d-16 2026-09-16 등록 2026-10-09 마감 111",
       "autoCollected": true
     },
     {
@@ -1205,29 +1159,6 @@
       "autoCollected": true
     },
     {
-      "id": "job_158f0qk",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-09-14",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천논현초등학교",
-      "jobType": "예체능강사",
-      "title": "인천논현초등학교 학교스포츠클럽 지도강사 모집 공고",
-      "deadline": "2026-09-18",
-      "startDate": "2026-09-28",
-      "endDate": "2026-12-18",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "스포츠"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천논현초등학교 예체능강사 인천논현초등학교 학교스포츠클럽 지도강사 모집 공고",
-      "autoCollected": true
-    },
-    {
       "id": "artmore_94989",
       "source": "아트모아",
       "sourceId": "artmore",
@@ -1283,7 +1214,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 부평구 인천 부평구 대형음악학원 플루트강사샘 모집해요. 인천 부평구 경기 부천시 인천 계양구 인천 부평구 대형음악학원 플루트강사샘 모집해요. 09.13 93",
+      "searchText": "인천 부평구 인천 부평구 대형음악학원 플루트강사샘 모집해요. 인천 부평구 경기 부천시 인천 계양구 인천 부평구 대형음악학원 플루트강사샘 모집해요. 09.13 94",
       "autoCollected": true
     },
     {
@@ -1309,54 +1240,6 @@
       "instrumentTags": [],
       "matchedKeywords": [],
       "searchText": "부천상록학교 부천상록학교(공립 특수학교) 2026학년도 2학기 시간강사 채용 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 특수(초등), 특수(중등) 부천상록학교 032-678-2862 등록일 : 2026/09/10 조회수 : 52 부천상록학교(공립 특수학교) 2026학년도 2학기 시간강사 채용 공고 모집정보 시급 신입 | 부천시 채용인원 0 접수기간 2026/09/10 ~ 2026/12/04 채용기간 2026/09/30 ~ 2026/12/09 직무분야 특수(초등), 특수(중등) 상세보기",
-      "autoCollected": true
-    },
-    {
-      "id": "job_puyhpm",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-09-10",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천주원초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 인천주원초등학교 특수학급 우쿨렐레 강사 모집 공고",
-      "deadline": "2026-09-17",
-      "startDate": "2026-10-01",
-      "endDate": "2026-12-10",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "우쿨렐레"
-      ],
-      "instrumentTags": [
-        "우쿨렐레"
-      ],
-      "searchText": "인천주원초등학교 예체능강사 2026학년도 인천주원초등학교 특수학급 우쿨렐레 강사 모집 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1ee2eh",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-09-10",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "용현여자중학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 2학기 전일제 특수학급 배치 학생 지원 프로그램 강사 공고문",
-      "deadline": "2026-09-15",
-      "startDate": "2026-09-17",
-      "endDate": "2026-12-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "용현여자중학교 예체능강사 2026학년도 2학기 전일제 특수학급 배치 학생 지원 프로그램 강사 공고문",
       "autoCollected": true
     },
     {
@@ -1386,30 +1269,7 @@
         "플루트",
         "플룻"
       ],
-      "searchText": "서울 구로구 서울, 경기, 인천 바이올린, 첼로, 피아노 선생님 구인합니다. 서울 구로구 서울, 경기, 인천 바이올린, 첼로, 피아노 선생님 구인합니다. n --> --> 739",
-      "autoCollected": true
-    },
-    {
-      "id": "job_bt3jhr",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-09-08",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "상인천초등학교",
-      "jobType": "예체능강사, 기타",
-      "title": "2026 상인천초 특수학급 푸드아트(요리및제빵) 프로그램 강사 채용 공고",
-      "deadline": "2026-09-14",
-      "startDate": "2026-09-22",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "상인천초등학교 예체능강사, 기타 2026 상인천초 특수학급 푸드아트(요리및제빵) 프로그램 강사 채용 공고",
+      "searchText": "서울 구로구 서울, 경기, 인천 바이올린, 첼로, 피아노 선생님 구인합니다. 서울 구로구 서울, 경기, 인천 바이올린, 첼로, 피아노 선생님 구인합니다. n --> --> 741",
       "autoCollected": true
     },
     {
@@ -1514,98 +1374,6 @@
       "autoCollected": true
     },
     {
-      "id": "job_1f00nea",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-09-03",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천동방중학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 인천동방중학교 학교예술동아리 강사(밴드부) 채용 공고",
-      "deadline": "2026-09-08",
-      "startDate": "2026-09-16",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천동방중학교 예체능강사 2026학년도 인천동방중학교 학교예술동아리 강사(밴드부) 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_gd2zat",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-09-03",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천동방중학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 인천동방중학교 1학생 1예체능 음악 협력 강사(통기타) 채용 공고",
-      "deadline": "2026-09-08",
-      "startDate": "2026-09-21",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "음악"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천동방중학교 예체능강사 2026학년도 인천동방중학교 1학생 1예체능 음악 협력 강사(통기타) 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_bo6wvk",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-09-02",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천관교초등학교",
-      "jobType": "예체능강사",
-      "title": "전일제 특수학급 학생 대상 미술치료 강사 모집",
-      "deadline": "2026-09-07",
-      "startDate": "2026-09-14",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "미술"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천관교초등학교 예체능강사 전일제 특수학급 학생 대상 미술치료 강사 모집",
-      "autoCollected": true
-    },
-    {
-      "id": "job_16kzui4",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-09-02",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "강남영상미디어고등학교",
-      "jobType": "예체능강사, 기타",
-      "title": "2026학년도 2학기 전일제 특수학급 배치 특수교육대상학생 지원 프로그램 강사 채용 공고(긴급)",
-      "deadline": "2026-09-04",
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "영상"
-      ],
-      "instrumentTags": [],
-      "searchText": "강남영상미디어고등학교 예체능강사, 기타 2026학년도 2학기 전일제 특수학급 배치 특수교육대상학생 지원 프로그램 강사 채용 공고(긴급)",
-      "autoCollected": true
-    },
-    {
       "id": "goe_58426",
       "source": "경기도교육청",
       "sourceId": "goe",
@@ -1631,98 +1399,6 @@
       "autoCollected": true
     },
     {
-      "id": "job_m3cuzz",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-28",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천새말초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 교육 연극 프로그램 강사 채용 공고",
-      "deadline": "2026-09-01",
-      "startDate": "2026-09-09",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천새말초등학교 예체능강사 2026학년도 교육 연극 프로그램 강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_11lvchu",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-27",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천신현북초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 1학년 문예체수업 강사 2차 모집 공고",
-      "deadline": "2026-09-01",
-      "startDate": "2026-09-11",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천신현북초등학교 예체능강사 2026학년도 1학년 문예체수업 강사 2차 모집 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_7deoq2",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-26",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천신송초등학교",
-      "jobType": "예체능강사",
-      "title": "신송초등학교 국악오케스트라 대금 강사 채용 공고",
-      "deadline": "2026-09-01",
-      "startDate": "2026-09-04",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "관악·오케스트라"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천신송초등학교 예체능강사 신송초등학교 국악오케스트라 대금 강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_3jo3nr",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-26",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천양지초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 2학기 특수교육대상학생 지원 프로그램 강사 모집",
-      "deadline": "2026-08-28",
-      "startDate": "2026-09-03",
-      "endDate": "2026-12-29",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천양지초등학교 예체능강사 2026학년도 2학기 특수교육대상학생 지원 프로그램 강사 모집",
-      "autoCollected": true
-    },
-    {
       "id": "goe_57911",
       "source": "경기도교육청",
       "sourceId": "goe",
@@ -1744,490 +1420,7 @@
       ],
       "instrumentTags": [],
       "matchedKeywords": [],
-      "searchText": "부천부흥중학교 2026학년도 부천부흥중학교 기간제교원(영어, 시간강사) 채용 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 영어 부천부흥중학교 070-7099-0862 등록일 : 2026/08/25 조회수 : 105 2026학년도 부천부흥중학교 기간제교원(영어, 시간강사) 채용 공고 모집정보 시급 경력무관 | 부천시 채용인원 1 접수기간 2026/08/26 ~ 2026/09/30 채용기간 2026/10/12 ~ 2026/10/16 직무분야 영어 상세보기",
-      "autoCollected": true
-    },
-    {
-      "id": "job_19cvvja",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-25",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천문남초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 6학년 다문화 동아리 예술(음악) 지도강사",
-      "deadline": "2026-08-31",
-      "startDate": "2026-09-07",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "음악"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천문남초등학교 예체능강사 2026학년도 6학년 다문화 동아리 예술(음악) 지도강사",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1ru8n02",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-25",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "용현중학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 동아리(밴드부) 공연 지도 단기 강사 모집 공고",
-      "deadline": "2026-08-31",
-      "startDate": "2026-09-15",
-      "endDate": "2026-10-24",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "용현중학교 예체능강사 2026학년도 동아리(밴드부) 공연 지도 단기 강사 모집 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_73sede",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-25",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천예일고등학교",
-      "jobType": "예체능강사",
-      "title": "(긴급)2026학년도 2학기 전일제 특수학급 배치 학생 지원 프로그램 강사 채용 공고",
-      "deadline": "2026-08-27",
-      "startDate": "2026-09-03",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천예일고등학교 예체능강사 (긴급)2026학년도 2학기 전일제 특수학급 배치 학생 지원 프로그램 강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1pezc58",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-24",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천창영초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 바둑 중점학교 강사 채용 공고",
-      "deadline": "2026-08-31",
-      "startDate": "2026-09-07",
-      "endDate": "2026-12-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천창영초등학교 예체능강사 2026학년도 바둑 중점학교 강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_stq5r8",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-24",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천장수초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 인천장수초등학교 연극교육 강사 모집",
-      "deadline": "2026-08-31",
-      "startDate": "2026-09-14",
-      "endDate": "2026-11-30",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천장수초등학교 예체능강사 2026학년도 인천장수초등학교 연극교육 강사 모집",
-      "autoCollected": true
-    },
-    {
-      "id": "job_16gs4o5",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-24",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천신촌초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 신촌초 특수학급 문화예술프로그램(방송댄스) 강사 채용 공고",
-      "deadline": "2026-08-30",
-      "startDate": "2026-09-03",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "무용"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천신촌초등학교 예체능강사 2026학년도 신촌초 특수학급 문화예술프로그램(방송댄스) 강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1p47fci",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-21",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인화여자중학교",
-      "jobType": "예체능강사",
-      "title": "가야금 강사 채용",
-      "deadline": "2026-08-27",
-      "startDate": "2026-09-01",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인화여자중학교 예체능강사 가야금 강사 채용",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1ozpv97",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-21",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천부평동초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 2학기 특수학급 건강체육교실 강사 채용",
-      "deadline": "2026-08-27",
-      "startDate": "2026-09-01",
-      "endDate": "2026-12-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "스포츠"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천부평동초등학교 예체능강사 2026학년도 2학기 특수학급 건강체육교실 강사 채용",
-      "autoCollected": true
-    },
-    {
-      "id": "job_154cjfm",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-21",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천가정초등학교",
-      "jobType": "예체능강사",
-      "title": "(긴급) 2026학년도 인천가정초등학교 학교예술동아리(세밀화) 강사 선발 공고",
-      "deadline": "2026-08-26",
-      "startDate": "2026-09-14",
-      "endDate": "2026-11-02",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천가정초등학교 예체능강사 (긴급) 2026학년도 인천가정초등학교 학교예술동아리(세밀화) 강사 선발 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_gi6xvk",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-21",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천송천초등학교",
-      "jobType": "시간강사, 예체능강사",
-      "title": "2026학년도 2학기 전일제특수학급 지원 프로그램 강사 채용 공고(언어치료)",
-      "deadline": "2026-08-25",
-      "startDate": "2026-09-01",
-      "endDate": "2027-01-07",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천송천초등학교 시간강사, 예체능강사 2026학년도 2학기 전일제특수학급 지원 프로그램 강사 채용 공고(언어치료)",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1h9a2x8",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-21",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천한빛초등학교",
-      "jobType": "예체능강사, 기타",
-      "title": "2026 놀자학교 - 인천한빛초등학교 교실놀이 강사 모집",
-      "deadline": "2026-08-24",
-      "startDate": "2026-09-07",
-      "endDate": "2026-10-09",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천한빛초등학교 예체능강사, 기타 2026 놀자학교 - 인천한빛초등학교 교실놀이 강사 모집",
-      "autoCollected": true
-    },
-    {
-      "id": "job_u5p89v",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-20",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천주안남초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 주안남초 놀이체육 프로그램 강사 추가 채용",
-      "deadline": "2026-08-26",
-      "startDate": "2026-09-01",
-      "endDate": "2026-12-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "스포츠"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천주안남초등학교 예체능강사 2026학년도 주안남초 놀이체육 프로그램 강사 추가 채용",
-      "autoCollected": true
-    },
-    {
-      "id": "job_xuoxli",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-20",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "신현여자중학교",
-      "jobType": "예체능강사, 기타",
-      "title": "신현여자중학교 교내학교스포츠클럽 피구부 지도강사 채용 공고",
-      "deadline": "2026-08-26",
-      "startDate": "2026-09-01",
-      "endDate": "2026-11-30",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "스포츠"
-      ],
-      "instrumentTags": [],
-      "searchText": "신현여자중학교 예체능강사, 기타 신현여자중학교 교내학교스포츠클럽 피구부 지도강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_lcxzd3",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-20",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "함박중학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 2학기 뮤지컬 동아리 강사 채용",
-      "deadline": "2026-08-23",
-      "startDate": "2026-09-01",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "함박중학교 예체능강사 2026학년도 2학기 뮤지컬 동아리 강사 채용",
-      "autoCollected": true
-    },
-    {
-      "id": "job_4h9kbd",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-19",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천옥련초등학교",
-      "jobType": "예체능강사",
-      "title": "인천옥련초등학교 특수학급 그림책 프로그램(그림책 뮤직테라피) 강사 채용 공고",
-      "deadline": "2026-08-24",
-      "startDate": "2026-09-01",
-      "endDate": "2026-12-29",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천옥련초등학교 예체능강사 인천옥련초등학교 특수학급 그림책 프로그램(그림책 뮤직테라피) 강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_5bta3a",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-18",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "동인천중학교",
-      "jobType": "시간강사, 예체능강사",
-      "title": "학교예술동아리(연극분야) 개인 위탁 외부 강사 모집",
-      "deadline": "2026-08-27",
-      "startDate": "2026-09-07",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "동인천중학교 시간강사, 예체능강사 학교예술동아리(연극분야) 개인 위탁 외부 강사 모집",
-      "autoCollected": true
-    },
-    {
-      "id": "job_wac9jv",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-18",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천신송초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 신송초 국악오케스트라 지도 강사 채용 공고(대금)",
-      "deadline": "2026-08-24",
-      "startDate": "2026-08-28",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "관악·오케스트라"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천신송초등학교 예체능강사 2026학년도 신송초 국악오케스트라 지도 강사 채용 공고(대금)",
-      "autoCollected": true
-    },
-    {
-      "id": "job_ggjzec",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-13",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천조동초등학교",
-      "jobType": "시간강사, 예체능강사",
-      "title": "2026학년도 2학기 조동초등학교 진로동아리(뉴스포츠) 강사 추가 모집 공고",
-      "deadline": "2026-08-19",
-      "startDate": "2026-09-04",
-      "endDate": "2026-12-19",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "스포츠"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천조동초등학교 시간강사, 예체능강사 2026학년도 2학기 조동초등학교 진로동아리(뉴스포츠) 강사 추가 모집 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1byyy0l",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-13",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천신현북초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 1학년 문예체수업 강사 위촉 공고문",
-      "deadline": "2026-08-17",
-      "startDate": "2026-09-01",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천신현북초등학교 예체능강사 2026학년도 1학년 문예체수업 강사 위촉 공고문",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1ia2fe5",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-13",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천신현북초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 유초연계 이음교육 강사 위촉 공고",
-      "deadline": "2026-08-17",
-      "startDate": "2026-09-01",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천신현북초등학교 예체능강사 2026학년도 유초연계 이음교육 강사 위촉 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1632js",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-12",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "덕신고등학교",
-      "jobType": "예체능강사, 방과후강사",
-      "title": "2026학년도 2학기 방과후학교 외부강사 채용(첼로)",
-      "deadline": "2026-08-18",
-      "startDate": "2026-08-19",
-      "endDate": "2026-11-26",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "덕신고등학교 예체능강사, 방과후강사 2026학년도 2학기 방과후학교 외부강사 채용(첼로)",
+      "searchText": "부천부흥중학교 2026학년도 부천부흥중학교 기간제교원(영어, 시간강사) 채용 공고 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 영어 부천부흥중학교 070-7099-0862 등록일 : 2026/08/25 조회수 : 108 2026학년도 부천부흥중학교 기간제교원(영어, 시간강사) 채용 공고 모집정보 시급 경력무관 | 부천시 채용인원 1 접수기간 2026/08/26 ~ 2026/09/30 채용기간 2026/10/12 ~ 2026/10/16 직무분야 영어 상세보기",
       "autoCollected": true
     },
     {
@@ -2253,261 +1446,6 @@
       "instrumentTags": [],
       "matchedKeywords": [],
       "searchText": "경기도교육청 2026년 병원형 위(wee)센터 시간강사 채용(사회/한국사) 초중등시간강사(자유학기활동강사 특기적성(방과후) 포함) 사회/한국사 경기도교육청 032-310-0172 등록일 : 2026/08/11 조회수 : 112 2026년 병원형 위(wee)센터 시간강사 채용(사회/한국사) 모집정보 시급 경력무관 | 부천시 채용인원 1 접수기간 2026/08/10 ~ 2026/12/31 채용기간 2026/08/26 ~ 직무분야 사회/한국사 상세보기",
-      "autoCollected": true
-    },
-    {
-      "id": "job_5u52y",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-11",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천담방초등학교",
-      "jobType": "예체능강사",
-      "title": "인천담방초등학교 문화예술교육 연극 외부강사 모집 공고",
-      "deadline": "2026-08-19",
-      "startDate": "2026-08-31",
-      "endDate": "2026-12-04",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천담방초등학교 예체능강사 인천담방초등학교 문화예술교육 연극 외부강사 모집 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_b32o2d",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-10",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천부현초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 인천부현초등학교 창체동아리(칼림바) 지도강사 위촉공고",
-      "deadline": "2026-08-17",
-      "startDate": "2026-08-31",
-      "endDate": "2026-12-24",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "칼림바"
-      ],
-      "instrumentTags": [
-        "칼림바"
-      ],
-      "searchText": "인천부현초등학교 예체능강사 2026학년도 인천부현초등학교 창체동아리(칼림바) 지도강사 위촉공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_tnpbea",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-10",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천완정초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 1, 2학년 놀이수업 강사 채용 공고",
-      "deadline": "2026-08-17",
-      "startDate": "2026-08-27",
-      "endDate": "2026-12-17",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천완정초등학교 예체능강사 2026학년도 1, 2학년 놀이수업 강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_mla273",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-10",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인성초등학교",
-      "jobType": "시간강사, 예체능강사, 방과후강사",
-      "title": "2026학년도 2학기 5학년 스포츠클럽 탁구강사 모집",
-      "deadline": "2026-08-14",
-      "startDate": "2026-08-25",
-      "endDate": "2027-01-05",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "스포츠"
-      ],
-      "instrumentTags": [],
-      "searchText": "인성초등학교 시간강사, 예체능강사, 방과후강사 2026학년도 2학기 5학년 스포츠클럽 탁구강사 모집",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1gjszh3",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-10",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천신광초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 인천신광초등학교 꿈끼탐색 감성교육 악기 지도강사(난타, 우쿨레레) 채용공고",
-      "deadline": "2026-08-14",
-      "startDate": "2026-08-24",
-      "endDate": "2026-12-18",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "음악"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천신광초등학교 예체능강사 2026학년도 인천신광초등학교 꿈끼탐색 감성교육 악기 지도강사(난타, 우쿨레레) 채용공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_7g8gm8",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-10",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천명현초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 2학기 인천명현초등학교 문화예술 외부강사 공고",
-      "deadline": "2026-08-13",
-      "startDate": "2026-08-26",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천명현초등학교 예체능강사 2026학년도 2학기 인천명현초등학교 문화예술 외부강사 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_14u1ajj",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-08",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천안산초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 4학년 창의놀이교육 강사 채용 공고(안산초)",
-      "deadline": "2026-08-18",
-      "startDate": "2026-08-24",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천안산초등학교 예체능강사 2026학년도 4학년 창의놀이교육 강사 채용 공고(안산초)",
-      "autoCollected": true
-    },
-    {
-      "id": "job_10ipkk4",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-06",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천광역시서부교육지원청",
-      "jobType": "예체능강사",
-      "title": "[재공고] 2026 하반기 서부 학교문화예술교육 악기(예술) 강사 모집",
-      "deadline": "2026-08-13",
-      "startDate": "2026-08-25",
-      "endDate": "2026-12-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "음악"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천광역시서부교육지원청 예체능강사 [재공고] 2026 하반기 서부 학교문화예술교육 악기(예술) 강사 모집",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1xi74vq",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-05",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천해양과학고등학교",
-      "jobType": "시간강사, 예체능강사, 방과후강사",
-      "title": "2026학년도 방과후 학교 외부강사 모집공고문 (기타동아리)",
-      "deadline": "2026-08-10",
-      "startDate": "2026-08-14",
-      "endDate": "2026-12-24",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천해양과학고등학교 시간강사, 예체능강사, 방과후강사 2026학년도 방과후 학교 외부강사 모집공고문 (기타동아리)",
-      "autoCollected": true
-    },
-    {
-      "id": "job_a0l5up",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-05",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천해양과학고등학교",
-      "jobType": "시간강사, 예체능강사, 방과후강사",
-      "title": "2026학년도 예술동아리 학교 외부강사 모집 공고문 (기타)",
-      "deadline": "2026-08-10",
-      "startDate": "2026-08-14",
-      "endDate": "2026-12-24",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천해양과학고등학교 시간강사, 예체능강사, 방과후강사 2026학년도 예술동아리 학교 외부강사 모집 공고문 (기타)",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1jn4d6d",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-05",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "임학중학교",
-      "jobType": "시간강사, 예체능강사",
-      "title": "계약제교원(2학기 학교스포츠클럽 강사) 채용 계획",
-      "deadline": "2026-08-07",
-      "startDate": "2026-08-17",
-      "endDate": "2026-12-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "스포츠"
-      ],
-      "instrumentTags": [],
-      "searchText": "임학중학교 시간강사, 예체능강사 계약제교원(2학기 학교스포츠클럽 강사) 채용 계획",
       "autoCollected": true
     },
     {
@@ -2537,30 +1475,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 서해구 인천 검단신도시 아라역인근 대형음악학원에서 플루트강사샘 채용해… 인천 서해구 인천 검단신도시 아라역인근 대형음악학원에서 플루트강사샘 채용해… 08.04 212",
-      "autoCollected": true
-    },
-    {
-      "id": "job_9pr0bu",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-08-03",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천부마초등학교병설유치원",
-      "jobType": "예체능강사",
-      "title": "2026학년도 부마초등학교병설유치원 방과후 과정 특성화 강사 채용공고(음악놀이)",
-      "deadline": "2026-08-10",
-      "startDate": "2026-08-20",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "음악"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천부마초등학교병설유치원 예체능강사 2026학년도 부마초등학교병설유치원 방과후 과정 특성화 강사 채용공고(음악놀이)",
+      "searchText": "인천 서해구 인천 검단신도시 아라역인근 대형음악학원에서 플루트강사샘 채용해… 인천 서해구 인천 검단신도시 아라역인근 대형음악학원에서 플루트강사샘 채용해… 08.04 213",
       "autoCollected": true
     },
     {
@@ -2590,29 +1505,6 @@
         "플루트"
       ],
       "searchText": "송도교향악단 바이올린,첼로,플루트 선생님 모십니다 인천광역시 서해구 송도교향악단 진행중 바이올린,첼로,플루트 선생님 모십니다 경력무관 학력무관 인천광역시 서해구 서달로123번안길 17 시급 25,000원 ~ 0원 계약직 주5일 채용시까지 2026-07-29 등록 58",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1cz4jow",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-28",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천대중예술고등학교",
-      "jobType": "시간강사, 예체능강사",
-      "title": "2026학년도 인천대중예술고등학교 2학기 음악 실기 강사(건반) 채용 공고(2차)",
-      "deadline": "2026-08-02",
-      "startDate": "2026-08-14",
-      "endDate": "2027-01-08",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "음악"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천대중예술고등학교 시간강사, 예체능강사 2026학년도 인천대중예술고등학교 2학기 음악 실기 강사(건반) 채용 공고(2차)",
       "autoCollected": true
     },
     {
@@ -2674,121 +1566,6 @@
       "autoCollected": true
     },
     {
-      "id": "job_1c9kj26",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-23",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천예일고등학교",
-      "jobType": "예체능강사, 기타",
-      "title": "2026학년도 전일제 특수학급 배치 학생 지원 프로그램(공예) 강사 2차 채용 공고",
-      "deadline": "2026-07-30",
-      "startDate": "2026-08-14",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "미술"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천예일고등학교 예체능강사, 기타 2026학년도 전일제 특수학급 배치 학생 지원 프로그램(공예) 강사 2차 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_jnldpv",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-23",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천창영초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 학생예술동아리(바이올린) 강사 채용 공고 (3차)",
-      "deadline": "2026-07-29",
-      "startDate": "2026-09-01",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천창영초등학교 예체능강사 2026학년도 학생예술동아리(바이올린) 강사 채용 공고 (3차)",
-      "autoCollected": true
-    },
-    {
-      "id": "job_i1827w",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-22",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천검암초등학교",
-      "jobType": "시간강사, 예체능강사",
-      "title": "2026학년도 인천검암초등학교 아침이 신나는 교실 외부강사 채용 공고",
-      "deadline": "2026-07-28",
-      "startDate": "2026-08-18",
-      "endDate": "2027-01-05",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천검암초등학교 시간강사, 예체능강사 2026학년도 인천검암초등학교 아침이 신나는 교실 외부강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1lwgiv2",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-22",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천광역시남부교육지원청",
-      "jobType": "시간강사, 예체능강사, 방과후강사",
-      "title": "2026년도 지역연계 온동네 주말 초등 돌봄·교육 운영 「프로그램 지도강사」 모집 공고",
-      "deadline": "2026-07-27",
-      "startDate": "2026-08-22",
-      "endDate": "2026-09-19",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천광역시남부교육지원청 시간강사, 예체능강사, 방과후강사 2026년도 지역연계 온동네 주말 초등 돌봄·교육 운영 「프로그램 지도강사」 모집 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_14jubgc",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-20",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천광역시서부교육지원청",
-      "jobType": "예체능강사",
-      "title": "2026 하반기 학교문화예술교육 악기(예술) 강사 모집 안내2026 하반기 학교문화예술교육 악기(예술) 강사 모집 안내",
-      "deadline": "2026-07-29",
-      "startDate": "2026-08-25",
-      "endDate": "2026-12-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "음악"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천광역시서부교육지원청 예체능강사 2026 하반기 학교문화예술교육 악기(예술) 강사 모집 안내2026 하반기 학교문화예술교육 악기(예술) 강사 모집 안내",
-      "autoCollected": true
-    },
-    {
       "id": "lessoninfo_255682",
       "source": "레슨인포",
       "sourceId": "lessoninfo",
@@ -2815,30 +1592,7 @@
         "플루트",
         "플룻"
       ],
-      "searchText": "인천 남동구 플루트 선생님 모집합니다. 플루트 인천 남동구 인천 미추홀구 인천 연수구 플루트 선생님 모집합니다. 플루트 07.16 357",
-      "autoCollected": true
-    },
-    {
-      "id": "job_6jejfv",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-15",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천창영초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 학생예술동아리(바이올린) 강사 채용 공고 (2차)",
-      "deadline": "2026-07-20",
-      "startDate": "2026-09-01",
-      "endDate": "2026-12-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천창영초등학교 예체능강사 2026학년도 학생예술동아리(바이올린) 강사 채용 공고 (2차)",
+      "searchText": "인천 남동구 플루트 선생님 모집합니다. 플루트 인천 남동구 인천 미추홀구 인천 연수구 플루트 선생님 모집합니다. 플루트 07.16 358",
       "autoCollected": true
     },
     {
@@ -2867,53 +1621,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 연수구 인천연수구 플루트선생님모십니다. 인천 연수구 인천 남동구 인천 미추홀구 인천연수구 플루트선생님모십니다. 07.15 184",
-      "autoCollected": true
-    },
-    {
-      "id": "job_13afgc3",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-14",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천구월서초등학교",
-      "jobType": "예체능강사",
-      "title": "2026 인천구월서초 미술(수채화) 외부강사 위촉 공고(학교 자율 문화예술프로그램)",
-      "deadline": "2026-07-16",
-      "startDate": "2026-09-01",
-      "endDate": "2026-12-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "미술"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천구월서초등학교 예체능강사 2026 인천구월서초 미술(수채화) 외부강사 위촉 공고(학교 자율 문화예술프로그램)",
-      "autoCollected": true
-    },
-    {
-      "id": "job_8joump",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-13",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천공항초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 인천공항초등학교 연극 강사 채용 공고",
-      "deadline": "2026-07-16",
-      "startDate": "2026-09-01",
-      "endDate": "2026-12-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천공항초등학교 예체능강사 2026학년도 인천공항초등학교 연극 강사 채용 공고",
+      "searchText": "인천 연수구 인천연수구 플루트선생님모십니다. 인천 연수구 인천 남동구 인천 미추홀구 인천연수구 플루트선생님모십니다. 07.15 185",
       "autoCollected": true
     },
     {
@@ -2942,193 +1650,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 연수구 인천송도동 플루트선생님 모집합니다 인천 연수구 인천 중구 인천 미추홀구 인천송도동 플루트선생님 모집합니다 07.12 287",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1nrit5b",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-10",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천예일고등학교",
-      "jobType": "예체능강사, 기타",
-      "title": "전일제 특수학급 배치 학생 지원 프로그램 강사 채용 공고",
-      "deadline": "2026-07-16",
-      "startDate": "2026-08-14",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천예일고등학교 예체능강사, 기타 전일제 특수학급 배치 학생 지원 프로그램 강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_12wxnh3",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-10",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천구월서초등학교",
-      "jobType": "예체능강사",
-      "title": "인천구월서초등학교 외부 강사 위촉 공고(국악 1명)",
-      "deadline": "2026-07-14",
-      "startDate": "2026-08-20",
-      "endDate": "2027-01-06",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천구월서초등학교 예체능강사 인천구월서초등학교 외부 강사 위촉 공고(국악 1명)",
-      "autoCollected": true
-    },
-    {
-      "id": "job_107mn7y",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-10",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천구월서초등학교",
-      "jobType": "예체능강사",
-      "title": "[수정] 인천구월서초등학교 외부 강사 위촉 공고(독서교육 1명)",
-      "deadline": "2026-07-14",
-      "startDate": "2026-10-01",
-      "endDate": "2026-11-30",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천구월서초등학교 예체능강사 [수정] 인천구월서초등학교 외부 강사 위촉 공고(독서교육 1명)",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1awb74a",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-10",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천구월서초등학교",
-      "jobType": "예체능강사",
-      "title": "인천구월서초등학교 외부 강사 위촉 공고(바둑 1명)",
-      "deadline": "2026-07-14",
-      "startDate": "2026-08-20",
-      "endDate": "2026-09-30",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천구월서초등학교 예체능강사 인천구월서초등학교 외부 강사 위촉 공고(바둑 1명)",
-      "autoCollected": true
-    },
-    {
-      "id": "job_qnxfg5",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-10",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천구월서초등학교",
-      "jobType": "예체능강사",
-      "title": "인천구월서초등학교 외부 강사 위촉 공고(우쿨렐레 1명)",
-      "deadline": "2026-07-14",
-      "startDate": "2026-08-20",
-      "endDate": "2026-10-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "우쿨렐레"
-      ],
-      "instrumentTags": [
-        "우쿨렐레"
-      ],
-      "searchText": "인천구월서초등학교 예체능강사 인천구월서초등학교 외부 강사 위촉 공고(우쿨렐레 1명)",
-      "autoCollected": true
-    },
-    {
-      "id": "job_9fm054",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-10",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천구월서초등학교",
-      "jobType": "예체능강사",
-      "title": "인천구월서초등학교 외부 강사 위촉 공고(일본어 1명, 놀이체육 1명)",
-      "deadline": "2026-07-14",
-      "startDate": "2026-08-20",
-      "endDate": "2026-12-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "스포츠"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천구월서초등학교 예체능강사 인천구월서초등학교 외부 강사 위촉 공고(일본어 1명, 놀이체육 1명)",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1ok3gkw",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-08",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천동암초등학교",
-      "jobType": "예체능강사",
-      "title": "인천동암초등학교 2학기 합창 강사 채용 공고",
-      "deadline": "2026-07-13",
-      "startDate": "2026-08-24",
-      "endDate": "2026-12-04",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천동암초등학교 예체능강사 인천동암초등학교 2학기 합창 강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1pykehc",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-08",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천문남초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 영어체육강사 채용 공고",
-      "deadline": "2026-07-13",
-      "startDate": "2026-08-11",
-      "endDate": "2026-12-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "스포츠"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천문남초등학교 예체능강사 2026학년도 영어체육강사 채용 공고",
+      "searchText": "인천 연수구 인천송도동 플루트선생님 모집합니다 인천 연수구 인천 중구 인천 미추홀구 인천송도동 플루트선생님 모집합니다 07.12 288",
       "autoCollected": true
     },
     {
@@ -3157,309 +1679,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 계양구 신중동 플랫 선생님 모십니다 인천 계양구 경기 부천시 신중동 플랫 선생님 모십니다 07.07 343",
-      "autoCollected": true
-    },
-    {
-      "id": "job_s3bir8",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-06",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천창영초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 학생예술동아리(바이올린) 강사 채용 공고",
-      "deadline": "2026-07-14",
-      "startDate": "2026-08-01",
-      "endDate": "2026-12-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천창영초등학교 예체능강사 2026학년도 학생예술동아리(바이올린) 강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_164ijde",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-03",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천주안북초등학교",
-      "jobType": "예체능강사",
-      "title": "인천주안북초등학교 교실 놀이 강사 채용 공고",
-      "deadline": "2026-07-12",
-      "startDate": "2026-09-01",
-      "endDate": "2026-12-26",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천주안북초등학교 예체능강사 인천주안북초등학교 교실 놀이 강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_mpg3ke",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-02",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천주원초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 인천주원초등학교 학교문화예술체육교육(연극) 강사 공고",
-      "deadline": "2026-07-09",
-      "startDate": "2026-08-18",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "스포츠"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천주원초등학교 예체능강사 2026학년도 인천주원초등학교 학교문화예술체육교육(연극) 강사 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1yhckcq",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-02",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "광성중학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 광성중학교 오케스트라 음악 강사(바이올린 외) 채용 공고",
-      "deadline": "2026-07-08",
-      "startDate": "2026-07-20",
-      "endDate": "2026-11-23",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "관악·오케스트라",
-        "음악"
-      ],
-      "instrumentTags": [],
-      "searchText": "광성중학교 예체능강사 2026학년도 광성중학교 오케스트라 음악 강사(바이올린 외) 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1u8mjqv",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-01",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "동인천중학교",
-      "jobType": "시간강사, 예체능강사",
-      "title": "2026학년도 동인천중학교 1인 1예체능교육(통기타)강사 채용 공고",
-      "deadline": "2026-07-07",
-      "startDate": "2026-08-24",
-      "endDate": "2026-12-01",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "동인천중학교 시간강사, 예체능강사 2026학년도 동인천중학교 1인 1예체능교육(통기타)강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1ci6mca",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-01",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "부광중학교",
-      "jobType": "예체능강사",
-      "title": "2026 모두다 교육회복 예술지원사업 외부강사 위촉 공고",
-      "deadline": "2026-07-07",
-      "startDate": "2026-09-01",
-      "endDate": "2026-11-30",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "부광중학교 예체능강사 2026 모두다 교육회복 예술지원사업 외부강사 위촉 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_4e1yyx",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-07-01",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천병방초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 2학기 인천병방초 문화예술 분야(연극, 우쿨렐레) 협력수업 강사 위촉 공고",
-      "deadline": "2026-07-06",
-      "startDate": "2026-09-01",
-      "endDate": "2027-01-06",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "우쿨렐레"
-      ],
-      "instrumentTags": [
-        "우쿨렐레"
-      ],
-      "searchText": "인천병방초등학교 예체능강사 2026학년도 2학기 인천병방초 문화예술 분야(연극, 우쿨렐레) 협력수업 강사 위촉 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1j6ygf4",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-29",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천가석초등학교",
-      "jobType": "예체능강사, 기타",
-      "title": "2026학년도 문화예술강사(실로폰) 채용 공고",
-      "deadline": "2026-07-07",
-      "startDate": "2026-08-20",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "음악"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천가석초등학교 예체능강사, 기타 2026학년도 문화예술강사(실로폰) 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_7dorb8",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-29",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천문남초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 2학기 다함께 공동체 프로그램(1학년-놀이(체육)교육, 2학년-오카리나) 지도강사 위촉 공고",
-      "deadline": "2026-07-03",
-      "startDate": "2026-07-15",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "스포츠"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천문남초등학교 예체능강사 2026학년도 2학기 다함께 공동체 프로그램(1학년-놀이(체육)교육, 2학년-오카리나) 지도강사 위촉 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_iqx70t",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-29",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천구월초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 2학기 구월초 예술동아리(합창) 강사 채용 공고",
-      "deadline": "2026-07-03",
-      "startDate": "2026-08-31",
-      "endDate": "2026-12-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천구월초등학교 예체능강사 2026학년도 2학기 구월초 예술동아리(합창) 강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_gr8avy",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-25",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천양지초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 1학교 1예술동아리(사물놀이)강사 채용 공고",
-      "deadline": "2026-07-01",
-      "startDate": "2026-07-13",
-      "endDate": "2026-11-30",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천양지초등학교 예체능강사 2026학년도 1학교 1예술동아리(사물놀이)강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_tuxmjp",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-25",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천논곡초등학교",
-      "jobType": "예체능강사",
-      "title": "2026 인천논곡초등학교 1인 3악기 강사 위촉",
-      "deadline": "2026-07-01",
-      "startDate": "2026-10-19",
-      "endDate": "2026-12-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "음악"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천논곡초등학교 예체능강사 2026 인천논곡초등학교 1인 3악기 강사 위촉",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1duknyd",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-24",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천주안남초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 놀이체육 프로그램 강사 채용",
-      "deadline": "2026-07-01",
-      "startDate": "2026-08-18",
-      "endDate": "2026-12-19",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "스포츠"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천주안남초등학교 예체능강사 2026학년도 놀이체육 프로그램 강사 채용",
+      "searchText": "인천 계양구 신중동 플랫 선생님 모십니다 인천 계양구 경기 부천시 신중동 플랫 선생님 모십니다 07.07 344",
       "autoCollected": true
     },
     {
@@ -3488,99 +1708,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 서해구 인천 서구 청라동에서 플루트 선생님 모십니다. 인천 서해구 인천 서구 청라동에서 플루트 선생님 모십니다. 06.23 263",
-      "autoCollected": true
-    },
-    {
-      "id": "job_rhck8r",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-22",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천운서초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 운서초등학교 교육특성화프로그램(감성악기) 강사채용공고",
-      "deadline": "2026-07-01",
-      "startDate": "2026-08-20",
-      "endDate": "2026-12-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "음악"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천운서초등학교 예체능강사 2026학년도 운서초등학교 교육특성화프로그램(감성악기) 강사채용공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1dpmutm",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-22",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천마전초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 인천마전초등학교 지역연계 프로그램 지도강사 모집 재공고",
-      "deadline": "2026-06-29",
-      "startDate": "2026-08-24",
-      "endDate": "2026-11-20",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천마전초등학교 예체능강사 2026학년도 인천마전초등학교 지역연계 프로그램 지도강사 모집 재공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_ea1bdn",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-22",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천청선학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 자유학기제 강사(힐링 뮤직) 모집 재공고",
-      "deadline": "2026-06-26",
-      "startDate": "2026-09-01",
-      "endDate": "2027-02-26",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천청선학교 예체능강사 2026학년도 자유학기제 강사(힐링 뮤직) 모집 재공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_2wpfz7",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-22",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천동양중학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 인천동양중학교 모두다 문화예술교육 지원사업 외부강사 위촉 공고",
-      "deadline": "2026-06-24",
-      "startDate": "2026-06-29",
-      "endDate": "2027-01-08",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천동양중학교 예체능강사 2026학년도 인천동양중학교 모두다 문화예술교육 지원사업 외부강사 위촉 공고",
+      "searchText": "인천 서해구 인천 서구 청라동에서 플루트 선생님 모십니다. 인천 서해구 인천 서구 청라동에서 플루트 선생님 모십니다. 06.23 264",
       "autoCollected": true
     },
     {
@@ -3609,377 +1737,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 서해구 인천 서구 청라동에서 플루트 선생님 모십니다. 인천 서해구 인천 서구 청라동에서 플루트 선생님 모십니다. 06.19 266",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1t60m30",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-18",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천개흥초등학교",
-      "jobType": "예체능강사",
-      "title": "1학교 1예술동아리(국악악기 단소, 소금) 강사 채용 공고",
-      "deadline": "2026-06-26",
-      "startDate": "2026-07-13",
-      "endDate": "2026-11-30",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "음악"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천개흥초등학교 예체능강사 1학교 1예술동아리(국악악기 단소, 소금) 강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1bsas0w",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-15",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천광역시서부교육지원청",
-      "jobType": "예체능강사, 방과후강사, 돌봄, 기타",
-      "title": "2026학년도 서부 거점형 늘봄센터 단체활동 프로그램 지도강사 추가 모집 공고(음악활동 또는 체육활동)",
-      "deadline": "2026-06-22",
-      "startDate": "2026-07-13",
-      "endDate": "2027-02-23",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "음악",
-        "스포츠"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천광역시서부교육지원청 예체능강사, 방과후강사, 돌봄, 기타 2026학년도 서부 거점형 늘봄센터 단체활동 프로그램 지도강사 추가 모집 공고(음악활동 또는 체육활동)",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1fi96pd",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-11",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천해원중학교",
-      "jobType": "시간강사, 예체능강사",
-      "title": "2026학년도 인천해원중학교 문화예술동아리(밴드부) 강사 채용 공고",
-      "deadline": "2026-06-19",
-      "startDate": "2026-09-03",
-      "endDate": "2026-12-24",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천해원중학교 시간강사, 예체능강사 2026학년도 인천해원중학교 문화예술동아리(밴드부) 강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_13u58kf",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-09",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천청선학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 인천청선학교 자유학기제 강사 모집 공고",
-      "deadline": "2026-06-16",
-      "startDate": "2026-09-01",
-      "endDate": "2027-02-26",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천청선학교 예체능강사 2026학년도 인천청선학교 자유학기제 강사 모집 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_4rjkik",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-09",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "용현여자중학교",
-      "jobType": "예체능강사",
-      "title": "1학기 전일제 특수학급 배치 학생 지원 프로그램 강사 공고",
-      "deadline": "2026-06-15",
-      "startDate": "2026-06-16",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "용현여자중학교 예체능강사 1학기 전일제 특수학급 배치 학생 지원 프로그램 강사 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1qscjce",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-08",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천인수초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 지역연계(신체활동) 강사 채용 공고",
-      "deadline": "2026-06-17",
-      "startDate": "2026-09-01",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천인수초등학교 예체능강사 2026학년도 지역연계(신체활동) 강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_7ezmzk",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-04",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천창신초등학교",
-      "jobType": "예체능강사",
-      "title": "2026 인천창신초 기간제 스포츠강사 모집 공고",
-      "deadline": "2026-06-10",
-      "startDate": "2026-07-01",
-      "endDate": "2027-02-28",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "스포츠"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천창신초등학교 예체능강사 2026 인천창신초 기간제 스포츠강사 모집 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1fnqq1t",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-02",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천광역시서부교육지원청",
-      "jobType": "예체능강사, 방과후강사, 돌봄, 기타",
-      "title": "2026학년도 서부 거점형 늘봄센터 단체활동 프로그램 지도강사 모집 공고(독서논술)",
-      "deadline": "2026-06-10",
-      "startDate": "2026-07-03",
-      "endDate": "2027-02-23",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천광역시서부교육지원청 예체능강사, 방과후강사, 돌봄, 기타 2026학년도 서부 거점형 늘봄센터 단체활동 프로그램 지도강사 모집 공고(독서논술)",
-      "autoCollected": true
-    },
-    {
-      "id": "job_xutkjz",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-02",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천옥련초등학교",
-      "jobType": "예체능강사",
-      "title": "인천옥련초등학교 문화예술체육활동 음악강사 채용 공고",
-      "deadline": "2026-06-08",
-      "startDate": "2026-07-07",
-      "endDate": "2026-11-24",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "음악",
-        "스포츠"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천옥련초등학교 예체능강사 인천옥련초등학교 문화예술체육활동 음악강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_177kmw4",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-06-01",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "부원중학교",
-      "jobType": "예체능강사, 방과후강사",
-      "title": "부원중학교 2026학년도 체육 방과후학교 강사 채용",
-      "deadline": "2026-06-08",
-      "startDate": "2026-08-18",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "스포츠"
-      ],
-      "instrumentTags": [],
-      "searchText": "부원중학교 예체능강사, 방과후강사 부원중학교 2026학년도 체육 방과후학교 강사 채용",
-      "autoCollected": true
-    },
-    {
-      "id": "job_mcdmml",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-05-29",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천운남초등학교",
-      "jobType": "시간강사, 예체능강사, 방과후강사, 기타",
-      "title": "2026학년도 바둑중점학교 바둑강사 채용 공고",
-      "deadline": "2026-06-04",
-      "startDate": "2026-06-22",
-      "endDate": "2026-12-31",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천운남초등학교 시간강사, 예체능강사, 방과후강사, 기타 2026학년도 바둑중점학교 바둑강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_og9sod",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-05-26",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천광역시서부교육지원청",
-      "jobType": "예체능강사, 방과후강사, 돌봄, 기타",
-      "title": "[재공고문]2026학년도 서부 거점형 늘봄센터 단체활동 프로그램 지도강사 추가 모집 재공고",
-      "deadline": "2026-05-29",
-      "startDate": "2026-06-15",
-      "endDate": "2027-02-23",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천광역시서부교육지원청 예체능강사, 방과후강사, 돌봄, 기타 [재공고문]2026학년도 서부 거점형 늘봄센터 단체활동 프로그램 지도강사 추가 모집 재공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1bxm1m9",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-05-22",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천신선초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 창의적체험활동 학교예술동아리 외부강사 채용 공고",
-      "deadline": "2026-06-01",
-      "startDate": "2026-08-27",
-      "endDate": "2026-12-04",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천신선초등학교 예체능강사 2026학년도 창의적체험활동 학교예술동아리 외부강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_uzkn48",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-05-22",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천미산초등학교",
-      "jobType": "예체능강사",
-      "title": "2026 인천미산초등학교 문화예술교육 강사(목공) 공고",
-      "deadline": "2026-05-26",
-      "startDate": "2026-06-01",
-      "endDate": "2026-11-30",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천미산초등학교 예체능강사 2026 인천미산초등학교 문화예술교육 강사(목공) 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1dut8mk",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-05-20",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천부현초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 인천부현초등학교 지역연계 교육과정(연극) 강사 공모",
-      "deadline": "2026-05-27",
-      "startDate": "2026-10-01",
-      "endDate": "2026-11-14",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천부현초등학교 예체능강사 2026학년도 인천부현초등학교 지역연계 교육과정(연극) 강사 공모",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1ynfvlf",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-05-14",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천광역시서부교육지원청",
-      "jobType": "예체능강사, 방과후강사, 돌봄, 기타",
-      "title": "2026학년도 서부 거점형 늘봄센터 단체활동 프로그램 지도강사 추가 모집 공고",
-      "deadline": "2026-05-20",
-      "startDate": "2026-06-08",
-      "endDate": "2027-02-23",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천광역시서부교육지원청 예체능강사, 방과후강사, 돌봄, 기타 2026학년도 서부 거점형 늘봄센터 단체활동 프로그램 지도강사 추가 모집 공고",
+      "searchText": "인천 서해구 인천 서구 청라동에서 플루트 선생님 모십니다. 인천 서해구 인천 서구 청라동에서 플루트 선생님 모십니다. 06.19 267",
       "autoCollected": true
     },
     {
@@ -4041,75 +1799,6 @@
       "autoCollected": true
     },
     {
-      "id": "job_jpg9hg",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-05-11",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천서희학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 전문직업인 양성 예술특화교육과정 강사 2차 채용 공고",
-      "deadline": "2026-05-18",
-      "startDate": "2026-06-02",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천서희학교 예체능강사 2026학년도 전문직업인 양성 예술특화교육과정 강사 2차 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_1rohtgx",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-05-11",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천작전초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 인천작전초 당구강사 채용 공고",
-      "deadline": "2026-05-15",
-      "startDate": "2026-05-21",
-      "endDate": "2026-10-08",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천작전초등학교 예체능강사 2026학년도 인천작전초 당구강사 채용 공고",
-      "autoCollected": true
-    },
-    {
-      "id": "job_sysx56",
-      "source": "인천교육청",
-      "sourceId": "ice",
-      "sourceItemId": "",
-      "postedAt": "2026-05-08",
-      "recruitStatus": "모집종료",
-      "isActive": false,
-      "organization": "인천명현초등학교",
-      "jobType": "예체능강사",
-      "title": "2026학년도 인천명현초등학교 동아리 강사(보드게임) 모집 공고",
-      "deadline": "2026-05-11",
-      "startDate": "2026-05-15",
-      "endDate": "",
-      "region": "인천",
-      "url": "https://www.ice.go.kr/ice/na/ntt/selectNttList.do?mi=10997&bbsId=1981",
-      "tags": [
-        "기타 예체능"
-      ],
-      "instrumentTags": [],
-      "searchText": "인천명현초등학교 예체능강사 2026학년도 인천명현초등학교 동아리 강사(보드게임) 모집 공고",
-      "autoCollected": true
-    },
-    {
       "id": "artmore_92671",
       "source": "아트모아",
       "sourceId": "artmore",
@@ -4164,7 +1853,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 연수구 북콘서트 연주자 구인(고정연주자-바이올린,첼로,피아노,플루트) 인천 연수구 북콘서트 연주자 구인(고정연주자-바이올린,첼로,피아노,플루트) 04.11 1,034",
+      "searchText": "인천 연수구 북콘서트 연주자 구인(고정연주자-바이올린,첼로,피아노,플루트) 인천 연수구 북콘서트 연주자 구인(고정연주자-바이올린,첼로,피아노,플루트) 04.11 1,035",
       "autoCollected": true
     },
     {
@@ -4193,7 +1882,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 중구 운남동 하늘도시 플루트 바이올린 선생님 구인합니다. 인천 중구 인천 서해구 인천 연수구 운남동 하늘도시 플루트 바이올린 선생님 구인합니다. 04.04 273",
+      "searchText": "인천 중구 운남동 하늘도시 플루트 바이올린 선생님 구인합니다. 인천 중구 인천 서해구 인천 연수구 운남동 하늘도시 플루트 바이올린 선생님 구인합니다. 04.04 274",
       "autoCollected": true
     },
     {
@@ -4222,7 +1911,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 계양구 송도교향악단에서 바이올린,첼로,플루트 선생님을 모집합니다. 인천 계양구 인천 남동구 인천 서해구 송도교향악단에서 바이올린,첼로,플루트 선생님을 모집합니다. 04.02 582",
+      "searchText": "인천 계양구 송도교향악단에서 바이올린,첼로,플루트 선생님을 모집합니다. 인천 계양구 인천 남동구 인천 서해구 송도교향악단에서 바이올린,첼로,플루트 선생님을 모집합니다. 04.02 583",
       "autoCollected": true
     },
     {
@@ -4251,7 +1940,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 부평구 인천 플루트선생님 모집합니다~ 인천 부평구 인천 플루트선생님 모집합니다~ 03.28 287",
+      "searchText": "인천 부평구 인천 플루트선생님 모집합니다~ 인천 부평구 인천 플루트선생님 모집합니다~ 03.28 288",
       "autoCollected": true
     },
     {
@@ -4455,7 +2144,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "케이아츠에듀 2026 서울학생필하모닉오케스트라 파트멘토(강사) 초빙 공고 서울 은평구 케이아츠에듀 마감 2026 서울학생필하모닉오케스트라 파트멘토(강사) 초빙 공고 경력 1년 대학교(4년) 서울 은평구 가좌로 208 (응암동) 일급 150,000원 ~ 150,000원 계약직 주1일 마감 2026-02-02 등록 2026-02-11 마감 1919",
+      "searchText": "케이아츠에듀 2026 서울학생필하모닉오케스트라 파트멘토(강사) 초빙 공고 서울 은평구 케이아츠에듀 마감 2026 서울학생필하모닉오케스트라 파트멘토(강사) 초빙 공고 경력 1년 대학교(4년) 서울 은평구 가좌로 208 (응암동) 일급 150,000원 ~ 150,000원 계약직 주1일 마감 2026-02-02 등록 2026-02-11 마감 1920",
       "autoCollected": true
     },
     {
@@ -4696,7 +2385,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "하트하트아트앤컬쳐 하트하트 아트앤컬처 발달장애인 연주자(하트하트오케스트라 단원) 채용 공고 서울 송파구 하트하트아트앤컬쳐 마감 하트하트 아트앤컬처 발달장애인 연주자(하트하트오케스트라 단원) 채용 공고 경력무관 고등학교 서울 송파구 송이로23길 34 (가락동) 월급 0원 ~ 0원 정규직 주5일 마감 2026-01-15 등록 2026-01-30 마감 870",
+      "searchText": "하트하트아트앤컬쳐 하트하트 아트앤컬처 발달장애인 연주자(하트하트오케스트라 단원) 채용 공고 서울 송파구 하트하트아트앤컬쳐 마감 하트하트 아트앤컬처 발달장애인 연주자(하트하트오케스트라 단원) 채용 공고 경력무관 고등학교 서울 송파구 송이로23길 34 (가락동) 월급 0원 ~ 0원 정규직 주5일 마감 2026-01-15 등록 2026-01-30 마감 871",
       "autoCollected": true
     },
     {
@@ -4725,7 +2414,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 연수구 인천,부천 2월 28일 콩쿨(초등학생, 플루트) 반주자 선생님 구인합니다. 인천 연수구 경기 부천시 인천,부천 2월 28일 콩쿨(초등학생, 플루트) 반주자 선생님 구인합니다. 01.15 607",
+      "searchText": "인천 연수구 인천,부천 2월 28일 콩쿨(초등학생, 플루트) 반주자 선생님 구인합니다. 인천 연수구 경기 부천시 인천,부천 2월 28일 콩쿨(초등학생, 플루트) 반주자 선생님 구인합니다. 01.15 608",
       "autoCollected": true
     },
     {
@@ -4814,7 +2503,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "인천 계양구 보컬,관악part 선생님 연락주세요.(다성소울뮤즈).서양악기 모든part지… 인천 계양구 보컬,관악part 선생님 연락주세요.(다성소울뮤즈).서양악기 모든part지… 11.01 261",
+      "searchText": "인천 계양구 보컬,관악part 선생님 연락주세요.(다성소울뮤즈).서양악기 모든part지… 인천 계양구 보컬,관악part 선생님 연락주세요.(다성소울뮤즈).서양악기 모든part지… 11.01 262",
       "autoCollected": true
     },
     {
@@ -4962,7 +2651,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 서해구 인천 청라 대형음악학원 플루트 선생님 구합니다. 인천 서해구 인천 청라 대형음악학원 플루트 선생님 구합니다. 08.21 232",
+      "searchText": "인천 서해구 인천 청라 대형음악학원 플루트 선생님 구합니다. 인천 서해구 인천 청라 대형음악학원 플루트 선생님 구합니다. 08.21 233",
       "autoCollected": true
     },
     {
@@ -5108,7 +2797,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 서해구 플루트 선생님 모십니다. 인천 서해구 플루트 선생님 모십니다. 05.28 363",
+      "searchText": "인천 서해구 플루트 선생님 모십니다. 인천 서해구 플루트 선생님 모십니다. 05.28 364",
       "autoCollected": true
     },
     {
@@ -5167,7 +2856,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 계양구 인천 서구 대형음악학원에서 플루트선생님 구합니다. 인천 계양구 인천 서해구 경기 김포시 인천 서구 대형음악학원에서 플루트선생님 구합니다. 05.15 225",
+      "searchText": "인천 계양구 인천 서구 대형음악학원에서 플루트선생님 구합니다. 인천 계양구 인천 서해구 경기 김포시 인천 서구 대형음악학원에서 플루트선생님 구합니다. 05.15 227",
       "autoCollected": true
     },
     {
@@ -5197,7 +2886,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 서해구 인천 서구 청라 대형 음악학원 플루트 선생님 구합니다. 인천 서해구 인천 서구 청라 대형 음악학원 플루트 선생님 구합니다. 05.14 182",
+      "searchText": "인천 서해구 인천 서구 청라 대형 음악학원 플루트 선생님 구합니다. 인천 서해구 인천 서구 청라 대형 음악학원 플루트 선생님 구합니다. 05.14 183",
       "autoCollected": true
     },
     {
@@ -5227,7 +2916,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 계양구 인천 서구 대형음악학원에서 플루트샘 모셔요. 인천 계양구 인천 서해구 인천 부평구 인천 서구 대형음악학원에서 플루트샘 모셔요. 05.13 215",
+      "searchText": "인천 계양구 인천 서구 대형음악학원에서 플루트샘 모셔요. 인천 계양구 인천 서해구 인천 부평구 인천 서구 대형음악학원에서 플루트샘 모셔요. 05.13 216",
       "autoCollected": true
     },
     {
@@ -5256,7 +2945,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 남동구 플루트 선생님 모십니다 (여성분만) 인천 남동구 인천 미추홀구 인천 부평구 플루트 선생님 모십니다 (여성분만) 05.12 335",
+      "searchText": "인천 남동구 플루트 선생님 모십니다 (여성분만) 인천 남동구 인천 미추홀구 인천 부평구 플루트 선생님 모십니다 (여성분만) 05.12 336",
       "autoCollected": true
     },
     {
@@ -5286,7 +2975,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 서해구 인천 청라 대형음악학원 플루트 선생님 구합니다. 인천 서해구 인천 청라 대형음악학원 플루트 선생님 구합니다. 05.09 231",
+      "searchText": "인천 서해구 인천 청라 대형음악학원 플루트 선생님 구합니다. 인천 서해구 인천 청라 대형음악학원 플루트 선생님 구합니다. 05.09 232",
       "autoCollected": true
     },
     {
@@ -5345,7 +3034,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 서해구 인천 서구 대형음악학원에서 플루트선생님 구합니다. 인천 서해구 인천 계양구 경기 김포시 인천 서구 대형음악학원에서 플루트선생님 구합니다. 05.07 269",
+      "searchText": "인천 서해구 인천 서구 대형음악학원에서 플루트선생님 구합니다. 인천 서해구 인천 계양구 경기 김포시 인천 서구 대형음악학원에서 플루트선생님 구합니다. 05.07 270",
       "autoCollected": true
     },
     {
@@ -5374,7 +3063,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "재단법인서울시립교향악단 블라인드 채용 재단법인 서울시립교향악단 단원 모집 서울 종로구 재단법인서울시립교향악단 블라인드 채용 마감 재단법인 서울시립교향악단 단원 모집 경력무관 학력무관 서울 종로구 세종대로 175 (세종로) 연봉 0원 ~ 0원 정규직 주5일 마감 2025-04-15 등록 2025-05-08 마감 1063",
+      "searchText": "재단법인서울시립교향악단 블라인드 채용 재단법인 서울시립교향악단 단원 모집 서울 종로구 재단법인서울시립교향악단 블라인드 채용 마감 재단법인 서울시립교향악단 단원 모집 경력무관 학력무관 서울 종로구 세종대로 175 (세종로) 연봉 0원 ~ 0원 정규직 주5일 마감 2025-04-15 등록 2025-05-08 마감 1064",
       "autoCollected": true
     },
     {
@@ -5493,7 +3182,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "엔엠케이(nmk) 2025 nmk 오케스트라 아카데미 단원모집 (대학생) 서울 서초구 엔엠케이(nmk) 마감 2025 nmk 오케스트라 아카데미 단원모집 (대학생) 경력무관,신입 대학교(4년) 서울 서초구 반포대로 63 (서초동) 시급 0원 ~ 0원 인턴 주3일 마감 2025-03-06 등록 2025-04-06 마감 971",
+      "searchText": "엔엠케이(nmk) 2025 nmk 오케스트라 아카데미 단원모집 (대학생) 서울 서초구 엔엠케이(nmk) 마감 2025 nmk 오케스트라 아카데미 단원모집 (대학생) 경력무관,신입 대학교(4년) 서울 서초구 반포대로 63 (서초동) 시급 0원 ~ 0원 인턴 주3일 마감 2025-03-06 등록 2025-04-06 마감 972",
       "autoCollected": true
     },
     {
@@ -5581,7 +3270,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 계양구 송도교향악단에서 바이올린,첼로,플루트 선생님 모십니다 인천 계양구 인천 서해구 인천 동구 송도교향악단에서 바이올린,첼로,플루트 선생님 모십니다 02.26 707",
+      "searchText": "인천 계양구 송도교향악단에서 바이올린,첼로,플루트 선생님 모십니다 인천 계양구 인천 서해구 인천 동구 송도교향악단에서 바이올린,첼로,플루트 선생님 모십니다 02.26 708",
       "autoCollected": true
     },
     {
@@ -5611,7 +3300,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 계양구 인천 검단 대형음악학원에서 플루트샘 모셔요. 인천 계양구 인천 서해구 경기 김포시 인천 검단 대형음악학원에서 플루트샘 모셔요. 02.07 308",
+      "searchText": "인천 계양구 인천 검단 대형음악학원에서 플루트샘 모셔요. 인천 계양구 인천 서해구 경기 김포시 인천 검단 대형음악학원에서 플루트샘 모셔요. 02.07 309",
       "autoCollected": true
     },
     {
@@ -5640,7 +3329,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 연수구 플루트강사 구합니다 인천 연수구 플루트강사 구합니다 01.10 436",
+      "searchText": "인천 연수구 플루트강사 구합니다 인천 연수구 플루트강사 구합니다 01.10 437",
       "autoCollected": true
     },
     {
@@ -5669,7 +3358,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 서해구 롯데마트 검단점 문화센터 (목)플루트 , (토)기타 강사 구인 인천 서해구 롯데마트 검단점 문화센터 (목)플루트 , (토)기타 강사 구인 01.07 503",
+      "searchText": "인천 서해구 롯데마트 검단점 문화센터 (목)플루트 , (토)기타 강사 구인 인천 서해구 롯데마트 검단점 문화센터 (목)플루트 , (토)기타 강사 구인 01.07 505",
       "autoCollected": true
     },
     {
@@ -5757,7 +3446,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 연수구 인천 송도 신도시 플루트 선생님 구합니다. 인천 연수구 인천 송도 신도시 플루트 선생님 구합니다. 12.16 408",
+      "searchText": "인천 연수구 인천 송도 신도시 플루트 선생님 구합니다. 인천 연수구 인천 송도 신도시 플루트 선생님 구합니다. 12.16 409",
       "autoCollected": true
     },
     {
@@ -5844,7 +3533,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 부평구 8월15일 광복절 플루트대타선생님 구합니다 인천 부평구 인천 계양구 경기 부천시 8월15일 광복절 플루트대타선생님 구합니다 08.11 529",
+      "searchText": "인천 부평구 8월15일 광복절 플루트대타선생님 구합니다 인천 부평구 인천 계양구 경기 부천시 8월15일 광복절 플루트대타선생님 구합니다 08.11 530",
       "autoCollected": true
     },
     {
@@ -5874,7 +3563,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 서해구 인천 서구 대형음악학원에서 플루트샘 모셔요. 인천 서해구 인천 계양구 경기 김포시 인천 서구 대형음악학원에서 플루트샘 모셔요. 06.14 622",
+      "searchText": "인천 서해구 인천 서구 대형음악학원에서 플루트샘 모셔요. 인천 서해구 인천 계양구 경기 김포시 인천 서구 대형음악학원에서 플루트샘 모셔요. 06.14 623",
       "autoCollected": true
     },
     {
@@ -5933,7 +3622,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "인천 부평구 플루트 선생님 구합니다. 인천 부평구 플루트 선생님 구합니다. 04.22 609",
+      "searchText": "인천 부평구 플루트 선생님 구합니다. 인천 부평구 플루트 선생님 구합니다. 04.22 610",
       "autoCollected": true
     },
     {
@@ -5962,7 +3651,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "인천 부평구 플루트 선생님 구합니다. 인천 부평구 플루트 선생님 구합니다. 04.08 555",
+      "searchText": "인천 부평구 플루트 선생님 구합니다. 인천 부평구 플루트 선생님 구합니다. 04.08 556",
       "autoCollected": true
     },
     {
@@ -5991,7 +3680,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "인천 부평구 플루트 강사 구합니다. 인천 부평구 플루트 강사 구합니다. 02.26 478",
+      "searchText": "인천 부평구 플루트 강사 구합니다. 인천 부평구 플루트 강사 구합니다. 02.26 479",
       "autoCollected": true
     },
     {
@@ -6020,7 +3709,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 부평구 이번주 금요일 플루트대타 선생님 구합니다 (6시40분~7시30분) 인천 부평구 경기 부천시 인천 계양구 이번주 금요일 플루트대타 선생님 구합니다 (6시40분~7시30분) 01.23 553",
+      "searchText": "인천 부평구 이번주 금요일 플루트대타 선생님 구합니다 (6시40분~7시30분) 인천 부평구 경기 부천시 인천 계양구 이번주 금요일 플루트대타 선생님 구합니다 (6시40분~7시30분) 01.23 554",
       "autoCollected": true
     },
     {
@@ -6169,7 +3858,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 부평구 11월16일 목요일 플루트대타구합니다 3시~5시 인천 부평구 경기 부천시 인천 계양구 11월16일 목요일 플루트대타구합니다 3시~5시 11.09 611",
+      "searchText": "인천 부평구 11월16일 목요일 플루트대타구합니다 3시~5시 인천 부평구 경기 부천시 인천 계양구 11월16일 목요일 플루트대타구합니다 3시~5시 11.09 612",
       "autoCollected": true
     },
     {
@@ -6198,7 +3887,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 부평구 11월3일 금요일 플루트 대타선생님 6시40분~7시30분 경기 부천시 인천 부평구 인천 계양구 11월3일 금요일 플루트 대타선생님 6시40분~7시30분 11.01 558",
+      "searchText": "인천 부평구 11월3일 금요일 플루트 대타선생님 6시40분~7시30분 경기 부천시 인천 부평구 인천 계양구 11월3일 금요일 플루트 대타선생님 6시40분~7시30분 11.01 559",
       "autoCollected": true
     },
     {
@@ -6227,7 +3916,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 계양구 인천 서구 바이올린,첼로,플루트,드럼선생님을 모십니다. 인천 계양구 인천 서해구 인천 부평구 인천 서구 바이올린,첼로,플루트,드럼선생님을 모십니다. 09.19 1,707",
+      "searchText": "인천 계양구 인천 서구 바이올린,첼로,플루트,드럼선생님을 모십니다. 인천 계양구 인천 서해구 인천 부평구 인천 서구 바이올린,첼로,플루트,드럼선생님을 모십니다. 09.19 1,708",
       "autoCollected": true
     },
     {
@@ -6285,7 +3974,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 서해구 검단신도시 제일 큰학원 플루트샘 모셔요. 인천 서해구 경기 김포시 인천 계양구 검단신도시 제일 큰학원 플루트샘 모셔요. 06.28 791",
+      "searchText": "인천 서해구 검단신도시 제일 큰학원 플루트샘 모셔요. 인천 서해구 경기 김포시 인천 계양구 검단신도시 제일 큰학원 플루트샘 모셔요. 06.28 792",
       "autoCollected": true
     },
     {
@@ -6315,7 +4004,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 계양구 6/25 교회 오케스트라 플루트 대타 구해요 인천 계양구 6/25 교회 오케스트라 플루트 대타 구해요 06.20 664",
+      "searchText": "인천 계양구 6/25 교회 오케스트라 플루트 대타 구해요 인천 계양구 6/25 교회 오케스트라 플루트 대타 구해요 06.20 665",
       "autoCollected": true
     },
     {
@@ -6344,7 +4033,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 남동구 피아노 전임 선생님 구합니다 인천 남동구 피아노 전임 선생님 구합니다 05.23 851",
+      "searchText": "인천 남동구 피아노 전임 선생님 구합니다 인천 남동구 피아노 전임 선생님 구합니다 05.23 852",
       "autoCollected": true
     },
     {
@@ -6373,7 +4062,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 남동구 피아노 전임 선생님 구합니다 인천 남동구 피아노 전임 선생님 구합니다 05.22 736",
+      "searchText": "인천 남동구 피아노 전임 선생님 구합니다 인천 남동구 피아노 전임 선생님 구합니다 05.22 737",
       "autoCollected": true
     },
     {
@@ -6402,7 +4091,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 남동구 피아노 전임 선생님 구합니다 인천 남동구 피아노 전임 선생님 구합니다 05.21 854",
+      "searchText": "인천 남동구 피아노 전임 선생님 구합니다 인천 남동구 피아노 전임 선생님 구합니다 05.21 855",
       "autoCollected": true
     },
     {
@@ -6431,7 +4120,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 남동구 피아노 전임 선생님 구합니다 인천 남동구 피아노 전임 선생님 구합니다 05.19 873",
+      "searchText": "인천 남동구 피아노 전임 선생님 구합니다 인천 남동구 피아노 전임 선생님 구합니다 05.19 874",
       "autoCollected": true
     },
     {
@@ -6460,7 +4149,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 남동구 피아노 전임 선생님 구합니다 인천 남동구 피아노 전임 선생님 구합니다 05.19 747",
+      "searchText": "인천 남동구 피아노 전임 선생님 구합니다 인천 남동구 피아노 전임 선생님 구합니다 05.19 748",
       "autoCollected": true
     },
     {
@@ -6489,7 +4178,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 남동구 피아노 전임 선생님 구합니다 인천 남동구 피아노 전임 선생님 구합니다 05.18 747",
+      "searchText": "인천 남동구 피아노 전임 선생님 구합니다 인천 남동구 피아노 전임 선생님 구합니다 05.18 748",
       "autoCollected": true
     },
     {
@@ -6518,7 +4207,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 연수구 송도지역 기타 플루트 클라리넷강사 구합니다 인천 연수구 송도지역 기타 플루트 클라리넷강사 구합니다 04.24 778",
+      "searchText": "인천 연수구 송도지역 기타 플루트 클라리넷강사 구합니다 인천 연수구 송도지역 기타 플루트 클라리넷강사 구합니다 04.24 779",
       "autoCollected": true
     },
     {
@@ -6547,7 +4236,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 연수구 클라리넷 플루트 바이올린 기타 강사모집합니다 인천송도 인천 연수구 클라리넷 플루트 바이올린 기타 강사모집합니다 인천송도 04.19 827",
+      "searchText": "인천 연수구 클라리넷 플루트 바이올린 기타 강사모집합니다 인천송도 인천 연수구 클라리넷 플루트 바이올린 기타 강사모집합니다 인천송도 04.19 828",
       "autoCollected": true
     },
     {
@@ -6577,7 +4266,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 서해구 인천 서구 대형음악학원에서 플루트샘 모셔요. 경기 김포시 인천 서해구 인천 서구 대형음악학원에서 플루트샘 모셔요. 03.23 722",
+      "searchText": "인천 서해구 인천 서구 대형음악학원에서 플루트샘 모셔요. 경기 김포시 인천 서해구 인천 서구 대형음악학원에서 플루트샘 모셔요. 03.23 723",
       "autoCollected": true
     },
     {
@@ -6635,7 +4324,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 미추홀구 3/18(토) 2시30분예식 플루트 연주자구합니다. 인천주안인근웨딩홀 인천 미추홀구 인천 부평구 인천 서해구 3/18(토) 2시30분예식 플루트 연주자구합니다. 인천주안인근웨딩홀 02.17 790",
+      "searchText": "인천 미추홀구 3/18(토) 2시30분예식 플루트 연주자구합니다. 인천주안인근웨딩홀 인천 미추홀구 인천 부평구 인천 서해구 3/18(토) 2시30분예식 플루트 연주자구합니다. 인천주안인근웨딩홀 02.17 791",
       "autoCollected": true
     },
     {
@@ -6664,7 +4353,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 부평구 2월3일 금요일 오전 플루트대타 선생님 구합니다 경기 부천시 인천 부평구 2월3일 금요일 오전 플루트대타 선생님 구합니다 01.27 768",
+      "searchText": "인천 부평구 2월3일 금요일 오전 플루트대타 선생님 구합니다 경기 부천시 인천 부평구 2월3일 금요일 오전 플루트대타 선생님 구합니다 01.27 769",
       "autoCollected": true
     },
     {
@@ -6724,7 +4413,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "인천 부평구 부천 플루트 앙상블에서 전공쌤 구합니다. 서울 구로구 인천 부평구 경기 부천시 부천 플루트 앙상블에서 전공쌤 구합니다. 12.29 880",
+      "searchText": "인천 부평구 부천 플루트 앙상블에서 전공쌤 구합니다. 서울 구로구 인천 부평구 경기 부천시 부천 플루트 앙상블에서 전공쌤 구합니다. 12.29 881",
       "autoCollected": true
     },
     {
@@ -6753,7 +4442,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 동구 인천 바이올린, 플루트 전공 선생님을 모십니다 인천 동구 인천 바이올린, 플루트 전공 선생님을 모십니다 12.19 813",
+      "searchText": "인천 동구 인천 바이올린, 플루트 전공 선생님을 모십니다 인천 동구 인천 바이올린, 플루트 전공 선생님을 모십니다 12.19 814",
       "autoCollected": true
     },
     {
@@ -6783,7 +4472,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 동구 인천 성탄절칸타타 악기 연주자 모십니다. 플루트1,오보에1,첼로1 인천 동구 인천 성탄절칸타타 악기 연주자 모십니다. 플루트1,오보에1,첼로1 12.06 718",
+      "searchText": "인천 동구 인천 성탄절칸타타 악기 연주자 모십니다. 플루트1,오보에1,첼로1 인천 동구 인천 성탄절칸타타 악기 연주자 모십니다. 플루트1,오보에1,첼로1 12.06 719",
       "autoCollected": true
     },
     {
@@ -6813,7 +4502,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 동구 인천 성탄절칸타타 악기 연주자 모십니다. 플루트1,오보에1,바이올린1,… 인천 동구 인천 성탄절칸타타 악기 연주자 모십니다. 플루트1,오보에1,바이올린1,… 11.30 820",
+      "searchText": "인천 동구 인천 성탄절칸타타 악기 연주자 모십니다. 플루트1,오보에1,바이올린1,… 인천 동구 인천 성탄절칸타타 악기 연주자 모십니다. 플루트1,오보에1,바이올린1,… 11.30 821",
       "autoCollected": true
     },
     {
@@ -6842,7 +4531,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "인천 서해구 12/1(목). 검단 인천 완정초등학교 연주 플릇1명 모십니다 인천 서해구 12/1(목). 검단 인천 완정초등학교 연주 플릇1명 모십니다 11.25 664",
+      "searchText": "인천 서해구 12/1(목). 검단 인천 완정초등학교 연주 플릇1명 모십니다 인천 서해구 12/1(목). 검단 인천 완정초등학교 연주 플릇1명 모십니다 11.25 665",
       "autoCollected": true
     },
     {
@@ -6871,7 +4560,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 남동구 피아노 파트 선생님 구합니다. 인천 남동구 피아노 파트 선생님 구합니다. 11.18 887",
+      "searchText": "인천 남동구 피아노 파트 선생님 구합니다. 인천 남동구 피아노 파트 선생님 구합니다. 11.18 888",
       "autoCollected": true
     },
     {
@@ -6901,7 +4590,7 @@
         "플루트",
         "플룻"
       ],
-      "searchText": "인천 부평구 경기도 부천및 인천지역 피아노 방문 개인레슨 해주실 선생님 구합… 경기 부천시 인천 부평구 인천 계양구 경기도 부천및 인천지역 피아노 방문 개인레슨 해주실 선생님 구합… 10.13 1,468",
+      "searchText": "인천 부평구 경기도 부천및 인천지역 피아노 방문 개인레슨 해주실 선생님 구합… 경기 부천시 인천 부평구 인천 계양구 경기도 부천및 인천지역 피아노 방문 개인레슨 해주실 선생님 구합… 10.13 1,469",
       "autoCollected": true
     },
     {
@@ -6930,7 +4619,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 서해구 김포 플루트 선생님 구합니다 경기 김포시 경기 일산 인천 서해구 김포 플루트 선생님 구합니다 06.27 830",
+      "searchText": "인천 서해구 김포 플루트 선생님 구합니다 경기 김포시 경기 일산 인천 서해구 김포 플루트 선생님 구합니다 06.27 831",
       "autoCollected": true
     },
     {
@@ -6988,7 +4677,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "인천 연수구 인천 연수구 플루트 선생님 모십니다. 인천 연수구 인천 연수구 플루트 선생님 모십니다. 05.30 925",
+      "searchText": "인천 연수구 인천 연수구 플루트 선생님 모십니다. 인천 연수구 인천 연수구 플루트 선생님 모십니다. 05.30 926",
       "autoCollected": true
     },
     {
@@ -7227,7 +4916,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "인천 서해구 * 삭제된 게시물 입니다. 인천 서해구 * 삭제된 게시물 입니다. 09.01 219",
+      "searchText": "인천 서해구 * 삭제된 게시물 입니다. 인천 서해구 * 삭제된 게시물 입니다. 09.01 220",
       "autoCollected": true
     },
     {
@@ -7256,7 +4945,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "인천 연수구 * 삭제된 게시물 입니다. 인천 연수구 인천 부평구 인천 남동구 * 삭제된 게시물 입니다. 08.25 161",
+      "searchText": "인천 연수구 * 삭제된 게시물 입니다. 인천 연수구 인천 부평구 인천 남동구 * 삭제된 게시물 입니다. 08.25 162",
       "autoCollected": true
     },
     {
@@ -7285,7 +4974,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "인천 미추홀구 * 삭제된 게시물 입니다. 인천 미추홀구 * 삭제된 게시물 입니다. 08.22 152",
+      "searchText": "인천 미추홀구 * 삭제된 게시물 입니다. 인천 미추홀구 * 삭제된 게시물 입니다. 08.22 153",
       "autoCollected": true
     },
     {
@@ -7314,7 +5003,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "인천 부평구 * 삭제된 게시물 입니다. 인천 부평구 * 삭제된 게시물 입니다. 12.02 406",
+      "searchText": "인천 부평구 * 삭제된 게시물 입니다. 인천 부평구 * 삭제된 게시물 입니다. 12.02 407",
       "autoCollected": true
     },
     {
@@ -7343,7 +5032,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "인천 남동구 * 삭제된 게시물 입니다. 인천 남동구 * 삭제된 게시물 입니다. 09.04 238",
+      "searchText": "인천 남동구 * 삭제된 게시물 입니다. 인천 남동구 * 삭제된 게시물 입니다. 09.04 239",
       "autoCollected": true
     },
     {
@@ -7372,7 +5061,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "인천 남동구 * 삭제된 게시물 입니다. 인천 남동구 * 삭제된 게시물 입니다. 08.26 14",
+      "searchText": "인천 남동구 * 삭제된 게시물 입니다. 인천 남동구 * 삭제된 게시물 입니다. 08.26 15",
       "autoCollected": true
     },
     {
@@ -7401,7 +5090,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "인천 부평구 * 삭제된 게시물 입니다. 인천 부평구 인천 남동구 * 삭제된 게시물 입니다. 02.26 15",
+      "searchText": "인천 부평구 * 삭제된 게시물 입니다. 인천 부평구 인천 남동구 * 삭제된 게시물 입니다. 02.26 16",
       "autoCollected": true
     },
     {
@@ -7430,7 +5119,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 부평구 * 삭제된 게시물 입니다. 인천 부평구 인천 계양구 경기 부천시 * 삭제된 게시물 입니다. 09.10 126",
+      "searchText": "인천 부평구 * 삭제된 게시물 입니다. 인천 부평구 인천 계양구 경기 부천시 * 삭제된 게시물 입니다. 09.10 127",
       "autoCollected": true
     },
     {
@@ -7459,7 +5148,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 연수구 * 삭제된 게시물 입니다. 인천 연수구 * 삭제된 게시물 입니다. 07.25 258",
+      "searchText": "인천 연수구 * 삭제된 게시물 입니다. 인천 연수구 * 삭제된 게시물 입니다. 07.25 259",
       "autoCollected": true
     },
     {
@@ -7488,7 +5177,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 중구 * 삭제된 게시물 입니다. 인천 중구 인천 서해구 인천 연수구 * 삭제된 게시물 입니다. 04.14 216",
+      "searchText": "인천 중구 * 삭제된 게시물 입니다. 인천 중구 인천 서해구 인천 연수구 * 삭제된 게시물 입니다. 04.14 217",
       "autoCollected": true
     },
     {
@@ -7517,7 +5206,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 중구 * 삭제된 게시물 입니다. 인천 중구 인천 연수구 인천 서해구 * 삭제된 게시물 입니다. 04.08 173",
+      "searchText": "인천 중구 * 삭제된 게시물 입니다. 인천 중구 인천 연수구 인천 서해구 * 삭제된 게시물 입니다. 04.08 174",
       "autoCollected": true
     },
     {
@@ -7546,7 +5235,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 중구 * 삭제된 게시물 입니다. 인천 중구 인천 연수구 인천 서해구 * 삭제된 게시물 입니다. 04.02 168",
+      "searchText": "인천 중구 * 삭제된 게시물 입니다. 인천 중구 인천 연수구 인천 서해구 * 삭제된 게시물 입니다. 04.02 169",
       "autoCollected": true
     },
     {
@@ -7575,7 +5264,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 연수구 * 삭제된 게시물 입니다. 인천 연수구 * 삭제된 게시물 입니다. 03.25 196",
+      "searchText": "인천 연수구 * 삭제된 게시물 입니다. 인천 연수구 * 삭제된 게시물 입니다. 03.25 197",
       "autoCollected": true
     },
     {
@@ -7604,7 +5293,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 연수구 * 삭제된 게시물 입니다. 인천 연수구 * 삭제된 게시물 입니다. 03.20 173",
+      "searchText": "인천 연수구 * 삭제된 게시물 입니다. 인천 연수구 * 삭제된 게시물 입니다. 03.20 174",
       "autoCollected": true
     },
     {
@@ -7633,7 +5322,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 연수구 * 삭제된 게시물 입니다. 인천 연수구 * 삭제된 게시물 입니다. 03.18 182",
+      "searchText": "인천 연수구 * 삭제된 게시물 입니다. 인천 연수구 * 삭제된 게시물 입니다. 03.18 183",
       "autoCollected": true
     },
     {
@@ -7662,7 +5351,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 연수구 * 삭제된 게시물 입니다. 인천 연수구 인천 남동구 인천 미추홀구 * 삭제된 게시물 입니다. 02.23 235",
+      "searchText": "인천 연수구 * 삭제된 게시물 입니다. 인천 연수구 인천 남동구 인천 미추홀구 * 삭제된 게시물 입니다. 02.23 236",
       "autoCollected": true
     },
     {
@@ -7691,7 +5380,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "인천 계양구 * 삭제된 게시물 입니다. 인천 계양구 인천 서해구 경기 부천시 * 삭제된 게시물 입니다. 01.26 240",
+      "searchText": "인천 계양구 * 삭제된 게시물 입니다. 인천 계양구 인천 서해구 경기 부천시 * 삭제된 게시물 입니다. 01.26 242",
       "autoCollected": true
     }
   ]
