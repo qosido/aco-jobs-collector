@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T22:09:46.713Z",
+  "updatedAt": "2026-10-09T02:18:11.975Z",
   "diagnostics": {
     "ice": {
       "pagesCollected": 10,
@@ -11,7 +11,7 @@
       "firstPageTdCount": 91,
       "firstPageHasArtInstructor": true,
       "firstPageHasRecruiting": true,
-      "firstPagePreview": "공고 < 채용공고 < 채용 < 채용/시험 | 인천광역시교육청 본문으로 바로가기 메인메뉴 바로가기 이 누리집은 대한민국 공식 전자정부 누리집입니다. --> 로그인 메뉴스크랩 국가상징 KOR Language English Japanese Chinese Vietnamese Russian Mongolian Thai Uzbek --> 블로그 바로가기 유튜브 바로가기 페이스북 바로가기 인스타그램 바로가기 카카오톡 바로가기 SNS SNS 블로그 바로가기 트위터 바로가기 페이스북 바로가기 카카오톡 바로가기 인스타그램 바로가기 유튜브 바로가기 --> --> --> Tel.070.4021.7078 접수 받고 있습니다. --> --> --> --> --> --> 오늘하루열지않기 --> --> --> 닫기 --> --> --> --> 소식 교육 행정 채용/시험 참여/신청 개인정보처리방침 인천광역시교육청 관련사이트 12 ℃ 미세먼지 보통 교육청소식 교육청소식 학생성공시대 를 여는 인천교육 INCHEON M"
+      "firstPagePreview": "공고 < 채용공고 < 채용 < 채용/시험 | 인천광역시교육청 본문으로 바로가기 메인메뉴 바로가기 이 누리집은 대한민국 공식 전자정부 누리집입니다. --> 로그인 메뉴스크랩 국가상징 KOR Language English Japanese Chinese Vietnamese Russian Mongolian Thai Uzbek --> 블로그 바로가기 유튜브 바로가기 페이스북 바로가기 인스타그램 바로가기 카카오톡 바로가기 SNS SNS 블로그 바로가기 트위터 바로가기 페이스북 바로가기 카카오톡 바로가기 인스타그램 바로가기 유튜브 바로가기 --> --> --> Tel.070.4021.7078 접수 받고 있습니다. --> --> --> --> --> --> 오늘하루열지않기 --> --> --> 닫기 --> --> --> --> 소식 교육 행정 채용/시험 참여/신청 개인정보처리방침 인천광역시교육청 관련사이트 22 ℃ 미세먼지 보통 교육청소식 교육청소식 학생성공시대 를 여는 인천교육 INCHEON M"
     },
     "sen": {
       "keywords": [
@@ -87,26 +87,26 @@
       ],
       "region": "인천 전체",
       "searchField": "wr_subject||wr_content",
-      "searchRequests": 2,
-      "rawParsedCount": 0,
+      "searchRequests": 5,
+      "rawParsedCount": 157,
       "domFallbackCount": 0,
-      "uniqueCount": 0,
-      "activeCount": 0,
-      "detailPagesChecked": 0,
-      "detailDatesFixed": 0,
-      "oldPostsClosed": 0,
+      "uniqueCount": 76,
+      "activeCount": 2,
+      "detailPagesChecked": 76,
+      "detailDatesFixed": 63,
+      "oldPostsClosed": 74,
       "detailErrors": 0,
       "keywordCounts": {
-        "플루트": 0,
-        "플룻": 0
+        "플루트": 34,
+        "플룻": 123
       },
       "pageCounts": {
-        "플루트": 1,
-        "플룻": 1
+        "플루트": 2,
+        "플룻": 3
       },
       "firstPageHtmlLengths": {
-        "플루트": 144,
-        "플룻": 144
+        "플루트": 183857,
+        "플룻": 238633
       }
     },
     "goe": {
@@ -201,7 +201,7 @@
     "sen": 7,
     "artmore": 51,
     "artinfo": 14,
-    "lessoninfo": 0,
+    "lessoninfo": 76,
     "goe": 0
   },
   "locationCoverage": {
@@ -250,13 +250,13 @@
       "activeWithOrganization": 0
     },
     "lessoninfo": {
-      "total": 0,
-      "active": 0,
+      "total": 76,
+      "active": 2,
       "withAddress": 0,
       "addressRate": 0,
       "withOrganization": 0,
       "organizationRate": 0,
-      "withRegion": 0,
+      "withRegion": 76,
       "activeWithAddress": 0,
       "activeWithOrganization": 0
     },
@@ -272,15 +272,15 @@
       "activeWithOrganization": 0
     },
     "total": {
-      "total": 172,
+      "total": 248,
       "withAddress": 59,
-      "addressRate": 34.3,
+      "addressRate": 23.8,
       "withOrganization": 161,
-      "organizationRate": 93.6
+      "organizationRate": 64.9
     }
   },
-  "count": 172,
-  "activeCount": 34,
+  "count": 248,
+  "activeCount": 36,
   "jobs": [
     {
       "id": "sen_111779",
@@ -305,7 +305,7 @@
       "matchedKeywords": [
         "음악"
       ],
-      "searchText": "잠실여자중학교 2026학년도 잠실여자중학교 음악 강사 채용 공고 초기화 검색 채용정보 지역별 등록순 마감순 5개씩 보기 10개씩 보기 15개씩 보기 30개씩 보기 50개씩 보기 100개씩 보기 200개씩 보기 300개씩 보기 마감제외 오늘의채용공고 검색 검색건수 5건 잠실여자중학교 | 02-2140-8014 | 등록일 : 2026-10-08 조회수 : 101 2026학년도 잠실여자중학교 음악 강사 채용 공고 --> 과목(담당업무) 음악",
+      "searchText": "잠실여자중학교 2026학년도 잠실여자중학교 음악 강사 채용 공고 초기화 검색 채용정보 지역별 등록순 마감순 5개씩 보기 10개씩 보기 15개씩 보기 30개씩 보기 50개씩 보기 100개씩 보기 200개씩 보기 300개씩 보기 마감제외 오늘의채용공고 검색 검색건수 5건 잠실여자중학교 | 02-2140-8014 | 등록일 : 2026-10-08 조회수 : 113 2026학년도 잠실여자중학교 음악 강사 채용 공고 --> 과목(담당업무) 음악",
       "autoCollected": true
     },
     {
@@ -331,7 +331,7 @@
       "matchedKeywords": [
         "오케스트라"
       ],
-      "searchText": "강신중학교 강신중학교 오케스트라 강사 채용 공고(바이올린, 클라리넷, 트럼펫) 초기화 검색 채용정보 지역별 등록순 마감순 5개씩 보기 10개씩 보기 15개씩 보기 30개씩 보기 50개씩 보기 100개씩 보기 200개씩 보기 300개씩 보기 마감제외 오늘의채용공고 검색 검색건수 1건 강신중학교 | 070-5130-8229 | 등록일 : 2026-10-08 조회수 : 68 강신중학교 오케스트라 강사 채용 공고(바이올린, 클라리넷, 트럼펫) --> 과목(담당업무) 오케스트라(바이올린, 클라리넷, 트럼펫)",
+      "searchText": "강신중학교 강신중학교 오케스트라 강사 채용 공고(바이올린, 클라리넷, 트럼펫) 초기화 검색 채용정보 지역별 등록순 마감순 5개씩 보기 10개씩 보기 15개씩 보기 30개씩 보기 50개씩 보기 100개씩 보기 200개씩 보기 300개씩 보기 마감제외 오늘의채용공고 검색 검색건수 1건 강신중학교 | 070-5130-8229 | 등록일 : 2026-10-08 조회수 : 70 강신중학교 오케스트라 강사 채용 공고(바이올린, 클라리넷, 트럼펫) --> 과목(담당업무) 오케스트라(바이올린, 클라리넷, 트럼펫)",
       "autoCollected": true
     },
     {
@@ -357,7 +357,7 @@
       "matchedKeywords": [
         "관악"
       ],
-      "searchText": "서울특별시동작관악교육지원청 동작관악 학습진단성장센터 학습비타민 지원가 추가 모집 공고 초기화 검색 채용정보 지역별 등록순 마감순 5개씩 보기 10개씩 보기 15개씩 보기 30개씩 보기 50개씩 보기 100개씩 보기 200개씩 보기 300개씩 보기 마감제외 오늘의채용공고 검색 검색건수 1건 서울특별시동작관악교육지원청 | 02-810-8374 | 등록일 : 2026-10-07 조회수 : 292 동작관악 학습진단성장센터 학습비타민 지원가 추가 모집 공고 --> 과목(담당업무) 학습비타민 지원가(봉사자)",
+      "searchText": "서울특별시동작관악교육지원청 동작관악 학습진단성장센터 학습비타민 지원가 추가 모집 공고 초기화 검색 채용정보 지역별 등록순 마감순 5개씩 보기 10개씩 보기 15개씩 보기 30개씩 보기 50개씩 보기 100개씩 보기 200개씩 보기 300개씩 보기 마감제외 오늘의채용공고 검색 검색건수 1건 서울특별시동작관악교육지원청 | 02-810-8374 | 등록일 : 2026-10-07 조회수 : 457 동작관악 학습진단성장센터 학습비타민 지원가 추가 모집 공고 --> 과목(담당업무) 학습비타민 지원가(봉사자)",
       "autoCollected": true
     },
     {
@@ -412,7 +412,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "음악공감센터 바이올린,첼로,플루트 선생님 모십니다. 인천광역시 미추홀구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 음악공감센터 진행중 바이올린,첼로,플루트 선생님 모십니다. 경력무관 학력무관 인천광역시 미추홀구 한나루로 563 시급 25,000원 ~ 0원 정규직 주5일 채용시까지 2026-10-02 등록 41",
+      "searchText": "음악공감센터 바이올린,첼로,플루트 선생님 모십니다. 인천광역시 미추홀구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 음악공감센터 진행중 바이올린,첼로,플루트 선생님 모십니다. 경력무관 학력무관 인천광역시 미추홀구 한나루로 563 시급 25,000원 ~ 0원 정규직 주5일 채용시까지 2026-10-02 등록 43",
       "autoCollected": true
     },
     {
@@ -493,7 +493,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "송도교향악단 바이올린,첼로,플루트 선생님 모십니다 인천광역시 남동구 송도교향악단 진행중 바이올린,첼로,플루트 선생님 모십니다 경력무관 학력무관 인천광역시 남동구 남동대로 713 시급 25,000원 ~ 0원 시간선택제 주5일 채용시까지 2026-10-01 등록 29",
+      "searchText": "송도교향악단 바이올린,첼로,플루트 선생님 모십니다 인천광역시 남동구 송도교향악단 진행중 바이올린,첼로,플루트 선생님 모십니다 경력무관 학력무관 인천광역시 남동구 남동대로 713 시급 25,000원 ~ 0원 시간선택제 주5일 채용시까지 2026-10-01 등록 30",
       "autoCollected": true
     },
     {
@@ -546,7 +546,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "서초구립 한우리정보문화센터 2026 서초한우리오케스트라 직업연주자 선발 서울 서초구 서초구립 한우리정보문화센터 진행중 2026 서초한우리오케스트라 직업연주자 선발 경력무관 고등학교 서울 서초구 남부순환로340길 15 (서초동) 연봉 0원 ~ 0원 계약직 주5일 채용시까지 2026-09-22 등록 518",
+      "searchText": "서초구립 한우리정보문화센터 2026 서초한우리오케스트라 직업연주자 선발 서울 서초구 서초구립 한우리정보문화센터 진행중 2026 서초한우리오케스트라 직업연주자 선발 경력무관 고등학교 서울 서초구 남부순환로340길 15 (서초동) 연봉 0원 ~ 0원 계약직 주5일 채용시까지 2026-09-22 등록 523",
       "autoCollected": true
     },
     {
@@ -599,7 +599,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "연수문화원 연수문화원 문화학교 강사 모집(플루트, 통기타,라인댄스 인천 연수구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 연수문화원 진행중 연수문화원 문화학교 강사 모집(플루트, 통기타,라인댄스 경력무관 고등학교 인천 연수구 비류대로 299 (청학동) 월급 0원 ~ 0원 프리랜서 주1일 d-14 2026-09-16 등록 2026-10-23 마감 217",
+      "searchText": "연수문화원 연수문화원 문화학교 강사 모집(플루트, 통기타,라인댄스 인천 연수구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 연수문화원 진행중 연수문화원 문화학교 강사 모집(플루트, 통기타,라인댄스 경력무관 고등학교 인천 연수구 비류대로 299 (청학동) 월급 0원 ~ 0원 프리랜서 주1일 d-14 2026-09-16 등록 2026-10-23 마감 218",
       "autoCollected": true
     },
     {
@@ -709,6 +709,36 @@
       "autoCollected": true
     },
     {
+      "id": "lessoninfo_257982",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "257982",
+      "postedAt": "2026-09-13",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 부평구 대형음악학원 플룻강사샘 모집해요.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 부평구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/257982",
+      "tags": [
+        "플루트",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 부평구 인천 부평구 대형음악학원 플루트강사샘 모집해요. 인천 부평구 경기 부천시 인천 계양구 인천 부평구 대형음악학원 플루트강사샘 모집해요. 09.13 209",
+      "autoCollected": true
+    },
+    {
       "id": "job_puyhpm",
       "source": "인천교육청",
       "sourceId": "ice",
@@ -754,6 +784,36 @@
       ],
       "instrumentTags": [],
       "searchText": "용현여자중학교 예체능강사 2026학년도 2학기 전일제 특수학급 배치 학생 지원 프로그램 강사 공고문",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_20170307205423_8969",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "20170307205423_8969",
+      "postedAt": "2026-09-10",
+      "recruitStatus": "모집중",
+      "isActive": true,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "서울, 경기, 인천 바이올린, 첼로, 피아노 선생님 구인합니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "서울 구로구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/board/board.php?board_code=20130529164321_7227&code=20170307205423_8969&bo_table=20161213205858_6198&wr_no=23701",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트",
+        "플룻"
+      ],
+      "searchText": "서울 구로구 서울, 경기, 인천 바이올린, 첼로, 피아노 선생님 구인합니다. 서울 구로구 서울, 경기, 인천 바이올린, 첼로, 피아노 선생님 구인합니다. n --> --> 1,304",
       "autoCollected": true
     },
     {
@@ -1728,6 +1788,36 @@
       "autoCollected": true
     },
     {
+      "id": "lessoninfo_256166",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "256166",
+      "postedAt": "2026-08-04",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 검단신도시 아라역인근 대형음악학원에서 플룻강사샘 채용해…",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 서해구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/256166",
+      "tags": [
+        "플루트",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 서해구 인천 검단신도시 아라역인근 대형음악학원에서 플루트강사샘 채용해… 인천 서해구 인천 검단신도시 아라역인근 대형음악학원에서 플루트강사샘 채용해… 08.04 302",
+      "autoCollected": true
+    },
+    {
       "id": "job_9pr0bu",
       "source": "인천교육청",
       "sourceId": "ice",
@@ -1976,6 +2066,36 @@
       "autoCollected": true
     },
     {
+      "id": "lessoninfo_255682",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "255682",
+      "postedAt": "2026-07-16",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "플룻 선생님 모집합니다. 플루트",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 남동구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/255682",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트",
+        "플룻"
+      ],
+      "searchText": "인천 남동구 플루트 선생님 모집합니다. 플루트 인천 남동구 인천 미추홀구 인천 연수구 플루트 선생님 모집합니다. 플루트 07.16 453",
+      "autoCollected": true
+    },
+    {
       "id": "job_6jejfv",
       "source": "인천교육청",
       "sourceId": "ice",
@@ -1996,6 +2116,35 @@
       ],
       "instrumentTags": [],
       "searchText": "인천창영초등학교 예체능강사 2026학년도 학생예술동아리(바이올린) 강사 채용 공고 (2차)",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_255642",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "255642",
+      "postedAt": "2026-07-15",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천연수구 플룻선생님모십니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 연수구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/255642",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 연수구 인천연수구 플루트선생님모십니다. 인천 연수구 인천 남동구 인천 미추홀구 인천연수구 플루트선생님모십니다. 07.15 270",
       "autoCollected": true
     },
     {
@@ -2042,6 +2191,35 @@
       ],
       "instrumentTags": [],
       "searchText": "인천공항초등학교 예체능강사 2026학년도 인천공항초등학교 연극 강사 채용 공고",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_255532",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "255532",
+      "postedAt": "2026-07-12",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천송도동 플룻선생님 모집합니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 연수구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/255532",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 연수구 인천송도동 플루트선생님 모집합니다 인천 연수구 인천 중구 인천 미추홀구 인천송도동 플루트선생님 모집합니다 07.12 388",
       "autoCollected": true
     },
     {
@@ -2228,6 +2406,35 @@
       ],
       "instrumentTags": [],
       "searchText": "인천문남초등학교 예체능강사 2026학년도 영어체육강사 채용 공고",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_255409",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "255409",
+      "postedAt": "2026-07-07",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "신중동 플랫 선생님 모십니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 계양구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/255409",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 계양구 신중동 플랫 선생님 모십니다 인천 계양구 경기 부천시 신중동 플랫 선생님 모십니다 07.07 427",
       "autoCollected": true
     },
     {
@@ -2533,6 +2740,35 @@
       "autoCollected": true
     },
     {
+      "id": "lessoninfo_254918",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "254918",
+      "postedAt": "2026-06-23",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 서구 청라동에서 플룻 선생님 모십니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 서해구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/254918",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 서해구 인천 서구 청라동에서 플루트 선생님 모십니다. 인천 서해구 인천 서구 청라동에서 플루트 선생님 모십니다. 06.23 343",
+      "autoCollected": true
+    },
+    {
       "id": "job_rhck8r",
       "source": "인천교육청",
       "sourceId": "ice",
@@ -2622,6 +2858,35 @@
       ],
       "instrumentTags": [],
       "searchText": "인천동양중학교 예체능강사 2026학년도 인천동양중학교 모두다 문화예술교육 지원사업 외부강사 위촉 공고",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_254793",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "254793",
+      "postedAt": "2026-06-19",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 서구 청라동에서 플룻 선생님 모십니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 서해구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/254793",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 서해구 인천 서구 청라동에서 플루트 선생님 모십니다. 인천 서해구 인천 서구 청라동에서 플루트 선생님 모십니다. 06.19 346",
       "autoCollected": true
     },
     {
@@ -3124,7 +3389,123 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "하트하트아트앤컬쳐 발달장애인 연주자 정규직 직원 채용 공고 서울 송파구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 하트하트아트앤컬쳐 마감 발달장애인 연주자 정규직 직원 채용 공고 경력무관 고등학교 서울 송파구 송이로23길 34 (가락동) 월급 0원 ~ 0원 정규직 주5일 마감 2026-04-30 등록 2026-05-08 마감 527",
+      "searchText": "하트하트아트앤컬쳐 발달장애인 연주자 정규직 직원 채용 공고 서울 송파구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 하트하트아트앤컬쳐 마감 발달장애인 연주자 정규직 직원 채용 공고 경력무관 고등학교 서울 송파구 송이로23길 34 (가락동) 월급 0원 ~ 0원 정규직 주5일 마감 2026-04-30 등록 2026-05-08 마감 528",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_252091",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "252091",
+      "postedAt": "2026-04-11",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "북콘서트 연주자 구인(고정연주자-바이올린,첼로,피아노,플룻)",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 연수구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/252091",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 연수구 북콘서트 연주자 구인(고정연주자-바이올린,첼로,피아노,플루트) 인천 연수구 북콘서트 연주자 구인(고정연주자-바이올린,첼로,피아노,플루트) 04.11 1,118",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_251763",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "251763",
+      "postedAt": "2026-04-04",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "운남동 하늘도시 플룻 바이올린 선생님 구인합니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 중구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/251763",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 중구 운남동 하늘도시 플루트 바이올린 선생님 구인합니다. 인천 중구 인천 서해구 인천 연수구 운남동 하늘도시 플루트 바이올린 선생님 구인합니다. 04.04 354",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_251681",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "251681",
+      "postedAt": "2026-04-02",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "송도교향악단에서 바이올린,첼로,플룻 선생님을 모집합니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 계양구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/251681",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 계양구 송도교향악단에서 바이올린,첼로,플루트 선생님을 모집합니다. 인천 계양구 인천 남동구 인천 서해구 송도교향악단에서 바이올린,첼로,플루트 선생님을 모집합니다. 04.02 663",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_251449",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "251449",
+      "postedAt": "2026-03-28",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 플룻선생님 모집합니다~",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 부평구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/251449",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 부평구 인천 플루트선생님 모집합니다~ 인천 부평구 인천 플루트선생님 모집합니다~ 03.28 366",
       "autoCollected": true
     },
     {
@@ -3303,7 +3684,7 @@
       "matchedKeywords": [
         "플루트"
       ],
-      "searchText": "케이아츠에듀 2026 서울학생필하모닉오케스트라 파트멘토(강사) 초빙 공고 서울 은평구 케이아츠에듀 마감 2026 서울학생필하모닉오케스트라 파트멘토(강사) 초빙 공고 경력 1년 대학교(4년) 서울 은평구 가좌로 208 (응암동) 일급 150,000원 ~ 150,000원 계약직 주1일 마감 2026-02-02 등록 2026-02-11 마감 1982",
+      "searchText": "케이아츠에듀 2026 서울학생필하모닉오케스트라 파트멘토(강사) 초빙 공고 서울 은평구 케이아츠에듀 마감 2026 서울학생필하모닉오케스트라 파트멘토(강사) 초빙 공고 경력 1년 대학교(4년) 서울 은평구 가좌로 208 (응암동) 일급 150,000원 ~ 150,000원 계약직 주1일 마감 2026-02-02 등록 2026-02-11 마감 1983",
       "autoCollected": true
     },
     {
@@ -3548,6 +3929,35 @@
       "autoCollected": true
     },
     {
+      "id": "lessoninfo_247502",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "247502",
+      "postedAt": "2026-01-15",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천,부천 2월 28일 콩쿨(초등학생, 플룻) 반주자 선생님 구인합니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 연수구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/247502",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 연수구 인천,부천 2월 28일 콩쿨(초등학생, 플루트) 반주자 선생님 구인합니다. 인천 연수구 경기 부천시 인천,부천 2월 28일 콩쿨(초등학생, 플루트) 반주자 선생님 구인합니다. 01.15 694",
+      "autoCollected": true
+    },
+    {
       "id": "artmore_90090",
       "source": "아트모아",
       "sourceId": "artmore",
@@ -3603,6 +4013,37 @@
         "플룻"
       ],
       "searchText": "음악공감센터 바이올린,첼로,플루트 선생님 모십니다. 인천광역시 미추홀구 음악공감센터 마감 바이올린,첼로,플루트 선생님 모십니다. 경력무관 대학교(4년) 인천광역시 미추홀구 한나루로 563 시급 25,000원 ~ 0원 정규직 주5일 채용시까지 2026-01-05 등록 38",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_244453",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "244453",
+      "postedAt": "2025-11-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "보컬,관악Part 선생님 연락주세요.(다성소울뮤즈).서양악기 모든part지…",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 계양구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/244453",
+      "tags": [
+        "플루트",
+        "관악·오케스트라",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "인천 계양구 보컬,관악part 선생님 연락주세요.(다성소울뮤즈).서양악기 모든part지… 인천 계양구 보컬,관악part 선생님 연락주세요.(다성소울뮤즈).서양악기 모든part지… 11.01 341",
       "autoCollected": true
     },
     {
@@ -3724,6 +4165,36 @@
       "autoCollected": true
     },
     {
+      "id": "lessoninfo_241422",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "241422",
+      "postedAt": "2025-08-21",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 청라 대형음악학원 플룻 선생님 구합니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 서해구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/241422",
+      "tags": [
+        "플루트",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 서해구 인천 청라 대형음악학원 플루트 선생님 구합니다. 인천 서해구 인천 청라 대형음악학원 플루트 선생님 구합니다. 08.21 308",
+      "autoCollected": true
+    },
+    {
       "id": "artmore_88339",
       "source": "아트모아",
       "sourceId": "artmore",
@@ -3841,6 +4312,35 @@
       "autoCollected": true
     },
     {
+      "id": "lessoninfo_238303",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "238303",
+      "postedAt": "2025-05-28",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "플룻 선생님 모십니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 서해구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/238303",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 서해구 플루트 선생님 모십니다. 인천 서해구 플루트 선생님 모십니다. 05.28 441",
+      "autoCollected": true
+    },
+    {
       "id": "artinfo_343",
       "source": "아트인포",
       "sourceId": "artinfo",
@@ -3870,6 +4370,155 @@
       "autoCollected": true
     },
     {
+      "id": "lessoninfo_237758",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "237758",
+      "postedAt": "2025-05-15",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 서구 대형음악학원에서 플룻선생님 구합니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 계양구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/237758",
+      "tags": [
+        "플루트",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 계양구 인천 서구 대형음악학원에서 플루트선생님 구합니다. 인천 계양구 인천 서해구 경기 김포시 인천 서구 대형음악학원에서 플루트선생님 구합니다. 05.15 306",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_237716",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "237716",
+      "postedAt": "2025-05-14",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 서구 청라 대형 음악학원 플룻 선생님 구합니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 서해구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/237716",
+      "tags": [
+        "플루트",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 서해구 인천 서구 청라 대형 음악학원 플루트 선생님 구합니다. 인천 서해구 인천 서구 청라 대형 음악학원 플루트 선생님 구합니다. 05.14 264",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_237683",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "237683",
+      "postedAt": "2025-05-13",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 서구 대형음악학원에서 플룻샘 모셔요.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 계양구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/237683",
+      "tags": [
+        "플루트",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 계양구 인천 서구 대형음악학원에서 플루트샘 모셔요. 인천 계양구 인천 서해구 인천 부평구 인천 서구 대형음악학원에서 플루트샘 모셔요. 05.13 293",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_237602",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "237602",
+      "postedAt": "2025-05-12",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "플룻 선생님 모십니다 (여성분만)",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 남동구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/237602",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 남동구 플루트 선생님 모십니다 (여성분만) 인천 남동구 인천 미추홀구 인천 부평구 플루트 선생님 모십니다 (여성분만) 05.12 412",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_237469",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "237469",
+      "postedAt": "2025-05-09",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 청라 대형음악학원 플룻 선생님 구합니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 서해구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/237469",
+      "tags": [
+        "플루트",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 서해구 인천 청라 대형음악학원 플루트 선생님 구합니다. 인천 서해구 인천 청라 대형음악학원 플루트 선생님 구합니다. 05.09 306",
+      "autoCollected": true
+    },
+    {
       "id": "artmore_86855",
       "source": "아트모아",
       "sourceId": "artmore",
@@ -3896,6 +4545,36 @@
         "플룻"
       ],
       "searchText": "송도교향악단 송도교향악단에서 바이올린,첼로,플루트,클라리넷 선생... 인천광역시 계양구 송도교향악단 마감 송도교향악단에서 바이올린,첼로,플루트,클라리넷 선생... 경력무관 대학교(4년) 인천광역시 계양구 아나지로299번길 13 시급 25,000원 ~ 0원 정규직 주5일 채용시까지 2025-05-07 등록 195",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_237378",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "237378",
+      "postedAt": "2025-05-07",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 서구 대형음악학원에서 플룻선생님 구합니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 서해구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/237378",
+      "tags": [
+        "플루트",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 서해구 인천 서구 대형음악학원에서 플루트선생님 구합니다. 인천 서해구 인천 계양구 경기 김포시 인천 서구 대형음악학원에서 플루트선생님 구합니다. 05.07 352",
       "autoCollected": true
     },
     {
@@ -4106,6 +4785,123 @@
       "autoCollected": true
     },
     {
+      "id": "lessoninfo_233535",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "233535",
+      "postedAt": "2025-02-26",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "송도교향악단에서 바이올린,첼로,플룻 선생님 모십니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 계양구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/233535",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 계양구 송도교향악단에서 바이올린,첼로,플루트 선생님 모십니다 인천 계양구 인천 서해구 인천 동구 송도교향악단에서 바이올린,첼로,플루트 선생님 모십니다 02.26 791",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_232256",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "232256",
+      "postedAt": "2025-02-07",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 검단 대형음악학원에서 플룻샘 모셔요.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 계양구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/232256",
+      "tags": [
+        "플루트",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 계양구 인천 검단 대형음악학원에서 플루트샘 모셔요. 인천 계양구 인천 서해구 경기 김포시 인천 검단 대형음악학원에서 플루트샘 모셔요. 02.07 391",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_231164",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "231164",
+      "postedAt": "2025-01-10",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "플룻강사 구합니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 연수구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/231164",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 연수구 플루트강사 구합니다 인천 연수구 플루트강사 구합니다 01.10 512",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_230995",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "230995",
+      "postedAt": "2025-01-07",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "롯데마트 검단점 문화센터 (목)플룻 , (토)기타 강사 구인",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 서해구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/230995",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 서해구 롯데마트 검단점 문화센터 (목)플루트 , (토)기타 강사 구인 인천 서해구 롯데마트 검단점 문화센터 (목)플루트 , (토)기타 강사 구인 01.07 593",
+      "autoCollected": true
+    },
+    {
       "id": "artinfo_255",
       "source": "아트인포",
       "sourceId": "artinfo",
@@ -4162,6 +4958,35 @@
         "플룻"
       ],
       "searchText": "may심포니오케스트라 5기 단원 모집 채용 | may심포니오케스트라 5기 단원 모집 artinfo 채용 나눔 레슨 공연 뉴스 기획 문의 로그인 may심포니오케스트라 5기 단원 모집 타악기 피아노 바이올린 외 11 타악기 피아노 외 12 서울 강남구 청담동 11-23 1 may심포니오케스트라 2024.12.17 채용 사이트 바로가기 채용 사이트 바로가기 2025년 may 심포니 오케스트라 5기 단원 모집 may 심포니 오케스트라는 크리스천 클래식 전문 음악가들을 말씀과 기도로 교육하고, 서로 위로하고 격려하며, 일터에서 예수 그리스도의 제자로서 복음을 전하고 사랑을 실천하는 삶을 살아가는 사단법인 한국기독교문화사업단 산하 오케스트라입니다. *모집부문 바이올린, 비올라, 첼로, 콘트라베이스, 플루트, 오보에, 클라리넷, 바순, 호른, 트럼펫, 트럼본, 튜바, 팀파니, 피아노 *응시자격 4년제 음악대학 졸업자 및 졸업예정자 이상 *전형절차 1차 서류 (이메일접수) 가) 이력서 (사진이 포함된 자유양식) 나) 신앙고백이 포함된 자기 소개서 다) 목사님 추천서 2차 면접 3차 실기 전형 (무반주, 각 곡 악보 지참) 가) 자유곡 콘체르토 혹은 소나타 3분 이내 나) 지정곡 예수를 나의 구주 삼고 (새288장), 내 영혼이 은총 입어 (새438장), 하나님의 은혜 (조은아, 신상우) 중 1곡 선택 *접수 2024. 12. 9. (월) ~ 2025. 1. 31. (금) maysymphony@naver.com (이메일 접수만 가능) *전형일정 1차: 서류전형 합격자 발표 2025. 2. 5 (수) 2차: 면접 2025. 2. 10 (월) ~ 2. 11 (화) 10:00 ~ 18:00 2차 합격자 발표: 2025. 2. 12 (수) 3차: 실기 2025. 2. 24 (월) 10:00 ~ 18:00 면접 실기 장소는 서류 전형 합격자에 한하여 개별 통지 최종합격자 발표: 2025. 2. 26 (수) 최종합격자 환영 예배 및 오리엔테이션: 2025. 3. 2 (월) *오케스트라 연습 및 모임 일정 일시: 매주 월요일 17:30 ~ 21:50 장소: 서울시 송파구 장지동 생명나무교회 *문의 may 심포니 오케스트라 010-3346-0448/ maysymphony@naver.com 홈페이지: www.maysymphony.com 채용 소통 기획 레슨 공연",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_230213",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "230213",
+      "postedAt": "2024-12-16",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 송도 신도시 플룻 선생님 구합니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 연수구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/230213",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 연수구 인천 송도 신도시 플루트 선생님 구합니다. 인천 연수구 인천 송도 신도시 플루트 선생님 구합니다. 12.16 485",
       "autoCollected": true
     },
     {
@@ -4223,6 +5048,65 @@
       "autoCollected": true
     },
     {
+      "id": "lessoninfo_224066",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "224066",
+      "postedAt": "2024-08-11",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "8월15일 광복절 플룻대타선생님 구합니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 부평구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/224066",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 부평구 8월15일 광복절 플루트대타선생님 구합니다 인천 부평구 인천 계양구 경기 부천시 8월15일 광복절 플루트대타선생님 구합니다 08.11 608",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_221642",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "221642",
+      "postedAt": "2024-06-14",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 서구 대형음악학원에서 플룻샘 모셔요.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 서해구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/221642",
+      "tags": [
+        "플루트",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 서해구 인천 서구 대형음악학원에서 플루트샘 모셔요. 인천 서해구 인천 계양구 경기 김포시 인천 서구 대형음악학원에서 플루트샘 모셔요. 06.14 699",
+      "autoCollected": true
+    },
+    {
       "id": "artmore_82532",
       "source": "아트모아",
       "sourceId": "artmore",
@@ -4250,6 +5134,122 @@
         "플루트"
       ],
       "searchText": "(주)에이디엔노뜨 (주)ad & note(에이디엔노뜨), [9월-11월 공연 연주자 모집] (기악듀엣&기악독주) 서울 서초구 (주)에이디엔노뜨 마감 (주)ad & note(에이디엔노뜨), [9월-11월 공연 연주자 모집] (기악듀엣&기악독주) 경력무관 학력무관 서울 서초구 방배로 201 (방배동) 일급 0원 ~ 0원 계약직 주6일 마감 2024-05-31 등록 2024-06-03 마감 519",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_218848",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "218848",
+      "postedAt": "2024-04-22",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "플루트 선생님 구합니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 부평구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/218848",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "인천 부평구 플루트 선생님 구합니다. 인천 부평구 플루트 선생님 구합니다. 04.22 686",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_218075",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "218075",
+      "postedAt": "2024-04-08",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "플루트 선생님 구합니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 부평구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/218075",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "인천 부평구 플루트 선생님 구합니다. 인천 부평구 플루트 선생님 구합니다. 04.08 633",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_214793",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "214793",
+      "postedAt": "2024-02-26",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "플루트 강사 구합니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 부평구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/214793",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "인천 부평구 플루트 강사 구합니다. 인천 부평구 플루트 강사 구합니다. 02.26 552",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_212720",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "212720",
+      "postedAt": "2024-01-23",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "이번주 금요일 플룻대타 선생님 구합니다 (6시40분~7시30분)",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 부평구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/212720",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 부평구 이번주 금요일 플루트대타 선생님 구합니다 (6시40분~7시30분) 인천 부평구 경기 부천시 인천 계양구 이번주 금요일 플루트대타 선생님 구합니다 (6시40분~7시30분) 01.23 630",
       "autoCollected": true
     },
     {
@@ -4309,7 +5309,7 @@
       "matchedKeywords": [
         "플룻"
       ],
-      "searchText": "서초구립 한우리정보문화센터 종료 서초구립 한우리정보문화센터 플루트앙상블 강사 채용 공고 서울 서초구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 서초구립 한우리정보문화센터 종료 서초구립 한우리정보문화센터 플루트앙상블 강사 채용 공고 경력무관 대학교(4년) 서울 서초구 남부순환로340길 15 (서초동) 월급 200,000원 ~ 250,000원 계약직 주1일 채용시까지 2023-12-22 등록 1813",
+      "searchText": "서초구립 한우리정보문화센터 종료 서초구립 한우리정보문화센터 플루트앙상블 강사 채용 공고 서울 서초구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 서초구립 한우리정보문화센터 종료 서초구립 한우리정보문화센터 플루트앙상블 강사 채용 공고 경력무관 대학교(4년) 서울 서초구 남부순환로340길 15 (서초동) 월급 200,000원 ~ 250,000원 계약직 주1일 채용시까지 2023-12-22 등록 1825",
       "autoCollected": true
     },
     {
@@ -4373,6 +5373,93 @@
       "autoCollected": true
     },
     {
+      "id": "lessoninfo_208846",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "208846",
+      "postedAt": "2023-11-09",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "11월16일 목요일 플룻대타구합니다 3시~5시",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 부평구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/208846",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 부평구 11월16일 목요일 플루트대타구합니다 3시~5시 인천 부평구 경기 부천시 인천 계양구 11월16일 목요일 플루트대타구합니다 3시~5시 11.09 688",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_208400",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "208400",
+      "postedAt": "2023-11-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "11월3일 금요일 플룻 대타선생님 6시40분~7시30분",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 부평구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/208400",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 부평구 11월3일 금요일 플루트 대타선생님 6시40분~7시30분 경기 부천시 인천 부평구 인천 계양구 11월3일 금요일 플루트 대타선생님 6시40분~7시30분 11.01 634",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_206130",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "206130",
+      "postedAt": "2023-09-19",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 서구 바이올린,첼로,플룻,드럼선생님을 모십니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 계양구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/206130",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 계양구 인천 서구 바이올린,첼로,플루트,드럼선생님을 모십니다. 인천 계양구 인천 서해구 인천 부평구 인천 서구 바이올린,첼로,플루트,드럼선생님을 모십니다. 09.19 1,785",
+      "autoCollected": true
+    },
+    {
       "id": "artmore_78010",
       "source": "아트모아",
       "sourceId": "artmore",
@@ -4402,6 +5489,327 @@
       "autoCollected": true
     },
     {
+      "id": "lessoninfo_201221",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "201221",
+      "postedAt": "2023-06-28",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "검단신도시 제일 큰학원 플룻샘 모셔요.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 서해구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/201221",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 서해구 검단신도시 제일 큰학원 플루트샘 모셔요. 인천 서해구 경기 김포시 인천 계양구 검단신도시 제일 큰학원 플루트샘 모셔요. 06.28 870",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_200722",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "200722",
+      "postedAt": "2023-06-20",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "6/25 교회 오케스트라 플룻 대타 구해요",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 계양구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/200722",
+      "tags": [
+        "플루트",
+        "관악·오케스트라"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 계양구 6/25 교회 오케스트라 플루트 대타 구해요 인천 계양구 6/25 교회 오케스트라 플루트 대타 구해요 06.20 744",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_199155",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "199155",
+      "postedAt": "2023-05-23",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "피아노 전임 선생님 구합니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 남동구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/199155",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 남동구 피아노 전임 선생님 구합니다 인천 남동구 피아노 전임 선생님 구합니다 05.23 930",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_199091",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "199091",
+      "postedAt": "2023-05-22",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "피아노 전임 선생님 구합니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 남동구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/199091",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 남동구 피아노 전임 선생님 구합니다 인천 남동구 피아노 전임 선생님 구합니다 05.22 818",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_199012",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "199012",
+      "postedAt": "2023-05-21",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "피아노 전임 선생님 구합니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 남동구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/199012",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 남동구 피아노 전임 선생님 구합니다 인천 남동구 피아노 전임 선생님 구합니다 05.21 935",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_198972",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "198972",
+      "postedAt": "2023-05-19",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "피아노 전임 선생님 구합니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 남동구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/198972",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 남동구 피아노 전임 선생님 구합니다 인천 남동구 피아노 전임 선생님 구합니다 05.19 950",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_198926",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "198926",
+      "postedAt": "2023-05-19",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "피아노 전임 선생님 구합니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 남동구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/198926",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 남동구 피아노 전임 선생님 구합니다 인천 남동구 피아노 전임 선생님 구합니다 05.19 824",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_198912",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "198912",
+      "postedAt": "2023-05-18",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "피아노 전임 선생님 구합니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 남동구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/198912",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 남동구 피아노 전임 선생님 구합니다 인천 남동구 피아노 전임 선생님 구합니다 05.18 825",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_197569",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "197569",
+      "postedAt": "2023-04-24",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "송도지역 기타 플룻 클라리넷강사 구합니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 연수구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/197569",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 연수구 송도지역 기타 플루트 클라리넷강사 구합니다 인천 연수구 송도지역 기타 플루트 클라리넷강사 구합니다 04.24 856",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_197255",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "197255",
+      "postedAt": "2023-04-19",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "클라리넷 플룻 바이올린 기타 강사모집합니다 인천송도",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 연수구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/197255",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 연수구 클라리넷 플루트 바이올린 기타 강사모집합니다 인천송도 인천 연수구 클라리넷 플루트 바이올린 기타 강사모집합니다 인천송도 04.19 909",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_195254",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "195254",
+      "postedAt": "2023-03-23",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 서구 대형음악학원에서 플룻샘 모셔요.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 서해구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/195254",
+      "tags": [
+        "플루트",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 서해구 인천 서구 대형음악학원에서 플루트샘 모셔요. 경기 김포시 인천 서해구 인천 서구 대형음악학원에서 플루트샘 모셔요. 03.23 803",
+      "autoCollected": true
+    },
+    {
       "id": "artmore_66923",
       "source": "아트모아",
       "sourceId": "artmore",
@@ -4428,6 +5836,64 @@
         "플루트"
       ],
       "searchText": "사단법인 한국장애인공연예술단 (사) 한국장애인공연예술단 2023학년도 강사 공개채용 공고 서울 강북구 사단법인 한국장애인공연예술단 마감 (사) 한국장애인공연예술단 2023학년도 강사 공개채용 공고 경력 1년 대학교(4년) 서울 강북구 삼양로77길 32 (수유동, 동신빌라) 월급 0원 ~ 0원 계약직 주1일 마감 2023-03-03 등록 2023-03-17 마감 721",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_191579",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "191579",
+      "postedAt": "2023-02-17",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "3/18(토) 2시30분예식 플룻 연주자구합니다. 인천주안인근웨딩홀",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 미추홀구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/191579",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 미추홀구 3/18(토) 2시30분예식 플루트 연주자구합니다. 인천주안인근웨딩홀 인천 미추홀구 인천 부평구 인천 서해구 3/18(토) 2시30분예식 플루트 연주자구합니다. 인천주안인근웨딩홀 02.17 878",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_189619",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "189619",
+      "postedAt": "2023-01-27",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "2월3일 금요일 오전 플룻대타 선생님 구합니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 부평구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/189619",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 부평구 2월3일 금요일 오전 플루트대타 선생님 구합니다 경기 부천시 인천 부평구 2월3일 금요일 오전 플루트대타 선생님 구합니다 01.27 847",
       "autoCollected": true
     },
     {
@@ -4461,6 +5927,242 @@
       "autoCollected": true
     },
     {
+      "id": "lessoninfo_188113",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "188113",
+      "postedAt": "2022-12-29",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "부천 플루트 앙상블에서 전공쌤 구합니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 부평구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/188113",
+      "tags": [
+        "플루트",
+        "관악·오케스트라"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "인천 부평구 부천 플루트 앙상블에서 전공쌤 구합니다. 서울 구로구 인천 부평구 경기 부천시 부천 플루트 앙상블에서 전공쌤 구합니다. 12.29 957",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_187483",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "187483",
+      "postedAt": "2022-12-19",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 바이올린, 플룻 전공 선생님을 모십니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 동구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/187483",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 동구 인천 바이올린, 플루트 전공 선생님을 모십니다 인천 동구 인천 바이올린, 플루트 전공 선생님을 모십니다 12.19 890",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_186612",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "186612",
+      "postedAt": "2022-12-06",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 성탄절칸타타 악기 연주자 모십니다. 플룻1,오보에1,첼로1",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 동구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/186612",
+      "tags": [
+        "플루트",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 동구 인천 성탄절칸타타 악기 연주자 모십니다. 플루트1,오보에1,첼로1 인천 동구 인천 성탄절칸타타 악기 연주자 모십니다. 플루트1,오보에1,첼로1 12.06 800",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_186185",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "186185",
+      "postedAt": "2022-11-30",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 성탄절칸타타 악기 연주자 모십니다. 플룻1,오보에1,바이올린1,…",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 동구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/186185",
+      "tags": [
+        "플루트",
+        "음악"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 동구 인천 성탄절칸타타 악기 연주자 모십니다. 플루트1,오보에1,바이올린1,… 인천 동구 인천 성탄절칸타타 악기 연주자 모십니다. 플루트1,오보에1,바이올린1,… 11.30 897",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_185792",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "185792",
+      "postedAt": "2022-11-25",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "12/1(목). 검단 인천 완정초등학교 연주 플릇1명 모십니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 서해구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/185792",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "인천 서해구 12/1(목). 검단 인천 완정초등학교 연주 플릇1명 모십니다 인천 서해구 12/1(목). 검단 인천 완정초등학교 연주 플릇1명 모십니다 11.25 743",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_185264",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "185264",
+      "postedAt": "2022-11-18",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "피아노 파트 선생님 구합니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 남동구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/185264",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 남동구 피아노 파트 선생님 구합니다. 인천 남동구 피아노 파트 선생님 구합니다. 11.18 964",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_182409",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "182409",
+      "postedAt": "2022-10-13",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "경기도 부천및 인천지역 피아노 방문 개인레슨 해주실 선생님 구합…",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 부평구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/182409",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트",
+        "플룻"
+      ],
+      "searchText": "인천 부평구 경기도 부천및 인천지역 피아노 방문 개인레슨 해주실 선생님 구합… 경기 부천시 인천 부평구 인천 계양구 경기도 부천및 인천지역 피아노 방문 개인레슨 해주실 선생님 구합… 10.13 1,548",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_172990",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "172990",
+      "postedAt": "2022-06-27",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "김포 플룻 선생님 구합니다",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 서해구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/172990",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 서해구 김포 플루트 선생님 구합니다 경기 김포시 경기 일산 인천 서해구 김포 플루트 선생님 구합니다 06.27 909",
+      "autoCollected": true
+    },
+    {
       "id": "artmore_45816",
       "source": "아트모아",
       "sourceId": "artmore",
@@ -4487,6 +6189,35 @@
         "플룻"
       ],
       "searchText": "어울림세상 발달장애인 바이올린, 플루트, 클라리넷 연주자 모집... 서울특별시 서대문구 어울림세상 마감 발달장애인 바이올린, 플루트, 클라리넷 연주자 모집... 경력 학력무관 서울특별시 서대문구 경기대로9길 37 월급 1,900,000원 ~ 1,900,000원 계약직 주5일 마감 2022-06-14 등록 2022-06-26 마감 77",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_170550",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "170550",
+      "postedAt": "2022-05-30",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "인천 연수구 플루트 선생님 모십니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 연수구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/170550",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "인천 연수구 인천 연수구 플루트 선생님 모십니다. 인천 연수구 인천 연수구 플루트 선생님 모십니다. 05.30 1,004",
       "autoCollected": true
     },
     {
@@ -4697,6 +6428,499 @@
         "플루트"
       ],
       "searchText": "서울에듀아트클래식 2021 인력지원사업 음악분야 채용공고 서울 강남구 회사명/정보제공처 채용공고명/담당업무/지원자격 근무조건 등록/마감일 조회수 서울에듀아트클래식 마감 2021 인력지원사업 음악분야 채용공고 신입,경력 1년 고등학교 서울 강남구 역삼로20길 9 (역삼동) 월급 1,800,000원 ~ 1,800,000원 계약직 주4일 마감 2021-05-31 등록 2021-06-15 마감 1116",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_257467",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "257467",
+      "postedAt": "2002-01-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "* 삭제된 게시물 입니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 서해구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/257467",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "인천 서해구 * 삭제된 게시물 입니다. 인천 서해구 * 삭제된 게시물 입니다. 09.01 286",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_241716",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "241716",
+      "postedAt": "2002-01-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "* 삭제된 게시물 입니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 연수구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/241716",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "인천 연수구 * 삭제된 게시물 입니다. 인천 연수구 인천 부평구 인천 남동구 * 삭제된 게시물 입니다. 08.25 226",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_241487",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "241487",
+      "postedAt": "2002-01-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "* 삭제된 게시물 입니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 미추홀구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/241487",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "인천 미추홀구 * 삭제된 게시물 입니다. 인천 미추홀구 * 삭제된 게시물 입니다. 08.22 217",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_229570",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "229570",
+      "postedAt": "2002-01-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "* 삭제된 게시물 입니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 부평구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/229570",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "인천 부평구 * 삭제된 게시물 입니다. 인천 부평구 * 삭제된 게시물 입니다. 12.02 471",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_225472",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "225472",
+      "postedAt": "2002-01-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "* 삭제된 게시물 입니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 남동구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/225472",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "인천 남동구 * 삭제된 게시물 입니다. 인천 남동구 * 삭제된 게시물 입니다. 09.04 305",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_224904",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "224904",
+      "postedAt": "2002-01-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "* 삭제된 게시물 입니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 남동구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/224904",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "인천 남동구 * 삭제된 게시물 입니다. 인천 남동구 * 삭제된 게시물 입니다. 08.26 79",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_214791",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "214791",
+      "postedAt": "2002-01-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "* 삭제된 게시물 입니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 부평구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/214791",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플루트"
+      ],
+      "searchText": "인천 부평구 * 삭제된 게시물 입니다. 인천 부평구 인천 남동구 * 삭제된 게시물 입니다. 02.26 80",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_257898",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "257898",
+      "postedAt": "2002-01-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "* 삭제된 게시물 입니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 부평구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/257898",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 부평구 * 삭제된 게시물 입니다. 인천 부평구 인천 계양구 경기 부천시 * 삭제된 게시물 입니다. 09.10 192",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_255925",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "255925",
+      "postedAt": "2002-01-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "* 삭제된 게시물 입니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 연수구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/255925",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 연수구 * 삭제된 게시물 입니다. 인천 연수구 * 삭제된 게시물 입니다. 07.25 324",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_252211",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "252211",
+      "postedAt": "2002-01-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "* 삭제된 게시물 입니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 중구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/252211",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 중구 * 삭제된 게시물 입니다. 인천 중구 인천 서해구 인천 연수구 * 삭제된 게시물 입니다. 04.14 281",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_251979",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "251979",
+      "postedAt": "2002-01-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "* 삭제된 게시물 입니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 중구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/251979",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 중구 * 삭제된 게시물 입니다. 인천 중구 인천 연수구 인천 서해구 * 삭제된 게시물 입니다. 04.08 238",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_251658",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "251658",
+      "postedAt": "2002-01-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "* 삭제된 게시물 입니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 중구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/251658",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 중구 * 삭제된 게시물 입니다. 인천 중구 인천 연수구 인천 서해구 * 삭제된 게시물 입니다. 04.02 233",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_251286",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "251286",
+      "postedAt": "2002-01-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "* 삭제된 게시물 입니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 연수구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/251286",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 연수구 * 삭제된 게시물 입니다. 인천 연수구 * 삭제된 게시물 입니다. 03.25 262",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_251065",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "251065",
+      "postedAt": "2002-01-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "* 삭제된 게시물 입니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 연수구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/251065",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 연수구 * 삭제된 게시물 입니다. 인천 연수구 * 삭제된 게시물 입니다. 03.20 238",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_250951",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "250951",
+      "postedAt": "2002-01-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "* 삭제된 게시물 입니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 연수구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/250951",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 연수구 * 삭제된 게시물 입니다. 인천 연수구 * 삭제된 게시물 입니다. 03.18 247",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_249325",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "249325",
+      "postedAt": "2002-01-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "* 삭제된 게시물 입니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 연수구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/249325",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 연수구 * 삭제된 게시물 입니다. 인천 연수구 인천 남동구 인천 미추홀구 * 삭제된 게시물 입니다. 02.23 300",
+      "autoCollected": true
+    },
+    {
+      "id": "lessoninfo_247906",
+      "source": "레슨인포",
+      "sourceId": "lessoninfo",
+      "sourceItemId": "247906",
+      "postedAt": "2002-01-01",
+      "recruitStatus": "모집종료",
+      "isActive": false,
+      "organization": "",
+      "jobType": "음악학원·레슨강사",
+      "title": "* 삭제된 게시물 입니다.",
+      "deadline": "",
+      "startDate": "",
+      "endDate": "",
+      "region": "인천 계양구",
+      "address": "",
+      "url": "https://www.lessoninfo.co.kr/music-jobs/247906",
+      "tags": [
+        "플루트"
+      ],
+      "instrumentTags": [
+        "플루트"
+      ],
+      "matchedKeywords": [
+        "플룻"
+      ],
+      "searchText": "인천 계양구 * 삭제된 게시물 입니다. 인천 계양구 인천 서해구 경기 부천시 * 삭제된 게시물 입니다. 01.26 306",
       "autoCollected": true
     }
   ]
